@@ -1,14 +1,14 @@
 export default {
   colors: {
-    text: "#333",
-    background: "#fff",
-    primary: "#639",
-    secondary: "#ff6347",
+    primary: '#7f653d',
+    secondary: '#795c31',
+    background: '#f0ebe3',
+    highlight: '#f44336'
   },
   fonts: {
-    body: "system-ui, sans-serif",
-    heading: "system-ui, sans-serif",
-    monospace: "Menlo, monospace",
+    body: 'system-ui, sans-serif',
+    heading: 'system-ui, sans-serif',
+    monospace: 'Menlo, monospace',
   },
   fontWeights: {
     body: 400,
@@ -20,7 +20,5 @@ export default {
     heading: 1.125,
   },
   fontSizes: [12, 14, 16, 20, 24, 32, 48, 64, 72],
-  // highlight-start
   space: [0, 4, 8, 16, 32, 64, 128, 256, 512],
-  // highlight-end
 }
