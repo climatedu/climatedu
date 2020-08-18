@@ -3,7 +3,7 @@ import { Box, Text, jsx } from 'theme-ui'
 import useAuth from '../util/auth'
 /** @jsx jsx */
 
-export default () => {
+export default function index(){
   const user = useAuth()
   return (
     <Box>
