@@ -1,3 +1,5 @@
+const path = require('path')
+
 /**
  * Configure your Gatsby site with this file.
  *
@@ -6,5 +8,18 @@
 
 module.exports = {
   /* Your site config here */
-  plugins: ['gatsby-plugin-theme-ui'],
+  plugins: [
+    'gatsby-plugin-sharp',
+    'gatsby-transformer-sharp',
+    'gatsby-transformer-yaml',
+    'gatsby-transformer-remark',
+    'gatsby-plugin-theme-ui',
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'people',
+        path: path.resolve(__dirname, 'data/people/')
+      }
+    },
+  ],
 }
