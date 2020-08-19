@@ -21,5 +21,12 @@ module.exports = {
         path: path.resolve(__dirname, 'data/people/')
       }
     },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'course',
+        path: path.resolve(__dirname, 'data/course/')
+      }
+    },
   ],
 }

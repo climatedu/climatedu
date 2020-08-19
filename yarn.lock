@@ -7242,6 +7242,11 @@ github-slugger@^1.2.1:
   dependencies:
     emoji-regex ">=6.0.0 <=6.1.1"
 
+glider-js@1.6.6:
+  version "1.6.6"
+  resolved "https://registry.yarnpkg.com/glider-js/-/glider-js-1.6.6.tgz#28c2592b52847507f1a92056b165baf30bc2f2a3"
+  integrity sha512-P1zzyjsrm/xNw6avk4ZKuQXNcDESQuy2OjDy89AF4Ln1LCMOSHlJGP3OkYIAIAxQl7YX4JO/XdEEsz9O7Eh6gA==
+
 glob-parent@^3.1.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/glob-parent/-/glob-parent-3.1.0.tgz#9e6af6299d8d3bd2bd40430832bd113df906c5ae"
@@ -11863,6 +11868,13 @@ react-focus-lock@^2.3.1:
     react-clientside-effect "^1.2.2"
     use-callback-ref "^1.2.1"
     use-sidecar "^1.0.1"
+
+react-glider@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/react-glider/-/react-glider-2.0.1.tgz#21596227aeabea7afe2c1d58283d543dc8636c37"
+  integrity sha512-59E7rmYS3qZQXNW2UOLPohEYult5Gj4HZswhXMsIi+cJztZRFAfBicAjXDlZmc6oXDrYvMJ5WnEAFrmJJnnn4Q==
+  dependencies:
+    glider-js "1.6.6"
 
 react-hot-loader@^4.12.21:
   version "4.12.21"
