@@ -8,27 +8,30 @@ import 'glider-js/glider.min.css'
 import Layout from '../components/layout'
 import Link from '../components/link'
 
+import useAuth from '../util/auth'
+
 import iconArrowRight from '../icons/arrow_right.svg'
 
 // TODO: put this somewhere else, maybe pull in with graphql? or just js is fine too
 const facts = [
   {
-    title: "Basically like the USACO Guide.",
-    text: "I thought you guys were joking, but it's literally pretty much what we're want.",
+    title: 'Basically like the USACO Guide.',
+    text:
+      "I thought you guys were joking, but it's literally pretty much what we're want.",
     icon: iconArrowRight,
   },
   {
-    title: "Fact 2",
+    title: 'Fact 2',
     text: "I guess we'll just try to make it prettier!",
     icon: iconArrowRight,
   },
   {
-    title: "Gink gink gink gink.",
-    text: "Gink gink gink gink gink gink gink gink gink gink gink gink gink.",
+    title: 'Gink gink gink gink.',
+    text: 'Gink gink gink gink gink gink gink gink gink gink gink gink gink.',
     icon: iconArrowRight,
   },
   {
-    title: "Fact 4",
+    title: 'Fact 4',
     text: "We're using different icons, I just dunno what our facts will be.",
     icon: iconArrowRight,
   },
@@ -36,20 +39,25 @@ const facts = [
 
 const faq = [
   {
-    question: "Is this course only intended for middle school students?",
-    answer: "No!! If your kid is taking this course, you should probably take it too!!!!!!! This is stuff everybody needs to know xoxo sorry devs just trying to fill up space!",
+    question: 'Is this course only intended for middle school students?',
+    answer:
+      'No!! If your kid is taking this course, you should probably take it too!!!!!!! This is stuff everybody needs to know xoxo sorry devs just trying to fill up space!',
   },
   {
-    question: "Is Tux cool?",
-    answer: "Yes, in fact, he is. He's pretty legendary, too. Petition to bring back legendary tux/viv role back. not that viv==tux but that i would be honored to have that role.",
+    question: 'Is Tux cool?',
+    answer:
+      "Yes, in fact, he is. He's pretty legendary, too. Petition to bring back legendary tux/viv role back. not that viv==tux but that i would be honored to have that role.",
   },
   {
-    question: "How much wood would a wood chuck chuck if a wood chuck could chuck wood?",
-    answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commado consequat.",
-  }
+    question:
+      'How much wood would a wood chuck chuck if a wood chuck could chuck wood?',
+    answer:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commado consequat.',
+  },
 ]
 
 const Home = ({ data }) => {
+  const user = useAuth()
   return (
     <Layout>
       <Box
@@ -60,7 +68,7 @@ const Home = ({ data }) => {
         }}
       >
         <Heading
-          as='h1'
+          as="h1"
           sx={{
             color: 'primary',
             fontSize: [5, 6],
@@ -70,7 +78,7 @@ const Home = ({ data }) => {
           Welcome to climatEDU!
         </Heading>
         <Heading
-          as='h2'
+          as="h2"
           sx={{
             color: 'secondary',
             fontWeight: 500,
@@ -89,13 +97,11 @@ const Home = ({ data }) => {
             flexBasis: ['auto', null, 0],
             mx: [0, null, 3],
             my: [2, null, 0],
-          }
+          },
         }}
       >
         <Box>
-          <Embed
-            src='https://www.youtube-nocookie.com/embed/fv2vijLQroo'
-          />
+          <Embed src="https://www.youtube-nocookie.com/embed/fv2vijLQroo" />
         </Box>
         <Flex
           sx={{
@@ -109,13 +115,13 @@ const Home = ({ data }) => {
               fontSize: 3,
             }}
           >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-            nisi ut aliquip ex ea commodo consequat.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
           </Text>
           <Link
-            to='/login'
+            to="/login"
             sx={{
               fontSize: 4,
               textDecoration: 'none',
@@ -123,7 +129,7 @@ const Home = ({ data }) => {
               fontWeight: 600,
             }}
           >
-            Register today!
+            {user === null ? 'Register today!' : 'Go to dashboard'}
             <Image
               src={iconArrowRight}
               sx={{
@@ -145,7 +151,7 @@ const Home = ({ data }) => {
           mb: 5,
         }}
       >
-        {facts.map(({icon, title, text}, i) => {
+        {facts.map(({ icon, title, text }, i) => {
           return (
             <Flex key={i}>
               <Image
@@ -158,7 +164,7 @@ const Home = ({ data }) => {
               />
               <Box>
                 <Heading
-                  as='h2'
+                  as="h2"
                   sx={{
                     color: 'primary',
                     mb: 2,
@@ -179,7 +185,7 @@ const Home = ({ data }) => {
         }}
       >
         <Heading
-          as='h1'
+          as="h1"
           sx={{
             color: 'primary',
             fontSize: [5, 6],
@@ -207,11 +213,11 @@ const Home = ({ data }) => {
                 slidesToShow: 'auto',
                 slidesToScroll: 'auto',
                 itemWidth: 250,
-              }
-            }
+              },
+            },
           ]}
         >
-          {data.allMarkdownRemark.edges.map(({node}, i) => {
+          {data.allMarkdownRemark.edges.map(({ node }, i) => {
             return (
               <Box
                 key={i}
@@ -224,13 +230,13 @@ const Home = ({ data }) => {
                 }}
               >
                 <Heading
-                  as='h3'
+                  as="h3"
                   sx={{
                     mb: 3,
                   }}
                 >
                   {node.frontmatter.title}
-                  </Heading>
+                </Heading>
                 {node.frontmatter.description}
               </Box>
             )
@@ -244,7 +250,7 @@ const Home = ({ data }) => {
         }}
       >
         <Heading
-          as='h1'
+          as="h1"
           sx={{
             color: 'primary',
             fontSize: [5, 6],
@@ -260,7 +266,7 @@ const Home = ({ data }) => {
           mb: 5,
         }}
       >
-        {faq.map(({question, answer}, i) => {
+        {faq.map(({ question, answer }, i) => {
           return (
             <Box
               key={i}
@@ -294,7 +300,7 @@ const Home = ({ data }) => {
         }}
       >
         <Heading
-          as='h1'
+          as="h1"
           sx={{
             color: 'primary',
             fontSize: [5, 6],
@@ -309,7 +315,9 @@ const Home = ({ data }) => {
 
 export const query = graphql`
   {
-    allMarkdownRemark(filter: {fields: {sourceInstanceName: {eq: "course"}}}) {
+    allMarkdownRemark(
+      filter: { fields: { sourceInstanceName: { eq: "course" } } }
+    ) {
       edges {
         node {
           frontmatter {

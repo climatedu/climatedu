@@ -1,7 +1,7 @@
 import React from 'react'
 import { Button } from 'theme-ui'
 
-export default function ButtonComponent(props){
+export default function ButtonComponent(props) {
   return (
     <Button
       sx={{
@@ -11,7 +11,7 @@ export default function ButtonComponent(props){
         color: 'primary',
         padding: '10px 20px',
         fontSize: 20,
-        backgroundColor: 'background'
+        backgroundColor: 'background',
       }}
       {...props}
     />
