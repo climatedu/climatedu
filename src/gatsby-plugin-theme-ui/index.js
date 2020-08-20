@@ -21,7 +21,7 @@ export default {
     body: 1.5,
     heading: 1.125,
   },
-  borders:{
+  borders: {
     debug: '2px solid red',
   },
   fontSizes: [12, 14, 16, 20, 24, 32, 48, 64, 72],
@@ -30,12 +30,12 @@ export default {
     avatar: {
       width: '200px',
       marginTop: '20px',
-    }
+    },
   },
   styles: {
     root: {
       fontFamily: 'body',
       fontWeight: 'body',
-    }
+    },
   },
 }

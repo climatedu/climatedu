@@ -4,11 +4,15 @@ import { graphql } from 'gatsby'
 import Image from 'gatsby-image'
 import { jsx, Box, Heading } from 'theme-ui'
 
-export const TeamProfile = ({ data }) =>
+export const TeamProfile = ({ data }) => (
   <Box>
-    <Image fixed={data.avatar.childImageSharp.fixed} sx={{ borderRadius: '999em' }} />
-    <Heading as='h1'>{data.name}</Heading>
+    <Image
+      fixed={data.avatar.childImageSharp.fixed}
+      sx={{ borderRadius: '999em' }}
+    />
+    <Heading as="h1">{data.name}</Heading>
   </Box>
+)
 
 export default TeamProfile
 

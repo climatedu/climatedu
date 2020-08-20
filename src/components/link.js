@@ -1,17 +1,17 @@
 /** @jsx jsx */
 import { jsx } from 'theme-ui'
-import { Link as GatsbyLink }  from 'gatsby'
+import { Link as GatsbyLink } from 'gatsby'
 
-const Link = (props) => {
+const Link = props => {
   return (
     <GatsbyLink
       {...props}
-      activeClassName='active'
+      activeClassName="active"
       sx={{
         color: 'inherit',
         '&.active': {
           color: 'primary',
-        }
+        },
       }}
     />
   )

@@ -18,15 +18,15 @@ module.exports = {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'people',
-        path: path.resolve(__dirname, 'data/people/')
-      }
+        path: path.resolve(__dirname, 'data/people/'),
+      },
     },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'course',
-        path: path.resolve(__dirname, 'data/course/')
-      }
+        path: path.resolve(__dirname, 'data/course/'),
+      },
     },
   ],
 }

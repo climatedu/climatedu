@@ -1,3 +1,3 @@
 const progressStates = {
-  START: 0
+  START: 0,
 }
