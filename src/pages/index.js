@@ -256,6 +256,7 @@ const Home = ({ data }) => {
       <Box
         sx={{
           columnCount: [1, 2],
+          columnGap: '2em',
           mb: 5,
         }}
       >

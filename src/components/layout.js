@@ -11,7 +11,7 @@ const Layout = ({ children }) => {
       <main
         sx={{
           m: 'auto',
-          maxWidth: 1200,
+          maxWidth: 960,
           width: '90%',
         }}
       >
