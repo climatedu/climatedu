@@ -1,3 +1,6 @@
+import 'fontsource-manrope/400.css'
+import 'fontsource-manrope/700.css'
+
 export default {
   colors: {
     primary: '#1F7240',
@@ -7,8 +10,8 @@ export default {
     text: '#57AC79',
   },
   fonts: {
-    body: 'system-ui, sans-serif',
-    heading: 'system-ui, sans-serif',
+    body: 'Manrope, system-ui, sans-serif',
+    heading: 'Manrope, system-ui, sans-serif',
     monospace: 'Menlo, monospace',
   },
   fontWeights: {

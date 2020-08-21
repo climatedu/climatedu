@@ -1,5 +1,5 @@
 import { graphql } from 'gatsby'
-import { Box, Button, Flex, Grid, Heading, Image, Text, jsx } from 'theme-ui'
+import { Box, Button, Flex, Grid, Heading, Text, jsx } from 'theme-ui'
 /** @jsx jsx */
 
 import Glider from 'react-glider'
@@ -109,7 +109,6 @@ const Home = ({ data }) => {
         <Heading
           as="h2"
           sx={{
-            fontWeight: 500,
             fontSize: [4, 5],
             mb: 4,
           }}
