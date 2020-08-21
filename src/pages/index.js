@@ -1,39 +1,41 @@
 import { graphql } from 'gatsby'
-import { Box, Embed, Flex, Grid, Heading, Image, Text, jsx } from 'theme-ui'
+import { Box, Button, Flex, Grid, Heading, Image, Text, jsx } from 'theme-ui'
 /** @jsx jsx */
 
 import Glider from 'react-glider'
 import 'glider-js/glider.min.css'
 
 import Layout from '../components/layout'
-import Link from '../components/link'
 
 import useAuth from '../util/auth'
 
-import iconArrowRight from '../icons/arrow_right.svg'
+import number1 from '../icons/number-1.svg'
 
 // TODO: put this somewhere else, maybe pull in with graphql? or just js is fine too
 const facts = [
   {
-    title: 'Basically like the USACO Guide.',
+    title: 'A refreshing, relatable voice.',
     text:
-      "I thought you guys were joking, but it's literally pretty much what we're want.",
-    icon: iconArrowRight,
+      'Built by driven high school students, this course makes use of what really works in education today.',
+    icon: number1,
   },
   {
-    title: 'Fact 2',
-    text: "I guess we'll just try to make it prettier!",
-    icon: iconArrowRight,
+    title: 'Not your average online class.',
+    text:
+      '<em>Learning. Ugh.</em> No! Each resource is hand-picked to engage, provoke thought, and inspire.',
+    icon: number1,
   },
   {
-    title: 'Gink gink gink gink.',
-    text: 'Gink gink gink gink gink gink gink gink gink gink gink gink gink.',
-    icon: iconArrowRight,
+    title: 'Filling a gap in the school system.',
+    text:
+      'Many schools severely lack a comprehensive, mandated climate curriculum. We seek to change that!',
+    icon: number1,
   },
   {
-    title: 'Fact 4',
-    text: "We're using different icons, I just dunno what our facts will be.",
-    icon: iconArrowRight,
+    title: 'A built-in classroom.',
+    text:
+      'Students join classes with unique codes. Teachers track progress and view responses from their dashboard.',
+    icon: number1,
   },
 ]
 
@@ -57,257 +59,225 @@ const faq = [
 ]
 
 const Home = ({ data }) => {
-  const user = useAuth()
   return (
     <Layout>
       <Box
         sx={{
           textAlign: 'center',
           mt: 6,
-          mb: 5,
+          mb: 4,
         }}
       >
         <Heading
           as="h1"
           sx={{
-            color: 'primary',
             fontSize: [5, 6],
             mb: 3,
           }}
         >
-          Welcome to climatEDU!
+          Welcome to climatedu!
         </Heading>
         <Heading
           as="h2"
           sx={{
-            color: 'secondary',
             fontWeight: 500,
             fontSize: [4, 5],
+            mb: 4,
           }}
         >
           Climate education made by students, for students.
         </Heading>
-      </Box>
-      <Flex
-        sx={{
-          mb: 5,
-          flexWrap: 'wrap',
-          '& > div': {
-            flex: '1 1',
-            flexBasis: ['auto', null, 0],
-            mx: [0, null, 3],
-            my: [2, null, 0],
-          },
-        }}
-      >
-        <Box>
-          <Embed src="https://www.youtube-nocookie.com/embed/fv2vijLQroo" />
-        </Box>
-        <Flex
+        <Button
           sx={{
-            flexDirection: 'column',
-            justifyContent: 'center',
+            fontSize: 4,
+            p: 3,
+            background:
+              'linear-gradient(93.23deg, #FFD959 5.32%, rgba(255, 255, 255, 0) 118.45%), #ACD28A',
+            boxShadow: '0px 0px 8px 5px rgba(161, 192, 137, 0.3)',
+            borderRadius: 20,
+            fontWeight: 'bold',
+            '&:hover': {
+              boxShadow: '0px 0px 8px 5px rgb(119 156 90 / 30%)',
+            },
           }}
         >
-          <Text
-            sx={{
-              mb: 10,
-              fontSize: 3,
-            }}
-          >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
-          </Text>
-          <Link
-            to="/login"
-            sx={{
-              fontSize: 4,
-              textDecoration: 'none',
-              color: 'primary',
-              fontWeight: 600,
-            }}
-          >
-            {user === null ? 'Register today!' : 'Go to dashboard'}
-            <Image
-              src={iconArrowRight}
-              sx={{
-                height: '0.5em',
-                verticalAlign: 'middle',
-                ml: 10,
-              }}
-            />
-          </Link>
-        </Flex>
-      </Flex>
-      <Grid
-        gap={4}
-        columns={[1, 2]}
+          Register today!
+        </Button>
+      </Box>
+      <Box
         sx={{
           backgroundColor: 'darkBackground',
-          borderRadius: 30,
-          p: 4,
-          mb: 5,
+          px: [4, 5],
+          py: 4,
         }}
       >
-        {facts.map(({ icon, title, text }, i) => {
-          return (
-            <Flex key={i}>
-              <Image
-                src={icon}
-                sx={{
-                  height: '1.5em',
-                  mr: '1em',
-                  flex: '0 0 auto',
-                }}
-              />
-              <Box>
-                <Heading
-                  as="h2"
-                  sx={{
-                    color: 'primary',
-                    mb: 2,
-                  }}
-                >
-                  {title}
-                </Heading>
-                <Text>{text}</Text>
-              </Box>
-            </Flex>
-          )
-        })}
-      </Grid>
-      <Box
-        sx={{
-          textAlign: 'center',
-          mb: 5,
-        }}
-      >
-        <Heading
-          as="h1"
+        <Grid
+          gap={4}
+          columns={[1, 2]}
           sx={{
-            color: 'primary',
-            fontSize: [5, 6],
+            backgroundColor: 'background',
+            borderRadius: 30,
+            p: 4,
+            mb: 5,
           }}
         >
-          Our Course
-        </Heading>
-      </Box>
-      <Box
-        sx={{
-          px: 4,
-          mb: 5,
-        }}
-      >
-        <Glider
-          draggable
-          dragVelocity={1}
-          hasArrows
-          slidesToShow={1}
-          slidesToScroll={1}
-          responsive={[
-            {
-              breakpoint: 640,
-              settings: {
-                slidesToShow: 'auto',
-                slidesToScroll: 'auto',
-                itemWidth: 250,
-              },
-            },
-          ]}
+          {facts.map(({ icon, title, text }, i) => {
+            return (
+              <Flex key={i}>
+                <Image
+                  src={icon}
+                  sx={{
+                    height: '2.5em',
+                    mr: '1em',
+                    flex: '0 0 auto',
+                  }}
+                />
+                <Box>
+                  <Heading
+                    as="h2"
+                    sx={{
+                      color: 'primary',
+                      mb: 2,
+                    }}
+                  >
+                    {title}
+                  </Heading>
+                  <Text dangerouslySetInnerHTML={{ __html: text }} />
+                </Box>
+              </Flex>
+            )
+          })}
+        </Grid>
+        <Box
+          sx={{
+            textAlign: 'center',
+            mb: 5,
+          }}
         >
-          {data.allMarkdownRemark.edges.map(({ node }, i) => {
+          <Heading
+            as="h1"
+            sx={{
+              color: 'primary',
+              fontSize: [5, 6],
+            }}
+          >
+            Our Course
+          </Heading>
+        </Box>
+        <Box
+          sx={{
+            px: 4,
+            mb: 5,
+          }}
+        >
+          <Glider
+            draggable
+            dragVelocity={1}
+            hasArrows
+            slidesToShow={1}
+            slidesToScroll={1}
+            responsive={[
+              {
+                breakpoint: 640,
+                settings: {
+                  slidesToShow: 'auto',
+                  slidesToScroll: 'auto',
+                  itemWidth: 275,
+                },
+              },
+            ]}
+          >
+            {data.allMarkdownRemark.edges.map(({ node: unit }, i) => {
+              return (
+                <Box
+                  key={i}
+                  sx={{
+                    p: 4,
+                    mx: 3,
+                    borderRadius: 30,
+                    backgroundColor: unit.frontmatter.background,
+                    color: unit.frontmatter.text,
+                  }}
+                >
+                  <Heading
+                    as="h3"
+                    sx={{
+                      mb: 3,
+                      color: unit.frontmatter.text,
+                    }}
+                  >
+                    {unit.frontmatter.title}
+                  </Heading>
+                  <Text
+                    dangerouslySetInnerHTML={{
+                      __html: unit.excerpt,
+                    }}
+                  />
+                </Box>
+              )
+            })}
+          </Glider>
+        </Box>
+        <Box
+          sx={{
+            textAlign: 'center',
+            mb: 5,
+          }}
+        >
+          <Heading
+            as="h1"
+            sx={{
+              color: 'primary',
+              fontSize: [5, 6],
+            }}
+          >
+            FAQ
+          </Heading>
+        </Box>
+        <Box
+          sx={{
+            columnCount: [1, 2],
+            columnGap: '4em',
+            px: [4, 5, 6],
+            mb: 5,
+          }}
+        >
+          {faq.map(({ question, answer }, i) => {
             return (
               <Box
                 key={i}
                 sx={{
-                  p: 4,
-                  mx: 3,
-                  borderRadius: 30,
-                  backgroundColor: node.frontmatter.background,
-                  color: node.frontmatter.text,
+                  marginBottom: 4,
                 }}
               >
                 <Heading
-                  as="h3"
                   sx={{
-                    mb: 3,
+                    mb: 2,
                   }}
                 >
-                  {node.frontmatter.title}
+                  {question}
                 </Heading>
-                {node.frontmatter.description}
+                <Text>{answer}</Text>
               </Box>
             )
           })}
-        </Glider>
-      </Box>
-      <Box
-        sx={{
-          textAlign: 'center',
-          mb: 5,
-        }}
-      >
-        <Heading
-          as="h1"
+        </Box>
+        <Box
           sx={{
-            color: 'primary',
-            fontSize: [5, 6],
+            textAlign: 'center',
+            mb: 5,
           }}
         >
-          FAQ
-        </Heading>
-      </Box>
-      <Box
-        sx={{
-          columnCount: [1, 2],
-          columnGap: '2em',
-          mb: 5,
-        }}
-      >
-        {faq.map(({ question, answer }, i) => {
-          return (
-            <Box
-              key={i}
-              sx={{
-                marginBottom: 4,
-              }}
-            >
-              <Heading
-                sx={{
-                  color: 'secondary',
-                  mb: 2,
-                }}
-              >
-                {question}
-              </Heading>
-              <Text
-                sx={{
-                  color: 'secondary',
-                }}
-              >
-                {answer}
-              </Text>
-            </Box>
-          )
-        })}
-      </Box>
-      <Box
-        sx={{
-          textAlign: 'center',
-          mb: 5,
-        }}
-      >
-        <Heading
-          as="h1"
-          sx={{
-            color: 'primary',
-            fontSize: [5, 6],
-          }}
-        >
-          You can probably imagine other stuff that fills this space!
-        </Heading>
+          <Heading
+            as="h1"
+            sx={{
+              color: 'primary',
+              fontSize: [5, 6],
+            }}
+          >
+            You can probably imagine other stuff that fills this space!
+          </Heading>
+        </Box>
       </Box>
     </Layout>
   )
@@ -317,15 +287,16 @@ export const query = graphql`
   {
     allMarkdownRemark(
       filter: { fields: { sourceInstanceName: { eq: "course" } } }
+      sort: { fields: frontmatter___unit }
     ) {
       edges {
         node {
           frontmatter {
             background
-            description
             text
             title
           }
+          excerpt(format: HTML)
         }
       }
     }

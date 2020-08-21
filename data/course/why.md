@@ -1,9 +1,11 @@
 ---
 slug: '/why'
-title: 'Why do we care?'
-description: 'Extreme weather! hurricanes! flooding! heat related disease! economy! food security, MELTING glaciers, rising sea levels, inequality and climate racism'
-background: '#d4c2e2'
-text: '#623d80'
+unit: 2
+title: 'Why does climate change matter?'
+background: '#fcd8b8'
+text: '#b25604'
 ---
 
-course content would go here probably?
+Climate change impacts everything on Earth, causing ocean acidification, heat-related disease, species extinction, and more. Learn about why we should care.
+
+<!-- end -->
