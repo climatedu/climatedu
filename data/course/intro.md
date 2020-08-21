@@ -1,9 +1,10 @@
 ---
-slug: '/intro'
-title: 'Introduction to Climate Change'
-description: 'not final! climate, climate v. weather, energy budget, greenhouse cases, models, current trajectory, carbon cycle'
-background: '#d2e3ed'
-text: '#2e5a84'
+slug: /intro
+unit: 1
+title: Introduction to Climate Change
+description: What is climate? Explore definitions, Earth’s energy budget, greenhouse gases, our carbon footprint, and current climate models.
+background: '#d0e4ef'
+text: '#2a6d92'
 ---
 
-course content would go here probably?
+placeholder course content

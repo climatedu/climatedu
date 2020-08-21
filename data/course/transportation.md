@@ -1,7 +1,8 @@
 ---
-slug: '/transportation'
-title: 'Transportation'
-description: "Honk honk car car car cars create a lot of pollution, land usage, SOx and NOx, EV's but really public vs. private transportation, world without cars etc etc etc."
+slug: /transportation
+unit: 6
+title: Transportation and urbanization
+description: <em>Planes, Trains and Automobiles (1987)...</em> what’s it got to do with pollution and land usage? Why do cities need trees? Explore green solutions in an urban world.
 background: '#d2d2d2'
 text: '#646464'
 ---

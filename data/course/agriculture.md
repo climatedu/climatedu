@@ -1,7 +1,8 @@
 ---
-slug: '/agriculture'
-title: 'Agriculture'
-description: "Eating cows makes them sad. also it releases a lot of methane and is really bad!!!! what are the solutions? well you don't need to be vegan but you could eat less meat sometimes!"
+slug: /agriculture
+unit: 5
+title: Agriculture and food waste
+description: How does the food on your dinner plate affect the planet? Study how agriculture and food waste contribute to greenhouse gas emissions.
 background: '#cbe2c2'
 text: '#46803d'
 ---

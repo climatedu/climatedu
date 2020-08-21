@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import { useCallback, useState } from 'react'
-import { Box, Button, Text, jsx } from 'theme-ui'
+import { Box, Text, jsx } from 'theme-ui'
 import useAuth from '../util/auth'
 import Link from './link'
 

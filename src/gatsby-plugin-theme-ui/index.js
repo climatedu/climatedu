@@ -1,11 +1,10 @@
 export default {
   colors: {
-    primary: '#795c31',
-    secondary: '#a59173',
-    background: '#f0ebe3',
-    darkBackground: '#e2d5c2',
-    highlight: '#f44336',
-    text: '#9c8766',
+    primary: '#1F7240',
+    secondary: '#EAF2D9',
+    background: '#FBFFF1',
+    darkBackground: '#EAF2D9',
+    text: '#57AC79',
   },
   fonts: {
     body: 'system-ui, sans-serif',
@@ -36,6 +35,67 @@ export default {
     root: {
       fontFamily: 'body',
       fontWeight: 'body',
+    },
+  },
+  buttons: {
+    primary: {
+      borderRadius: 10,
+      backgroundColor: 'text',
+      cursor: 'pointer',
+      '&:focus': {
+        outline: 'none',
+      },
+    },
+  },
+  text: {
+    heading: {
+      color: 'primary',
+    },
+  },
+  forms: {
+    input: {
+      borderWidth: 3,
+      borderRadius: 10,
+      borderColor: 'text',
+      backgroundColor: 'secondary',
+      px: 3,
+      py: 2,
+      fontSize: 3,
+      '&:focus': {
+        borderColor: 'primary',
+        outline: 'none',
+      },
+    },
+    checkbox: {
+      outline: 'none',
+      '&:focus': {
+        borderColor: 'primary',
+        outline: 'none',
+      },
+    },
+    select: {
+      borderWidth: 3,
+      borderRadius: 10,
+      borderColor: 'text',
+      backgroundColor: 'secondary',
+      '&:focus': {
+        borderColor: 'primary',
+        outline: 'none',
+      },
+    },
+    textarea: {
+      borderWidth: 3,
+      borderRadius: 10,
+      borderColor: 'text',
+      backgroundColor: 'secondary',
+      fontFamily: 'body',
+      '&:focus': {
+        borderColor: 'primary',
+        outline: 'none',
+      },
+    },
+    slider: {
+      backgroundColor: 'text',
     },
   },
 }
