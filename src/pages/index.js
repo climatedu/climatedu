@@ -75,7 +75,7 @@ const Home = ({ data }) => {
             mb: 3,
           }}
         >
-          Welcome to climatEDU!
+          Welcome to climatedu!
         </Heading>
         <Heading
           as="h2"
@@ -187,7 +187,7 @@ const Home = ({ data }) => {
               },
             ]}
           >
-            {data.allMarkdownRemark.edges.map(({ node }, i) => {
+            {data.allMarkdownRemark.edges.map(({ node: unit }, i) => {
               return (
                 <Box
                   key={i}
@@ -195,22 +195,22 @@ const Home = ({ data }) => {
                     p: 4,
                     mx: 3,
                     borderRadius: 30,
-                    backgroundColor: node.frontmatter.background,
-                    color: node.frontmatter.text,
+                    backgroundColor: unit.frontmatter.background,
+                    color: unit.frontmatter.text,
                   }}
                 >
                   <Heading
                     as="h3"
                     sx={{
                       mb: 3,
-                      color: node.frontmatter.text,
+                      color: unit.frontmatter.text,
                     }}
                   >
-                    {node.frontmatter.title}
+                    {unit.frontmatter.title}
                   </Heading>
                   <Text
                     dangerouslySetInnerHTML={{
-                      __html: node.frontmatter.description,
+                      __html: unit.excerpt,
                     }}
                   />
                 </Box>
@@ -293,11 +293,10 @@ export const query = graphql`
         node {
           frontmatter {
             background
-            description
-            slug
             text
             title
           }
+          excerpt(format: HTML)
         }
       }
     }

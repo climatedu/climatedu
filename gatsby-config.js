@@ -12,7 +12,12 @@ module.exports = {
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
     'gatsby-transformer-yaml',
-    'gatsby-transformer-remark',
+    {
+      resolve: 'gatsby-transformer-remark',
+      options: {
+        excerpt_separator: '<!-- end -->',
+      },
+    },
     'gatsby-plugin-theme-ui',
     {
       resolve: 'gatsby-source-filesystem',
