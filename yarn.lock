@@ -6479,6 +6479,11 @@ follow-redirects@^1.0.0:
   resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.12.1.tgz#de54a6205311b93d60398ebc01cf7015682312b6"
   integrity sha512-tmRv0AVuR7ZyouUHLeNSiO6pqulF7dYa3s19c6t+wz9LD69/uSzdMxJ2S91nTI9U3rt/IldxpzMOFejp6f0hjg==
 
+fontsource-manrope@^3.0.5:
+  version "3.0.5"
+  resolved "https://registry.yarnpkg.com/fontsource-manrope/-/fontsource-manrope-3.0.5.tgz#4030db348310ad792bc471fafa0565b16872eb2d"
+  integrity sha512-Arux1GA+xVti0OABOVNsJgTJ5hMvwqsSR54uUj0tPqLZkjSOVbycXyu7RlwCJHSqdylAA8HgwTLt952DA+1CtA==
+
 for-in@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/for-in/-/for-in-1.0.2.tgz#81068d295a8142ec0ac726c6e2200c30fb6d5e80"
