@@ -7,8 +7,6 @@ import 'glider-js/glider.min.css'
 
 import Layout from '../components/layout'
 
-import useAuth from '../util/auth'
-
 import number1 from '../icons/number-1.svg'
 
 // TODO: put this somewhere else, maybe pull in with graphql? or just js is fine too
@@ -58,6 +56,36 @@ const faq = [
   },
 ]
 
+const Section = ({ header, children, ...props }) => {
+  return (
+    <Box as='section' {...props}>
+      <Box
+        sx={{
+          textAlign: 'center',
+          mb: [4, 5],
+        }}
+      >
+        <Heading
+          as="h1"
+          sx={{
+            fontSize: [5, 6],
+          }}
+        >
+          {header}
+        </Heading>
+      </Box>
+      <Box
+        sx={{
+          px: 4,
+          mb: 5,
+        }}
+      >
+        {children}
+      </Box>
+    </Box>
+  )
+}
+
 const Home = ({ data }) => {
   return (
     <Layout>
@@ -66,6 +94,7 @@ const Home = ({ data }) => {
           textAlign: 'center',
           mt: 6,
           mb: 4,
+          px: [4, 5],
         }}
       >
         <Heading
@@ -107,8 +136,7 @@ const Home = ({ data }) => {
       <Box
         sx={{
           backgroundColor: 'darkBackground',
-          px: [4, 5],
-          py: 4,
+          p: [4, 5],
         }}
       >
         <Grid
@@ -148,28 +176,7 @@ const Home = ({ data }) => {
             )
           })}
         </Grid>
-        <Box
-          sx={{
-            textAlign: 'center',
-            mb: 5,
-          }}
-        >
-          <Heading
-            as="h1"
-            sx={{
-              color: 'primary',
-              fontSize: [5, 6],
-            }}
-          >
-            Our Course
-          </Heading>
-        </Box>
-        <Box
-          sx={{
-            px: 4,
-            mb: 5,
-          }}
-        >
+        <Section header="Our Course">
           <Glider
             draggable
             dragVelocity={1}
@@ -217,67 +224,38 @@ const Home = ({ data }) => {
               )
             })}
           </Glider>
-        </Box>
-        <Box
-          sx={{
-            textAlign: 'center',
-            mb: 5,
-          }}
-        >
-          <Heading
-            as="h1"
+        </Section>
+        <Section header='FAQ'>
+          <Box
             sx={{
-              color: 'primary',
-              fontSize: [5, 6],
+              columnCount: [1, 2],
+              columnGap: '4em',
+              px: [4, 4, 5],
+              mb: 5,
             }}
           >
-            FAQ
-          </Heading>
-        </Box>
-        <Box
-          sx={{
-            columnCount: [1, 2],
-            columnGap: '4em',
-            px: [4, 5, 6],
-            mb: 5,
-          }}
-        >
-          {faq.map(({ question, answer }, i) => {
-            return (
-              <Box
-                key={i}
-                sx={{
-                  marginBottom: 4,
-                }}
-              >
-                <Heading
+            {faq.map(({ question, answer }, i) => {
+              return (
+                <Box
+                  key={i}
                   sx={{
-                    mb: 2,
+                    marginBottom: 4,
                   }}
                 >
-                  {question}
-                </Heading>
-                <Text>{answer}</Text>
-              </Box>
-            )
-          })}
-        </Box>
-        <Box
-          sx={{
-            textAlign: 'center',
-            mb: 5,
-          }}
-        >
-          <Heading
-            as="h1"
-            sx={{
-              color: 'primary',
-              fontSize: [5, 6],
-            }}
-          >
-            You can probably imagine other stuff that fills this space!
-          </Heading>
-        </Box>
+                  <Heading
+                    sx={{
+                      mb: 2,
+                    }}
+                  >
+                    {question}
+                  </Heading>
+                  <Text>{answer}</Text>
+                </Box>
+              )
+            })}
+          </Box>
+        </Section>
+        <Section header='You can probably imagine other stuff that fills this space!' />
       </Box>
     </Layout>
   )
