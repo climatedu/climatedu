@@ -2,7 +2,7 @@ import { useCallback, useState } from 'react'
 import { Redirect } from '@reach/router'
 import { jsx, Box, Text, Heading, Image } from 'theme-ui'
 import Button from '../components/button'
-import iconGoogle from '../icons/google.svg'
+import { Google } from '../icons'
 
 import firebase from 'firebase/app'
 import useFirebase from '../firebase/useFirebase'
@@ -42,9 +42,13 @@ export default function login() {
         </Heading>
         <Button onClick={handleGoogleLogin} sx={{ cursor: 'pointer' }}>
           Sign in with Google
-          <Image
-            sx={{ height: '1.5em', verticalAlign: 'middle', marginLeft: 10 }}
-            src={iconGoogle}
+          <Google
+            sx={{
+              fill: 'primary',
+              height: '1.5em',
+              verticalAlign: 'middle',
+              marginLeft: 10,
+            }}
           />
         </Button>
         <Text sx={{ color: 'highlight', marginTop: 20, textAlign: 'center' }}>
