@@ -9,7 +9,7 @@ import Layout from '../components/layout'
 
 import useAuth from '../util/auth'
 
-import number1 from '../icons/number-1.svg'
+import icons from '../icons'
 
 // TODO: put this somewhere else, maybe pull in with graphql? or just js is fine too
 const facts = [
@@ -17,25 +17,25 @@ const facts = [
     title: 'A refreshing, relatable voice.',
     text:
       'Built by driven high school students, this course makes use of what really works in education today.',
-    icon: number1,
+    icon: 'Number1',
   },
   {
     title: 'Not your average online class.',
     text:
       '<em>Learning. Ugh.</em> No! Each resource is hand-picked to engage, provoke thought, and inspire.',
-    icon: number1,
+    icon: 'Number2',
   },
   {
     title: 'Filling a gap in the school system.',
     text:
       'Many schools severely lack a comprehensive, mandated climate curriculum. We seek to change that!',
-    icon: number1,
+    icon: 'Number3',
   },
   {
     title: 'A built-in classroom.',
     text:
       'Students join classes with unique codes. Teachers track progress and view responses from their dashboard.',
-    icon: number1,
+    icon: 'Number4',
   },
 ]
 
@@ -122,11 +122,12 @@ const Home = ({ data }) => {
           }}
         >
           {facts.map(({ icon, title, text }, i) => {
+            const Icon = icons[icon]
             return (
               <Flex key={i}>
-                <Image
-                  src={icon}
+                <Icon
                   sx={{
+                    fill: 'primary',
                     height: '2.5em',
                     mr: '1em',
                     flex: '0 0 auto',
