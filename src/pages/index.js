@@ -58,7 +58,7 @@ const faq = [
 
 const Section = ({ header, children, ...props }) => {
   return (
-    <Box as='section' {...props}>
+    <Box as="section" {...props}>
       <Box
         sx={{
           textAlign: 'center',
@@ -225,7 +225,7 @@ const Home = ({ data }) => {
             })}
           </Glider>
         </Section>
-        <Section header='FAQ'>
+        <Section header="FAQ">
           <Box
             sx={{
               columnCount: [1, 2],
@@ -255,7 +255,7 @@ const Home = ({ data }) => {
             })}
           </Box>
         </Section>
-        <Section header='You can probably imagine other stuff that fills this space!' />
+        <Section header="You can probably imagine other stuff that fills this space!" />
       </Box>
     </Layout>
   )

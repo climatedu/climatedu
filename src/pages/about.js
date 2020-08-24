@@ -1,115 +1,51 @@
-import { useCallback, useState } from 'react'
-import { Redirect } from '@reach/router'
-import { jsx, Box, Text, Heading, Avatar, Badge } from 'theme-ui'
-import Button from '../components/button'
 /** @jsx jsx */
+import { jsx, Box, Heading, Grid } from 'theme-ui'
+import { TeamProfile } from '../components/teamProfile'
+import { graphql } from 'gatsby'
+import Layout from '../components/layout'
 
-export default function about() {
+const about = ({ data }) => {
   return (
-    <Box sx={{ height: '100vh', width: '100vw', display: 'grid' }}>
-      <Box
-        sx={{
-          margin: '5% auto',
-          width: '100%',
-          maxWidth: '90%',
-          display: 'grid',
-          gridTemplateColums:
-            '11.1% 11.1% 11.1% 11.1% 11.1% 11.1% 11.1% 11.1% 11.1%',
-          gridTemplateRows: '100px auto',
-        }}
-      >
+    <Layout>
+      <Box sx={{ marginBottom: '2em' }}>
         <Heading
           sx={{
-            fontSize: '7',
+            margin: '0 0 0.75em 0',
+            fontSize: [5, 6, 7],
             textAlign: 'center',
             color: 'primary',
-            gridColumnStart: '1',
-            gridColumnEnd: '9',
           }}
         >
           Our Team
         </Heading>
-
-        <Box
+        <Grid
           sx={{
-            gridColumnStart: '1',
-            gridColumnEnd: '3',
-            height: '400px',
-            textAlign: 'center',
+            margin: '0 auto',
+            width: '80%',
+            gridTemplateColumns: ['repeat(6, 1fr)', 'repeat(8, 1fr)'],
           }}
+          gap={['1em', '3em', '4em']}
         >
-          <Avatar src="/anika.jpg" />
-          <Box>
-            <Text>Anika Seth</Text>
-          </Box>
-        </Box>
-
-        <Box
-          sx={{
-            gridColumnStart: '3',
-            gridColumnEnd: '5',
-            height: '400px',
-            textAlign: 'center',
-          }}
-        >
-          <Avatar src="/chen-robert.jpg" />
-        </Box>
-
-        <Box
-          sx={{
-            gridColumnStart: '5',
-            gridColumnEnd: '7',
-            height: '400px',
-            textAlign: 'center',
-          }}
-        >
-          <Avatar src="/ginkoid.png" />
-        </Box>
-
-        <Box
-          sx={{
-            gridColumnStart: '7',
-            gridColumnEnd: '9',
-            height: '400px',
-            textAlign: 'center',
-          }}
-        >
-          <Avatar src="/josh.jpg" />
-        </Box>
-
-        <Box
-          sx={{
-            gridColumnStart: '2',
-            gridColumnEnd: '4',
-            height: '400px',
-            textAlign: 'center',
-          }}
-        >
-          <Avatar src="/kevinpfp.jpg" />
-        </Box>
-
-        <Box
-          sx={{
-            gridColumnStart: '4',
-            gridColumnEnd: '6',
-            height: '400px',
-            textAlign: 'center',
-          }}
-        >
-          <Avatar src="/viv.jpg" />
-        </Box>
-
-        <Box
-          sx={{
-            gridColumnStart: '6',
-            gridColumnEnd: '8',
-            height: '400px',
-            textAlign: 'center',
-          }}
-        >
-          <Avatar src="/bracklinn.jpeg" />
-        </Box>
+          {data.allPeopleYaml.edges.map(({ node }) => (
+            <TeamProfile key={node.id} data={node} />
+          ))}
+        </Grid>
       </Box>
-    </Box>
+    </Layout>
   )
 }
+
+export default about
+
+export const query = graphql`
+  query {
+    allPeopleYaml(sort: { fields: pos, order: ASC }) {
+      edges {
+        node {
+          id
+          ...TeamProfileInformation
+        }
+      }
+    }
+  }
+`
