@@ -33,5 +33,24 @@ module.exports = {
         path: path.resolve(__dirname, 'data/course/'),
       },
     },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'config',
+        path: path.resolve(__dirname, 'data/config/'),
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-svgr',
+      options: {
+        icon: true,
+        dimensions: false,
+        svgoConfig: {
+          removeAttrs: {
+            attrs: '(fill|stroke)',
+          },
+        },
+      },
+    },
   ],
 }

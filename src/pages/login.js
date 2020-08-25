@@ -2,7 +2,7 @@ import { useCallback, useState } from 'react'
 import { Redirect } from '@reach/router'
 import { jsx, Box, Text, Heading } from 'theme-ui'
 import Button from '../components/button'
-import { Google } from '../icons'
+import { ReactComponent as Google } from '../icons/google.svg'
 
 import firebase from 'firebase/app'
 import useFirebase from '../firebase/useFirebase'
@@ -44,7 +44,7 @@ export default function login() {
           Sign in with Google
           <Google
             sx={{
-              fill: 'primary',
+              color: 'primary',
               height: '1.5em',
               verticalAlign: 'middle',
               marginLeft: 10,
