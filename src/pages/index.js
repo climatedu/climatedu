@@ -220,31 +220,34 @@ const Home = ({ data }) => {
 }
 
 export const query = graphql`
-{
-  configYaml {
-    facts {
-      title
-      text
-      icon
+  {
+    configYaml {
+      facts {
+        title
+        text
+        icon
+      }
+      faq {
+        question
+        answer
+      }
     }
-    faq {
-      question
-      answer
-    }
-  }
-  allMarkdownRemark(filter: {fields: {sourceInstanceName: {eq: "course"}}}, sort: {fields: frontmatter___unit}) {
-    edges {
-      node {
-        frontmatter {
-          background
-          text
-          title
+    allMarkdownRemark(
+      filter: { fields: { sourceInstanceName: { eq: "course" } } }
+      sort: { fields: frontmatter___unit }
+    ) {
+      edges {
+        node {
+          frontmatter {
+            background
+            text
+            title
+          }
+          excerpt(format: HTML)
         }
-        excerpt(format: HTML)
       }
     }
   }
-}
 `
 
 export default Home
