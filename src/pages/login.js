@@ -1,6 +1,6 @@
 import { useCallback, useState } from 'react'
 import { Redirect } from '@reach/router'
-import { jsx, Box, Text, Heading, Image } from 'theme-ui'
+import { jsx, Box, Text, Heading } from 'theme-ui'
 import Button from '../components/button'
 import { Google } from '../icons'
 
@@ -26,7 +26,7 @@ export default function login() {
 
   const user = useAuth()
   if (user !== null) {
-    return <Redirect to="/" noThrow />
+    return <Redirect to='/' noThrow />
   }
 
   return (
@@ -35,7 +35,7 @@ export default function login() {
         sx={{ margin: 'auto', width: '100%', maxWidth: 300, display: 'grid' }}
       >
         <Heading
-          as="h1"
+          as='h1'
           sx={{ textAlign: 'center', color: 'primary', marginBottom: 20 }}
         >
           Log In
