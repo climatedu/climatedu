@@ -6,7 +6,7 @@ const Link = props => {
   return (
     <GatsbyLink
       {...props}
-      activeClassName="active"
+      activeClassName='active'
       sx={{
         color: 'inherit',
         '&.active': {

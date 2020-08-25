@@ -58,7 +58,7 @@ const faq = [
 
 const Section = ({ header, children, ...props }) => {
   return (
-    <Box as="section" {...props}>
+    <Box as='section' {...props}>
       <Box
         sx={{
           textAlign: 'center',
@@ -66,7 +66,7 @@ const Section = ({ header, children, ...props }) => {
         }}
       >
         <Heading
-          as="h1"
+          as='h1'
           sx={{
             fontSize: [5, 6],
           }}
@@ -98,7 +98,7 @@ const Home = ({ data }) => {
         }}
       >
         <Heading
-          as="h1"
+          as='h1'
           sx={{
             fontSize: [5, 6],
             mb: 3,
@@ -107,7 +107,7 @@ const Home = ({ data }) => {
           Welcome to climatedu!
         </Heading>
         <Heading
-          as="h2"
+          as='h2'
           sx={{
             fontSize: [4, 5],
             mb: 4,
@@ -162,7 +162,7 @@ const Home = ({ data }) => {
                 />
                 <Box>
                   <Heading
-                    as="h2"
+                    as='h2'
                     sx={{
                       color: 'primary',
                       mb: 2,
@@ -176,7 +176,7 @@ const Home = ({ data }) => {
             )
           })}
         </Grid>
-        <Section header="Our Course">
+        <Section header='Our Course'>
           <Glider
             draggable
             dragVelocity={1}
@@ -207,7 +207,7 @@ const Home = ({ data }) => {
                   }}
                 >
                   <Heading
-                    as="h3"
+                    as='h3'
                     sx={{
                       mb: 3,
                       color: unit.frontmatter.text,
@@ -225,7 +225,7 @@ const Home = ({ data }) => {
             })}
           </Glider>
         </Section>
-        <Section header="FAQ">
+        <Section header='FAQ'>
           <Box
             sx={{
               columnCount: [1, 2],
@@ -255,7 +255,7 @@ const Home = ({ data }) => {
             })}
           </Box>
         </Section>
-        <Section header="You can probably imagine other stuff that fills this space!" />
+        <Section header='You can probably imagine other stuff that fills this space!' />
       </Box>
     </Layout>
   )

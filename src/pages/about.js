@@ -21,7 +21,7 @@ const about = ({ data }) => {
         <Grid
           sx={{
             margin: '0 auto',
-            width: ['80%', '70%'],
+            width: ['90%', '80%', '75%'],
             gridTemplateColumns: ['repeat(6, 1fr)', 'repeat(8, 1fr)'],
           }}
           gap={['1em', '3em', '4em']}

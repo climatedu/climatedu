@@ -30,11 +30,11 @@ const Navbar = () => {
     >
       this will be replaced with the real navbar
       {user === null ? (
-        <Link to="/login">login and register</Link>
+        <Link to='/login'>login and register</Link>
       ) : (
         <Box>
           <Text>welcome {user.displayName}</Text>
-          <Link to="/" onClick={handleLogout}>
+          <Link to='/' onClick={handleLogout}>
             Logout
           </Link>
           <Text sx={{ color: 'highlight' }}>{error}</Text>
