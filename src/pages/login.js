@@ -44,7 +44,7 @@ export default function login() {
           Sign in with Google
           <Google
             sx={{
-              fill: 'primary',
+              color: 'primary',
               height: '1.5em',
               verticalAlign: 'middle',
               marginLeft: 10,
