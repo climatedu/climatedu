@@ -22,8 +22,6 @@ const bigscreen = [
   [6, 8],
 ]
 
-/**/
-
 export const TeamProfile = ({ data }) => (
   <Box
     sx={{
@@ -59,5 +57,7 @@ export const query = graphql`
         }
       }
     }
+    school
+    team
   }
 `
