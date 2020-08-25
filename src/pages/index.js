@@ -7,54 +7,12 @@ import 'glider-js/glider.min.css'
 
 import Layout from '../components/layout'
 
-import icons from '../icons'
+import { ReactComponent as Megaphone } from '../icons/megaphone.svg'
+import { ReactComponent as Brain } from '../icons/brain.svg'
+import { ReactComponent as Document } from '../icons/document.svg'
+import { ReactComponent as Computer } from '../icons/computer.svg'
 
-// TODO: put this somewhere else, maybe pull in with graphql? or just js is fine too
-const facts = [
-  {
-    title: 'A refreshing, relatable voice.',
-    text:
-      'Built by driven high school students, this course makes use of what really works in education today.',
-    icon: 'Number1',
-  },
-  {
-    title: 'Not your average online class.',
-    text:
-      '<em>Learning. Ugh.</em> No! Each resource is hand-picked to engage, provoke thought, and inspire.',
-    icon: 'Number2',
-  },
-  {
-    title: 'Filling a gap in the school system.',
-    text:
-      'Many schools severely lack a comprehensive, mandated climate curriculum. We seek to change that!',
-    icon: 'Number3',
-  },
-  {
-    title: 'A built-in classroom.',
-    text:
-      'Students join classes with unique codes. Teachers track progress and view responses from their dashboard.',
-    icon: 'Number4',
-  },
-]
-
-const faq = [
-  {
-    question: 'Is this course only intended for middle school students?',
-    answer:
-      'No!! If your kid is taking this course, you should probably take it too!!!!!!! This is stuff everybody needs to know xoxo sorry devs just trying to fill up space!',
-  },
-  {
-    question: 'Is Tux cool?',
-    answer:
-      "Yes, in fact, he is. He's pretty legendary, too. Petition to bring back legendary tux/viv role back. not that viv==tux but that i would be honored to have that role.",
-  },
-  {
-    question:
-      'How much wood would a wood chuck chuck if a wood chuck could chuck wood?',
-    answer:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commado consequat.',
-  },
-]
+const icons = { Megaphone, Brain, Document, Computer }
 
 const Section = ({ header, children, ...props }) => {
   return (
@@ -148,13 +106,13 @@ const Home = ({ data }) => {
             mb: 5,
           }}
         >
-          {facts.map(({ icon, title, text }, i) => {
+          {data.configYaml.facts.map(({ icon, title, text }, i) => {
             const Icon = icons[icon]
             return (
               <Flex key={i}>
                 <Icon
                   sx={{
-                    fill: 'primary',
+                    color: 'primary',
                     height: '2.5em',
                     mr: '1em',
                     flex: '0 0 auto',
@@ -234,12 +192,13 @@ const Home = ({ data }) => {
               mb: 5,
             }}
           >
-            {faq.map(({ question, answer }, i) => {
+            {data.configYaml.faq.map(({ question, answer }, i) => {
               return (
                 <Box
                   key={i}
                   sx={{
                     marginBottom: 4,
+                    breakInside: 'avoid',
                   }}
                 >
                   <Heading
@@ -255,30 +214,37 @@ const Home = ({ data }) => {
             })}
           </Box>
         </Section>
-        <Section header='You can probably imagine other stuff that fills this space!' />
       </Box>
     </Layout>
   )
 }
 
 export const query = graphql`
-  {
-    allMarkdownRemark(
-      filter: { fields: { sourceInstanceName: { eq: "course" } } }
-      sort: { fields: frontmatter___unit }
-    ) {
-      edges {
-        node {
-          frontmatter {
-            background
-            text
-            title
-          }
-          excerpt(format: HTML)
+{
+  configYaml {
+    facts {
+      title
+      text
+      icon
+    }
+    faq {
+      question
+      answer
+    }
+  }
+  allMarkdownRemark(filter: {fields: {sourceInstanceName: {eq: "course"}}}, sort: {fields: frontmatter___unit}) {
+    edges {
+      node {
+        frontmatter {
+          background
+          text
+          title
         }
+        excerpt(format: HTML)
       }
     }
   }
+}
 `
 
 export default Home
