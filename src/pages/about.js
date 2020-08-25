@@ -4,14 +4,21 @@ import { TeamProfile } from '../components/teamProfile'
 import { graphql } from 'gatsby'
 import Layout from '../components/layout'
 
+const nCols = [1, 4]
+
+const calcColumnStart = pos =>
+  nCols
+    .map(n => ({ n, i: (pos - 1) % (2 * n - 1) }))
+    .map(({ n, i }) => 2 * (i % n) + (i >= n ? 2 : 1))
+
 const about = ({ data }) => {
   return (
     <Layout>
-      <Box sx={{ marginBottom: '2em' }}>
+      <Box mb={4 /* TODO: replace with footer */}>
         <Heading
           sx={{
-            margin: '0 0 0.75em 0',
-            fontSize: [5, 6, 7],
+            mb: 5,
+            fontSize: [6, 7],
             textAlign: 'center',
             color: 'primary',
           }}
@@ -20,14 +27,22 @@ const about = ({ data }) => {
         </Heading>
         <Grid
           sx={{
-            margin: '0 auto',
-            width: ['90%', '80%', '75%'],
-            gridTemplateColumns: ['repeat(6, 1fr)', 'repeat(8, 1fr)'],
+            mt: 2,
+            mx: [4, 5],
+            gridTemplateColumns: nCols.map(n => `repeat(${n * 2}, 1fr)`),
+            columnGap: 4,
+            rowGap: 4,
           }}
-          gap={['1em', '3em', '4em']}
         >
           {data.allPeopleYaml.edges.map(({ node }) => (
-            <TeamProfile key={node.id} data={node} />
+            <TeamProfile
+              key={node.pos}
+              sx={{
+                gridColumnStart: calcColumnStart(node.pos),
+                gridColumnEnd: calcColumnStart(node.pos).map(c => c + 2),
+              }}
+              data={node}
+            />
           ))}
         </Grid>
       </Box>
@@ -42,7 +57,7 @@ export const query = graphql`
     allPeopleYaml(sort: { fields: pos, order: ASC }) {
       edges {
         node {
-          id
+          pos
           ...TeamProfileInformation
         }
       }

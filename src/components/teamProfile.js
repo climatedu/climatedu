@@ -2,53 +2,29 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 import Image from 'gatsby-image'
-import { jsx, Box, Heading, Text } from 'theme-ui'
+import { jsx, Flex, Box, Grid, Heading, Text } from 'theme-ui'
 
-const smallscreen = [
-  [1, 3],
-  [3, 5],
-  [5, 7],
-  [2, 4],
-  [4, 6],
-]
-
-const bigscreen = [
-  [1, 3],
-  [3, 5],
-  [5, 7],
-  [7, 9],
-  [2, 4],
-  [4, 6],
-  [6, 8],
-]
-
-export const TeamProfile = ({ data }) => (
-  <Box
-    sx={{
-      gridColumnStart: [
-        smallscreen[(data.pos - 1) % 5][0],
-        bigscreen[(data.pos - 1) % 7][0],
-      ],
-      gridColumnEnd: [
-        smallscreen[(data.pos - 1) % 5][1],
-        bigscreen[(data.pos - 1) % 7][1],
-      ],
-      textAlign: 'center',
-    }}
-  >
-    <Image
-      fluid={{ ...data.avatar.childImageSharp.fluid, aspectRatio: 1 }}
-      sx={{ borderRadius: '999em' }}
-    />
-    <Heading
-      sx={{ fontSize: [2, 3, 4, 5], marginTop: ['0.5em', '0.75em', '1em'] }}
+export const TeamProfile = ({ data, ...props }) => (
+  <Box {...props}>
+    <Flex
+      sx={{
+        justifyContent: 'center',
+      }}
     >
-      {data.name}
-    </Heading>
-    <Text sx={{ fontSize: [1, 1, 2, 3], fontStyle: 'italic' }}>
-      {data.school}
-    </Text>
-    <Text sx={{ fontSize: [1, 2, 3, 4] }}>{data.team}</Text>
+      <Image
+        fluid={{ ...data.avatar.childImageSharp.fluid, aspectRatio: 1 }}
+        sx={{
+          borderRadius: '999em',
+          width: '100%',
+          maxWidth: '200px',
+        }}
+      />
+    </Flex>
+    <Grid gap={1} mt={2} sx={{ textAlign: 'center' }}>
+      <Heading sx={{ fontSize: [3, 4] }}>{data.name}</Heading>
+      <Text sx={{ fontSize: 2, fontStyle: 'italic' }}>{data.school}</Text>
+      <Text sx={{ fontSize: 2 }}>{data.team}</Text>
+    </Grid>
   </Box>
 )
 
@@ -57,11 +33,10 @@ export default TeamProfile
 export const query = graphql`
   fragment TeamProfileInformation on PeopleYaml {
     name
-    pos
     avatar {
       childImageSharp {
-        fluid(maxHeight: 400, maxWidth: 400) {
-          ...GatsbyImageSharpFluid
+        fluid(maxHeight: 400, maxWidth: 400, traceSVG: { color: "#1F724033" }) {
+          ...GatsbyImageSharpFluid_tracedSVG
         }
       }
     }
