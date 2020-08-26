@@ -13,16 +13,16 @@ export default function login() {
   const firebaseApp = useFirebase()
   const [error, setError] = useState(null)
 
-  const [name, setName] = useState("")
+  const [name, setName] = useState('')
   const handleSetName = useCallback(e => setName(e.target.value), [])
 
-  const [email, setEmail] = useState("")
+  const [email, setEmail] = useState('')
   const handleSetEmail = useCallback(e => setEmail(e.target.value), [])
 
-  const [type, setType] = useState("Student")
+  const [type, setType] = useState('Student')
   const handleSetType = useCallback(e => setType(e.target.value), [])
   
-  const [comment, setComment] = useState("")
+  const [comment, setComment] = useState('')
   const handleSetComment = useCallback(e => setComment(e.target.value), [])
 
   const submitContactForm = useCallback(() => {
@@ -41,7 +41,7 @@ export default function login() {
         >
           Contact Us
         </Heading>
-        <div sx={{ width: "50%" }}>
+        <div sx={{ width: '50%' }}>
           <Label htmlFor='name'>Name</Label>
           <Input name='name' placeholder='Name' value={name} onChange={handleSetName} mb={1} />
           
@@ -49,7 +49,7 @@ export default function login() {
           <Input name='email' placeholder='Email' value={email} onChange={handleSetEmail} mb={1} />
 
           <Label htmlFor='type'>I am...</Label>
-          <Select sx={{ width: "50%" }} name='type' value={type} onChange={handleSetType} mb={3}>
+          <Select sx={{ width: '50%' }} name='type' value={type} onChange={handleSetType} mb={3}>
             <option>Student</option>
             <option>Teacher</option>
           </Select>
