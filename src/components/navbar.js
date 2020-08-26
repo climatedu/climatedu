@@ -1,8 +1,9 @@
 /** @jsx jsx */
-import { Box, Text, Image, Grid, NavLink, jsx } from 'theme-ui'
+import { Image, Flex, Box, jsx } from 'theme-ui'
 import useAuth from '../util/auth'
-import Link from './link'
 import logo from '../../static/climatedu.png'
+import NavButton from './navbutton'
+import { BsPerson } from 'react-icons/bs'
 
 const links = [
   {
@@ -12,7 +13,10 @@ const links = [
   {
     'location':_=>'/about',
     'text':_=>'About',
-    'dropdown':['Our Team','Our Mission']
+    'dropdown':_=>[
+      {'location':'/about/team','text':'Our Team'},
+      {'location':'/about/mission','text':'Our Mission'}
+    ]
   },
   {
     'location':_=>'/contact',
@@ -20,53 +24,52 @@ const links = [
   },
   {
     'location':user=>user?'/profile':'/login',
-    'text':user=>user?'Welcome '+user.displayName+'!':'Log in'
+    'text':user=>user?'Welcome '+user.displayName+'!':'Log in',
+    'icon':_=>BsPerson
   },
 ];
 
 const Navbar = () => {
-  const user = useAuth()
+  const user = useAuth();
   return (
-    <Grid
-      gap={0}
-      columns={['repeat(2,1fr)','repeat(5,1fr)']}
+    <Flex
       sx={{
         backgroundColor: 'background',
-        justifyItems: 'center',
+        alignContent: 'flex-start',
         alignItems: 'center',
-        textAlign: 'center',
+        flexWrap: 'wrap',
+        justifyContent: 'flex-end',
         fontSize: '24px',
         maxWidth: '960px',
         margin: 'auto',
         padding: '5px'
       }}
     >
-      <Image
-        src={logo}
-        alt='climatedu logo'
+      <Box
         sx={{
-          minHeight:'3em',
-          maxHeight:'6em',
-          justifySelf:'start'
+          flexBasis: '7em',
+          marginRight: 'auto'
         }}
-      />
-      {links.map(({location,text}) => {
-        const cur = window.location.pathname.endsWith(location())
-        return (<Box sx={{
-          display: 'inline-block',
-          padding: '2px 8px',
-          borderRadius: '10px',
-          background: cur?'#dfd':'inherit',
-          border: cur?'3px solid green':'0px',
-        }}>
-          <NavLink
-            href={location()}
-          >
-            {text()}
-          </NavLink>
-        </Box>)
+      >
+        <Image
+          src={logo}
+          alt='climatedu logo'
+        />
+      </Box>
+      {links.map(({location,text,icon,dropdown}) => {
+        const loc = location(user);
+        const active = window.location.pathname == loc;
+        return (
+          <NavButton
+            loc={loc}
+            text={text(user)}
+            icon={icon&&icon(user)}
+            active={active}
+            dropdown={dropdown?dropdown(user):undefined}
+          />
+        )
       })}
-    </Grid>
+    </Flex>
   )
 }
 
