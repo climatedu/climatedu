@@ -1,5 +1,6 @@
 /** @jsx jsx */
-import { Image, Flex, Box, jsx } from 'theme-ui'
+import { useCallback, useState } from 'react'
+import { Box, Image, Flex, Text, jsx } from 'theme-ui'
 import useAuth from '../util/auth'
 import logo from '../../static/climatedu.png'
 import NavButton from './navbutton'
@@ -29,8 +30,22 @@ const links = [
   },
 ];
 
+import useFirebase from '../firebase/useFirebase'
+
 const Navbar = () => {
-  const user = useAuth();
+  const firebaseApp = useFirebase()
+  const user = useAuth()
+
+  const [error, setError] = useState(null)
+
+  const handleLogout = useCallback(async () => {
+    if (!firebaseApp) return
+    try {
+      await firebaseApp.auth().signOut()
+    } catch (e) {
+      setError(e.message)
+    }
+  }, [firebaseApp])
   return (
     <Flex
       sx={{

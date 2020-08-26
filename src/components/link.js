@@ -1,8 +1,8 @@
 /** @jsx jsx */
 import { jsx } from 'theme-ui'
-import { Link as GatsbyLink }  from 'gatsby'
+import { Link as GatsbyLink } from 'gatsby'
 
-const Link = (props) => {
+const Link = props => {
   return (
     <GatsbyLink
       {...props}
@@ -11,7 +11,7 @@ const Link = (props) => {
         color: 'inherit',
         '&.active': {
           color: 'primary',
-        }
+        },
       }}
     />
   )

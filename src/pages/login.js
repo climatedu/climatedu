@@ -1,23 +1,28 @@
 import { useCallback, useState } from 'react'
 import { Redirect } from '@reach/router'
-import { jsx, Box, Text, Heading, Image } from 'theme-ui'
+import { jsx, Box, Text, Heading } from 'theme-ui'
 import Button from '../components/button'
-import iconGoogle from '../icons/google.svg'
-import firebaseAuth from '../util/firebase-auth'
+import { ReactComponent as Google } from '../icons/google.svg'
+
+import firebase from 'firebase/app'
+import useFirebase from '../firebase/useFirebase'
 import useAuth from '../util/auth'
 /** @jsx jsx */
 
-export default function login(){
+export default function login() {
+  const firebaseApp = useFirebase()
   const [error, setError] = useState(null)
+
   const handleGoogleLogin = useCallback(async () => {
-    const provider = new firebaseAuth.GoogleAuthProvider()
+    if (!firebaseApp) return
+    const provider = new firebase.auth.GoogleAuthProvider()
     try {
-      await firebaseAuth().signInWithPopup(provider)
+      await firebaseApp.auth().signInWithPopup(provider)
     } catch (e) {
       setError(e.message)
       return
     }
-  }, [])
+  }, [firebaseApp])
 
   const user = useAuth()
   if (user !== null) {
@@ -26,13 +31,29 @@ export default function login(){
 
   return (
     <Box sx={{ height: '100vh', display: 'grid' }}>
-      <Box sx={{ margin: 'auto', width: '100%', maxWidth: 300, display: 'grid' }}>
-        <Heading as='h1' sx={{ textAlign: 'center', color: 'primary', marginBottom: 20 }}>Log In</Heading>
-        <Button onClick={handleGoogleLogin} sx={{ cursor: "pointer" }}>
+      <Box
+        sx={{ margin: 'auto', width: '100%', maxWidth: 300, display: 'grid' }}
+      >
+        <Heading
+          as='h1'
+          sx={{ textAlign: 'center', color: 'primary', marginBottom: 20 }}
+        >
+          Log In
+        </Heading>
+        <Button onClick={handleGoogleLogin} sx={{ cursor: 'pointer' }}>
           Sign in with Google
-          <Image sx={{ height: '1.5em', verticalAlign: 'middle', marginLeft: 10 }} src={iconGoogle} />
+          <Google
+            sx={{
+              color: 'primary',
+              height: '1.5em',
+              verticalAlign: 'middle',
+              marginLeft: 10,
+            }}
+          />
         </Button>
-        <Text sx={{ color: 'highlight', marginTop: 20, textAlign: 'center' }}>{error}</Text>
+        <Text sx={{ color: 'highlight', marginTop: 20, textAlign: 'center' }}>
+          {error}
+        </Text>
       </Box>
     </Box>
   )

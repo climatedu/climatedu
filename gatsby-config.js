@@ -12,21 +12,45 @@ module.exports = {
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
     'gatsby-transformer-yaml',
-    'gatsby-transformer-remark',
+    {
+      resolve: 'gatsby-transformer-remark',
+      options: {
+        excerpt_separator: '<!-- end -->',
+      },
+    },
     'gatsby-plugin-theme-ui',
     {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'people',
-        path: path.resolve(__dirname, 'data/people/')
-      }
+        path: path.resolve(__dirname, 'data/people/'),
+      },
     },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'course',
-        path: path.resolve(__dirname, 'data/course/')
-      }
+        path: path.resolve(__dirname, 'data/course/'),
+      },
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'config',
+        path: path.resolve(__dirname, 'data/config/'),
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-svgr',
+      options: {
+        icon: true,
+        dimensions: false,
+        svgoConfig: {
+          removeAttrs: {
+            attrs: '(fill|stroke)',
+          },
+        },
+      },
     },
   ],
 }
