@@ -3,22 +3,22 @@ facts:
     text:
       Built by driven high school students, this course makes use of what really
       works in education today.
-    icon: Megaphone
+    icon: IoIosMegaphone
   - title: Not your average online class.
     text:
       '<em>Learning. Ugh.</em> No! Each resource is hand-picked to engage, provoke
       thought, and inspire.'
-    icon: Brain
+    icon: FaBrain
   - title: Filling a gap in the school system.
     text:
       Many schools severely lack a comprehensive, mandated climate curriculum. We
       seek to change that!
-    icon: Document
+    icon: IoIosPaper
   - title: A built-in classroom.
     text:
       Students join classes with unique codes. Teachers track progress and view
       responses from their dashboard.
-    icon: Computer
+    icon: MdLaptopMac
 faq:
   - question: Who is this course most suitable for?
     answer:
