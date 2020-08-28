@@ -7,12 +7,11 @@ import 'glider-js/glider.min.css'
 
 import Layout from '../components/layout'
 
-import { ReactComponent as Megaphone } from '../icons/megaphone.svg'
-import { ReactComponent as Brain } from '../icons/brain.svg'
-import { ReactComponent as Document } from '../icons/document.svg'
-import { ReactComponent as Computer } from '../icons/computer.svg'
+import { IoIosMegaphone, IoIosPaper } from 'react-icons/io'
+import { FaBrain } from 'react-icons/fa'
+import { MdLaptopMac } from 'react-icons/md'
 
-const icons = { Megaphone, Brain, Document, Computer }
+const icons = { IoIosMegaphone, IoIosPaper, FaBrain, MdLaptopMac, }
 
 const Section = ({ header, children, ...props }) => {
   return (
@@ -111,9 +110,9 @@ const Home = ({ data }) => {
             return (
               <Flex key={i}>
                 <Icon
+                  size='2.5em'
                   sx={{
                     color: 'primary',
-                    height: '2.5em',
                     mr: '1em',
                     flex: '0 0 auto',
                   }}
