@@ -11,7 +11,7 @@ import { IoIosMegaphone, IoIosPaper } from 'react-icons/io'
 import { FaBrain } from 'react-icons/fa'
 import { MdLaptopMac } from 'react-icons/md'
 
-const icons = { IoIosMegaphone, IoIosPaper, FaBrain, MdLaptopMac, }
+const icons = { IoIosMegaphone, IoIosPaper, FaBrain, MdLaptopMac }
 
 const Section = ({ header, children, ...props }) => {
   return (
