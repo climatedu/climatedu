@@ -20,7 +20,7 @@ const PageHeader = ({ primary, secondary, children }) => {
       >
         {primary}
       </Heading>
-      {secondary &&
+      {secondary && (
         <Heading
           as='h2'
           sx={{
@@ -30,7 +30,7 @@ const PageHeader = ({ primary, secondary, children }) => {
         >
           {secondary}
         </Heading>
-      }
+      )}
       {children}
     </Box>
   )

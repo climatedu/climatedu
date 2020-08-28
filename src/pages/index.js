@@ -49,7 +49,10 @@ const Section = ({ header, children, ...props }) => {
 const Home = ({ data }) => {
   return (
     <Layout>
-      <PageHeader primary='Welcome to climatedu!' secondary='Climate education made by students, for students.'>
+      <PageHeader
+        primary='Welcome to climatedu!'
+        secondary='Climate education made by students, for students.'
+      >
         <Button
           sx={{
             fontSize: 4,

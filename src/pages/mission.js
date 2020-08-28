@@ -1,5 +1,5 @@
 /** @jsx jsx **/
-import { graphql } from "gatsby"
+import { graphql } from 'gatsby'
 import { Box, jsx } from 'theme-ui'
 
 import Layout from '../components/layout'
@@ -23,7 +23,7 @@ const Mission = ({ data }) => {
 
 export const query = graphql`
   {
-    markdownRemark(fileAbsolutePath: {glob: "**/mission.md"}) {
+    markdownRemark(fileAbsolutePath: { glob: "**/mission.md" }) {
       html
     }
   }
