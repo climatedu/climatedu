@@ -40,17 +40,5 @@ module.exports = {
         path: path.resolve(__dirname, 'data/config/'),
       },
     },
-    {
-      resolve: 'gatsby-plugin-svgr',
-      options: {
-        icon: true,
-        dimensions: false,
-        svgoConfig: {
-          removeAttrs: {
-            attrs: '(fill|stroke)',
-          },
-        },
-      },
-    },
   ],
 }

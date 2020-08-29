@@ -38,6 +38,8 @@ export default {
     root: {
       fontFamily: 'body',
       fontWeight: 'body',
+      height: '100%',
+      overflowY: 'auto',
     },
   },
   buttons: {

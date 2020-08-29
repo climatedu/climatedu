@@ -19,7 +19,6 @@
     "firebase": "^7.17.2",
     "fontsource-manrope": "^3.0.5",
     "gatsby": "^2.24.26",
-    "gatsby-plugin-svgr": "^2.0.2",
     "gatsby-plugin-theme-ui": "^0.3.0",
     "glider-js": "^1.7.3",
     "react": "^16.12.0",
