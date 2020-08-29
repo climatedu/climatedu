@@ -28,10 +28,12 @@ import Forest from '../media/Forest.png'
 const Layout = ({ children, backgroundColor }) => {
   const data = useStaticQuery(graphql`
     {
-      configYaml {
-        socials {
-          icon
-          href
+      site {
+        siteMetadata {
+          socials {
+            icon
+            href
+          }
         }
       }
     }
@@ -46,61 +48,55 @@ const Layout = ({ children, backgroundColor }) => {
           },
         }}
       />
-      <Navbar />
+      <Navbar
+        sx={{
+          flexShrink: 0,
+        }}
+      />
       <Box
         sx={{
-          pb: theme => [
-            `calc(${theme.sizes.footer} + 32px)`,
-            null,
-            'calc(50% + 32px)',
-          ],
+          flex: '1 0 auto',
           backgroundColor: backgroundColor,
         }}
       >
         {children}
       </Box>
-      <Box
+      <Flex
         sx={{
-          position: 'absolute',
-          bottom: 0,
-          width: '100%',
+          flexShrink: 0,
+          justifyContent: 'center',
+          alignItems: 'stretch',
+          flexDirection: 'column',
+          backgroundColor: backgroundColor,
+          pt: 4,
         }}
       >
         <Image
           src={Forest}
           sx={{
-            position: 'absolute',
-            bottom: 0,
             backgroundColor: backgroundColor,
-            display: ['none', null, 'block'],
           }}
         />
         <Flex
           sx={{
-            position: 'absolute',
-            left: 0,
-            bottom: 0,
-            right: 0,
+            backgroundColor: '#007439',
             flexDirection: 'column',
             alignItems: 'center',
-            p: 3,
             textAlign: 'center',
-            justifyContent: 'center',
-            height: 'footer',
-            backgroundColor: ['primary', null, 'transparent'],
+            pb: 4,
           }}
         >
           <Heading
             as='h3'
             sx={{
               color: 'background',
-              pb: 3,
+              py: 3,
             }}
           >
             Have a question? Reach out to hello@climatedu.org!
           </Heading>
           <Box>
-            {data.configYaml.socials.map(({ icon, href }, i) => {
+            {data.site.siteMetadata.socials.map(({ icon, href }, i) => {
               const Icon = icons[icon]
               return (
                 <IconButton
@@ -124,7 +120,7 @@ const Layout = ({ children, backgroundColor }) => {
             })}
           </Box>
         </Flex>
-      </Box>
+      </Flex>
     </Styled.root>
   )
 }

@@ -30,7 +30,7 @@ export default {
   space: [0, 4, 8, 16, 32, 64, 128, 256, 512],
   sizes: {
     container: '960px',
-    footer: '12rem',
+    footer: '400px',
   },
   images: {
     avatar: {
@@ -42,8 +42,10 @@ export default {
     root: {
       fontFamily: 'body',
       fontWeight: 'body',
-      minHeight: '100%',
-      position: 'relative',
+      minHeight: '100vh',
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'stretch',
       '&, *': {
         scrollbarColor: theme =>
           `${theme.colors.primary} ${theme.colors.darkBackground}`,
