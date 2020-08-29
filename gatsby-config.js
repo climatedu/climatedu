@@ -45,27 +45,15 @@ module.exports = {
     socials: [
       {
         icon: 'IoLogoInstagram',
-        href: 'https://instagram.com/darinmao',
+        href: 'https://instagram.com/climateduteam',
       },
       {
         icon: 'IoLogoTwitter',
-        href: 'https://twitter.com/darinmao_',
-      },
-      {
-        icon: 'IoLogoGithub',
-        href: 'https://github.com/DarinMao',
-      },
-      {
-        icon: 'FaDiscord',
-        href: 'https://discord.gg/w5xapGP',
-      },
-      {
-        icon: 'MdEmail',
-        href: 'mailto:maodarin@gmail.com',
+        href: 'https://twitter.com/climateduteam',
       },
       {
         icon: 'IoLogoYoutube',
-        href: 'https://youtube.com/watch?v=dQw4w9WgXcQ',
+        href: 'https://www.youtube.com/channel/UCmImqBAZqWWXPzmeArLJ-4Q?view_as=subscriber',
       },
     ],
   },
