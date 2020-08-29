@@ -6,19 +6,13 @@ import { useStaticQuery, graphql } from 'gatsby'
 import {
   IoLogoInstagram,
   IoLogoTwitter,
-  IoLogoGithub,
   IoLogoYoutube,
 } from 'react-icons/io'
-import { FaDiscord } from 'react-icons/fa'
-import { MdEmail } from 'react-icons/md'
 
 const icons = {
   IoLogoInstagram,
   IoLogoTwitter,
-  IoLogoGithub,
   IoLogoYoutube,
-  FaDiscord,
-  MdEmail,
 }
 
 import Navbar from './navbar'

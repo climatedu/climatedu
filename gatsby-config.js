@@ -53,7 +53,7 @@ module.exports = {
       },
       {
         icon: 'IoLogoYoutube',
-        href: 'https://www.youtube.com/channel/UCmImqBAZqWWXPzmeArLJ-4Q?view_as=subscriber',
+        href: 'https://www.youtube.com/channel/UCmImqBAZqWWXPzmeArLJ-4Q',
       },
     ],
   },
