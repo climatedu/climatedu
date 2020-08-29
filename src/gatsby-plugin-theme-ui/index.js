@@ -101,4 +101,18 @@ export default {
       backgroundColor: 'text',
     },
   },
+  links: {
+    nav:{
+      px: '10px',
+      py: '4px',
+      borderRadius: '10px',
+      '&.active': {
+        bg: 'secondary',
+      },
+      '&.open': {
+        bg: 'secondary',
+        borderRadius: '10px 10px 0 0'
+      }
+    }
+  }
 }

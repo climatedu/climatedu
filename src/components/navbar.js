@@ -6,30 +6,6 @@ import logo from '../../static/climatedu.png'
 import NavButton from './navbutton'
 import { BsPerson } from 'react-icons/bs'
 
-const links = [
-  {
-    'location':_=>'/',
-    'text':_=>'Home'
-  },
-  {
-    'location':_=>'/about',
-    'text':_=>'About',
-    'dropdown':_=>[
-      {'location':'/about/team','text':'Our Team'},
-      {'location':'/about/mission','text':'Our Mission'}
-    ]
-  },
-  {
-    'location':_=>'/contact',
-    'text':_=>'Contact Us'
-  },
-  {
-    'location':user=>user?'/profile':'/login',
-    'text':user=>user?'Welcome '+user.displayName+'!':'Log in',
-    'icon':_=>BsPerson
-  },
-];
-
 import useFirebase from '../firebase/useFirebase'
 
 const Navbar = () => {
@@ -46,24 +22,46 @@ const Navbar = () => {
       setError(e.message)
     }
   }, [firebaseApp])
+  const links = [
+    {
+      'location':'/',
+      'text':'Home'
+    },
+    {
+      'location':'/about',
+      'text':'About',
+      'dropdown':[
+        {'location':'/about/team','text':'Our Team'},
+        {'location':'/about/mission','text':'Our Mission'}
+      ]
+    },
+    {
+      'location':'/contact',
+      'text':'Contact Us'
+    },
+    {
+      'location':user?'/profile':'/login',
+      'text':user?'Welcome '+user.displayName+'!':'Log in',
+      'icon':BsPerson
+    },
+  ];
   return (
     <Flex
+      m='auto'
+      p='5px'
       sx={{
-        backgroundColor: 'background',
         alignContent: 'flex-start',
         alignItems: 'center',
         flexWrap: 'wrap',
         justifyContent: 'flex-end',
         fontSize: '24px',
-        maxWidth: '960px',
-        margin: 'auto',
-        padding: '5px'
+        maxWidth: '960px'
       }}
     >
       <Box
+        mr='auto'
         sx={{
-          flexBasis: '7em',
-          marginRight: 'auto'
+          flexBasis: '7em'
         }}
       >
         <Image
@@ -71,19 +69,9 @@ const Navbar = () => {
           alt='climatedu logo'
         />
       </Box>
-      {links.map(({location,text,icon,dropdown}) => {
-        const loc = location(user);
-        const active = window.location.pathname == loc;
-        return (
-          <NavButton
-            loc={loc}
-            text={text(user)}
-            icon={icon&&icon(user)}
-            active={active}
-            dropdown={dropdown?dropdown(user):undefined}
-          />
-        )
-      })}
+      {links.map((props,i) => (
+        <NavButton key={i} {...props} />
+      ))}
     </Flex>
   )
 }

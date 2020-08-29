@@ -1,91 +1,76 @@
 /** @jsx jsx */
-import { Box, Flex, NavLink, Image, jsx } from 'theme-ui'
-import { Component } from 'react'
-import React from 'react'
-import { BsCaretDownFill, BsCaretUpFill } from 'react-icons/bs'
+import { Box, Flex, NavLink as ThemeUINavLink, jsx } from 'theme-ui'
+import { Link as GatsbyLink } from 'gatsby'
+import { useState } from 'react'
+import { BsCaretDownFill } from 'react-icons/bs'
 
-class NavButton extends Component {
-  constructor(props) {
-    super(props);
-    const {loc,text,icon,active,dropdown} = props;
-    this.loc = loc;
-    this.text = text;
-    this.active = active;
-    this.icon = icon;
-    this.dropdown = dropdown;
-    this.state = {open:false};
-    this.expand = ()=>this.setState({open:true});
-    this.collapse = ()=>this.setState({open:false});
-  }
-  render() {
-    return (
-      <Box
+const InnerNavLink = props =>
+  <GatsbyLink activeClassName='active' {...props} />
+
+const NavLink = props =>
+  <ThemeUINavLink as={InnerNavLink} {...props} sx={{}}/>
+
+function NavButton (props) {
+  const [open, setState] = useState(false);
+  return (
+    <Box
+      mx='auto'
+      onBlur={e=>{
+        if (!e.currentTarget.contains(e.relatedTarget)) {
+          setState(false);
+        }
+      }}
+    >
+      <Flex
         sx={{
-          padding: '4px 10px',
-          margin: '0 auto',
-          borderRadius: this.state.open?'10px 10px 0 0':'10px',
-          background: this.active||this.state.open?'#dfd':'inherit'
+          alignItems:'center',
+          justifyContent:'center'
         }}
-        onBlur={this.collapse}
       >
-        <Flex
+        <NavLink
+          to={props.location}
+          activeClassName='active'
+          className={open?'open':''}
+        >
+          {props.text}
+          {props.icon&&jsx(props.icon,{
+            sx:{
+              top:'0.15em',
+              position:'relative'
+            }
+          })}
+          {props.dropdown&&(
+            <BsCaretDownFill
+              onClick={e=>{e.preventDefault();setState(!open)}}
+              sx={{
+                transform: open?'rotate(180deg)':''
+              }}
+            />
+          )}
+        </NavLink>
+      </Flex>
+      {props.dropdown&&open&&(
+        <Box
+          bg='secondary'
           sx={{
-            alignItems:'center',
-            justifyContent:'center'
+            position: 'absolute',
+            borderRadius: '0 10px 10px 10px',
+            zIndex: 10
           }}
         >
-          <NavLink
-            href={this.loc}
-          >
-            {this.text}
-            {this.icon&&jsx(this.icon,{
-              sx:{
-                top:'0.1em',
-                position:'relative'
-              }
-            })}
-          </NavLink>
-          {this.dropdown?(this.state.open?(
-            <BsCaretUpFill
-              onClick={()=>this.collapse()}
-              sx={{
-                paddingLeft:'5px'
-              }}
-            />
-          ):(
-            <BsCaretDownFill
-              onClick={()=>this.expand()}
-              sx={{
-                paddingLeft:'5px',
-                paddingTop:'0.25em'
-              }}
-            />
-          )):undefined}
-        </Flex>
-        {this.dropdown&&this.state.open&&(
-          <Box
-            sx={{
-              position:'absolute',
-              padding: '2px 8px',
-              borderRadius: '0 10px 10px 10px',
-              background: '#dfd',
-              marginLeft:'-10px',
-              zIndex: 10
-            }}
-          >
-          {this.dropdown.map(({location,text})=>{
+          {props.dropdown.map(({location,text},i)=>{
             return (
-              <Box>
-                <NavLink href={location}>
+              <Box key={i}>
+                <NavLink to={location}>
                   {text}
                 </NavLink>
-              </Box>)
+              </Box>
+            )
           })}
-          </Box>
-        )}
-      </Box>
-    )
-  }
+        </Box>
+      )}
+    </Box>
+  )
 }
 
 export default NavButton
