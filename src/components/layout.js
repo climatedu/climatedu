@@ -3,7 +3,12 @@ import { Box, Flex, Heading, IconButton, Image, Styled, jsx } from 'theme-ui'
 import { Global } from '@emotion/core'
 import { useStaticQuery, graphql } from 'gatsby'
 
-import { IoLogoInstagram, IoLogoTwitter, IoLogoGithub, IoLogoYoutube } from 'react-icons/io'
+import {
+  IoLogoInstagram,
+  IoLogoTwitter,
+  IoLogoGithub,
+  IoLogoYoutube,
+} from 'react-icons/io'
 import { FaDiscord } from 'react-icons/fa'
 import { MdEmail } from 'react-icons/md'
 
@@ -37,14 +42,18 @@ const Layout = ({ children, backgroundColor }) => {
       <Global
         styles={{
           'html, body, #___gatsby, #gatsby-focus-wrapper': {
-            height: '100%'
+            height: '100%',
           },
         }}
       />
       <Navbar />
       <Box
         sx={{
-          pb: theme => [`calc(${theme.sizes.footer} + 32px)`, null, 'calc(50% + 32px)'],
+          pb: theme => [
+            `calc(${theme.sizes.footer} + 32px)`,
+            null,
+            'calc(50% + 32px)',
+          ],
           backgroundColor: backgroundColor,
         }}
       >
@@ -109,7 +118,7 @@ const Layout = ({ children, backgroundColor }) => {
                     mt: 0,
                   }}
                 >
-                  <Icon size='100%'/>
+                  <Icon size='100%' />
                 </IconButton>
               )
             })}

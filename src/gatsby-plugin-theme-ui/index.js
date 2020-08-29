@@ -45,7 +45,8 @@ export default {
       minHeight: '100%',
       position: 'relative',
       '&, *': {
-        scrollbarColor: theme => `${theme.colors.primary} ${theme.colors.darkBackground}`,
+        scrollbarColor: theme =>
+          `${theme.colors.primary} ${theme.colors.darkBackground}`,
         scrollbarWidth: 'thin',
       },
       '::-webkit-scrollbar, *::-webkit-scrollbar': {

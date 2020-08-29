@@ -33,9 +33,7 @@ const Section = ({ header, children, ...props }) => {
           {header}
         </Heading>
       </Box>
-      <Box>
-        {children}
-      </Box>
+      <Box>{children}</Box>
     </Box>
   )
 }
@@ -64,9 +62,7 @@ const Home = ({ data }) => {
           Register today!
         </Button>
       </PageHeader>
-      <Container
-        pt={4}
-      >
+      <Container pt={4}>
         <Grid
           gap={4}
           columns={[1, 2]}
