@@ -8,6 +8,7 @@ export default {
     background: '#FBFFF1',
     darkBackground: '#EAF2D9',
     text: '#57AC79',
+    error: '#F44336',
   },
   fonts: {
     body: 'Manrope, system-ui, sans-serif',
@@ -44,11 +45,22 @@ export default {
   },
   buttons: {
     primary: {
+      borderWidth: 3,
       borderRadius: 10,
-      backgroundColor: 'text',
+      borderColor: 'text',
+      borderStyle: 'solid',
+      backgroundColor: 'secondary',
+      px: 3,
+      py: 2,
+      color: 'text',
+      fontSize: 3,
       cursor: 'pointer',
       '&:focus': {
         outline: 'none',
+      },
+      '&:active': {
+        borderColor: 'primary',
+        color: 'primary',
       },
     },
   },
@@ -65,10 +77,15 @@ export default {
       backgroundColor: 'secondary',
       px: 3,
       py: 2,
+      color: 'text',
       fontSize: 3,
       '&:focus': {
+        color: 'primary',
         borderColor: 'primary',
         outline: 'none',
+      },
+      '&::placeholder': {
+        color: 'text',
       },
     },
     checkbox: {
@@ -83,9 +100,14 @@ export default {
       borderRadius: 10,
       borderColor: 'text',
       backgroundColor: 'secondary',
+      px: 3,
+      py: 2,
+      color: 'text',
+      fontSize: 3,
       '&:focus': {
         borderColor: 'primary',
         outline: 'none',
+        color: 'primary',
       },
     },
     textarea: {
@@ -94,9 +116,17 @@ export default {
       borderColor: 'text',
       backgroundColor: 'secondary',
       fontFamily: 'body',
+      px: 3,
+      py: 2,
+      color: 'text',
+      fontSize: 3,
       '&:focus': {
         borderColor: 'primary',
         outline: 'none',
+        color: 'primary',
+      },
+      '&::placeholder': {
+        color: 'text',
       },
     },
     slider: {

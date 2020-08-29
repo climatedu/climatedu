@@ -1,13 +1,14 @@
+/** @jsx jsx */
 import { useCallback, useState } from 'react'
-import { Redirect } from '@reach/router'
-import { jsx, Box, Text, Heading, Input, Select, Textarea, Label } from 'theme-ui'
-import Button from '../components/button'
-import { ReactComponent as Google } from '../icons/google.svg'
+import { Button, Text, Box, Input, Select, Textarea, jsx } from 'theme-ui'
+
+import Layout from '../components/layout'
+import PageHeader from '../components/pageheader'
+import Container from '../components/container'
 
 import firebase from 'firebase/app'
 import useFirebase from '../firebase/useFirebase'
 import useAuth from '../util/auth'
-/** @jsx jsx */
 
 export default function login() {
   const firebaseApp = useFirebase()
@@ -19,51 +20,79 @@ export default function login() {
   const [email, setEmail] = useState('')
   const handleSetEmail = useCallback(e => setEmail(e.target.value), [])
 
-  const [type, setType] = useState('Student')
+  const [type, setType] = useState('')
   const handleSetType = useCallback(e => setType(e.target.value), [])
-  
+
   const [comment, setComment] = useState('')
   const handleSetComment = useCallback(e => setComment(e.target.value), [])
 
-  const submitContactForm = useCallback(() => {
-
-  })
-
+  const submitContactForm = useCallback(() => {})
 
   return (
-    <Box sx={{ height: '100vh', display: 'grid' }}>
-      <Box
-        sx={{ margin: 'auto', width: '100%', maxWidth: 600, display: 'grid' }}
-      >
-        <Heading
-          as='h1'
-          sx={{ textAlign: 'center', color: 'primary', marginBottom: 20 }}
-        >
-          Contact Us
-        </Heading>
-        <div sx={{ width: '50%' }}>
-          <Label htmlFor='name'>Name</Label>
-          <Input name='name' placeholder='Name' value={name} onChange={handleSetName} mb={1} />
-          
-          <Label htmlFor='email'>Email</Label>
-          <Input name='email' placeholder='Email' value={email} onChange={handleSetEmail} mb={1} />
+    <Layout>
+      <PageHeader primary='Contact Us' />
+      <Container>
+        <Box as='form'>
+          <Input
+            sx={{
+              width: ['100%', null, '50%'],
+              mb: 3,
+            }}
+            name='name'
+            placeholder='Name'
+            value={name}
+            onChange={handleSetName}
+          />
 
-          <Label htmlFor='type'>I am...</Label>
-          <Select sx={{ width: '50%' }} name='type' value={type} onChange={handleSetType} mb={3}>
+          <Input
+            sx={{
+              width: ['100%', null, '50%'],
+              mb: 3,
+            }}
+            name='email'
+            placeholder='Email'
+            value={email}
+            onChange={handleSetEmail}
+          />
+
+          <Select
+            sx={{
+              width: ['100%', '50%', '25%'],
+              mb: 3,
+            }}
+            name='type'
+            value={type}
+            onChange={handleSetType}
+          >
+            <option value=''>I&apos;m a...</option>
             <option>Student</option>
             <option>Teacher</option>
           </Select>
-        </div>
 
-        <Label htmlFor='comment'>Comments</Label>
-        <Textarea mb={3} name='comment' placeholder='Tell us your thoughts' rows={8} value={comment} onChange={handleSetComment}/>
-        <Button onClick={submitContactForm} sx={{ cursor: 'pointer' }}>
-          Submit
-        </Button>
-        <Text sx={{ color: 'highlight', marginTop: 20, textAlign: 'center' }}>
-          {error}
-        </Text>
-      </Box>
-    </Box>
+          <Textarea
+            name='comment'
+            placeholder='Tell us your thoughts'
+            rows={8}
+            value={comment}
+            onChange={handleSetComment}
+            sx={{
+              mb: 3,
+            }}
+          />
+          <Button
+            onClick={submitContactForm}
+            sx={{
+              cursor: 'pointer',
+              mb: 3,
+            }}
+          >
+            Submit
+          </Button>
+          <Text sx={{ color: 'error', marginTop: 20, textAlign: 'center' }}>
+            {error}
+          </Text>
+        </Box>
+      </Container>
+    </Layout>
   )
 }

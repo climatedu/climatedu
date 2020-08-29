@@ -9,7 +9,8 @@ const Layout = ({ children }) => {
     <Styled.root
       sx={{
         '&, *': {
-          scrollbarColor: theme => `${theme.colors.primary} ${theme.colors.darkBackground}`,
+          scrollbarColor: theme =>
+            `${theme.colors.primary} ${theme.colors.darkBackground}`,
           scrollbarWidth: 'thin',
         },
         '::-webkit-scrollbar, *::-webkit-scrollbar': {
@@ -23,7 +24,7 @@ const Layout = ({ children }) => {
       <Global
         styles={{
           'html, body, #___gatsby, #gatsby-focus-wrapper': {
-            height: '100%'
+            height: '100%',
           },
         }}
       />
