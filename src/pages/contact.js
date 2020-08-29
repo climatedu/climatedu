@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import { useCallback, useState } from 'react'
-import { Button, Text, Box, Input, Select, Textarea, jsx } from 'theme-ui'
+import { Button, Text, Box, Label, Input, Select, Textarea, jsx } from 'theme-ui'
 
 import Layout from '../components/layout'
 import PageHeader from '../components/pageheader'
@@ -33,28 +33,29 @@ export default function login() {
       <PageHeader primary='Contact Us' />
       <Container>
         <Box as='form'>
+          <Label htmlFor='name'>Name</Label>
           <Input
             sx={{
               width: ['100%', null, '50%'],
               mb: 3,
             }}
             name='name'
-            placeholder='Name'
             value={name}
             onChange={handleSetName}
           />
 
+          <Label htmlFor='email'>Email</Label>
           <Input
             sx={{
               width: ['100%', null, '50%'],
               mb: 3,
             }}
             name='email'
-            placeholder='Email'
             value={email}
             onChange={handleSetEmail}
           />
 
+          <Label htmlFor='type'>I&apos;m a...</Label>
           <Select
             sx={{
               width: ['100%', '50%', '25%'],
@@ -64,14 +65,13 @@ export default function login() {
             value={type}
             onChange={handleSetType}
           >
-            <option value=''>I&apos;m a...</option>
             <option>Student</option>
             <option>Teacher</option>
           </Select>
 
+          <Label htmlFor='comment'>Tell us your thoughts</Label>
           <Textarea
             name='comment'
-            placeholder='Tell us your thoughts'
             rows={8}
             value={comment}
             onChange={handleSetComment}
