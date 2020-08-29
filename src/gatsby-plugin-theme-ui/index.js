@@ -28,6 +28,10 @@ export default {
   },
   fontSizes: [12, 14, 16, 20, 24, 32, 48, 64, 72],
   space: [0, 4, 8, 16, 32, 64, 128, 256, 512],
+  sizes: {
+    container: '960px',
+    footer: '12rem',
+  },
   images: {
     avatar: {
       width: '200px',
@@ -38,7 +42,18 @@ export default {
     root: {
       fontFamily: 'body',
       fontWeight: 'body',
-      height: '100%',
+      minHeight: '100%',
+      position: 'relative',
+      '&, *': {
+        scrollbarColor: theme => `${theme.colors.primary} ${theme.colors.darkBackground}`,
+        scrollbarWidth: 'thin',
+      },
+      '::-webkit-scrollbar, *::-webkit-scrollbar': {
+        bg: 'darkBackground',
+      },
+      '::-webkit-scrollbar-thumb, *::-webkit-scrollbar-thumb': {
+        bg: 'primary',
+      },
       overflowY: 'auto',
     },
   },
