@@ -1,13 +1,10 @@
 /** @jsx jsx */
-import { Box, Flex, Heading, IconButton, Image, Styled, jsx } from 'theme-ui'
+import { Box, Flex, Heading, IconButton, Styled, jsx } from 'theme-ui'
 import { Global } from '@emotion/core'
 import { useStaticQuery, graphql } from 'gatsby'
+import Image from 'gatsby-image'
 
-import {
-  IoLogoInstagram,
-  IoLogoTwitter,
-  IoLogoYoutube,
-} from 'react-icons/io'
+import { IoLogoInstagram, IoLogoTwitter, IoLogoYoutube } from 'react-icons/io'
 
 const icons = {
   IoLogoInstagram,
@@ -16,8 +13,6 @@ const icons = {
 }
 
 import Navbar from './navbar'
-
-import Forest from '../media/Forest.png'
 
 const Layout = ({ children, backgroundColor }) => {
   const data = useStaticQuery(graphql`
@@ -28,6 +23,11 @@ const Layout = ({ children, backgroundColor }) => {
             icon
             href
           }
+        }
+      }
+      imageSharp(fluid: { originalName: { eq: "Forest.png" } }) {
+        fluid(maxWidth: 2560) {
+          ...GatsbyImageSharpFluid
         }
       }
     }
@@ -66,7 +66,7 @@ const Layout = ({ children, backgroundColor }) => {
         }}
       >
         <Image
-          src={Forest}
+          fluid={data.imageSharp.fluid}
           sx={{
             backgroundColor: backgroundColor,
           }}

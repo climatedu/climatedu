@@ -40,6 +40,13 @@ module.exports = {
         path: path.resolve(__dirname, 'data/config/'),
       },
     },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'media',
+        path: path.resolve(__dirname, 'data/media/'),
+      },
+    },
   ],
   siteMetadata: {
     socials: [
