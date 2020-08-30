@@ -61,7 +61,7 @@ export default {
       '&:focus': {
         outline: 'none',
       },
-    }
+    },
   },
   text: {
     heading: {

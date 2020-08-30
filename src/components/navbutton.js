@@ -6,7 +6,8 @@ import { BsCaretDownFill } from 'react-icons/bs'
 import Link from './link'
 
 const DesktopNavLink = props => (
-  <Link {...props}
+  <Link
+    {...props}
     activeClassName='active'
     sx={{
       color: 'inherit',
@@ -24,11 +25,13 @@ const DesktopNavLink = props => (
       '&:hover, &:focus, &.active': {
         color: 'primary',
       },
-    }} />
+    }}
+  />
 )
 
 const MobileNavLink = props => (
-  <Link {...props}
+  <Link
+    {...props}
     sx={{
       textDecoration: 'none',
       display: 'flex',
@@ -45,7 +48,7 @@ const MobileNavLink = props => (
   />
 )
 
-const DesktopNavButton = ({ location, text, dropdown, children, ...props}) => {
+const DesktopNavButton = ({ location, text, dropdown, children, ...props }) => {
   const [open, setOpen] = useState(false)
 
   const setDropdown = state => () => {
@@ -64,7 +67,12 @@ const DesktopNavButton = ({ location, text, dropdown, children, ...props}) => {
       <DesktopNavLink
         to={location}
         partiallyActive={dropdown}
-        onClick={dropdown && (e => {e.preventDefault()})}
+        onClick={
+          dropdown &&
+          (e => {
+            e.preventDefault()
+          })
+        }
         sx={{
           width: '100%',
         }}
@@ -97,7 +105,9 @@ const DesktopNavButton = ({ location, text, dropdown, children, ...props}) => {
         >
           {dropdown.map(({ location, text }, i) => {
             return (
-              <DesktopNavLink key={i} to={location}>{text}</DesktopNavLink>
+              <DesktopNavLink key={i} to={location}>
+                {text}
+              </DesktopNavLink>
             )
           })}
         </Box>
@@ -106,16 +116,20 @@ const DesktopNavButton = ({ location, text, dropdown, children, ...props}) => {
   )
 }
 
-const MobileNavButton = ({ location, text, dropdown, children, ...props}) => {
+const MobileNavButton = ({ location, text, dropdown, children, ...props }) => {
   const [open, setOpen] = useState(false)
-  const toggleOpen = (e) => {
+  const toggleOpen = e => {
     e.preventDefault()
     setOpen(!open)
   }
 
   return (
     <Box {...props}>
-      <MobileNavLink to={location} partiallyActive={dropdown} onClick={dropdown && toggleOpen}>
+      <MobileNavLink
+        to={location}
+        partiallyActive={dropdown}
+        onClick={dropdown && toggleOpen}
+      >
         {text}
         {dropdown && (
           <BsCaretDownFill
@@ -128,9 +142,12 @@ const MobileNavButton = ({ location, text, dropdown, children, ...props}) => {
         )}
         {children}
       </MobileNavLink>
-      {open && dropdown?.map(({ location, text }, i) => (
-        <MobileNavLink key={i} to={location} sx={{ pl: 5 }}>{text}</MobileNavLink>
-      ))}
+      {open &&
+        dropdown?.map(({ location, text }, i) => (
+          <MobileNavLink key={i} to={location} sx={{ pl: 5 }}>
+            {text}
+          </MobileNavLink>
+        ))}
     </Box>
   )
 }

@@ -13,7 +13,11 @@ import Container from './container'
 
 const Navbar = ({ navbarOpen, setNavbarOpen }) => {
   const user = useAuth()
-  const {site: {siteMetadata: {navLinks : links}}} = useStaticQuery(graphql`
+  const {
+    site: {
+      siteMetadata: { navLinks: links },
+    },
+  } = useStaticQuery(graphql`
     {
       site {
         siteMetadata {
@@ -42,7 +46,7 @@ const Navbar = ({ navbarOpen, setNavbarOpen }) => {
         py: 4,
       }}
     >
-      <Image src={logo} alt='climatedu logo' sx={{ maxHeight: '100%' }}/>
+      <Image src={logo} alt='climatedu logo' sx={{ maxHeight: '100%' }} />
       <Flex
         as='ul'
         sx={{
@@ -55,7 +59,10 @@ const Navbar = ({ navbarOpen, setNavbarOpen }) => {
           <DesktopNavButton key={i} as='li' sx={{ mr: 3 }} {...props} />
         ))}
 
-        <DesktopNavButton as='li' location='/login' text='Login'
+        <DesktopNavButton
+          as='li'
+          location='/login'
+          text='Login'
           sx={{
             ml: 2,
           }}
@@ -76,7 +83,9 @@ const Navbar = ({ navbarOpen, setNavbarOpen }) => {
           color: 'primary',
           display: ['inline-flex', null, 'none'],
         }}
-        onClick={() => {setNavbarOpen(true)}}
+        onClick={() => {
+          setNavbarOpen(true)
+        }}
       >
         <AiOutlineMenu size='100%' />
       </IconButton>
@@ -102,7 +111,8 @@ const Navbar = ({ navbarOpen, setNavbarOpen }) => {
           backgroundColor: 'background',
           boxShadow: '-6px 4px 24px rgba(0,0,0,.15)',
           transition: 'transform .3s',
-          transform: theme => `translateX(${navbarOpen ? 0 : theme.sizes.mobileNav})`,
+          transform: theme =>
+            `translateX(${navbarOpen ? 0 : theme.sizes.mobileNav})`,
           zIndex: 999,
         }}
       >
@@ -113,7 +123,9 @@ const Navbar = ({ navbarOpen, setNavbarOpen }) => {
             width: '5em',
             color: 'primary',
           }}
-          onClick={() => {setNavbarOpen(false)}}
+          onClick={() => {
+            setNavbarOpen(false)
+          }}
         >
           <AiOutlineClose size='100%' />
         </IconButton>
@@ -129,8 +141,12 @@ const Navbar = ({ navbarOpen, setNavbarOpen }) => {
             <MobileNavButton key={i} as='li' {...props} />
           ))}
           <Box as='li'>
-            <MobileNavButton as='li' location='/login' text={ user?.displayName ?? 'Login'}>
-              <BsPerson size='1.5em'/>
+            <MobileNavButton
+              as='li'
+              location='/login'
+              text={user?.displayName ?? 'Login'}
+            >
+              <BsPerson size='1.5em' />
             </MobileNavButton>
           </Box>
         </Box>
