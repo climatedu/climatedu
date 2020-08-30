@@ -1,70 +1,103 @@
 /** @jsx jsx */
-import { Box, Flex, NavLink as ThemeUINavLink, jsx } from 'theme-ui'
-import { Link as GatsbyLink } from 'gatsby'
+import { Box, jsx } from 'theme-ui'
 import { useState } from 'react'
 import { BsCaretDownFill } from 'react-icons/bs'
 
-const InnerNavLink = props =>
-  <GatsbyLink activeClassName='active' {...props} />
+import Link from './link'
 
-const NavLink = props =>
-  <ThemeUINavLink as={InnerNavLink} {...props} sx={{}}/>
+const DesktopNavLink = props => (
+  <Link {...props}
+    activeClassName='active'
+    sx={{
+      color: 'inherit',
+      textDecoration: 'none',
+      fontWeight: 'bold',
+      display: 'inline-block',
+      whiteSpace: 'nowrap',
+      px: 3,
+      py: 2,
+      borderRadius: 10,
+      fontSize: 3,
+      '&.active': {
+        bg: 'secondary',
+      },
+      '&:hover, &:focus, &.active': {
+        color: 'primary',
+      },
+    }} />
+)
 
-function NavButton (props) {
-  const [open, setState] = useState(false);
+const MobileNavLink = props => (
+  <Link {...props}
+    sx={{
+      textDecoration: 'none',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'space-between',
+      width: '100%',
+      p: 4,
+      fontSize: 3,
+      whiteSpace: 'nowrap',
+      '&.active': {
+        backgroundColor: 'darkBackground',
+      },
+    }}
+  />
+)
+
+const DesktopNavButton = ({ location, text, dropdown, children, ...props}) => {
+  const [open, setOpen] = useState(false)
+
+  const setDropdown = state => () => {
+    setOpen(state)
+  }
+
   return (
     <Box
-      mx='auto'
-      onBlur={e=>{
-        if (!e.currentTarget.contains(e.relatedTarget)) {
-          setState(false);
-        }
+      onMouseEnter={dropdown && setDropdown(true)}
+      onMouseLeave={dropdown && setDropdown(false)}
+      sx={{
+        position: 'relative',
       }}
+      {...props}
     >
-      <Flex
+      <DesktopNavLink
+        to={location}
+        partiallyActive={dropdown}
+        onClick={dropdown && (e => {e.preventDefault()})}
         sx={{
-          alignItems:'center',
-          justifyContent:'center'
+          width: '100%',
         }}
       >
-        <NavLink
-          to={props.location}
-          activeClassName='active'
-          className={open?'open':''}
-        >
-          {props.text}
-          {props.icon&&jsx(props.icon,{
-            sx:{
-              top:'0.15em',
-              position:'relative'
-            }
-          })}
-          {props.dropdown&&(
-            <BsCaretDownFill
-              onClick={e=>{e.preventDefault();setState(!open)}}
-              sx={{
-                transform: open?'rotate(180deg)':''
-              }}
-            />
-          )}
-        </NavLink>
-      </Flex>
-      {props.dropdown&&open&&(
+        {text}
+        {dropdown && (
+          <BsCaretDownFill
+            sx={{
+              transform: open ? 'rotate(-180deg)' : '',
+              verticalAlign: 'middle',
+              transition: 'transform .3s ease',
+              ml: 2,
+            }}
+          />
+        )}
+        {children}
+      </DesktopNavLink>
+      {dropdown && (
         <Box
           bg='secondary'
           sx={{
             position: 'absolute',
-            borderRadius: '0 10px 10px 10px',
-            zIndex: 10
+            top: '100%',
+            borderRadius: 10,
+            visibility: open ? 'visible' : 'hidden',
+            opacity: open ? 1 : 0,
+            transition: 'opacity .3s',
+            minWidth: '100%',
           }}
         >
-          {props.dropdown.map(({location,text},i)=>{
+          {dropdown.map(({ location, text }, i) => {
             return (
-              <Box key={i}>
-                <NavLink to={location}>
-                  {text}
-                </NavLink>
-              </Box>
+              <DesktopNavLink key={i} to={location}>{text}</DesktopNavLink>
             )
           })}
         </Box>
@@ -73,4 +106,33 @@ function NavButton (props) {
   )
 }
 
-export default NavButton
+const MobileNavButton = ({ location, text, dropdown, children, ...props}) => {
+  const [open, setOpen] = useState(false)
+  const toggleOpen = (e) => {
+    e.preventDefault()
+    setOpen(!open)
+  }
+
+  return (
+    <Box {...props}>
+      <MobileNavLink to={location} partiallyActive={dropdown} onClick={dropdown && toggleOpen}>
+        {text}
+        {dropdown && (
+          <BsCaretDownFill
+            sx={{
+              transform: open ? 'rotate(0deg)' : 'rotate(-90deg)',
+              transition: 'transform .3s ease',
+              ml: 2,
+            }}
+          />
+        )}
+        {children}
+      </MobileNavLink>
+      {open && dropdown?.map(({ location, text }, i) => (
+        <MobileNavLink key={i} to={location} sx={{ pl: 5 }}>{text}</MobileNavLink>
+      ))}
+    </Box>
+  )
+}
+
+export { DesktopNavButton, MobileNavButton }

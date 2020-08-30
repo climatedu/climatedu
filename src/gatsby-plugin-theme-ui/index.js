@@ -28,6 +28,10 @@ export default {
   },
   fontSizes: [12, 14, 16, 20, 24, 32, 48, 64, 72],
   space: [0, 4, 8, 16, 32, 64, 128, 256, 512],
+  sizes: {
+    container: '960px',
+    mobileNav: '250px',
+  },
   images: {
     avatar: {
       width: '200px',
@@ -39,6 +43,7 @@ export default {
       fontFamily: 'body',
       fontWeight: 'body',
       height: '100%',
+      overflowX: 'hidden',
       overflowY: 'auto',
     },
   },
@@ -51,6 +56,12 @@ export default {
         outline: 'none',
       },
     },
+    icon: {
+      cursor: 'pointer',
+      '&:focus': {
+        outline: 'none',
+      },
+    }
   },
   text: {
     heading: {
@@ -103,18 +114,4 @@ export default {
       backgroundColor: 'text',
     },
   },
-  links: {
-    nav:{
-      px: '10px',
-      py: '4px',
-      borderRadius: '10px',
-      '&.active': {
-        bg: 'secondary',
-      },
-      '&.open': {
-        bg: 'secondary',
-        borderRadius: '10px 10px 0 0'
-      }
-    }
-  }
 }
