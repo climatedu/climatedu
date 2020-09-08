@@ -92,7 +92,7 @@ const Navbar = ({ navbarOpen, setNavbarOpen }) => {
       <Box
         sx={{
           display: navbarOpen ? 'block' : 'none',
-          position: 'absolute',
+          position: 'fixed',
           top: 0,
           bottom: 0,
           left: 0,
@@ -103,16 +103,17 @@ const Navbar = ({ navbarOpen, setNavbarOpen }) => {
       <Box
         sx={{
           display: ['block', null, 'none'],
-          position: 'absolute',
+          position: 'fixed',
           top: 0,
           right: 0,
           height: '100vh',
           width: 'mobileNav',
           backgroundColor: 'background',
           boxShadow: '-6px 4px 24px rgba(0,0,0,.15)',
+          overflowX: 'hidden',
+          overflowY: 'auto',
           transition: 'transform .3s',
-          transform: theme =>
-            `translateX(${navbarOpen ? 0 : theme.sizes.mobileNav})`,
+          transform: `translateX(${navbarOpen ? 0 : '100%'})`,
           zIndex: 999,
         }}
       >
