@@ -1,4 +1,4 @@
-import { useCallback, useState } from 'react'
+import { useState } from 'react'
 import { Redirect } from '@reach/router'
 import { jsx, Box, Text, Heading } from 'theme-ui'
 import Button from '../components/button'
@@ -6,7 +6,7 @@ import Button from '../components/button'
 import { AiFillGoogleCircle } from 'react-icons/ai'
 
 import firebase from 'firebase/app'
-import useFirebase from '../firebase/useFirebase'
+import useFirebase from '../firebase'
 import useAuth from '../util/auth'
 /** @jsx jsx */
 
@@ -14,7 +14,7 @@ export default function login() {
   const firebaseApp = useFirebase()
   const [error, setError] = useState(null)
 
-  const handleGoogleLogin = useCallback(async () => {
+  const handleGoogleLogin = async () => {
     if (!firebaseApp) return
     const provider = new firebase.auth.GoogleAuthProvider()
     try {
@@ -23,7 +23,7 @@ export default function login() {
       setError(e.message)
       return
     }
-  }, [firebaseApp])
+  }
 
   const user = useAuth()
   if (user !== null) {

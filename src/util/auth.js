@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import useFirebase from '../firebase/useFirebase'
+import useFirebase from '../firebase'
 
 const useAuth = () => {
   const firebaseApp = useFirebase()
