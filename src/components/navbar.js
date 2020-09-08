@@ -1,10 +1,10 @@
 /** @jsx jsx */
-import { useCallback, useState } from 'react'
+import { useState } from 'react'
 import { Box, Text, jsx } from 'theme-ui'
 import useAuth from '../util/auth'
 import Link from './link'
 
-import useFirebase from '../firebase/useFirebase'
+import useFirebase from '../firebase'
 
 const Navbar = () => {
   const firebaseApp = useFirebase()
@@ -12,14 +12,14 @@ const Navbar = () => {
 
   const [error, setError] = useState(null)
 
-  const handleLogout = useCallback(async () => {
+  const handleLogout = async () => {
     if (!firebaseApp) return
     try {
       await firebaseApp.auth().signOut()
     } catch (e) {
       setError(e.message)
     }
-  }, [firebaseApp])
+  }
 
   return (
     <Box
