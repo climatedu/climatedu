@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { useCallback, useState} from 'react'
+import { useCallback, useState } from 'react'
 import { Redirect } from '@reach/router'
 import {
   Button,
@@ -42,6 +42,8 @@ export default function login() {
 
   const submitContactForm = useCallback(
     e => {
+      if (!firebaseApp) return
+      
       e.preventDefault()
 
       setError('')
@@ -56,24 +58,22 @@ export default function login() {
         return
       }
 
-      if(firebaseApp){
-        firebaseApp
-          .firestore()
-          .collection('contact')
-          .add({
-            name: name,
-            email: email,
-            type: type,
-            comment: comment,
-          })
-          .then(() => {
-            setSuccess('Successfully submitted contact form!')
-            setTimeout(setFormSubmit.bind(null, true), 1500)
-          })
-          .catch(() => {
-            setError('Firebase error, please try again.')
-          })
-      }
+      firebaseApp
+        .firestore()
+        .collection('contact')
+        .add({
+          name: name,
+          email: email,
+          type: type,
+          comment: comment,
+        })
+        .then(() => {
+          setSuccess('Successfully submitted contact form!')
+          setTimeout(setFormSubmit.bind(null, true), 1500)
+        })
+        .catch(() => {
+          setError('Firebase error, please try again.')
+        })
     },
     [name, email, type, comment]
   )
