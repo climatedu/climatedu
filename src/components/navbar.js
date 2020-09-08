@@ -63,9 +63,6 @@ const Navbar = ({ navbarOpen, setNavbarOpen }) => {
           as='li'
           location='/login'
           text='Login'
-          sx={{
-            ml: 2,
-          }}
         >
           <IoMdPerson
             sx={{
