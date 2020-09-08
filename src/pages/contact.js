@@ -16,8 +16,6 @@ import Layout from '../components/layout'
 import PageHeader from '../components/pageheader'
 import Container from '../components/container'
 
-import firebase from 'firebase'
-import 'firebase/firestore'
 import getFirebase from '../firebase'
 
 export default function login() {
