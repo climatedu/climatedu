@@ -1,13 +1,22 @@
 /** @jsx jsx */
-import { useCallback, useState, useEffect} from 'react'
+import { useCallback, useState, useEffect } from 'react'
 import { Redirect } from '@reach/router'
-import { Button, Text, Box, Label, Input, Select, Textarea, jsx } from 'theme-ui'
+import {
+  Button,
+  Text,
+  Box,
+  Label,
+  Input,
+  Select,
+  Textarea,
+  jsx,
+} from 'theme-ui'
 
 import Layout from '../components/layout'
 import PageHeader from '../components/pageheader'
 import Container from '../components/container'
 
-import firebase from "firebase"
+import firebase from 'firebase'
 import 'firebase/firestore'
 import getFirebase from '../firebase'
 
@@ -27,40 +36,50 @@ export default function login() {
   const handleSetType = useCallback(e => setType(e.target.value), [type])
 
   const [comment, setComment] = useState('')
-  const handleSetComment = useCallback(e => setComment(e.target.value), [comment])
+  const handleSetComment = useCallback(e => setComment(e.target.value), [
+    comment,
+  ])
 
   const [formSubmit, setFormSubmit] = useState(false)
 
-  const submitContactForm = useCallback((e) => {
-    e.preventDefault()
+  const submitContactForm = useCallback(
+    e => {
+      e.preventDefault()
 
-    setError('');
+      setError('')
 
-    if(name === "" || email === "" || type === "" || comment === ""){
-      setError("One or more fields are missing.")
-      return
-    }
+      if (name === '' || email === '' || type === '' || comment === '') {
+        setError('One or more fields are missing.')
+        return
+      }
 
-    if(!/\S+@\S+\.\S+/.test(email)){
-      setError("Invalid email.")
-      return
-    }
+      if (!/\S+@\S+\.\S+/.test(email)) {
+        setError('Invalid email.')
+        return
+      }
 
-    firebaseApp.firestore().collection("contact").add({
-      name: name,
-      email: email,
-      type: type,
-      comment: comment
-    }).then(() => {
-      setSuccess("Sucessfully submitted contact form!")
-      setTimeout(setFormSubmit.bind(null, true), 1500)
-    }).catch(() => {
-      setError("Firebase error, please try again.")
-    });
-  }, [name, email, type, comment])
+      firebaseApp
+        .firestore()
+        .collection('contact')
+        .add({
+          name: name,
+          email: email,
+          type: type,
+          comment: comment,
+        })
+        .then(() => {
+          setSuccess('Sucessfully submitted contact form!')
+          setTimeout(setFormSubmit.bind(null, true), 1500)
+        })
+        .catch(() => {
+          setError('Firebase error, please try again.')
+        })
+    },
+    [name, email, type, comment]
+  )
 
-  if(formSubmit){
-    return <Redirect to="/" noThrow />
+  if (formSubmit) {
+    return <Redirect to='/' noThrow />
   }
 
   return (
@@ -68,7 +87,9 @@ export default function login() {
       <PageHeader primary='Contact Us' />
       <Container>
         <Box as='form'>
-          <Label htmlFor='name' sx={{ fontSize:[4, 5]}}>Name</Label>
+          <Label htmlFor='name' sx={{ fontSize: [4, 5] }}>
+            Name
+          </Label>
           <Input
             sx={{
               width: ['100%', null, '50%'],
@@ -77,10 +98,12 @@ export default function login() {
             name='name'
             value={name}
             onChange={handleSetName}
-            required="required"
+            required='required'
           />
 
-          <Label htmlFor='email' sx={{ fontSize:[4, 5]}}>Email</Label>
+          <Label htmlFor='email' sx={{ fontSize: [4, 5] }}>
+            Email
+          </Label>
           <Input
             sx={{
               width: ['100%', null, '50%'],
@@ -89,27 +112,31 @@ export default function login() {
             name='email'
             value={email}
             onChange={handleSetEmail}
-            required="required"
-            type="email"
+            required='required'
+            type='email'
           />
 
-          <Label htmlFor='type' sx={{ fontSize:[4, 5]}}>I&apos;m a...</Label>
+          <Label htmlFor='type' sx={{ fontSize: [4, 5] }}>
+            I&apos;m a...
+          </Label>
           <Select
             sx={{
               width: ['100%', '50%', '25%'],
               mb: 3,
-              fontSize: [3, 4]
+              fontSize: [3, 4],
             }}
             name='type'
             value={type}
             onChange={handleSetType}
-            required="required"
+            required='required'
           >
-            <option sx={{fontSize: [3, 4]}}>Student</option>
-            <option sx={{fontSize: [3, 4]}}>Teacher</option>
+            <option sx={{ fontSize: [3, 4] }}>Student</option>
+            <option sx={{ fontSize: [3, 4] }}>Teacher</option>
           </Select>
 
-          <Label htmlFor='comment' sx={{ fontSize:[4, 5]}}>Tell us your thoughts</Label>
+          <Label htmlFor='comment' sx={{ fontSize: [4, 5] }}>
+            Tell us your thoughts
+          </Label>
           <Textarea
             name='comment'
             rows={8}
@@ -118,28 +145,36 @@ export default function login() {
             sx={{
               mb: 3,
             }}
-            required="required"
+            required='required'
           />
           <Button
             onClick={submitContactForm}
             sx={{
               cursor: 'pointer',
-              fontSize: [4, 5]
+              fontSize: [4, 5],
             }}
           >
             Submit
           </Button>
-          <Text sx={{ fontSize: [4, 5], color: 'red',
-            marginTop: [1,2],
-            marginBottom:[3, 4],
-            textAlign: 'left' }}
+          <Text
+            sx={{
+              fontSize: [4, 5],
+              color: 'red',
+              marginTop: [1, 2],
+              marginBottom: [3, 4],
+              textAlign: 'left',
+            }}
           >
             {error}
           </Text>
-          <Text sx={{ fontSize: [4, 5], color: 'success',
-            marginTop: [1,2],
-            marginBottom:[3, 4],
-            textAlign: 'left' }}
+          <Text
+            sx={{
+              fontSize: [4, 5],
+              color: 'success',
+              marginTop: [1, 2],
+              marginBottom: [3, 4],
+              textAlign: 'left',
+            }}
           >
             {success}
           </Text>
