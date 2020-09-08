@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { Box, jsx } from 'theme-ui'
+import { Flex, Box, jsx } from 'theme-ui'
 import { useState } from 'react'
 import { BsCaretDownFill } from 'react-icons/bs'
 
@@ -131,16 +131,19 @@ const MobileNavButton = ({ location, text, dropdown, children, ...props }) => {
         onClick={dropdown && toggleOpen}
       >
         {text}
-        {dropdown && (
-          <BsCaretDownFill
-            sx={{
-              transform: open ? 'rotate(0deg)' : 'rotate(-90deg)',
-              transition: 'transform .3s ease',
-              ml: 2,
-            }}
-          />
-        )}
-        {children}
+        {(dropdown || children) &&
+          <Flex sx={{width: '1.5em', justifyContent: 'center'}}>
+            {dropdown && (
+              <BsCaretDownFill
+                sx={{
+                  transform: open ? 'rotate(0deg)' : 'rotate(-90deg)',
+                  transition: 'transform .3s ease',
+                }}
+              />
+            )}
+            {children}
+          </Flex>
+        }
       </MobileNavLink>
       {open &&
         dropdown?.map(({ location, text }, i) => (

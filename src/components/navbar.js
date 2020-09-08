@@ -6,8 +6,7 @@ import { useStaticQuery, graphql } from 'gatsby'
 
 import { DesktopNavButton, MobileNavButton } from './navbutton'
 
-import { BsPerson } from 'react-icons/bs'
-import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai'
+import { IoMdPerson, IoMdMenu, IoMdClose } from 'react-icons/io'
 
 import Container from './container'
 
@@ -52,6 +51,7 @@ const Navbar = ({ navbarOpen, setNavbarOpen }) => {
         sx={{
           listStyle: 'none',
           display: ['none', null, 'flex'],
+          alignItems: 'baseline',
           p: 0,
         }}
       >
@@ -67,9 +67,10 @@ const Navbar = ({ navbarOpen, setNavbarOpen }) => {
             ml: 2,
           }}
         >
-          <BsPerson
+          <IoMdPerson
             sx={{
-              verticalAlign: 'middle',
+              fontSize: '125%',
+              verticalAlign: 'text-top',
               ml: 1,
             }}
           />
@@ -87,7 +88,7 @@ const Navbar = ({ navbarOpen, setNavbarOpen }) => {
           setNavbarOpen(true)
         }}
       >
-        <AiOutlineMenu size='100%' />
+        <IoMdMenu size='100%' />
       </IconButton>
       <Box
         sx={{
@@ -128,7 +129,7 @@ const Navbar = ({ navbarOpen, setNavbarOpen }) => {
             setNavbarOpen(false)
           }}
         >
-          <AiOutlineClose size='100%' />
+          <IoMdClose size='100%' />
         </IconButton>
         <Box
           as='ul'
@@ -141,15 +142,13 @@ const Navbar = ({ navbarOpen, setNavbarOpen }) => {
           {links.map((props, i) => (
             <MobileNavButton key={i} as='li' {...props} />
           ))}
-          <Box as='li'>
-            <MobileNavButton
-              as='li'
-              location='/login'
-              text={user?.displayName ?? 'Login'}
-            >
-              <BsPerson size='1.5em' />
-            </MobileNavButton>
-          </Box>
+          <MobileNavButton
+            as='li'
+            location='/login'
+            text={user?.displayName ?? 'Login'}
+          >
+            <IoMdPerson size='1.5em' />
+          </MobileNavButton>
         </Box>
       </Box>
     </Container>
