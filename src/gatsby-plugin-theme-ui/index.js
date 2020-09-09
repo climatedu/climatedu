@@ -46,19 +46,7 @@ export default {
       display: 'flex',
       flexDirection: 'column',
       alignItems: 'stretch',
-      '&, *': {
-        scrollbarColor: theme =>
-          `${theme.colors.primary} ${theme.colors.darkBackground}`,
-        scrollbarWidth: 'thin',
-      },
-      '::-webkit-scrollbar, *::-webkit-scrollbar': {
-        bg: 'darkBackground',
-      },
-      '::-webkit-scrollbar-thumb, *::-webkit-scrollbar-thumb': {
-        bg: 'primary',
-      },
       overflowX: 'hidden',
-      overflowY: 'auto',
     },
   },
   buttons: {

@@ -5,7 +5,12 @@ import { Global } from '@emotion/core'
 import { useStaticQuery, graphql } from 'gatsby'
 import Image from 'gatsby-image'
 
-import { IoMdMail, IoLogoInstagram, IoLogoTwitter, IoLogoYoutube } from 'react-icons/io'
+import {
+  IoMdMail,
+  IoLogoInstagram,
+  IoLogoTwitter,
+  IoLogoYoutube,
+} from 'react-icons/io'
 
 const icons = {
   IoMdMail,
