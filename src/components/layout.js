@@ -1,6 +1,7 @@
 /** @jsx jsx */
 import { Box, Styled, jsx } from 'theme-ui'
 import { Global } from '@emotion/core'
+import 'react-toastify/dist/ReactToastify.min.css'
 
 import Navbar from './navbar'
 
