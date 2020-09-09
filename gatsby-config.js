@@ -51,6 +51,11 @@ module.exports = {
   siteMetadata: {
     socials: [
       {
+        icon: 'IoMdMail',
+        href: 'mailto:hello@climatedu.org',
+        name: 'Email',
+      },
+      {
         icon: 'IoLogoInstagram',
         href: 'https://instagram.com/climateduteam',
         name: 'Instagram',
