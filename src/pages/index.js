@@ -1,4 +1,4 @@
-import { graphql } from 'gatsby'
+import { graphql, navigate } from 'gatsby'
 import { Box, Button, Flex, Grid, Heading, Text, jsx } from 'theme-ui'
 /** @jsx jsx */
 
@@ -39,6 +39,10 @@ const Section = ({ header, children, ...props }) => {
 }
 
 const Home = ({ data }) => {
+  const onRegister = () => {
+    navigate('/login')
+  }
+
   return (
     <Layout bg='darkBackground'>
       <PageHeader
@@ -58,6 +62,7 @@ const Home = ({ data }) => {
               boxShadow: '0px 0px 8px 5px rgb(119 156 90 / 30%)',
             },
           }}
+          onClick={onRegister}
         >
           Register today!
         </Button>

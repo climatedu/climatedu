@@ -71,5 +71,23 @@ module.exports = {
         name: 'YouTube',
       },
     ],
+    navLinks: [
+      {
+        location: '/',
+        text: 'Home',
+      },
+      {
+        location: '/about/',
+        text: 'About',
+        dropdown: [
+          { location: '/about/team', text: 'Our Team' },
+          { location: '/about/mission', text: 'Our Mission' },
+        ],
+      },
+      {
+        location: '/contact',
+        text: 'Contact Us',
+      },
+    ],
   },
 }

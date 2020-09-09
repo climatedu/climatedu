@@ -29,7 +29,8 @@ export default {
   fontSizes: [12, 14, 16, 20, 24, 32, 48, 64, 72],
   space: [0, 4, 8, 16, 32, 64, 128, 256, 512],
   sizes: {
-    container: 960,
+    container: '960px',
+    mobileNav: '250px',
   },
   images: {
     avatar: {
@@ -56,6 +57,7 @@ export default {
       '::-webkit-scrollbar-thumb, *::-webkit-scrollbar-thumb': {
         bg: 'primary',
       },
+      overflowX: 'hidden',
       overflowY: 'auto',
     },
   },
@@ -64,6 +66,13 @@ export default {
       borderRadius: 10,
       bg: 'text',
       cursor: 'pointer',
+      '&:focus': {
+        outline: 'none',
+      },
+    },
+    icon: {
+      cursor: 'pointer',
+      borderRadius: 999,
       '&:focus': {
         outline: 'none',
       },
