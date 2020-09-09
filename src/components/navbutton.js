@@ -131,8 +131,8 @@ const MobileNavButton = ({ location, text, dropdown, children, ...props }) => {
         onClick={dropdown && toggleOpen}
       >
         {text}
-        {(dropdown || children) &&
-          <Flex sx={{width: '1.5em', justifyContent: 'center'}}>
+        {(dropdown || children) && (
+          <Flex sx={{ width: '1.5em', justifyContent: 'center' }}>
             {dropdown && (
               <BsCaretDownFill
                 sx={{
@@ -143,7 +143,7 @@ const MobileNavButton = ({ location, text, dropdown, children, ...props }) => {
             )}
             {children}
           </Flex>
-        }
+        )}
       </MobileNavLink>
       {open &&
         dropdown?.map(({ location, text }, i) => (

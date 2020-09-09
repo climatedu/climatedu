@@ -6,8 +6,9 @@ const PageHeader = ({ primary, secondary, children }) => {
     <Box
       sx={{
         textAlign: 'center',
-        my: 4,
-        px: [4, 5],
+        p: 4,
+        pt: [null, 5],
+        bg: 'background',
       }}
     >
       <Heading

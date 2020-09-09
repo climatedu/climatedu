@@ -43,14 +43,16 @@ export default {
       fontFamily: 'body',
       fontWeight: 'body',
       height: '100%',
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'stretch',
       overflowX: 'hidden',
-      overflowY: 'auto',
     },
   },
   buttons: {
     primary: {
       borderRadius: 10,
-      backgroundColor: 'text',
+      bg: 'text',
       cursor: 'pointer',
       '&:focus': {
         outline: 'none',
@@ -58,6 +60,7 @@ export default {
     },
     icon: {
       cursor: 'pointer',
+      borderRadius: 999,
       '&:focus': {
         outline: 'none',
       },
@@ -73,7 +76,7 @@ export default {
       borderWidth: 3,
       borderRadius: 10,
       borderColor: 'text',
-      backgroundColor: 'secondary',
+      bg: 'secondary',
       px: 3,
       py: 2,
       fontSize: 3,
@@ -93,7 +96,7 @@ export default {
       borderWidth: 3,
       borderRadius: 10,
       borderColor: 'text',
-      backgroundColor: 'secondary',
+      bg: 'secondary',
       '&:focus': {
         borderColor: 'primary',
         outline: 'none',
@@ -103,7 +106,7 @@ export default {
       borderWidth: 3,
       borderRadius: 10,
       borderColor: 'text',
-      backgroundColor: 'secondary',
+      bg: 'secondary',
       fontFamily: 'body',
       '&:focus': {
         borderColor: 'primary',
@@ -111,7 +114,7 @@ export default {
       },
     },
     slider: {
-      backgroundColor: 'text',
+      bg: 'text',
     },
   },
 }

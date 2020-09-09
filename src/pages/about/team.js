@@ -14,7 +14,7 @@ const calcColumnStart = pos =>
 const about = ({ data }) => {
   return (
     <Layout>
-      <Box mb={4 /* TODO: replace with footer */}>
+      <Box>
         <Heading
           sx={{
             mb: 5,

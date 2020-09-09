@@ -40,8 +40,37 @@ module.exports = {
         path: path.resolve(__dirname, 'data/config/'),
       },
     },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'media',
+        path: path.resolve(__dirname, 'data/media/'),
+      },
+    },
   ],
   siteMetadata: {
+    socials: [
+      {
+        icon: 'IoMdMail',
+        href: 'mailto:hello@climatedu.org',
+        name: 'Email',
+      },
+      {
+        icon: 'IoLogoInstagram',
+        href: 'https://instagram.com/climateduteam',
+        name: 'Instagram',
+      },
+      {
+        icon: 'IoLogoTwitter',
+        href: 'https://twitter.com/climateduteam',
+        name: 'Twitter',
+      },
+      {
+        icon: 'IoLogoYoutube',
+        href: 'https://www.youtube.com/channel/UCmImqBAZqWWXPzmeArLJ-4Q',
+        name: 'YouTube',
+      },
+    ],
     navLinks: [
       {
         location: '/',
