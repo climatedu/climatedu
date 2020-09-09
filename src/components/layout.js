@@ -22,6 +22,7 @@ const Layout = ({ children, bg }) => {
           socials {
             icon
             href
+            name
           }
         }
       }
@@ -91,7 +92,7 @@ const Layout = ({ children, bg }) => {
             Have a question? Reach out to hello@climatedu.org!
           </Heading>
           <Box>
-            {data.site.siteMetadata.socials.map(({ icon, href }, i) => {
+            {data.site.siteMetadata.socials.map(({ icon, href, name }, i) => {
               const Icon = icons[icon]
               return (
                 <IconButton
@@ -107,9 +108,17 @@ const Layout = ({ children, bg }) => {
                     color: 'primary',
                     m: 2,
                     mt: 0,
+                    transition: 'opacity 0.3s ease',
+                    ':hover, :focus': {
+                      opacity: 0.85,
+                    },
+                    ':active': {
+                      opacity: 0.6,
+                    },
                   }}
+                  title={name}
                 >
-                  <Icon size='100%' />
+                  <Icon size='100%' aria-hidden />
                 </IconButton>
               )
             })}
