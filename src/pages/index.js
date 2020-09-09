@@ -40,7 +40,7 @@ const Section = ({ header, children, ...props }) => {
 
 const Home = ({ data }) => {
   return (
-    <Layout backgroundColor='darkBackground'>
+    <Layout bg='darkBackground'>
       <PageHeader
         primary='Welcome to climatedu!'
         secondary='Climate education made by students, for students.'
@@ -67,7 +67,7 @@ const Home = ({ data }) => {
           gap={4}
           columns={[1, 2]}
           sx={{
-            backgroundColor: 'background',
+            bg: 'background',
             borderRadius: 30,
             p: 4,
           }}
@@ -126,7 +126,7 @@ const Home = ({ data }) => {
                     p: 4,
                     mx: 3,
                     borderRadius: 30,
-                    backgroundColor: unit.frontmatter.background,
+                    bg: unit.frontmatter.background,
                     color: unit.frontmatter.text,
                   }}
                 >

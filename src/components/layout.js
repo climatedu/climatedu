@@ -14,7 +14,7 @@ const icons = {
 
 import Navbar from './navbar'
 
-const Layout = ({ children, backgroundColor }) => {
+const Layout = ({ children, bg }) => {
   const data = useStaticQuery(graphql`
     {
       site {
@@ -26,8 +26,8 @@ const Layout = ({ children, backgroundColor }) => {
         }
       }
       imageSharp(fluid: { originalName: { eq: "Forest.png" } }) {
-        fluid(maxWidth: 2560) {
-          ...GatsbyImageSharpFluid
+        fluid(maxWidth: 2560, traceSVG: { color: "#007439" }) {
+          ...GatsbyImageSharpFluid_tracedSVG
         }
       }
     }
@@ -48,9 +48,10 @@ const Layout = ({ children, backgroundColor }) => {
         }}
       />
       <Box
+        as='main'
         sx={{
           flex: '1 0 auto',
-          backgroundColor: backgroundColor,
+          bg: bg,
         }}
       >
         {children}
@@ -61,19 +62,19 @@ const Layout = ({ children, backgroundColor }) => {
           justifyContent: 'center',
           alignItems: 'stretch',
           flexDirection: 'column',
-          backgroundColor: backgroundColor,
+          bg: bg,
           pt: 4,
         }}
       >
         <Image
           fluid={data.imageSharp.fluid}
           sx={{
-            backgroundColor: backgroundColor,
+            bg: bg,
           }}
         />
         <Flex
           sx={{
-            backgroundColor: '#007439',
+            bg: '#007439',
             flexDirection: 'column',
             alignItems: 'center',
             textAlign: 'center',
@@ -102,7 +103,7 @@ const Layout = ({ children, backgroundColor }) => {
                     p: ['8px', '12px'],
                     height: ['2em', '3em'],
                     width: ['2em', '3em'],
-                    backgroundColor: 'background',
+                    bg: 'background',
                     color: 'primary',
                     m: 2,
                     mt: 0,

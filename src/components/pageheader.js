@@ -8,7 +8,7 @@ const PageHeader = ({ primary, secondary, children }) => {
         textAlign: 'center',
         p: 4,
         pt: [null, 5],
-        backgroundColor: 'background',
+        bg: 'background',
       }}
     >
       <Heading

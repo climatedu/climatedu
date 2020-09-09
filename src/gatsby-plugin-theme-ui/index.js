@@ -41,7 +41,7 @@ export default {
     root: {
       fontFamily: 'body',
       fontWeight: 'body',
-      minHeight: '100vh',
+      height: '100%',
       display: 'flex',
       flexDirection: 'column',
       alignItems: 'stretch',
@@ -62,7 +62,7 @@ export default {
   buttons: {
     primary: {
       borderRadius: 10,
-      backgroundColor: 'text',
+      bg: 'text',
       cursor: 'pointer',
       '&:focus': {
         outline: 'none',
@@ -79,7 +79,7 @@ export default {
       borderWidth: 3,
       borderRadius: 10,
       borderColor: 'text',
-      backgroundColor: 'secondary',
+      bg: 'secondary',
       px: 3,
       py: 2,
       fontSize: 3,
@@ -99,7 +99,7 @@ export default {
       borderWidth: 3,
       borderRadius: 10,
       borderColor: 'text',
-      backgroundColor: 'secondary',
+      bg: 'secondary',
       '&:focus': {
         borderColor: 'primary',
         outline: 'none',
@@ -109,7 +109,7 @@ export default {
       borderWidth: 3,
       borderRadius: 10,
       borderColor: 'text',
-      backgroundColor: 'secondary',
+      bg: 'secondary',
       fontFamily: 'body',
       '&:focus': {
         borderColor: 'primary',
@@ -117,7 +117,7 @@ export default {
       },
     },
     slider: {
-      backgroundColor: 'text',
+      bg: 'text',
     },
   },
 }

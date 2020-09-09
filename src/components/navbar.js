@@ -24,7 +24,7 @@ const Navbar = () => {
   return (
     <Box
       sx={{
-        backgroundColor: 'background',
+        bg: 'background',
         mb: 4,
       }}
     >
