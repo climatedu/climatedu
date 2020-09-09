@@ -1,16 +1,37 @@
 /** @jsx jsx */
-import { Button, Flex, Input, Heading, jsx } from 'theme-ui'
+import { useState } from 'react'
+import { Button, Flex, Input, Heading, Text, jsx } from 'theme-ui'
 
 import Layout from '../components/layout'
 import PageHeader from '../components/pageheader'
 import Container from '../components/container'
 
+import getFirebase from '../firebase'
+
 const Login = ({ data }) => {
+  const firebaseApp = getFirebase()
+
+  const [error, setError] = useState('')
+  const [email, setEmail] = useState('')
+
+  const onSubmit = async e => {
+    e.preventDefault()
+    if (!firebaseApp) return
+
+    /* TODO: use toasts? */
+    try {
+      await firebaseApp.firestore().collection('reminders').add({ email })
+      setError('Submitted!')
+    } catch (e) {
+      setError(e.message)
+    }
+  }
+
   return (
     <Layout>
       <PageHeader
         primary='Login'
-        secondary="We're still building this course. Come back and join us in October!"
+        secondary="We're still building this course. Come back and join us soon!"
       />
       <Container>
         <Heading
@@ -30,12 +51,15 @@ const Login = ({ data }) => {
           }}
         >
           <Input
-            placeholder='Email'
-            sx={{
-              mb: 3,
-            }}
+            aria-label='Email'
+            value={email}
+            onChange={e => setEmail(e.target.value)}
+            sx={{ mb: 3 }}
           />
-          <Button>Submit</Button>
+          <Button onClick={onSubmit} sx={{ mb: 3 }}>
+            Submit
+          </Button>
+          <Text sx={{ color: 'red' }}>{error}</Text>
         </Flex>
       </Container>
     </Layout>
