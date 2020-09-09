@@ -1,4 +1,4 @@
-import { graphql } from 'gatsby'
+import { graphql, navigate } from 'gatsby'
 import { Box, Button, Flex, Grid, Heading, Text, jsx } from 'theme-ui'
 /** @jsx jsx */
 
@@ -21,7 +21,7 @@ const Section = ({ header, children, ...props }) => {
       <Box
         sx={{
           textAlign: 'center',
-          mb: [4, 5],
+          p: 4,
         }}
       >
         <Heading
@@ -33,21 +33,18 @@ const Section = ({ header, children, ...props }) => {
           {header}
         </Heading>
       </Box>
-      <Box
-        sx={{
-          px: 4,
-          mb: 5,
-        }}
-      >
-        {children}
-      </Box>
+      <Box>{children}</Box>
     </Box>
   )
 }
 
 const Home = ({ data }) => {
+  const onRegister = () => {
+    navigate('/login')
+  }
+
   return (
-    <Layout>
+    <Layout bg='darkBackground'>
       <PageHeader
         primary='Welcome to climatedu!'
         secondary='Climate education made by students, for students.'
@@ -65,137 +62,129 @@ const Home = ({ data }) => {
               boxShadow: '0px 0px 8px 5px rgb(119 156 90 / 30%)',
             },
           }}
+          onClick={onRegister}
         >
           Register today!
         </Button>
       </PageHeader>
-      <Box
-        sx={{
-          backgroundColor: 'darkBackground',
-          py: [4, 5],
-        }}
-      >
-        <Container>
-          <Grid
-            gap={4}
-            columns={[1, 2]}
-            sx={{
-              backgroundColor: 'background',
-              borderRadius: 30,
-              p: 4,
-              mb: 5,
-            }}
-          >
-            {data.configYaml.facts.map(({ icon, title, text }, i) => {
-              const Icon = icons[icon]
-              return (
-                <Flex key={i}>
-                  <Icon
-                    size='2.5em'
+      <Container pt={4}>
+        <Grid
+          gap={4}
+          columns={[1, 2]}
+          sx={{
+            bg: 'background',
+            borderRadius: 30,
+            p: 4,
+          }}
+        >
+          {data.configYaml.facts.map(({ icon, title, text }, i) => {
+            const Icon = icons[icon]
+            return (
+              <Flex key={i}>
+                <Icon
+                  size='2.5em'
+                  sx={{
+                    color: 'primary',
+                    mr: '1em',
+                    flex: '0 0 auto',
+                  }}
+                />
+                <Box>
+                  <Heading
+                    as='h2'
                     sx={{
                       color: 'primary',
-                      mr: '1em',
-                      flex: '0 0 auto',
+                      mb: 2,
                     }}
-                  />
-                  <Box>
-                    <Heading
-                      as='h2'
-                      sx={{
-                        color: 'primary',
-                        mb: 2,
-                      }}
-                    >
-                      {title}
-                    </Heading>
-                    <Text dangerouslySetInnerHTML={{ __html: text }} />
-                  </Box>
-                </Flex>
-              )
-            })}
-          </Grid>
-          <Section header='Our Course'>
-            <Glider
-              draggable
-              dragVelocity={1}
-              hasArrows
-              slidesToShow={1}
-              slidesToScroll={1}
-              responsive={[
-                {
-                  breakpoint: 640,
-                  settings: {
-                    slidesToShow: 'auto',
-                    slidesToScroll: 'auto',
-                    itemWidth: 275,
-                  },
+                  >
+                    {title}
+                  </Heading>
+                  <Text dangerouslySetInnerHTML={{ __html: text }} />
+                </Box>
+              </Flex>
+            )
+          })}
+        </Grid>
+        <Section header='Our Course'>
+          <Glider
+            draggable
+            dragVelocity={1}
+            hasArrows
+            slidesToShow={1}
+            slidesToScroll={1}
+            responsive={[
+              {
+                breakpoint: 640,
+                settings: {
+                  slidesToShow: 'auto',
+                  slidesToScroll: 'auto',
+                  itemWidth: 275,
                 },
-              ]}
-            >
-              {data.allMarkdownRemark.edges.map(({ node: unit }, i) => {
-                return (
-                  <Box
-                    key={i}
+              },
+            ]}
+          >
+            {data.allMarkdownRemark.edges.map(({ node: unit }, i) => {
+              return (
+                <Box
+                  key={i}
+                  sx={{
+                    p: 4,
+                    mx: 3,
+                    borderRadius: 30,
+                    bg: unit.frontmatter.background,
+                    color: unit.frontmatter.text,
+                  }}
+                >
+                  <Heading
+                    as='h3'
                     sx={{
-                      p: 4,
-                      mx: 3,
-                      borderRadius: 30,
-                      backgroundColor: unit.frontmatter.background,
+                      mb: 3,
                       color: unit.frontmatter.text,
                     }}
                   >
-                    <Heading
-                      as='h3'
-                      sx={{
-                        mb: 3,
-                        color: unit.frontmatter.text,
-                      }}
-                    >
-                      {unit.frontmatter.title}
-                    </Heading>
-                    <Text
-                      dangerouslySetInnerHTML={{
-                        __html: unit.excerpt,
-                      }}
-                    />
-                  </Box>
-                )
-              })}
-            </Glider>
-          </Section>
-          <Section header='FAQ'>
-            <Box
-              sx={{
-                columnCount: [1, 2],
-                columnGap: '4em',
-                px: [4, 4, 5],
-                mb: 5,
-              }}
-            >
-              {data.configYaml.faq.map(({ question, answer }, i) => {
-                return (
-                  <Box
-                    key={i}
+                    {unit.frontmatter.title}
+                  </Heading>
+                  <Text
+                    dangerouslySetInnerHTML={{
+                      __html: unit.excerpt,
+                    }}
+                  />
+                </Box>
+              )
+            })}
+          </Glider>
+        </Section>
+        <Section header='FAQ'>
+          <Box
+            sx={{
+              columnCount: [1, 2],
+              columnGap: '4em',
+              px: 4,
+            }}
+          >
+            {data.configYaml.faq.map(({ question, answer }, i) => {
+              return (
+                <Box
+                  key={i}
+                  sx={{
+                    marginBottom: 4,
+                    breakInside: 'avoid',
+                  }}
+                >
+                  <Heading
                     sx={{
-                      marginBottom: 4,
-                      breakInside: 'avoid',
+                      mb: 2,
                     }}
                   >
-                    <Heading
-                      sx={{
-                        mb: 2,
-                      }}
-                    >
-                      {question}
-                    </Heading>
-                    <Text>{answer}</Text>
-                  </Box>
-                )
-              })}
-            </Box>
-          </Section>
-        </Container>
-      </Box>
+                    {question}
+                  </Heading>
+                  <Text>{answer}</Text>
+                </Box>
+              )
+            })}
+          </Box>
+        </Section>
+      </Container>
     </Layout>
   )
 }

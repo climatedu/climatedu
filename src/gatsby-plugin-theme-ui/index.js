@@ -28,6 +28,10 @@ export default {
   },
   fontSizes: [12, 14, 16, 20, 24, 32, 48, 64, 72],
   space: [0, 4, 8, 16, 32, 64, 128, 256, 512],
+  sizes: {
+    container: '960px',
+    mobileNav: '250px',
+  },
   images: {
     avatar: {
       width: '200px',
@@ -39,14 +43,24 @@ export default {
       fontFamily: 'body',
       fontWeight: 'body',
       height: '100%',
-      overflowY: 'auto',
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'stretch',
+      overflowX: 'hidden',
     },
   },
   buttons: {
     primary: {
       borderRadius: 10,
-      backgroundColor: 'text',
+      bg: 'text',
       cursor: 'pointer',
+      '&:focus': {
+        outline: 'none',
+      },
+    },
+    icon: {
+      cursor: 'pointer',
+      borderRadius: 999,
       '&:focus': {
         outline: 'none',
       },
@@ -62,7 +76,7 @@ export default {
       borderWidth: 3,
       borderRadius: 10,
       borderColor: 'text',
-      backgroundColor: 'secondary',
+      bg: 'secondary',
       px: 3,
       py: 2,
       fontSize: 3,
@@ -82,7 +96,7 @@ export default {
       borderWidth: 3,
       borderRadius: 10,
       borderColor: 'text',
-      backgroundColor: 'secondary',
+      bg: 'secondary',
       '&:focus': {
         borderColor: 'primary',
         outline: 'none',
@@ -92,7 +106,7 @@ export default {
       borderWidth: 3,
       borderRadius: 10,
       borderColor: 'text',
-      backgroundColor: 'secondary',
+      bg: 'secondary',
       fontFamily: 'body',
       '&:focus': {
         borderColor: 'primary',
@@ -100,7 +114,7 @@ export default {
       },
     },
     slider: {
-      backgroundColor: 'text',
+      bg: 'text',
     },
   },
 }

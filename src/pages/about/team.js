@@ -1,8 +1,8 @@
 /** @jsx jsx */
 import { jsx, Box, Heading, Grid } from 'theme-ui'
-import { TeamProfile } from '../components/teamProfile'
+import { TeamProfile } from '../../components/teamProfile'
 import { graphql } from 'gatsby'
-import Layout from '../components/layout'
+import Layout from '../../components/layout'
 
 const nCols = [1, 4]
 
@@ -14,7 +14,7 @@ const calcColumnStart = pos =>
 const about = ({ data }) => {
   return (
     <Layout>
-      <Box mb={4 /* TODO: replace with footer */}>
+      <Box>
         <Heading
           sx={{
             mb: 5,

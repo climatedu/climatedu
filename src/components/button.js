@@ -11,7 +11,7 @@ export default function ButtonComponent(props) {
         color: 'primary',
         padding: '10px 20px',
         fontSize: 20,
-        backgroundColor: 'background',
+        bg: 'background',
       }}
       {...props}
     />

@@ -6,7 +6,7 @@ const Container = ({ children, ...props }) => {
     <Box
       {...props}
       sx={{
-        maxWidth: 960,
+        maxWidth: 'container',
         width: '90%',
         m: 'auto',
       }}

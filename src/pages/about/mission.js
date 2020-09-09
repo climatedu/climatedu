@@ -2,9 +2,9 @@
 import { graphql } from 'gatsby'
 import { Box, jsx } from 'theme-ui'
 
-import Layout from '../components/layout'
-import PageHeader from '../components/pageheader'
-import Container from '../components/container'
+import Layout from '../../components/layout'
+import PageHeader from '../../components/pageheader'
+import Container from '../../components/container'
 
 const Mission = ({ data }) => {
   return (
