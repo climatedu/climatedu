@@ -1,10 +1,12 @@
 /** @jsx jsx */
+import { useState } from 'react'
 import { Box, Styled, jsx } from 'theme-ui'
 import { Global } from '@emotion/core'
 
 import Navbar from './navbar'
 
 const Layout = ({ children }) => {
+  const [navbarOpen, setNavbarOpen] = useState(false)
   return (
     <Styled.root
       sx={{
@@ -19,16 +21,18 @@ const Layout = ({ children }) => {
         '::-webkit-scrollbar-thumb, *::-webkit-scrollbar-thumb': {
           bg: 'primary',
         },
+        overflowY: navbarOpen ? 'hidden' : 'auto',
       }}
     >
       <Global
         styles={{
           'html, body, #___gatsby, #gatsby-focus-wrapper': {
             height: '100%',
+            overflowX: 'hidden',
           },
         }}
       />
-      <Navbar />
+      <Navbar navbarOpen={navbarOpen} setNavbarOpen={setNavbarOpen} />
       <Box>{children}</Box>
     </Styled.root>
   )
