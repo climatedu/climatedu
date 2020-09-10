@@ -55,7 +55,6 @@ module.exports = {
       Climate education is often lacking from today’s science curriculums, and we\'re \
       dedicated establishing that foundation of knowledge to build a robust future of changemakers.',
     url: 'https://climatedu.org',
-    description: '',
     socials: [
       {
         icon: 'IoMdMail',
