@@ -24,7 +24,6 @@ const Login = ({ data }) => {
       return
     }
 
-    /* TODO: use toasts? */
     try {
       await firebaseApp.firestore().collection('reminders').add({ email })
       toast.success('Submitted!')
