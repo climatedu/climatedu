@@ -60,6 +60,8 @@ const Home = ({ data }) => {
             fontWeight: 'bold',
             '&:hover': {
               boxShadow: '0px 0px 8px 5px rgb(119 156 90 / 30%)',
+              background:
+                'linear-gradient(93.23deg, #FFD959 5.32%, rgba(255, 255, 255, 0) 118.45%), #ACD28A',
             },
             '&:active': {
               color: 'white',
