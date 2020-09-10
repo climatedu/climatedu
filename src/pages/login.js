@@ -1,6 +1,7 @@
 /** @jsx jsx */
 import { useState } from 'react'
 import { Button, Flex, Input, Heading, Text, jsx } from 'theme-ui'
+import { navigate } from "gatsby"
 import { toast } from 'react-toastify';
 
 import Layout from '../components/layout'
@@ -27,7 +28,7 @@ const Login = ({ data }) => {
     try {
       await firebaseApp.firestore().collection('reminders').add({ email })
       toast.success('Submitted!')
-      setEmail('')
+      navigate('/')
     } catch (e) {
       toast.error('Something went wrong. Let us know at hello@climatedu.org.')
     }
