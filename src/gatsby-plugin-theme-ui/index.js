@@ -59,7 +59,7 @@ export default {
       backgroundColor: 'secondary',
       px: 3,
       py: 2,
-      color: 'text',
+      color: 'white',
       fontSize: 3,
       bg: 'text',
       cursor: 'pointer',
