@@ -1,61 +1,75 @@
-import { useState } from 'react'
-import { Redirect } from '@reach/router'
-import { jsx, Box, Text, Heading } from 'theme-ui'
-import Button from '../components/button'
-
-import { AiFillGoogleCircle } from 'react-icons/ai'
-
-import firebase from 'firebase/app'
-import useFirebase from '../firebase'
-import useAuth from '../util/auth'
 /** @jsx jsx */
+import { useState } from 'react'
+import { Button, Flex, Input, Heading, Text, jsx } from 'theme-ui'
+import { navigate } from "gatsby"
+import { toast } from 'react-toastify';
 
-export default function login() {
-  const firebaseApp = useFirebase()
-  const [error, setError] = useState(null)
+import Layout from '../components/layout'
+import PageHeader from '../components/pageheader'
+import Container from '../components/container'
 
-  const handleGoogleLogin = async () => {
+import getFirebase from '../firebase'
+
+const Login = ({ data }) => {
+  const firebaseApp = getFirebase()
+
+  const [email, setEmail] = useState('')
+
+  const onSubmit = async e => {
+    e.preventDefault()
     if (!firebaseApp) return
-    const provider = new firebase.auth.GoogleAuthProvider()
-    try {
-      await firebaseApp.auth().signInWithPopup(provider)
-    } catch (e) {
-      setError(e.message)
+
+    if (!/\S+@\S+\.\S+/.test(email)) {
+      toast.error('Invalid email.')
       return
+    }
+
+    try {
+      await firebaseApp.firestore().collection('reminders').add({ email })
+      toast.success('Submitted!')
+      navigate('/')
+    } catch (e) {
+      toast.error('Something went wrong. Let us know at hello@climatedu.org.')
     }
   }
 
-  const user = useAuth()
-  if (user !== null) {
-    return <Redirect to='/' noThrow />
-  }
-
   return (
-    <Box sx={{ height: '100vh', display: 'grid' }}>
-      <Box
-        sx={{ margin: 'auto', width: '100%', maxWidth: 300, display: 'grid' }}
-      >
+    <Layout>
+      <PageHeader
+        primary='Login'
+        secondary="We're still building this course. Come back and join us soon!"
+      />
+      <Container>
         <Heading
-          as='h1'
-          sx={{ textAlign: 'center', color: 'primary', marginBottom: 20 }}
+          sx={{
+            textAlign: 'center',
+            mb: 3,
+          }}
         >
-          Log In
+          Leave your email, and we&apos;ll remind you:
         </Heading>
-        <Button onClick={handleGoogleLogin} sx={{ cursor: 'pointer' }}>
-          Sign in with Google
-          <AiFillGoogleCircle
-            size='1.5em'
-            sx={{
-              color: 'primary',
-              verticalAlign: 'middle',
-              marginLeft: 10,
-            }}
+        <Flex
+          as='form'
+          onSubmit={onSubmit}
+          sx={{
+            maxWidth: 'smallContainer',
+            m: 'auto',
+            flexDirection: 'column',
+          }}
+        >
+          <Input
+            aria-label='Email'
+            value={email}
+            onChange={e => setEmail(e.target.value)}
+            sx={{ mb: 2 }}
           />
-        </Button>
-        <Text sx={{ color: 'highlight', marginTop: 20, textAlign: 'center' }}>
-          {error}
-        </Text>
-      </Box>
-    </Box>
+          <Button>
+            Submit
+          </Button>
+        </Flex>
+      </Container>
+    </Layout>
   )
 }
+
+export default Login

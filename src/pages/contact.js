@@ -1,6 +1,5 @@
 /** @jsx jsx */
 import { useCallback, useState } from 'react'
-import { Redirect } from '@reach/router'
 import {
   Button,
   Text,
@@ -11,18 +10,17 @@ import {
   Textarea,
   jsx,
 } from 'theme-ui'
+import { navigate } from "gatsby"
 
 import Layout from '../components/layout'
 import PageHeader from '../components/pageheader'
 import Container from '../components/container'
+import { toast } from 'react-toastify';
 
 import getFirebase from '../firebase'
 
 export default function login() {
   const firebaseApp = getFirebase()
-
-  const [error, setError] = useState(null)
-  const [success, setSuccess] = useState(null)
 
   const [name, setName] = useState('')
   const handleSetName = useCallback(e => setName(e.target.value), [name])
@@ -46,15 +44,13 @@ export default function login() {
       
       e.preventDefault()
 
-      setError('')
-
       if (name === '' || email === '' || type === '' || comment === '') {
-        setError('One or more fields are missing.')
+        toast.error('One or more fields are missing.')
         return
       }
 
       if (!/\S+@\S+\.\S+/.test(email)) {
-        setError('Invalid email.')
+        toast.error('Invalid email.')
         return
       }
 
@@ -68,25 +64,21 @@ export default function login() {
           comment: comment,
         })
         .then(() => {
-          setSuccess('Successfully submitted contact form!')
-          setTimeout(setFormSubmit.bind(null, true), 1500)
-        })
+          toast.success('Successfully submitted!')
+          navigate('/')
+      })
         .catch(() => {
-          setError('Firebase error, please try again.')
+          toast.error('Something went wrong. Let us know at hello@climatedu.org.')
         })
     },
     [name, email, type, comment]
   )
 
-  if (formSubmit) {
-    return <Redirect to='/' noThrow />
-  }
-
   return (
     <Layout>
       <PageHeader primary='Contact Us' />
       <Container>
-        <Box as='form'>
+        <Box as='form' onSubmit={submitContactForm}>
           <Label htmlFor='name'>
             Name
           </Label>
@@ -147,33 +139,12 @@ export default function login() {
             required='required'
           />
           <Button
-            onClick={submitContactForm}
             sx={{
               cursor: 'pointer',
             }}
           >
             Submit
           </Button>
-          <Text
-            sx={{
-              color: 'red',
-              marginTop: [1, 2],
-              marginBottom: [3, 4],
-              textAlign: 'left',
-            }}
-          >
-            {error}
-          </Text>
-          <Text
-            sx={{
-              color: 'success',
-              marginTop: [1, 2],
-              marginBottom: [3, 4],
-              textAlign: 'left',
-            }}
-          >
-            {success}
-          </Text>
         </Box>
       </Container>
     </Layout>
