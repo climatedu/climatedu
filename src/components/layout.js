@@ -92,6 +92,9 @@ const Layout = ({ children, bg }) => {
           sx={{
             bg: bg,
           }}
+          imgStyle={{
+            top: 2,
+          }}
         />
         <Flex
           sx={{
