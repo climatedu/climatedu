@@ -51,10 +51,10 @@ module.exports = {
     title: 'Climate education made by students, for students',
     titleTemplate: '%s · climatedu.org',
     description:
-      "Led by a group of high school students from MCPS, climatedu is a climate science ' +
+      'Led by a group of high school students from MCPS, climatedu is a climate science ' +
       'and sustainability online mini-course geared toward middle and high school students. ' +
-      'Climate education is often lacking from today’s science curriculums, and we're ' +
-      'dedicated establishing that foundation of knowledge to build a robust future of changemakers.",
+      "Climate education is often lacking from today’s science curriculums, and we're " +
+      'dedicated establishing that foundation of knowledge to build a robust future of changemakers.',
     url: 'https://climatedu.org',
     socials: [
       {
