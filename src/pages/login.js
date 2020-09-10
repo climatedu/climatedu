@@ -12,18 +12,25 @@ const Login = ({ data }) => {
   const firebaseApp = getFirebase()
 
   const [error, setError] = useState('')
+  const [success, setSuccess] = useState(null)
   const [email, setEmail] = useState('')
 
   const onSubmit = async e => {
     e.preventDefault()
     if (!firebaseApp) return
 
+    if (!/\S+@\S+\.\S+/.test(email)) {
+      setError('Invalid email.')
+      return
+    }
+    
     /* TODO: use toasts? */
     try {
       await firebaseApp.firestore().collection('reminders').add({ email })
-      setError('Submitted!')
+      setSuccess('Submitted!')
+      setEmail('')
     } catch (e) {
-      setError(e.message)
+      setError('Something went wrong. Let us know at hello@climatedu.org.')
     }
   }
 
@@ -60,6 +67,7 @@ const Login = ({ data }) => {
             Submit
           </Button>
           <Text sx={{ color: 'red' }}>{error}</Text>
+          <Text sx={{ color: 'success' }}>{success}</Text>
         </Flex>
       </Container>
     </Layout>
