@@ -15,14 +15,12 @@ import {
 import Layout from '../components/layout'
 import PageHeader from '../components/pageheader'
 import Container from '../components/container'
+import { toast } from 'react-toastify';
 
 import getFirebase from '../firebase'
 
 export default function login() {
   const firebaseApp = getFirebase()
-
-  const [error, setError] = useState(null)
-  const [success, setSuccess] = useState('\u00A0')
 
   const [name, setName] = useState('')
   const handleSetName = useCallback(e => setName(e.target.value), [name])
@@ -47,14 +45,12 @@ export default function login() {
       e.preventDefault()
 
       if (name === '' || email === '' || type === '' || comment === '') {
-        setSuccess('')
-        setError('One or more fields are missing.')
+        toast.error('One or more fields are missing.')
         return
       }
 
       if (!/\S+@\S+\.\S+/.test(email)) {
-        setSuccess('')
-        setError('Invalid email.')
+        toast.error('Invalid email.')
         return
       }
 
@@ -68,14 +64,13 @@ export default function login() {
           comment: comment,
         })
         .then(() => {
-          setSuccess('Successfully submitted contact form!')
-          setError('')
+          toast.success('Successfully submitted contact form!')
           setEmail('')
           setName('')
           setComment('')
         })
         .catch(() => {
-          setError('Something went wrong. Let us know at hello@climatedu.org.')
+          toast.error('Something went wrong. Let us know at hello@climatedu.org.')
         })
     },
     [name, email, type, comment]
@@ -149,27 +144,10 @@ export default function login() {
             onClick={submitContactForm}
             sx={{
               cursor: 'pointer',
-              marginBottom: [1, 2],
             }}
           >
             Submit
           </Button>
-          <Text
-            sx={{
-              color: 'red',
-              textAlign: 'left',
-            }}
-          >
-            {error}
-          </Text>
-          <Text
-            sx={{
-              color: 'success',
-              textAlign: 'left',
-            }}
-          >
-            {success}
-          </Text>
         </Box>
       </Container>
     </Layout>
