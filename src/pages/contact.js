@@ -100,6 +100,9 @@ export default function Contact() {
             sx={{
               width: ['100%', '50%', '25%'],
               mb: 3,
+              '& + svg': {
+                mt: theme => `${-theme.space[3]}px`,
+              },
             }}
             name='type'
             id='type'
