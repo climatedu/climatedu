@@ -61,6 +61,11 @@ const Home = ({ data }) => {
             '&:hover': {
               boxShadow: '0px 0px 8px 5px rgb(119 156 90 / 30%)',
             },
+            '&:active': {
+              color: 'white',
+            },
+            color: 'white',
+            border: 'none',
           }}
           onClick={onRegister}
         >
