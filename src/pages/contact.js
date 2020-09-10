@@ -22,7 +22,7 @@ export default function login() {
   const firebaseApp = getFirebase()
 
   const [error, setError] = useState(null)
-  const [success, setSuccess] = useState(null)
+  const [success, setSuccess] = useState('\u00A0')
 
   const [name, setName] = useState('')
   const handleSetName = useCallback(e => setName(e.target.value), [name])
@@ -46,14 +46,14 @@ export default function login() {
       
       e.preventDefault()
 
-      setError('')
-
       if (name === '' || email === '' || type === '' || comment === '') {
+        setSuccess('')
         setError('One or more fields are missing.')
         return
       }
 
       if (!/\S+@\S+\.\S+/.test(email)) {
+        setSuccess('')
         setError('Invalid email.')
         return
       }
@@ -69,10 +69,13 @@ export default function login() {
         })
         .then(() => {
           setSuccess('Successfully submitted contact form!')
-          setTimeout(setFormSubmit.bind(null, true), 1500)
+          setError('')
+          setEmail('')
+          setName('')
+          setComment('')
         })
         .catch(() => {
-          setError('Firebase error, please try again.')
+          setError('Something went wrong. Let us know at hello@climatedu.org.')
         })
     },
     [name, email, type, comment]
