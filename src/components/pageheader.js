@@ -7,7 +7,7 @@ const PageHeader = ({ primary, secondary, children }) => {
       sx={{
         textAlign: 'center',
         p: 4,
-        pt: 3,
+        pt: 0,
         bg: 'background',
       }}
     >
