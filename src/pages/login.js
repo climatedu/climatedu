@@ -52,7 +52,7 @@ const Login = ({ data }) => {
           as='form'
           onSubmit={onSubmit}
           sx={{
-            maxWidth: 300,
+            maxWidth: 'smallContainer',
             m: 'auto',
             flexDirection: 'column',
           }}
