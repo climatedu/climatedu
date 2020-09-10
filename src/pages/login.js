@@ -21,6 +21,7 @@ const Login = ({ data }) => {
 
     if (!/\S+@\S+\.\S+/.test(email)) {
       setError('Invalid email.')
+      setSuccess('')
       return
     }
     
