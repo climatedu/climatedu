@@ -136,6 +136,7 @@ export default {
       },
     },
     textarea: {
+      resize: 'none',
       borderWidth: 3,
       borderRadius: 10,
       borderColor: 'text',
