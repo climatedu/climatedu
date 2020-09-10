@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import { useState } from 'react'
-import { Box, Flex, Heading, IconButton, Styled, jsx } from 'theme-ui'
+import { Box, Flex, Heading, IconButton, Styled, jsx, useThemeUI } from 'theme-ui'
 import { Global } from '@emotion/core'
 import 'react-toastify/dist/ReactToastify.min.css'
 import { useStaticQuery, graphql } from 'gatsby'
@@ -70,7 +70,7 @@ const Layout = ({ children, bg }) => {
             margin: 'auto 8px',
           },
           '.Toastify__toast--success': {
-            bg: 'primary',
+            bg: useThemeUI().theme.colors.primary,
           },
         }}
       />
