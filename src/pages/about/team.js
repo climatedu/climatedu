@@ -3,7 +3,7 @@ import { jsx, Box, Heading, Grid } from 'theme-ui'
 import { TeamProfile } from '../../components/teamProfile'
 import { graphql } from 'gatsby'
 import Layout from '../../components/layout'
-import PageHeader from '../components/pageheader'
+import PageHeader from '../../components/pageheader'
 
 const nCols = [1, 4]
 
