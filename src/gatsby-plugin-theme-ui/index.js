@@ -126,6 +126,7 @@ export default {
       backgroundColor: 'secondary',
       px: 3,
       py: 2,
+      pr: 4,
       color: 'text',
       fontSize: 3,
       bg: 'secondary',
@@ -133,6 +134,10 @@ export default {
         borderColor: 'primary',
         outline: 'none',
         color: 'primary',
+      },
+      '& + svg': {
+        transform: 'scale(1.5)',
+        ml: theme => `${-theme.space[4]}px`,
       },
     },
     textarea: {
