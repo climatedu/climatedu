@@ -70,7 +70,7 @@ const Layout = ({ children, bg }) => {
             margin: 'auto 8px',
           },
           '.Toastify__toast--success': {
-            bg: useThemeUI().theme.colors.primary,
+            background: useThemeUI().theme.colors.primary,
           },
         }}
       />
