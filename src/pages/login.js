@@ -11,8 +11,6 @@ import getFirebase from '../firebase'
 const Login = ({ data }) => {
   const firebaseApp = getFirebase()
 
-  const [error, setError] = useState('')
-  const [success, setSuccess] = useState('\u00A0')
   const [email, setEmail] = useState('')
 
   const onSubmit = async e => {
@@ -20,20 +18,17 @@ const Login = ({ data }) => {
     if (!firebaseApp) return
 
     if (!/\S+@\S+\.\S+/.test(email)) {
-      setError('Invalid email.')
-      setSuccess('')
+      toast.error('Invalid email.')
       return
     }
 
     /* TODO: use toasts? */
     try {
       await firebaseApp.firestore().collection('reminders').add({ email })
-      setError('')
-      setSuccess('Submitted!')
+      toast.success('Submitted!')
       setEmail('')
     } catch (e) {
-      setSuccess('')
-      setError('Something went wrong. Let us know at hello@climatedu.org.')
+      toast.error('Something went wrong. Let us know at hello@climatedu.org.')
     }
   }
 
@@ -64,13 +59,11 @@ const Login = ({ data }) => {
             aria-label='Email'
             value={email}
             onChange={e => setEmail(e.target.value)}
-            sx={{ mb: 3 }}
+            sx={{ mb: 2 }}
           />
-          <Button onClick={onSubmit} sx={{ mb: 3 }}>
+          <Button onClick={onSubmit}>
             Submit
           </Button>
-          <Text sx={{ color: 'red' }}>{error}</Text>
-          <Text sx={{ color: 'success' }}>{success}</Text>
         </Flex>
       </Container>
     </Layout>
