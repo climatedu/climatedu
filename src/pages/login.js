@@ -21,7 +21,7 @@ const Login = ({ data }) => {
 
     if (!/\S+@\S+\.\S+/.test(email)) {
       setError('Invalid email.')
-      setSuccess('\u00A0')
+      setSuccess('')
       return
     }
     
@@ -32,7 +32,7 @@ const Login = ({ data }) => {
       setSuccess('Submitted!')
       setEmail('')
     } catch (e) {
-      setSuccess('\u00A0')
+      setSuccess('')
       setError('Something went wrong. Let us know at hello@climatedu.org.')
     }
   }
