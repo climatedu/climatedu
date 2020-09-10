@@ -77,7 +77,7 @@ const Layout = ({ children, bg }) => {
           },
         })}
       />
-      <SEO />
+      <SEO /> // eslint-disable-line react/jsx-pascal-case
       <Navbar navbarOpen={navbarOpen} setNavbarOpen={setNavbarOpen} />
       <Box
         as='main'
