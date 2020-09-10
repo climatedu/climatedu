@@ -69,6 +69,9 @@ const Layout = ({ children, bg }) => {
           '.Toastify__toast-body': {
             margin: 'auto 8px',
           },
+          'Toastify__toast--success': {
+            bg: 'primary',
+          },
         }}
       />
       <Navbar navbarOpen={navbarOpen} setNavbarOpen={setNavbarOpen} />
