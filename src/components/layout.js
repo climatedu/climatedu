@@ -43,6 +43,7 @@ const Layout = ({ children, bg }) => {
   `)
 
   const [navbarOpen, setNavbarOpen] = useState(false)
+  const {theme} = useThemeUI()
   return (
     <Styled.root
       sx={{
@@ -70,7 +71,7 @@ const Layout = ({ children, bg }) => {
             margin: 'auto 8px',
           },
           '.Toastify__toast--success': {
-            background: useThemeUI().theme.colors.primary,
+            background: theme.colors.primary,
           },
         }}
       />
