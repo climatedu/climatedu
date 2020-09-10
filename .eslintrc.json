@@ -6,7 +6,12 @@
   "extends": [
     "eslint:recommended",
     "plugin:react/recommended",
-    "plugin:react-hooks/recommended"
+    "plugin:react-hooks/recommended",
+    "standard",
+    "standard-react",
+    "plugin:prettier/recommended",
+    "prettier/standard",
+    "prettier/react"
   ],
   "parserOptions": {
     "ecmaFeatures": {
@@ -15,6 +20,15 @@
     "ecmaVersion": 11,
     "sourceType": "module"
   },
-  "plugins": ["react"],
-  "rules": {}
+  "rules": {
+    "react/prop-types": "off"
+  },
+  "overrides": [
+    {
+      "files": ["gatsby-config.js", "gatsby-node.js"],
+      "env": {
+        "node": true
+      }
+    }
+  ]
 }

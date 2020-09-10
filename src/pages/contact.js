@@ -1,47 +1,34 @@
 /** @jsx jsx */
 import { useCallback, useState } from 'react'
-import {
-  Button,
-  Text,
-  Box,
-  Label,
-  Input,
-  Select,
-  Textarea,
-  jsx,
-} from 'theme-ui'
-import { navigate } from "gatsby"
+import { Button, Box, Label, Input, Select, Textarea, jsx } from 'theme-ui'
+import { navigate } from 'gatsby'
 
 import Layout from '../components/layout'
 import PageHeader from '../components/pageheader'
 import Container from '../components/container'
-import { toast } from 'react-toastify';
+import { toast } from 'react-toastify'
 
 import getFirebase from '../firebase'
 
-export default function login() {
+export default function Contact() {
   const firebaseApp = getFirebase()
 
   const [name, setName] = useState('')
-  const handleSetName = useCallback(e => setName(e.target.value), [name])
+  const handleSetName = useCallback(e => setName(e.target.value), [])
 
   const [email, setEmail] = useState('')
-  const handleSetEmail = useCallback(e => setEmail(e.target.value), [email])
+  const handleSetEmail = useCallback(e => setEmail(e.target.value), [])
 
   const [type, setType] = useState('Student')
-  const handleSetType = useCallback(e => setType(e.target.value), [type])
+  const handleSetType = useCallback(e => setType(e.target.value), [])
 
   const [comment, setComment] = useState('')
-  const handleSetComment = useCallback(e => setComment(e.target.value), [
-    comment,
-  ])
-
-  const [formSubmit, setFormSubmit] = useState(false)
+  const handleSetComment = useCallback(e => setComment(e.target.value), [])
 
   const submitContactForm = useCallback(
     e => {
       if (!firebaseApp) return
-      
+
       e.preventDefault()
 
       if (name === '' || email === '' || type === '' || comment === '') {
@@ -66,12 +53,14 @@ export default function login() {
         .then(() => {
           toast.success('Successfully submitted!')
           navigate('/')
-      })
+        })
         .catch(() => {
-          toast.error('Something went wrong. Let us know at hello@climatedu.org.')
+          toast.error(
+            'Something went wrong. Let us know at hello@climatedu.org.'
+          )
         })
     },
-    [name, email, type, comment]
+    [firebaseApp, name, email, type, comment]
   )
 
   return (
@@ -79,9 +68,7 @@ export default function login() {
       <PageHeader primary='Contact Us' />
       <Container>
         <Box as='form' onSubmit={submitContactForm}>
-          <Label htmlFor='name'>
-            Name
-          </Label>
+          <Label htmlFor='name'>Name</Label>
           <Input
             sx={{
               width: ['100%', null, '50%'],
@@ -94,9 +81,7 @@ export default function login() {
             required='required'
           />
 
-          <Label htmlFor='email'>
-            Email
-          </Label>
+          <Label htmlFor='email'>Email</Label>
           <Input
             sx={{
               width: ['100%', null, '50%'],
@@ -110,9 +95,7 @@ export default function login() {
             type='email'
           />
 
-          <Label htmlFor='type'>
-            I&apos;m a...
-          </Label>
+          <Label htmlFor='type'>I&apos;m a...</Label>
           <Select
             sx={{
               width: ['100%', '50%', '25%'],
@@ -128,9 +111,7 @@ export default function login() {
             <option>Teacher</option>
           </Select>
 
-          <Label htmlFor='comment'>
-            Tell us your thoughts
-          </Label>
+          <Label htmlFor='comment'>Tell us your thoughts</Label>
           <Textarea
             name='comment'
             id='comment'

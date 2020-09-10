@@ -1,8 +1,8 @@
 /** @jsx jsx */
 import { useState } from 'react'
-import { Button, Flex, Input, Heading, Text, jsx } from 'theme-ui'
-import { navigate } from "gatsby"
-import { toast } from 'react-toastify';
+import { Button, Flex, Input, Heading, jsx } from 'theme-ui'
+import { navigate } from 'gatsby'
+import { toast } from 'react-toastify'
 
 import Layout from '../components/layout'
 import PageHeader from '../components/pageheader'
@@ -63,9 +63,7 @@ const Login = ({ data }) => {
             onChange={e => setEmail(e.target.value)}
             sx={{ mb: 2 }}
           />
-          <Button>
-            Submit
-          </Button>
+          <Button>Submit</Button>
         </Flex>
       </Container>
     </Layout>
