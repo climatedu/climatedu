@@ -112,6 +112,9 @@ export default function Contact() {
           >
             <option>Student</option>
             <option>Teacher</option>
+            <option>Parent</option>
+            <option>Sponsor</option>
+            <option>Other</option>
           </Select>
 
           <Label htmlFor='comment'>Tell us your thoughts</Label>
