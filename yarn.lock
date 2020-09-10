@@ -7444,6 +7444,11 @@ glider-js@1.6.6:
   resolved "https://registry.yarnpkg.com/glider-js/-/glider-js-1.6.6.tgz#28c2592b52847507f1a92056b165baf30bc2f2a3"
   integrity sha512-P1zzyjsrm/xNw6avk4ZKuQXNcDESQuy2OjDy89AF4Ln1LCMOSHlJGP3OkYIAIAxQl7YX4JO/XdEEsz9O7Eh6gA==
 
+glider-js@^1.7.3:
+  version "1.7.3"
+  resolved "https://registry.yarnpkg.com/glider-js/-/glider-js-1.7.3.tgz#4d397fb9de0870753953244d146a94248d4eb394"
+  integrity sha512-smiepWalDyBAUtOH6Ev06fHlcQ128OUzGLx97E/9NcR8/fR+uALUVSMytVN6z5pIqO4kDGTzINniqZV2yMf8bg==
+
 glob-parent@^3.1.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/glob-parent/-/glob-parent-3.1.0.tgz#9e6af6299d8d3bd2bd40430832bd113df906c5ae"
