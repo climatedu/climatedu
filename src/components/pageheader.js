@@ -14,7 +14,7 @@ const PageHeader = ({ primary, secondary, children }) => {
       <Heading
         as='h1'
         sx={{
-          fontSize: [5, 6],
+          fontSize: 6,
           mb: 3,
         }}
       >
@@ -24,7 +24,7 @@ const PageHeader = ({ primary, secondary, children }) => {
         <Heading
           as='h2'
           sx={{
-            fontSize: [4, 5],
+            fontSize: 4,
             mb: 4,
           }}
         >
