@@ -44,7 +44,6 @@ const Layout = ({ children, bg }) => {
   `)
 
   const [navbarOpen, setNavbarOpen] = useState(false)
-  const {theme} = useThemeUI()
   return (
     <Styled.root
       sx={{
@@ -63,8 +62,7 @@ const Layout = ({ children, bg }) => {
       }}
     >
       <Global
-        style={css({ ... })}
-        styles={{
+        styles={css({
           'html, body, #___gatsby, #gatsby-focus-wrapper': {
             height: '100%',
             overflowX: 'hidden',
@@ -75,7 +73,7 @@ const Layout = ({ children, bg }) => {
           '.Toastify__toast--success': {
             bg: 'primary',
           },
-        }}
+        })}
       />
       <Navbar navbarOpen={navbarOpen} setNavbarOpen={setNavbarOpen} />
       <Box
