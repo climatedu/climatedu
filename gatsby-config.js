@@ -54,7 +54,7 @@ module.exports = {
     description:
       'Led by a group of high school students from Montgomery County Public Schools, ' +
       'climatedu is a climate science and sustainability online mini-course geared ' +
-      'toward middle and high school students. '
+      'toward middle and high school students.',
     image: '/climatedumini.png',
     url: 'https://climatedu.org',
     socials: [
