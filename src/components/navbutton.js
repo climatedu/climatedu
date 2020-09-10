@@ -76,7 +76,7 @@ const DesktopNavButton = ({ location, text, dropdown, children, ...props }) => {
         sx={{
           width: '100%',
           transition: 'border-radius .3s ease',
-          '&.active': {
+          '&.active:hover': {
             borderBottomLeftRadius: 0,
             borderBottomRightRadius: 0
            },
