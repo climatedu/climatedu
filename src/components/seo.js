@@ -29,6 +29,7 @@ const SEO = ({ title, description }) => {
       {seo.description && (
         <meta property='og:description' content={seo.description} />
       )}
+      <link rel="icon" type="image/png" href="/climatedumini.png"" />
     </Helmet>
   )
 }
