@@ -1,6 +1,7 @@
 /** @jsx jsx */
 import { useState } from 'react'
 import { Box, Flex, Heading, IconButton, Styled, jsx } from 'theme-ui'
+import { css } from '@theme-ui/css'
 import { Global } from '@emotion/core'
 import 'react-toastify/dist/ReactToastify.min.css'
 import { useStaticQuery, graphql } from 'gatsby'
@@ -61,12 +62,18 @@ const Layout = ({ children, bg }) => {
       }}
     >
       <Global
-        styles={{
+        styles={css({
           'html, body, #___gatsby, #gatsby-focus-wrapper': {
             height: '100%',
             overflowX: 'hidden',
           },
-        }}
+          '.Toastify__toast-body': {
+            mx: 2,
+          },
+          '.Toastify__toast--success': {
+            bg: 'primary',
+          },
+        })}
       />
       <Navbar navbarOpen={navbarOpen} setNavbarOpen={setNavbarOpen} />
       <Box

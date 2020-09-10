@@ -57,15 +57,16 @@ export default {
       borderRadius: 10,
       borderColor: 'text',
       borderStyle: 'solid',
-      backgroundColor: 'secondary',
       px: 3,
       py: 2,
-      color: 'white',
+      color: 'secondary',
       fontSize: 3,
       bg: 'text',
       cursor: 'pointer',
       '&:focus': {
         outline: 'none',
+        bg: 'primary',
+        borderColor: 'primary',
       },
     },
     icon: {
