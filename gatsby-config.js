@@ -9,6 +9,7 @@ const path = require('path')
 module.exports = {
   plugins: [
     'gatsby-plugin-sharp',
+    'gatsby-plugin-react-helmet',
     'gatsby-transformer-sharp',
     'gatsby-transformer-yaml',
     {
