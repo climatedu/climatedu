@@ -7,6 +7,8 @@ import 'react-toastify/dist/ReactToastify.min.css'
 import { useStaticQuery, graphql } from 'gatsby'
 import Image from 'gatsby-image'
 
+import Navbar from './navbar'
+
 import {
   IoMdMail,
   IoLogoInstagram,
@@ -20,8 +22,6 @@ const icons = {
   IoLogoTwitter,
   IoLogoYoutube,
 }
-
-import Navbar from './navbar'
 
 const Layout = ({ children, bg }) => {
   const data = useStaticQuery(graphql`
@@ -45,6 +45,7 @@ const Layout = ({ children, bg }) => {
 
   const [navbarOpen, setNavbarOpen] = useState(false)
   return (
+    // eslint-disable-next-line react/jsx-pascal-case
     <Styled.root
       sx={{
         '&, *': {
