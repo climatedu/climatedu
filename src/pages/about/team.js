@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx, Box, Heading, Grid } from 'theme-ui'
+import { jsx, Box, Grid } from 'theme-ui'
 import { TeamProfile } from '../../components/teamProfile'
 import { graphql } from 'gatsby'
 import Layout from '../../components/layout'
