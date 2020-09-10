@@ -64,6 +64,8 @@ export default {
       cursor: 'pointer',
       '&:focus': {
         outline: 'none',
+        bg: 'primary',
+        borderColor: 'primary',
       },
     },
     icon: {
