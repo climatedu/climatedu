@@ -101,7 +101,7 @@ export default function login() {
             required='required'
           />
 
-          <Label htmlFor='email' sx={{ fontSize: [4, 5] }}>
+          <Label htmlFor='email'>
             Email
           </Label>
           <Input
@@ -116,25 +116,24 @@ export default function login() {
             type='email'
           />
 
-          <Label htmlFor='type' sx={{ fontSize: [4, 5] }}>
+          <Label htmlFor='type'>
             I&apos;m a...
           </Label>
           <Select
             sx={{
               width: ['100%', '50%', '25%'],
               mb: 3,
-              fontSize: [3, 4],
             }}
             name='type'
             value={type}
             onChange={handleSetType}
             required='required'
           >
-            <option sx={{ fontSize: [3, 4] }}>Student</option>
-            <option sx={{ fontSize: [3, 4] }}>Teacher</option>
+            <option>Student</option>
+            <option>Teacher</option>
           </Select>
 
-          <Label htmlFor='comment' sx={{ fontSize: [4, 5] }}>
+          <Label htmlFor='comment'>
             Tell us your thoughts
           </Label>
           <Textarea
@@ -151,14 +150,12 @@ export default function login() {
             onClick={submitContactForm}
             sx={{
               cursor: 'pointer',
-              fontSize: [4, 5],
             }}
           >
             Submit
           </Button>
           <Text
             sx={{
-              fontSize: [4, 5],
               color: 'red',
               marginTop: [1, 2],
               marginBottom: [3, 4],
@@ -169,7 +166,6 @@ export default function login() {
           </Text>
           <Text
             sx={{
-              fontSize: [4, 5],
               color: 'success',
               marginTop: [1, 2],
               marginBottom: [3, 4],
