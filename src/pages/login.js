@@ -27,9 +27,11 @@ const Login = ({ data }) => {
     /* TODO: use toasts? */
     try {
       await firebaseApp.firestore().collection('reminders').add({ email })
+      setError('')
       setSuccess('Submitted!')
       setEmail('')
     } catch (e) {
+      setSuccess('')
       setError('Something went wrong. Let us know at hello@climatedu.org.')
     }
   }
