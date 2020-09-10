@@ -50,6 +50,7 @@ const Login = ({ data }) => {
         </Heading>
         <Flex
           as='form'
+          onSubmit={onSubmit}
           sx={{
             maxWidth: 300,
             m: 'auto',
@@ -62,7 +63,7 @@ const Login = ({ data }) => {
             onChange={e => setEmail(e.target.value)}
             sx={{ mb: 2 }}
           />
-          <Button onClick={onSubmit}>
+          <Button>
             Submit
           </Button>
         </Flex>
