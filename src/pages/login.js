@@ -12,7 +12,7 @@ const Login = ({ data }) => {
   const firebaseApp = getFirebase()
 
   const [error, setError] = useState('')
-  const [success, setSuccess] = useState('&nbsp;')
+  const [success, setSuccess] = useState('\u00A0')
   const [email, setEmail] = useState('')
 
   const onSubmit = async e => {
@@ -21,7 +21,7 @@ const Login = ({ data }) => {
 
     if (!/\S+@\S+\.\S+/.test(email)) {
       setError('Invalid email.')
-      setSuccess('&nbsp;')
+      setSuccess('\u00A0')
       return
     }
     
@@ -32,7 +32,7 @@ const Login = ({ data }) => {
       setSuccess('Submitted!')
       setEmail('')
     } catch (e) {
-      setSuccess('&nbsp;')
+      setSuccess('\u00A0')
       setError('Something went wrong. Let us know at hello@climatedu.org.')
     }
   }
