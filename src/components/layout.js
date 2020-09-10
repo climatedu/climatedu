@@ -102,9 +102,6 @@ const Layout = ({ children, bg }) => {
           sx={{
             bg: bg,
           }}
-          imgStyle={{
-            top: 3,
-          }}
         />
         <Flex
           sx={{
@@ -113,6 +110,9 @@ const Layout = ({ children, bg }) => {
             alignItems: 'center',
             textAlign: 'center',
             pb: 4,
+            pt: 1,
+            mt: theme => `-{theme.space[1]}px`,
+            zIndex: 999,
           }}
         >
           <Heading
