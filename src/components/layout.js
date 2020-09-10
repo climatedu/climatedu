@@ -8,6 +8,7 @@ import { useStaticQuery, graphql } from 'gatsby'
 import Image from 'gatsby-image'
 
 import Navbar from './navbar'
+import SEO from './seo'
 
 import {
   IoMdMail,
@@ -76,6 +77,7 @@ const Layout = ({ children, bg }) => {
           },
         })}
       />
+      <SEO />
       <Navbar navbarOpen={navbarOpen} setNavbarOpen={setNavbarOpen} />
       <Box
         as='main'
