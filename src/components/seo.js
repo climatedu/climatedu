@@ -31,8 +31,8 @@ const SEO = ({ title, description, image }) => {
       {seo.description && (
         <meta property='og:description' content={seo.description} />
       )}
-      {seo.image && <meta property="og:image" content={seo.image} />}
-      <link rel="icon" type="image/png" href="/climatedumini.png"" />
+      {seo.image && <meta property='og:image' content={seo.image} />}
+      <link rel='icon' type='image/png' href='/climatedumini.png' />
     </Helmet>
   )
 }
