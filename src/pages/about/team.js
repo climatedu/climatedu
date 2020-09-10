@@ -1,8 +1,9 @@
 /** @jsx jsx */
-import { jsx, Box, Heading, Grid } from 'theme-ui'
+import { jsx, Box, Grid } from 'theme-ui'
 import { TeamProfile } from '../../components/teamProfile'
 import { graphql } from 'gatsby'
 import Layout from '../../components/layout'
+import PageHeader from '../../components/pageheader'
 
 const nCols = [1, 4]
 
@@ -15,16 +16,7 @@ const about = ({ data }) => {
   return (
     <Layout>
       <Box>
-        <Heading
-          sx={{
-            mb: 5,
-            fontSize: [6, 7],
-            textAlign: 'center',
-            color: 'primary',
-          }}
-        >
-          Our Team
-        </Heading>
+        <PageHeader primary='Our Team' />
         <Grid
           sx={{
             mt: 2,
