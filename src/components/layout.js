@@ -111,7 +111,7 @@ const Layout = ({ children, bg }) => {
             textAlign: 'center',
             pb: 4,
             pt: 1,
-            mt: theme => `-{theme.space[1]}px`,
+            mt: theme => `-${theme.space[1]}px`,
             zIndex: 999,
           }}
         >
