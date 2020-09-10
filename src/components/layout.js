@@ -66,6 +66,9 @@ const Layout = ({ children, bg }) => {
             height: '100%',
             overflowX: 'hidden',
           },
+          '.Toastify__toast-body': {
+            margin: 'auto 8px',
+          },
         }}
       />
       <Navbar navbarOpen={navbarOpen} setNavbarOpen={setNavbarOpen} />
