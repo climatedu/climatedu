@@ -1,6 +1,5 @@
 /** @jsx jsx */
 import { useCallback, useState } from 'react'
-import { Redirect } from '@reach/router'
 import {
   Button,
   Text,
@@ -11,6 +10,7 @@ import {
   Textarea,
   jsx,
 } from 'theme-ui'
+import { navigate } from "gatsby"
 
 import Layout from '../components/layout'
 import PageHeader from '../components/pageheader'
@@ -65,10 +65,8 @@ export default function login() {
         })
         .then(() => {
           toast.success('Successfully submitted!')
-          setEmail('')
-          setName('')
-          setComment('')
-        })
+          navigate('/')
+      })
         .catch(() => {
           toast.error('Something went wrong. Let us know at hello@climatedu.org.')
         })
@@ -80,7 +78,7 @@ export default function login() {
     <Layout>
       <PageHeader primary='Contact Us' />
       <Container>
-        <Box as='form'>
+        <Box as='form' onSubmit={submitContactForm}>
           <Label htmlFor='name'>
             Name
           </Label>
@@ -141,7 +139,6 @@ export default function login() {
             required='required'
           />
           <Button
-            onClick={submitContactForm}
             sx={{
               cursor: 'pointer',
             }}
