@@ -72,7 +72,7 @@ const Layout = ({ children, bg }) => {
             mx: 2,
           },
           '.Toastify__toast--success': {
-            bg: 'primary',
+            bg: 'text',
           },
         })}
       />

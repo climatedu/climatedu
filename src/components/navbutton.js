@@ -61,6 +61,13 @@ const DesktopNavButton = ({ location, text, dropdown, children, ...props }) => {
       onMouseLeave={dropdown && setDropdown(false)}
       sx={{
         position: 'relative',
+        '&:hover > .active:first-child': {
+          borderBottomLeftRadius: 0,
+          borderBottomRightRadius: 0,
+        },
+        '& > .active:first-child + div': {
+          borderTopLeftRadius: 0,
+        },
       }}
       {...props}
     >
@@ -75,6 +82,7 @@ const DesktopNavButton = ({ location, text, dropdown, children, ...props }) => {
         }
         sx={{
           width: '100%',
+          transition: 'border-radius .3s ease',
         }}
       >
         {text}
