@@ -87,7 +87,7 @@ export default function login() {
       <PageHeader primary='Contact Us' />
       <Container>
         <Box as='form'>
-          <Label htmlFor='name' sx={{ fontSize: [4, 5] }}>
+          <Label htmlFor='name'>
             Name
           </Label>
           <Input
