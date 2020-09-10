@@ -46,7 +46,6 @@ const Layout = ({ children, bg }) => {
 
   const [navbarOpen, setNavbarOpen] = useState(false)
   return (
-    // eslint-disable-next-line react/jsx-pascal-case
     <Styled.root
       sx={{
         '&, *': {
@@ -77,7 +76,7 @@ const Layout = ({ children, bg }) => {
           },
         })}
       />
-      <SEO /> // eslint-disable-line react/jsx-pascal-case
+      <SEO />
       <Navbar navbarOpen={navbarOpen} setNavbarOpen={setNavbarOpen} />
       <Box
         as='main'
