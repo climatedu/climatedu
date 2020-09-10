@@ -13,14 +13,12 @@ const SEO = ({ title, description }) => {
     titleTemplate,
     defaultDescription,
     siteUrl,
-    defaultImage,
     twitterUsername,
   } = site.siteMetadata
   
   const seo = {
     title: title || defaultTitle,
     description: description || defaultDescription,
-    image: `${siteUrl}${image || defaultImage}`,
     url: `${siteUrl}${pathname}`,
   }
   
