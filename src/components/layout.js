@@ -77,6 +77,7 @@ const Layout = ({ children, bg }) => {
           },
         })}
       />
+      <SEO />
       <Navbar navbarOpen={navbarOpen} setNavbarOpen={setNavbarOpen} />
       <Box
         as='main'
