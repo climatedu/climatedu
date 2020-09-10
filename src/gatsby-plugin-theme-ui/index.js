@@ -53,6 +53,7 @@ export default {
   },
   buttons: {
     primary: {
+      fontFamily: 'body',
       borderWidth: 3,
       borderRadius: 10,
       borderColor: 'text',
@@ -65,6 +66,10 @@ export default {
       cursor: 'pointer',
       '&:focus': {
         outline: 'none',
+        bg: 'primary',
+        borderColor: 'primary',
+      },
+      '&:hover': {
         bg: 'primary',
         borderColor: 'primary',
       },
@@ -88,6 +93,7 @@ export default {
   },
   forms: {
     input: {
+      fontFamily: 'body',
       borderWidth: 3,
       borderRadius: 10,
       borderColor: 'text',
@@ -113,6 +119,7 @@ export default {
       },
     },
     select: {
+      fontFamily: 'body',
       borderWidth: 3,
       borderRadius: 10,
       borderColor: 'text',
