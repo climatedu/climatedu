@@ -69,7 +69,7 @@ const Layout = ({ children, bg }) => {
           '.Toastify__toast-body': {
             margin: 'auto 8px',
           },
-          'Toastify__toast--success': {
+          '.Toastify__toast--success': {
             bg: 'primary',
           },
         }}
