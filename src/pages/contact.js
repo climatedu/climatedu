@@ -64,7 +64,7 @@ export default function login() {
           comment: comment,
         })
         .then(() => {
-          toast.success('Successfully submitted contact form!')
+          toast.success('Successfully submitted!')
           setEmail('')
           setName('')
           setComment('')
