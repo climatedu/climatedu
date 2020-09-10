@@ -88,6 +88,7 @@ export default function login() {
               mb: 3,
             }}
             name='name'
+            id='name'
             value={name}
             onChange={handleSetName}
             required='required'
@@ -102,6 +103,7 @@ export default function login() {
               mb: 3,
             }}
             name='email'
+            id='email'
             value={email}
             onChange={handleSetEmail}
             required='required'
@@ -117,6 +119,7 @@ export default function login() {
               mb: 3,
             }}
             name='type'
+            id='type'
             value={type}
             onChange={handleSetType}
             required='required'
@@ -130,6 +133,7 @@ export default function login() {
           </Label>
           <Textarea
             name='comment'
+            id='comment'
             rows={8}
             value={comment}
             onChange={handleSetComment}
