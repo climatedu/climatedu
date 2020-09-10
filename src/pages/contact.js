@@ -81,10 +81,6 @@ export default function login() {
     [name, email, type, comment]
   )
 
-  if (formSubmit) {
-    return <Redirect to='/' noThrow />
-  }
-
   return (
     <Layout>
       <PageHeader primary='Contact Us' />
@@ -153,6 +149,7 @@ export default function login() {
             onClick={submitContactForm}
             sx={{
               cursor: 'pointer',
+              marginBottom: [1, 2],
             }}
           >
             Submit
@@ -160,8 +157,6 @@ export default function login() {
           <Text
             sx={{
               color: 'red',
-              marginTop: [1, 2],
-              marginBottom: [3, 4],
               textAlign: 'left',
             }}
           >
@@ -170,8 +165,6 @@ export default function login() {
           <Text
             sx={{
               color: 'success',
-              marginTop: [1, 2],
-              marginBottom: [3, 4],
               textAlign: 'left',
             }}
           >
