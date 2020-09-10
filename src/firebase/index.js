@@ -1,5 +1,6 @@
 import firebase from 'firebase/app'
 import 'firebase/auth'
+import 'firebase/firestore'
 
 // https://climatedu-957b7.firebaseapp.com/__/firebase/init.json
 const config = {

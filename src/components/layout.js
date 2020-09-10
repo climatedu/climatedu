@@ -2,6 +2,7 @@
 import { useState } from 'react'
 import { Box, Flex, Heading, IconButton, Styled, jsx } from 'theme-ui'
 import { Global } from '@emotion/core'
+import 'react-toastify/dist/ReactToastify.min.css'
 import { useStaticQuery, graphql } from 'gatsby'
 import Image from 'gatsby-image'
 
