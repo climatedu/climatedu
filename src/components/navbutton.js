@@ -78,8 +78,8 @@ const DesktopNavButton = ({ location, text, dropdown, children, ...props }) => {
           transition: 'border-radius .3s ease',
           '&.active:hover': {
             borderBottomLeftRadius: 0,
-            borderBottomRightRadius: 0
-           },
+            borderBottomRightRadius: 0,
+          },
         }}
       >
         {text}
