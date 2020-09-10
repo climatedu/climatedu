@@ -55,6 +55,7 @@ module.exports = {
       'and sustainability online mini-course geared toward middle and high school students. ' +
       "Climate education is often lacking from today’s science curriculums, and we're " +
       'dedicated establishing that foundation of knowledge to build a robust future of changemakers.',
+    image: '/climatedumini.png',
     url: 'https://climatedu.org',
     socials: [
       {
