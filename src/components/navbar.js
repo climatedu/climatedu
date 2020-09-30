@@ -137,7 +137,7 @@ const Navbar = ({ navbarOpen, setNavbarOpen }) => {
           ))}
           <MobileNavButton
             as='li'
-            location='/login'
+            location='/login/'
             text={user?.displayName ?? 'Login'}
           >
             <IoMdPerson size='1.5em' />
