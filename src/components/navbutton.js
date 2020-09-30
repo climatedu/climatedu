@@ -62,12 +62,12 @@ const DesktopNavButton = ({ location, text, dropdown, children, ...props }) => {
       sx={{
         position: 'relative',
         /* eslint-disable prettier/prettier */
-        '&:hover > .active:first-child': dropdown ? {
+        '&:hover > .active:first-of-type': dropdown ? {
           borderBottomLeftRadius: 0,
           borderBottomRightRadius: 0,
         } : {},
         /* eslint-enable prettier/prettier */
-        '& > .active:first-child + div': {
+        '& > .active:first-of-type + div': {
           borderTopLeftRadius: 0,
         },
       }}
@@ -75,7 +75,7 @@ const DesktopNavButton = ({ location, text, dropdown, children, ...props }) => {
     >
       <DesktopNavLink
         to={location}
-        partiallyActive={dropdown}
+        partiallyActive={dropdown !== undefined}
         onClick={
           dropdown &&
           (e => {
@@ -137,7 +137,7 @@ const MobileNavButton = ({ location, text, dropdown, children, ...props }) => {
     <Box {...props}>
       <MobileNavLink
         to={location}
-        partiallyActive={dropdown}
+        partiallyActive={dropdown !== undefined}
         onClick={dropdown && toggleOpen}
       >
         {text}
