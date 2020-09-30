@@ -59,7 +59,7 @@ const Navbar = ({ navbarOpen, setNavbarOpen }) => {
           <DesktopNavButton key={i} as='li' sx={{ mr: 3 }} {...props} />
         ))}
 
-        <DesktopNavButton as='li' location='/login' text='Login'>
+        <DesktopNavButton as='li' location='/login/' text='Login'>
           <IoMdPerson
             sx={{
               fontSize: '125%',
