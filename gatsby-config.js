@@ -93,7 +93,7 @@ module.exports = {
         ],
       },
       {
-        location: '/contact',
+        location: '/contact/',
         text: 'Contact Us',
       },
     ],
