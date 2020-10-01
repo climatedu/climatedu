@@ -1,6 +1,5 @@
 /** @jsx jsx */
 import { Button, Box, jsx } from 'theme-ui'
-import { navigate } from 'gatsby'
 import { Redirect } from '@reach/router'
 import { toast } from 'react-toastify'
 
