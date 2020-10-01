@@ -110,6 +110,28 @@ export default {
         color: 'text',
       },
     },
+    danger: {
+      fontFamily: 'body',
+      bg: 'rgba(0,0,0,0)',
+      borderStyle: 'solid',
+      borderWidth: 3,
+      borderRadius: 10,
+      borderColor: 'red',
+      px: 3,
+      py: 2,
+      color: 'red',
+      fontSize: 3,
+      outline: 'none',
+      '&:hover': {
+        color: '#940000',
+        borderColor: '#940000',
+        outline: 'none',
+      },
+      '&:visited': {
+        color: 'primary',
+        borderColor: 'red',
+      },
+    },
   },
   text: {
     heading: {

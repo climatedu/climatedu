@@ -1,6 +1,5 @@
 /** @jsx jsx */
 import { Box, IconButton, Image, Flex, jsx } from 'theme-ui'
-import useAuth from '../util/auth'
 import logo from '../media/climatedu.png'
 import { useStaticQuery, graphql } from 'gatsby'
 
@@ -10,8 +9,11 @@ import { IoMdPerson, IoMdMenu, IoMdClose } from 'react-icons/io'
 
 import Container from './container'
 
+import useAuth from '../util/auth'
+
 const Navbar = ({ navbarOpen, setNavbarOpen }) => {
   const user = useAuth()
+
   const {
     site: {
       siteMetadata: { navLinks: links },
@@ -59,15 +61,27 @@ const Navbar = ({ navbarOpen, setNavbarOpen }) => {
           <DesktopNavButton key={i} as='li' sx={{ mr: 3 }} {...props} />
         ))}
 
-        <DesktopNavButton as='li' location='/login' text='Login'>
-          <IoMdPerson
-            sx={{
-              fontSize: '125%',
-              verticalAlign: 'text-top',
-              ml: 1,
-            }}
-          />
-        </DesktopNavButton>
+        {user === null ? (
+          <DesktopNavButton as='li' location='/login/' text='Login'>
+            <IoMdPerson
+              sx={{
+                fontSize: '125%',
+                verticalAlign: 'text-top',
+                ml: 1,
+              }}
+            />
+          </DesktopNavButton>
+        ) : (
+          <DesktopNavButton as='li' location='/account/' text='Account'>
+            <IoMdPerson
+              sx={{
+                fontSize: '125%',
+                verticalAlign: 'text-top',
+                ml: 1,
+              }}
+            />
+          </DesktopNavButton>
+        )}
       </Flex>
       <IconButton
         sx={{
