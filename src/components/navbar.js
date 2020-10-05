@@ -12,7 +12,7 @@ import Container from './container'
 import useAuth from '../util/auth'
 
 const Navbar = ({ navbarOpen, setNavbarOpen }) => {
-  const user = useAuth()
+  const user = useAuth(false)
 
   const {
     site: {

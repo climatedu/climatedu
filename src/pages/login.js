@@ -82,7 +82,11 @@ const Login = ({ data }) => {
 
           <Button
             variant='looksLikeAnInput'
-            sx={{ width: '100%', fontSize: 4 }}
+            sx={{
+              width: '100%',
+              fontSize: 4,
+              cursor: 'pointer',
+            }}
             onClick={googleLogin}
           >
             <IoLogoGoogle
