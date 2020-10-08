@@ -35,6 +35,8 @@ const Navbar = ({ navbarOpen, setNavbarOpen }) => {
     }
   `)
 
+  console.log(links)
+
   return (
     <Container
       as='nav'
@@ -75,6 +77,7 @@ const Navbar = ({ navbarOpen, setNavbarOpen }) => {
           <DesktopNavButton
             location='/login/'
             text='Login'
+            dropdown={null}
             sx={{
               gridColumnStart: 4,
               gridColumnEnd: 5,
@@ -92,6 +95,7 @@ const Navbar = ({ navbarOpen, setNavbarOpen }) => {
           <DesktopNavButton
             location='/account/'
             text='Account'
+            dropdown={null}
             sx={{
               gridColumnStart: 4,
               gridColumnEnd: 5,

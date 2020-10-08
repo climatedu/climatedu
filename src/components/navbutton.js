@@ -17,6 +17,7 @@ const DesktopNavLink = props => (
       whiteSpace: 'nowrap',
       px: 3,
       py: 2,
+      textAlign: 'center',
       borderRadius: 10,
       fontSize: 3,
       '&.active': {
@@ -77,7 +78,7 @@ const DesktopNavButton = ({ location, text, dropdown, children, ...props }) => {
     >
       <DesktopNavLink
         to={location}
-        partiallyActive={dropdown !== undefined}
+        partiallyActive={dropdown}
         onClick={
           dropdown &&
           (e => {

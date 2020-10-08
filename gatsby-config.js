@@ -85,11 +85,17 @@ module.exports = {
         text: 'Home',
       },
       {
-        location: '/about/',
+        location: '/about',
         text: 'About',
         dropdown: [
-          { location: '/about/team/', text: 'Our Team' },
-          { location: '/about/mission/', text: 'Our Mission' },
+          {
+            location: '/about/team/',
+            text: 'Our Team',
+          },
+          {
+            location: '/about/mission/',
+            text: 'Our Mission',
+          },
         ],
       },
       {
