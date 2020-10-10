@@ -30,6 +30,39 @@ const DesktopNavLink = props => (
   />
 )
 
+const isLoginActive = className => ({ location }) => {
+  const activeClassName = { className: `${className} active` }
+  if (location.pathname === '/login/' || location.pathname === '/register/') {
+    return activeClassName
+  }
+  return { className }
+}
+
+const DesktopNavLinkLogin = props => (
+  <Link
+    {...props}
+    getProps={isLoginActive(props.className)}
+    sx={{
+      color: 'inherit',
+      textDecoration: 'none',
+      fontWeight: 'bold',
+      display: 'inline-block',
+      whiteSpace: 'nowrap',
+      px: 3,
+      py: 2,
+      textAlign: 'center',
+      borderRadius: 10,
+      fontSize: 3,
+      '&.active': {
+        bg: 'secondary',
+      },
+      '&:hover, &:focus, &.active': {
+        color: 'primary',
+      },
+    }}
+  />
+)
+
 const MobileNavLink = props => (
   <Link
     {...props}
@@ -76,33 +109,46 @@ const DesktopNavButton = ({ location, text, dropdown, children, ...props }) => {
       }}
       {...props}
     >
-      <DesktopNavLink
-        to={location}
-        partiallyActive={dropdown}
-        onClick={
-          dropdown &&
-          (e => {
-            e.preventDefault()
-          })
-        }
-        sx={{
-          width: '100%',
-          transition: 'border-radius .3s ease',
-        }}
-      >
-        {text}
-        {dropdown && (
-          <BsCaretDownFill
-            sx={{
-              transform: open ? 'rotate(-180deg)' : '',
-              verticalAlign: 'middle',
-              transition: 'transform .3s ease',
-              ml: 2,
-            }}
-          />
-        )}
-        {children}
-      </DesktopNavLink>
+      {location === '/login/' ? (
+        <DesktopNavLinkLogin
+          to={location}
+          sx={{
+            width: '100%',
+            transition: 'border-radius .3s ease',
+          }}
+        >
+          {text}
+          {children}
+        </DesktopNavLinkLogin>
+      ) : (
+        <DesktopNavLink
+          to={location}
+          partiallyActive={dropdown !== null}
+          onClick={
+            dropdown &&
+            (e => {
+              e.preventDefault()
+            })
+          }
+          sx={{
+            width: '100%',
+            transition: 'border-radius .3s ease',
+          }}
+        >
+          {text}
+          {dropdown && (
+            <BsCaretDownFill
+              sx={{
+                transform: open ? 'rotate(-180deg)' : '',
+                verticalAlign: 'middle',
+                transition: 'transform .3s ease',
+                ml: 2,
+              }}
+            />
+          )}
+          {children}
+        </DesktopNavLink>
+      )}
       {dropdown && (
         <Box
           bg='secondary'
@@ -140,7 +186,7 @@ const MobileNavButton = ({ location, text, dropdown, children, ...props }) => {
     <Box {...props}>
       <MobileNavLink
         to={location}
-        partiallyActive={dropdown !== undefined}
+        partiallyActive={dropdown !== null}
         onClick={dropdown && toggleOpen}
       >
         {text}

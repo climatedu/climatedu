@@ -40,7 +40,7 @@ const Section = ({ header, children, ...props }) => {
 
 const Home = ({ data }) => {
   const onRegister = () => {
-    navigate('/login')
+    navigate('/register/')
   }
 
   return (

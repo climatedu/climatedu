@@ -11,6 +11,14 @@ import Container from './container'
 
 import useAuth from '../util/auth'
 
+const isLoginActive = ({ location }) => {
+  if (location.pathname === '/login/'){
+    return { className: 'active bruh' }
+  }
+
+  return null
+}
+
 const Navbar = ({ navbarOpen, setNavbarOpen }) => {
   const user = useAuth(false)
 
@@ -34,9 +42,6 @@ const Navbar = ({ navbarOpen, setNavbarOpen }) => {
       }
     }
   `)
-
-  console.log(links)
-
   return (
     <Container
       as='nav'
@@ -78,6 +83,7 @@ const Navbar = ({ navbarOpen, setNavbarOpen }) => {
             location='/login/'
             text='Login'
             dropdown={null}
+            key={4}
             sx={{
               gridColumnStart: 4,
               gridColumnEnd: 5,
@@ -96,6 +102,7 @@ const Navbar = ({ navbarOpen, setNavbarOpen }) => {
             location='/account/'
             text='Account'
             dropdown={null}
+            key={4}
             sx={{
               gridColumnStart: 4,
               gridColumnEnd: 5,
@@ -179,7 +186,7 @@ const Navbar = ({ navbarOpen, setNavbarOpen }) => {
           ))}
           <MobileNavButton
             as='li'
-            location='/login'
+            location='/login/'
             text={user?.displayName ?? 'Login'}
           >
             <IoMdPerson size='1.5em' />

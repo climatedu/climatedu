@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import { useState } from 'react'
-import { Button, Box, Input, Flex, jsx, Label } from 'theme-ui'
-import { navigate } from 'gatsby'
+import { Button, Box, Input, Flex, Label, jsx } from 'theme-ui'
+import { navigate, Link as GatsbyLink } from 'gatsby'
 import { toast } from 'react-toastify'
 
 import Layout from '../components/layout'
@@ -58,7 +58,7 @@ const Login = ({ data }) => {
             flexDirection: 'column',
           }}
         >
-          <Label htmlFor='name'>Email</Label>
+          <Label htmlFor='email'>Email</Label>
           <Input
             aria-label='Email'
             name='email'
@@ -76,6 +76,7 @@ const Login = ({ data }) => {
             onChange={e => setPassword(e.target.value)}
             sx={{ mb: 3 }}
           />
+
           <Flex sx={{ width: '100%' }}>
             <Button sx={{ mb: 4, marginLeft: 'auto' }}>Let&apos;s go!</Button>
           </Flex>
@@ -86,6 +87,7 @@ const Login = ({ data }) => {
               width: '100%',
               fontSize: 4,
               cursor: 'pointer',
+              mb: 4,
             }}
             onClick={googleLogin}
           >
@@ -99,6 +101,28 @@ const Login = ({ data }) => {
             />
             Sign in with Google
           </Button>
+
+          <Box sx={{ mb: 3 }}>
+            <GatsbyLink
+              to='/register/'
+              sx={{
+                color: 'primary',
+              }}
+            >
+              Don&apos;t have an account? Sign up
+            </GatsbyLink>
+          </Box>
+
+          <Box>
+            <GatsbyLink
+              to='#'
+              sx={{
+                color: 'primary',
+              }}
+            >
+              Forgot password?
+            </GatsbyLink>
+          </Box>
         </Box>
       </Container>
     </Layout>
