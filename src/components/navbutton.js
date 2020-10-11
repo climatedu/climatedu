@@ -30,20 +30,11 @@ const DesktopNavLink = props => (
   />
 )
 
-const isLoginActive = className => ({ location }) => {
-  const activeClassName = { className: `${className} active` }
-  if (location.pathname === '/login/' || location.pathname === '/register/') {
-    return activeClassName
-  }
-  return { className }
-}
-
 const DesktopNavLinkLogin = props => (
   <Link
     {...props}
-    getProps={isLoginActive(props.className)}
     sx={{
-      color: 'inherit',
+      color: 'primary',
       textDecoration: 'none',
       fontWeight: 'bold',
       display: 'inline-block',
@@ -53,9 +44,7 @@ const DesktopNavLinkLogin = props => (
       textAlign: 'center',
       borderRadius: 10,
       fontSize: 3,
-      '&.active': {
-        bg: 'secondary',
-      },
+      backgroundColor: 'secondary',
       '&:hover, &:focus, &.active': {
         color: 'primary',
       },
@@ -82,7 +71,14 @@ const MobileNavLink = props => (
   />
 )
 
-const DesktopNavButton = ({ location, text, dropdown, children, ...props }) => {
+const DesktopNavButton = ({
+  location,
+  text,
+  dropdown,
+  children,
+  isLogin,
+  ...props
+}) => {
   const [open, setOpen] = useState(false)
 
   const setDropdown = state => () => {
@@ -109,9 +105,15 @@ const DesktopNavButton = ({ location, text, dropdown, children, ...props }) => {
       }}
       {...props}
     >
-      {location === '/login/' ? (
+      {isLogin ? (
         <DesktopNavLinkLogin
           to={location}
+          onClick={
+            dropdown &&
+            (e => {
+              e.preventDefault()
+            })
+          }
           sx={{
             width: '100%',
             transition: 'border-radius .3s ease',

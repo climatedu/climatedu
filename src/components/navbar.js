@@ -7,17 +7,11 @@ import { DesktopNavButton, MobileNavButton } from './navbutton'
 
 import { IoMdPerson, IoMdMenu, IoMdClose } from 'react-icons/io'
 
+import { useMatch } from '@reach/router'
+
 import Container from './container'
 
 import useAuth from '../util/auth'
-
-const isLoginActive = ({ location }) => {
-  if (location.pathname === '/login/'){
-    return { className: 'active bruh' }
-  }
-
-  return null
-}
 
 const Navbar = ({ navbarOpen, setNavbarOpen }) => {
   const user = useAuth(false)
@@ -42,6 +36,10 @@ const Navbar = ({ navbarOpen, setNavbarOpen }) => {
       }
     }
   `)
+
+  const loginPath = useMatch('/login/')
+  const registerPath = useMatch('/register/')
+
   return (
     <Container
       as='nav'
@@ -88,6 +86,7 @@ const Navbar = ({ navbarOpen, setNavbarOpen }) => {
               gridColumnStart: 4,
               gridColumnEnd: 5,
             }}
+            isLogin={loginPath || registerPath}
           >
             <IoMdPerson
               sx={{
