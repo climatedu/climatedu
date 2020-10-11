@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { useState } from 'react'
+import { useCallback, useState } from 'react'
 import { Button, Box, Input, Flex, Label, jsx } from 'theme-ui'
 import { navigate, Link as GatsbyLink } from 'gatsby'
 import { toast } from 'react-toastify'
@@ -9,15 +9,26 @@ import PageHeader from '../components/pageheader'
 import Container from '../components/container'
 
 import firebase from 'firebase/app'
+
+import useAuth from '../util/auth'
 import getFirebase from '../firebase'
 
 import { IoLogoGoogle } from 'react-icons/io'
 
 const Login = ({ data }) => {
+  const user = useAuth()
   const firebaseApp = getFirebase()
 
   const [email, setEmail] = useState('')
+  const handleSetEmail = useCallback(e => setEmail(e.target.value), [])
+
   const [password, setPassword] = useState('')
+  const handleSetPassword = useCallback(e => setPassword(e.target.value), [])
+
+  if (user) {
+    toast.info("You're already logged in, silly!")
+    navigate('/account/')
+  }
 
   const normalLogin = async e => {
     e.preventDefault()
@@ -63,7 +74,7 @@ const Login = ({ data }) => {
             aria-label='Email'
             name='email'
             value={email}
-            onChange={e => setEmail(e.target.value)}
+            onChange={handleSetEmail}
             sx={{ mb: 3 }}
           />
 
@@ -73,7 +84,7 @@ const Login = ({ data }) => {
             name='password'
             type='password'
             value={password}
-            onChange={e => setPassword(e.target.value)}
+            onChange={handleSetPassword}
             sx={{ mb: 3 }}
           />
 

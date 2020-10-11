@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { useState } from 'react'
+import { useCallback, useState } from 'react'
 import { Button, Box, Input, Flex, jsx, Label } from 'theme-ui'
 import { navigate, Link as GatsbyLink } from 'gatsby'
 import { toast } from 'react-toastify'
@@ -12,18 +12,35 @@ import Container from '../components/container'
 import 'react-datepicker/dist/react-datepicker.css'
 
 import firebase from 'firebase/app'
+import useAuth from '../util/auth'
 import getFirebase from '../firebase'
 
 const Register = ({ data }) => {
+  const user = useAuth()
   const firebaseApp = getFirebase()
 
-  const [type, setType] = useState('')
+  const [type, setType] = useState('Student')
+  const handleSetType = useCallback(e => setType(e.target.value), [])
+
   const [name, setName] = useState('')
+  const handleSetName = useCallback(e => setName(e.target.value), [])
+
   const [email, setEmail] = useState('')
-  // const [dateOfBirth, setDateOfBirth] = useState(new Date(2000, 0, 1, 0, 0))
+  const handleSetEmail = useCallback(e => setEmail(e.target.value), [])
 
   const [password, setPassword] = useState('')
+  const handleSetPassword = useCallback(e => setPassword(e.target.value), [])
+
   const [passwordConfirm, setPasswordConfirm] = useState('')
+  const handleSetPasswordConfirm = useCallback(
+    e => setPasswordConfirm(e.target.value),
+    []
+  )
+
+  if (user) {
+    toast.info("You're already logged in, silly!")
+    navigate('/account/')
+  }
 
   const normalLogin = async e => {
     e.preventDefault()
@@ -74,7 +91,7 @@ const Register = ({ data }) => {
             aria-label='Name'
             name='email'
             value={name}
-            onChange={e => setName(e.target.value)}
+            onChange={handleSetName}
             sx={{ mb: 3 }}
           />
 
@@ -83,7 +100,7 @@ const Register = ({ data }) => {
             aria-label='Email'
             name='email'
             value={email}
-            onChange={e => setEmail(e.target.value)}
+            onChange={handleSetEmail}
             sx={{ mb: 3 }}
           />
 
@@ -93,7 +110,7 @@ const Register = ({ data }) => {
             name='password'
             type='password'
             value={password}
-            onChange={e => setPassword(e.target.value)}
+            onChange={handleSetPassword}
             sx={{ mb: 3 }}
           />
 
@@ -103,7 +120,7 @@ const Register = ({ data }) => {
             name='passwordConfirm'
             type='password'
             value={passwordConfirm}
-            onChange={e => setPasswordConfirm(e.target.value)}
+            onChange={handleSetPasswordConfirm}
             sx={{ mb: 4 }}
           />
 

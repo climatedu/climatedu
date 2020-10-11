@@ -1,6 +1,7 @@
 /** @jsx jsx */
 import { Button, Box, jsx } from 'theme-ui'
 import { toast } from 'react-toastify'
+import { navigate } from 'gatsby'
 
 import Layout from '../components/layout'
 import PageHeader from '../components/pageheader'
@@ -18,6 +19,7 @@ const Account = ({ data }) => {
     try {
       await firebaseApp.auth().signOut()
       toast.success('Logged out!')
+      navigate('/')
     } catch (e) {
       toast.error(e.message)
     }
