@@ -17,6 +17,11 @@ import { IoLogoGoogle } from 'react-icons/io'
 
 const Login = ({ data }) => {
   const user = useAuth()
+
+  if (user) {
+    navigate('/account/')
+  }
+
   const firebaseApp = getFirebase()
 
   const [email, setEmail] = useState('')
@@ -25,17 +30,13 @@ const Login = ({ data }) => {
   const [password, setPassword] = useState('')
   const handleSetPassword = useCallback(e => setPassword(e.target.value), [])
 
-  if (user) {
-    toast.info("You're already logged in, silly!")
-    navigate('/account/')
-  }
-
   const normalLogin = async e => {
     e.preventDefault()
     if (!firebaseApp) return
     try {
       await firebaseApp.auth().signInWithEmailAndPassword(email, password)
       toast.success('Logged in!')
+
       navigate('/')
     } catch (e) {
       toast.error(e.message)
@@ -50,6 +51,7 @@ const Login = ({ data }) => {
     try {
       await firebaseApp.auth().signInWithPopup(provider)
       toast.success('Logged in!')
+
       navigate('/')
     } catch (e) {
       toast.error(e.message)

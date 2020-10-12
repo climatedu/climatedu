@@ -17,10 +17,19 @@ import getFirebase from '../firebase'
 
 const Register = ({ data }) => {
   const user = useAuth()
+
+  if (user) {
+    navigate('/account/')
+  }
+
   const firebaseApp = getFirebase()
 
   const [type, setType] = useState('Student')
-  const handleSetType = useCallback(e => setType(e.target.value), [])
+  const handleSetType = useCallback(e => {
+    e.preventDefault()
+
+    setType(e.target.value)
+  }, [])
 
   const [name, setName] = useState('')
   const handleSetName = useCallback(e => setName(e.target.value), [])
@@ -36,11 +45,6 @@ const Register = ({ data }) => {
     e => setPasswordConfirm(e.target.value),
     []
   )
-
-  if (user) {
-    toast.info("You're already logged in, silly!")
-    navigate('/account/')
-  }
 
   const normalLogin = async e => {
     e.preventDefault()
@@ -63,10 +67,23 @@ const Register = ({ data }) => {
 
     try {
       await firebaseApp.auth().createUserWithEmailAndPassword(email, password)
-      toast.success('Signed up!')
-      await firebase.auth().currentUser.updateProfile({
+
+      const userNew = firebase.auth().currentUser
+
+      await userNew.updateProfile({
         displayName: name,
       })
+
+      await firebaseApp
+        .firestore()
+        .collection('accounts')
+        .doc(userNew.uid)
+        .set({
+          type: type,
+        })
+
+      toast.success('Signed up!')
+
       navigate('/')
     } catch (e) {
       toast.error(e.message)
@@ -86,6 +103,38 @@ const Register = ({ data }) => {
             flexDirection: 'column',
           }}
         >
+          <Label htmlFor='typeSelection'>I&apos;m a...</Label>
+          <Flex
+            sx={{
+              justifyContent: 'space-between',
+              mb: 3,
+            }}
+          >
+            <Button
+              variant={type === 'Student' ? 'darkened' : 'looksLikeAnInput'}
+              sx={{
+                fontSize: 3,
+                cursor: 'pointer',
+              }}
+              onClick={handleSetType}
+              value='Student'
+            >
+              Student
+            </Button>
+
+            <Button
+              variant={type === 'Teacher' ? 'darkened' : 'looksLikeAnInput'}
+              sx={{
+                fontSize: 3,
+                cursor: 'pointer',
+              }}
+              onClick={handleSetType}
+              value='Teacher'
+            >
+              Teacher
+            </Button>
+          </Flex>
+
           <Label htmlFor='name'>Name</Label>
           <Input
             aria-label='Name'
@@ -114,7 +163,7 @@ const Register = ({ data }) => {
             sx={{ mb: 3 }}
           />
 
-          <Label htmlFor='password'>Confirm Password</Label>
+          <Label htmlFor='passwordConfirm'>Confirm Password</Label>
           <Input
             aria-label='Confirm Password'
             name='passwordConfirm'
@@ -123,33 +172,6 @@ const Register = ({ data }) => {
             onChange={handleSetPasswordConfirm}
             sx={{ mb: 4 }}
           />
-
-          {/*
-          <Label htmlFor='dateOfBirth'>Date of Birth</Label>
-          <DatePicker
-            aria-label='Date of Birth'
-            name='dateOfBirth'
-            selected={dateOfBirth}
-            onChange={date => setDateOfBirth(date)}
-            sx={{
-              display: 'flex',
-              mb: 4,
-              fontFamily: 'body',
-              bg: 'secondary',
-              borderStyle: 'solid',
-              borderWidth: 3,
-              borderRadius: 10,
-              borderColor: 'text',
-              px: 3,
-              py: 2,
-              color: 'text',
-              fontSize: 3,
-              outline: 'none',
-            }}
-            showYearDropdown
-            scrollableYearDropdown
-          />
-          */}
 
           <Flex sx={{ width: '100%' }}>
             <Button sx={{ mb: 4, marginLeft: 'auto' }}>Let&apos;s go!</Button>
