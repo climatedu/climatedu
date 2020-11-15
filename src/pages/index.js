@@ -1,6 +1,6 @@
+/** @jsx jsx */
 import { graphql, navigate } from 'gatsby'
 import { Box, Button, Flex, Grid, Heading, Text, jsx } from 'theme-ui'
-/** @jsx jsx */
 
 import Glider from 'react-glider'
 import 'glider-js/glider.min.css'
@@ -40,7 +40,7 @@ const Section = ({ header, children, ...props }) => {
 
 const Home = ({ data }) => {
   const onRegister = () => {
-    navigate('/login')
+    navigate('/register/')
   }
 
   return (

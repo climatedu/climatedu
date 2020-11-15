@@ -1,6 +1,5 @@
 /** @jsx jsx */
-import { Box, IconButton, Image, Flex, jsx } from 'theme-ui'
-import useAuth from '../util/auth'
+import { Box, IconButton, Image, Grid, jsx } from 'theme-ui'
 import logo from '../media/climatedu.png'
 import { useStaticQuery, graphql } from 'gatsby'
 
@@ -8,10 +7,15 @@ import { DesktopNavButton, MobileNavButton } from './navbutton'
 
 import { IoMdPerson, IoMdMenu, IoMdClose } from 'react-icons/io'
 
+import { useMatch } from '@reach/router'
+
 import Container from './container'
 
+import useAuth from '../util/auth'
+
 const Navbar = ({ navbarOpen, setNavbarOpen }) => {
-  const user = useAuth()
+  const user = useAuth(false)
+
   const {
     site: {
       siteMetadata: { navLinks: links },
@@ -33,6 +37,9 @@ const Navbar = ({ navbarOpen, setNavbarOpen }) => {
     }
   `)
 
+  const loginPath = useMatch('/login/')
+  const registerPath = useMatch('/register/')
+
   return (
     <Container
       as='nav'
@@ -46,29 +53,70 @@ const Navbar = ({ navbarOpen, setNavbarOpen }) => {
       }}
     >
       <Image src={logo} alt='climatedu logo' sx={{ maxHeight: '100%' }} />
-      <Flex
-        as='ul'
+      <Grid
         sx={{
-          listStyle: 'none',
-          display: ['none', null, 'flex'],
+          display: ['none', null, 'grid'],
           alignItems: 'baseline',
           p: 0,
+          gridTemplateColumns: '25% 25% 25% 25%',
+          width: '65%',
+          columnGap: 0,
         }}
       >
         {links.map((props, i) => (
-          <DesktopNavButton key={i} as='li' sx={{ mr: 3 }} {...props} />
+          <DesktopNavButton
+            key={i}
+            sx={{
+              mr: 3,
+              gridColumnStart: i + 1,
+              gridColumnEnd: i + 2,
+              padding: 0,
+            }}
+            {...props}
+          />
         ))}
 
-        <DesktopNavButton as='li' location='/login/' text='Login'>
-          <IoMdPerson
+        {user === null ? (
+          <DesktopNavButton
+            location='/login/'
+            text='Login'
+            dropdown={null}
+            key={4}
             sx={{
-              fontSize: '125%',
-              verticalAlign: 'text-top',
-              ml: 1,
+              gridColumnStart: 4,
+              gridColumnEnd: 5,
             }}
-          />
-        </DesktopNavButton>
-      </Flex>
+            isLogin={loginPath || registerPath}
+          >
+            <IoMdPerson
+              sx={{
+                fontSize: '125%',
+                verticalAlign: 'text-top',
+                ml: 1,
+              }}
+            />
+          </DesktopNavButton>
+        ) : (
+          <DesktopNavButton
+            location='/account/'
+            text='Account'
+            dropdown={null}
+            key={4}
+            sx={{
+              gridColumnStart: 4,
+              gridColumnEnd: 5,
+            }}
+          >
+            <IoMdPerson
+              sx={{
+                fontSize: '125%',
+                verticalAlign: 'text-top',
+                ml: 1,
+              }}
+            />
+          </DesktopNavButton>
+        )}
+      </Grid>
       <IconButton
         sx={{
           p: 3,
