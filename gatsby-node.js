@@ -46,7 +46,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   result.data.allMarkdownRemark.edges.forEach(({ node }) => {
     const page = path.resolve(`src/course/${node.frontmatter.slug}.js`)
     createPage({
-      path: `/course/${node.frontmatter.slug}`,
+      path: `/course/${node.frontmatter.slug}/`,
       component: page,
       // In your blog post template's graphql query, you can use pagePath
       // as a GraphQL variable to query for data from the markdown file.
