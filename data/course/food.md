@@ -2,7 +2,7 @@
 slug: 'food'
 unit: 5
 title: 'Food'
-background: '#fcd9d7'
+background: '#f7e2e1'
 text: '#5c0a05'
 highlight: '#82322e'
 sections:
