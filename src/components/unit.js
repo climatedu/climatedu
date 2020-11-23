@@ -224,11 +224,6 @@ const Unit = ({ html, frontmatter, children }) => {
             zIndex: 0,
             mt: '6em',
             mb: '2em',
-            img: {
-              margin: 'auto',
-              display: 'block',
-              maxWidth: '500px',
-            },
             textarea: {
               boxSizing: 'border-box',
               margin: '0px 0px 16px',
@@ -269,6 +264,14 @@ const Unit = ({ html, frontmatter, children }) => {
           }}
         >
           <Box
+            sx={{
+              '& > img': {
+                margin: 'auto',
+                display: 'block',
+                width: '500px',
+                maxWidth: '100%',
+              },
+            }}
             ref={contentCallbackRef}
             dangerouslySetInnerHTML={{
               __html: html,

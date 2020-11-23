@@ -26,7 +26,7 @@ export const pageQuery = graphql`
       ...Unit
     }
     imageSharp(fluid: { originalName: { eq: "Beach.png" } }) {
-      fluid(maxWidth: 2560, traceSVG: { color: "#007439" }) {
+      fluid(maxWidth: 2560, traceSVG: {}) {
         ...GatsbyImageSharpFluid_tracedSVG
       }
     }
