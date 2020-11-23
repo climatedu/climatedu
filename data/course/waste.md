@@ -3,6 +3,8 @@ slug: 'waste'
 unit: 4
 title: "Waste"
 background: '#CEE2FF'
+scrollcolor: '#8cd7ff'
+scrollcolorbottom: true
 text: '#31639C'
 highlight: '#678ACF'
 sections:

@@ -71,7 +71,7 @@ const Unit = ({ html, frontmatter, children }) => {
     .sort((a, b) => a.frontmatter.unit - b.frontmatter.unit)
 
   const [navOpen, setNavOpen] = useState(false)
-  const [scrollLocation, setScrollLocation] = useState({ percent: 0 })
+  const [scrollLocation, setScrollLocation] = useState({ percent: 0, colorPercent: 0 })
 
   const unitRef = React.createRef()
   const [contentRef, setContentRef] = useState({ current: null })
@@ -100,11 +100,12 @@ const Unit = ({ html, frontmatter, children }) => {
   function scrollColor() {
     if (unitRef.current)
       setScrollLocation({
-        percent:
-          unitRef.current.scrollTop /
-          (unitRef.current.scrollHeight - unitRef.current.offsetHeight),
+        percent: scrollLocation.percent,
+        colorPercent:
+          frontmatter.scrollcolorbottom ? (unitRef.current.scrollTop > (unitRef.current.scrollHeight - unitRef.current.offsetHeight*2) ? (unitRef.current.scrollTop - (unitRef.current.scrollHeight - unitRef.current.offsetHeight*2))/unitRef.current.offsetHeight : 0)
+          : (unitRef.current.scrollTop / (unitRef.current.scrollHeight - unitRef.current.offsetHeight)),
       })
-    setTimeout(() => requestAnimationFrame(scrollColor), 500)
+    setTimeout(() => requestAnimationFrame(scrollColor), 100)
   }
   if (frontmatter.scrollcolor) scrollColor()
   return (
@@ -207,11 +208,12 @@ const Unit = ({ html, frontmatter, children }) => {
           }}
           onClick={() => {
             setScrollLocation(
-              Object.assign(scrollLocation, {
+              {
+                colorPercent: scrollLocation.colorPercent,
                 percent:
                   unitRef.current.scrollTop /
                   (unitRef.current.scrollHeight - unitRef.current.offsetHeight),
-              })
+              }
             )
             setNavOpen(true)
           }}
@@ -346,6 +348,7 @@ export const query = graphql`
       title
       background
       scrollcolor
+      scrollcolorbottom
       text
       highlight
       sections

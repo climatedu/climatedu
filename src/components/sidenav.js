@@ -25,7 +25,7 @@ function hexToRgb(hex) {
 }
 
 export function getColor(startColour, endColour, percentFade) {
-  percentFade = percentFade.percent
+  percentFade = percentFade.colorPercent
   var startRGB = hexToRgb(startColour)
   var endRGB = hexToRgb(endColour)
 
