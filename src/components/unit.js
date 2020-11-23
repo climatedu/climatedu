@@ -18,7 +18,7 @@ import PageHeader from './pageheader'
 import Container from './container'
 import SideNav, { getColor } from './sidenav'
 
-const Unit = ({ html, frontmatter }) => {
+const Unit = ({ html, frontmatter, children }) => {
   const data = useStaticQuery(graphql`
     {
       site {
@@ -329,6 +329,7 @@ const Unit = ({ html, frontmatter }) => {
               })
             : null}
         </Container>
+        {children}
       </Box>
     </Styled.root>
   )
