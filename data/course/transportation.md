@@ -2,9 +2,9 @@
 slug: 'transportation'
 unit: 6
 title: 'Transportation'
-background: '#d6d6d6'
-text: '#525252'
-highlight: '#7a7a7a'
+background: '#d3f2ec'
+text: '#0b4a3e'
+highlight: '#247062'
 sections:
   - Public vs. private transportation
   - Solutions

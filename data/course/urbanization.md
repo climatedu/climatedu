@@ -2,9 +2,9 @@
 slug: 'urbanization'
 unit: 7
 title: 'Urbanization'
-background: '#f2e7df'
-highlight: '#70755e'
-text: '#4a4f39'
+background: '#dedede'
+highlight: '#7a7a7a'
+text: '#525252'
 sections:
   - Thermal inversions
   - Photochemical smog
@@ -48,8 +48,8 @@ It’s not a coincidence that the hottest areas also happen to be in the world�
 
 If you’ve ever gone camping or hiking in the mountains, you’d know by experience that the higher you go, the colder it gets. However, there are times when the exact opposite occurs - temperature increases as altitude decreases. **Thermal inversions**, also known as temperature inversions, are natural phenomena in the atmosphere where the air above the ground is warmer than the air below it. Weird, right? Check out this video to see how thermal inversions occur in some of Utah’s cities. 
 
-
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Pdir5MGV4_M" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 
 
 As the video explains, the main pitfall of thermal inversions is the trapping of emissions and air pollution from urban areas, especially those nestled in a valley between mountains. The warm air acts as a lid, essentially sealing and condensing all of the toxic pollutants near the ground, leading to poor air quality for urban residents. The terrain prevents the trapped cold air from escaping and the surrounding mountains prevent winds from ushering in fresh air. The end result is nasty, stagnant air that is not only unpleasant to live in but also hazardous to our respiratory systems. 
@@ -73,13 +73,15 @@ Everyone has a general idea of what smog is - usually a yellowish dense fog or h
 
 **Q: What are the two main components of photochemical smog and where do they come from?**
 
+<textarea placeholder="Preview submission area. Answers are not saved."></textarea>
+
 **How are the secondary pollutants formed and how do these pollutants affect human health?**
+
+<textarea placeholder="Preview submission area. Answers are not saved."></textarea>
 
 **What kinds of cities are the most vulnerable to photochemical smog (hint: their surrounding geographies)?**
 
-
-
-1. Environment
+<textarea placeholder="Preview submission area. Answers are not saved."></textarea>
 
 **Tropospheric ozone**, one of the main pollutants of photochemical smog, is potent to all plant and animal life. Plants like tobacco, tomato, and spinach, are sensitive and therefore highly reactive to ozone. Therefore, photochemical smog has the ability to damage plant leaves, stunt growth, and increase vulnerability to disease. Studies conducted from 1980 to 1989 exposed the most important agronomic crops in the USA to varying concentrations of ozone (O<sub>3</sub>). Below were their findings:
 
@@ -88,7 +90,7 @@ Everyone has a general idea of what smog is - usually a yellowish dense fog or h
 ![Effect of O3 on Yeild of Crops](./images/7-crops.png)
 
 
-**Q: What trends, if any, do you see in the graph? Which crop(s) lost the most yield and what implications does that have in our lives? What do you predict?**
+**Q: What trends, if any, do you see in the graph? Which crop(s) lost the most yield and what implications does that have in our lives? What do you predict**
 
 <textarea placeholder="Preview submission area. Answers are not saved."></textarea>
 
@@ -103,7 +105,6 @@ These are just a few examples drawn from history that show us just how important
 
 
 
-
 ## Industry
 
 When it comes to industry, it’s important to understand that our human contributions, climate change, and its threat to us have an interdependent relationship. The environment that results from our industrial practices in turn affects our lifestyles and public health. We’ll be exploring this relationship with specific industries in the following sections, so keep this in mind as you read. 
@@ -111,26 +112,26 @@ When it comes to industry, it’s important to understand that our human contrib
 Economically speaking, industries are categorized into four sectors. For our purposes, we’ll be looking sector by sector at the involved industries and how they both contribute to and are impacted by the climate crisis. 
 
 
-
-### 1. Primary (raw materials) 
+#### Primary (raw materials) 
 
 The primary sector includes all industries involving the extraction and production of raw materials. The major industries in this sector are agriculture, forestry, mining, mineral extraction, and fishing, but we will only focus on a couple. 
 
-<span style="text-decoration:underline;">Mining</span>
+**Mining:** On land, we are constantly gathering land resources like wood and crops from the earth, but our activity underground has become just as environmentally harmful. Our extractive industries (oil, gas, mining) play a huge role in further polluting and depleting the earth of its rich minerals. Watch this video to learn about fracking!
 
-On land, we are constantly gathering land resources like wood and crops from the earth, but our activity underground has become just as environmentally harmful. Our extractive industries (oil, gas, mining) play a huge role in further polluting and depleting the earth of its rich minerals. Watch this video to learn about fracking!
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Tudal_4x4F0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
-
-*   [How does fracking work?](https://www.youtube.com/watch?v=Tudal_4x4F0), TED-Ed video
 
 **Q: What is the fracking fluid’s role in collecting oil and natural gases? What is flow-back liquid and how can it be dealt with? Why is fracking so controversial?**
+
+<textarea placeholder="Preview submission area. Answers are not saved."></textarea>
 
 With mining, we are literally reshaping the earth and unearthing large amounts of precious metals and sulfides. When sulfide reacts with water and air, it becomes sulfuric acid, which seeps into nearby streams and groundwater. This process is called **acid mine drainage** and it’s the biggest source of water pollution from mining. Because acid mine drainage can be up to 300 times more acidic than acidic rain, it’s extremely toxic to humans and other vulnerable species. Read this article to learn about all of the different impacts that mining has on the environment.
 
 
 
 *   [Environmental Impacts of Mining](https://wman-info.org/resource/environmental-impacts-of-mining/), WMAN article
+
 
 Here are videos that you can watch to learn more about the types of mining and each of their specific impacts on the environment:
 
@@ -141,9 +142,8 @@ Here are videos that you can watch to learn more about the types of mining and e
 *   [How Sand Mining Destroys One Home to Build Another](https://www.youtube.com/watch?v=fpc3hhH1cas), National Geographic video
 *   [My Water Is Not Safe To Drink](https://www.youtube.com/watch?v=74yhlpQntkc), National Geographic video
 
-<span style="text-decoration:underline;">Fishing</span>
 
-Apart from our land resources, a huge part of our nutritional diet comes from the ocean. Every prawn, crabcake, and piece of sushi that we consume comes from the mass seafood industry. In 2018 alone, global fish production is estimated to have been about 179 million tonnes (1 tonne = 1000 kg), and 156 million tonnes were for human consumption. Due to the increasing demand in seafood, fish species have been overfished and hunted to the point of extinction, disrupting migration patterns and decreasing biodiversity. For example, bottom trawling, a commercial fishing technique, takes giant nets and drags them across the ocean floor to pick up fish, stirring up sediment and damaging the corals there. To give you a sense of the global scale of bottom trawling, the United Nations estimate that up to 95% of global ocean damage is directly caused by bottom trawling. Blast fishing (watch the following video) and cyanide fishing are also extremely harmful, but common practices in the fishing industry. 
+**Fishing:** Apart from our land resources, a huge part of our nutritional diet comes from the ocean. Every prawn, crabcake, and piece of sushi that we consume comes from the mass seafood industry. In 2018 alone, global fish production is estimated to have been about 179 million tonnes (1 tonne = 1000 kg), and 156 million tonnes were for human consumption. Due to the increasing demand in seafood, fish species have been overfished and hunted to the point of extinction, disrupting migration patterns and decreasing biodiversity. For example, bottom trawling, a commercial fishing technique, takes giant nets and drags them across the ocean floor to pick up fish, stirring up sediment and damaging the corals there. To give you a sense of the global scale of bottom trawling, the United Nations estimate that up to 95% of global ocean damage is directly caused by bottom trawling. Blast fishing (watch the following video) and cyanide fishing are also extremely harmful, but common practices in the fishing industry. 
 
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/1Y_8x4TGm3A" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -179,23 +179,20 @@ So what does this mean for us? Our fishing industries are not only wreaking havo
 
 Optional: This is a great TED Talk from Perry Raso, an aquaculturist who is passionately advocating for sustainable aquaculture in our future industrial practices. Many of his points overlap with what you’ve already read in this section, but feel free to watch this if you’d like to explore sustainable aquafarming further and hear from his perspective! 
 
-
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/oSdEQNY1mkA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 
 
 Fishing is just one industry out of the many, many systems that we as humans have created to benefit us. But as we advance in innovation and technology, we must ask ourselves how our actions will affect the earth in the long term and how that resulting environment will impact our lives. Do the benefits truly outweigh the costs? 
 
 
-
-### 2. Secondary (manufacturing and construction)
+#### Secondary (manufacturing and construction)
 
 The secondary sector includes all industries involving the production of finished, usable products from the raw materials in the primary sector, usually for commercial purposes. Examples include metalwork, car manufacturing, petroleum refining, and hydroelectric power generation. Large-scale industries like these often require large factories and machinery, consuming enormous amounts of energy and overwhelmingly producing waste materials that cause environmental harm. These are the most major industrial contributors to the climate crisis, so you are probably familiar with many of them!
 
 There is no doubt that since the Industrial Revolution, factories worldwide have been increasingly polluting the environment and surrounding wildlife through emissions and waste. In terms of emissions, manufacturing and electrical generating factories contribute more than 50% of greenhouse gases, mainly carbon dioxide, methane, and ozone. 
 
-Numerous industrial dump sites, filled with millions of tons of industrial waste, are scattered throughout the states; they may even be near where you live! The worst and most uncontrolled of these sites have been dubbed “Superfund sites” by legislation that was passed by Congress in 1980, and there are more than 1,300 Superfund sites around the US. Below are some aerial shots of several Superfund sites:
-
-[https://fortune.com/2018/10/30/aerial-photos-superfund-sites-usa/](https://fortune.com/2018/10/30/aerial-photos-superfund-sites-usa/) 
+Numerous industrial dump sites, filled with millions of tons of industrial waste, are scattered throughout the states; they may even be near where you live! The worst and most uncontrolled of these sites have been dubbed “Superfund sites” by legislation that was passed by Congress in 1980, and there are more than 1,300 Superfund sites around the US. Below are some aerial shots of several Superfund sites ([source](https://fortune.com/2018/10/30/aerial-photos-superfund-sites-usa/)):
 
 **Q: What do you notice about the resulting land? How does the vegetation (or lack thereof) seem to be affected? What about the water sources in two of the photos?**
 
@@ -215,7 +212,7 @@ With global warming, these dump sites are much more vulnerable to extreme weathe
 Optional: Check out this video of the North Brooklyn Boat Club, an environmentalist group dedicated to cleaning up floating trash in Newtown Creek, a Superfund site on the National Priorities List. If you’re interested in doing similar trash cleanup efforts, then we encourage you to find one in your area!
 
 
-<iframe src="https://player.vimeo.com/video/136202042" width="640" height="360" frameborder="0" allow="fullscreen" allowfullscreen></iframe>
+<iframe src="https://player.vimeo.com/video/136202042" width="560" height="315" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 
 Industrial dump sites are the oldest and most basic methods of waste management. Many US cities have some kind of developed waste management system, including waste treatment facilities, where sewage could potentially be repurposed into heat and electricity for the plant or renewable natural gas. Check out NYC’s waste treatment process if you’re interested! 
 
@@ -239,9 +236,7 @@ In light of the climate crisis, many companies are implementing green factories,
 
 So far, we’ve mainly talked about how factories affect climate change. Have you considered the converse - how climate change affects factories? Most factory workers already work in tight spaces with no air conditioning or ventilation, which puts their health at risk on a daily basis. What happens as global temperatures rise and there are more hot days per year? These workers become even more at risk for heat exposure related conditions - heat stroke, fatigue, and even death. Outdoor workers like agriculture workers, commercial fishermen, and first responders are also at risk! As we keep learning about the climate crisis, it’s important to keep those who will be directly affected in mind.
 
-<span style="text-decoration:underline;">Fast Food</span>
-
-With every burger, milkshake, and plate of fries comes a cost. The global fast food industry makes hundreds of billions annually and is dominated by “fast food giants.” These are your typical drive-by, chain restaurants: McDonald’s, KFC, Burger King, Pizza Hut, etc. So just how big is their carbon footprint? 
+**Fast Food:** With every burger, milkshake, and plate of fries comes a cost. The global fast food industry makes hundreds of billions annually and is dominated by “fast food giants.” These are your typical drive-by, chain restaurants: McDonald’s, KFC, Burger King, Pizza Hut, etc. So just how big is their carbon footprint? 
 
 Take a look at this burger fact sheet about how much one hamburger affects the environment. 
 
@@ -252,13 +247,11 @@ Take a look at this burger fact sheet about how much one hamburger affects the e
 Now take that one burger and scale it up to trillions of burgers made daily in millions of chain restaurants around the world. Because the fast food industry and the climate crisis are both on such an enormous scale, it will take **all** of our efforts to make a substantial change. We should hold corporations like these fast food giants responsible for the amount of emissions and pollution they produce, and they should be progressing towards more environmentally conscious practices. This year, McDonald’s, the biggest burger chain, announced that they’re introducing “McPlant” - a plant-based line of burgers! They’ve also set a hard target for greenhouse gas emissions and have committed to a ~30% reduction in emissions. Although these are great improvements, we’ve still got a long way to go. 
 
 
-### 3. Tertiary (service)
+#### Tertiary (service)
 
 The tertiary sector includes all industries involving the provision of services like access, transportation, distribution, etc. Examples include railroad, subways, and entertainment. This sector focuses on serving the customer rather than making physical goods. 
 
-<span style="text-decoration:underline;">Entertainment</span>
-
-The entertainment industry, complete with Netflix shows and blockbuster films, plays a surprisingly bigger role in climate change than we’d normally think. According to a 2006 study by UCLA, the Hollywood film industry produces more air pollution in the Los Angeles region than the other five industries studied: aerospace manufacturing, apparel, hotels, and even semiconductor manufacturing. This means millions of metric tons of carbon dioxide annually! 
+**Entertainment:** The entertainment industry, complete with Netflix shows and blockbuster films, plays a surprisingly bigger role in climate change than we’d normally think. According to a 2006 study by UCLA, the Hollywood film industry produces more air pollution in the Los Angeles region than the other five industries studied: aerospace manufacturing, apparel, hotels, and even semiconductor manufacturing. This means millions of metric tons of carbon dioxide annually! 
 
 Have you ever considered how big a Hollywood movie production’s carbon footprint is? Producing movies requires workers for special effects and set building and trucks for transporting equipment, not to mention the thousands of generators needed to power the set for cameras and lighting. While these diesel generators are emitting carbon monoxide in particulate matter, the power plant that’s providing electricity to the sets is also polluting the air. It’s also not just Hollywood - one hour of UK television can produce 13 tons of carbon dioxide, which is almost as much CO2 as an American uses every year. 
 
@@ -272,34 +265,6 @@ Some movie franchises have taken the initiative to go greener, however. _The Mat
 
 Hollywood is a host of major movie studios, each of which is its own corporation. Just like how we should hold fast food companies accountable for their role in the climate crisis, we should also speak up against the entertainment industry’s use of resources. 
 
-<span style="text-decoration:underline;">Tourism</span>
-
-The tourism industry is one of the fastest growing industries in the world. More and more luxury hotels, beach clubs, and amusement parks are popping up all over the world as people are travelling internationally. Although people usually see tourism as a boost to the economy, it accelerates 
-
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/AMlG-c1hXEE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-
-[https://www.tiredearth.com/articles/how-tourism-impacts-environment](https://www.tiredearth.com/articles/how-tourism-impacts-environment)
-
-[https://www.theguardian.com/environment/2019/jul/18/environmental-damage-of-tourism-comes-under-mps-spotlight](https://www.theguardian.com/environment/2019/jul/18/environmental-damage-of-tourism-comes-under-mps-spotlight)
-
-The ecotourism industry has come to light in recent years. 
-
-
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/BudHTnb9G5s" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-
-Counter - [https://www.theworldcounts.com/challenges/consumption/transport-and-tourism/negative-environmental-impacts-of-tourism/story](https://www.theworldcounts.com/challenges/consumption/transport-and-tourism/negative-environmental-impacts-of-tourism/story) 
-
-<span style="text-decoration:underline;">Insurance?</span>
-
-[https://simplicable.com/new/tertiary-sector](https://simplicable.com/new/tertiary-sector) - list of industries in tertiary sector
-
-
-
-### 4. Quaternary (information services)
-
-The quaternary sector includes all industries involving knowledge-based services. Examples include media, research, blogging, designing, etc. The internet itself perpetually impacts the environment more drastically than we think: watch [this video](https://www.youtube.com/watch?v=GX8sOrz_-Fg) to get a grasp on our digital age.
 
 ## Green infrastructure
 
