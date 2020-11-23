@@ -15,7 +15,17 @@ module.exports = {
     {
       resolve: 'gatsby-transformer-remark',
       options: {
-        excerpt_separator: '<!-- end -->',
+        plugins: [
+          {
+            resolve: 'gatsby-remark-images',
+            options: {
+              maxWidth: 500,
+              tracedSVG: true,
+            },
+          },
+          'gatsby-remark-copy-linked-files',
+          'gatsby-remark-unwrap-images',
+        ],
       },
     },
     'gatsby-plugin-theme-ui',
