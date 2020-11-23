@@ -105,7 +105,7 @@ const Unit = ({ html, frontmatter, children }) => {
           frontmatter.scrollcolorbottom ? (unitRef.current.scrollTop > (unitRef.current.scrollHeight - unitRef.current.offsetHeight*2) ? (unitRef.current.scrollTop - (unitRef.current.scrollHeight - unitRef.current.offsetHeight*2))/unitRef.current.offsetHeight : 0)
           : (unitRef.current.scrollTop / (unitRef.current.scrollHeight - unitRef.current.offsetHeight)),
       })
-    setTimeout(() => requestAnimationFrame(scrollColor), 100)
+    setTimeout(() => {if (typeof requestAnimationFrame !== 'undefined') requestAnimationFrame(scrollColor)}, 100)
   }
   if (frontmatter.scrollcolor) scrollColor()
   return (
