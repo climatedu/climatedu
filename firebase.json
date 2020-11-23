@@ -7,4 +7,9 @@
     "public": "public",
     "ignore": ["firebase.json", "**/.*", "**/node_modules/**"]
   }
+  "hosting": {
+    "site": "climatedu-preview",
+    "public": "public",
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"]
+  }
 }
