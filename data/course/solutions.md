@@ -1,7 +1,7 @@
 ---
 slug: 'solutions'
 unit: 8
-title: 'General solutions'
+title: 'What can we do?'
 background: '#e2d1f0'
 text: '#401d5c'
 highlight: '#7c529e'
