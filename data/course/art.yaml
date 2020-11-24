@@ -67,18 +67,41 @@ sections:
       - file: ./doodles/lightning.svg
   - location: '4.1'
     doodles:
-      - file: ./doodles/chips1.png
+      - file: ./doodles/chips1.svg
+        rotation: -15
   - location: '4.1'
     doodles:
-      - file: ./doodles/can1.png
+      - file: ./doodles/can1.svg
         right: true
+        rotation: 10
   - location: '4.2'
     doodles:
-      - file: ./doodles/sixpack1.png
+      - file: ./doodles/sixpack2.svg
   - location: '4.3'
     doodles:
-      - file: ./doodles/bottle2.png
+      - file: ./doodles/bottle2.svg
         right: true
   - location: '4.4'
     doodles:
-      - file: ./doodles/straws.png
+      - file: ./doodles/apple.svg
+        rotation: -20
+  - location: '4.5'
+    doodles:
+      - file: ./doodles/tote.svg
+        right: true
+  - location: '4.6'
+    doodles:
+      - file: ./doodles/rackright.png
+        scale: 4
+        offsetX: -12em
+  - location: '4.6'
+    doodles:
+      - file: ./doodles/rackleft.png
+        right: true
+        scale: 4
+        offsetX: 12em
+  - location: '4.7'
+    doodles:
+      - file: ./doodles/hydroflask.svg
+        right: true
+        rotation: 1

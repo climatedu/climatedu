@@ -51,21 +51,27 @@ const Unit = ({ html, frontmatter, children }) => {
             file {
               publicURL
             }
+            rotation
+            scale
           }
         }
       }
     }
   `)
+
   const doodles = data.courseYaml.sections
     .filter(s => s.location.split('.')[0] === frontmatter.unit.toString())
     .map(s => {
       return {
         index: parseInt(s.location.split('.')[1]) - 1,
         doodles: s.doodles.map(d => {
-          return Object.assign(d, { url: d.file.publicURL })
+          return Object.assign(d, {
+            url: d.file.publicURL,
+          })
         }),
       }
     })
+
   const units = data.allMarkdownRemark.edges
     .map(n => n.node)
     .sort((a, b) => a.frontmatter.unit - b.frontmatter.unit)
@@ -312,6 +318,9 @@ const Unit = ({ html, frontmatter, children }) => {
                     : doodle.left
                     ? true
                     : !((index % 3) % 2)
+
+                  const rotation = doodle.rotation || 0
+                  const scale = doodle.scale || 1
                   return (
                     <img
                       key={index}
@@ -333,11 +342,12 @@ const Unit = ({ html, frontmatter, children }) => {
                           : 'auto',
                         right: left
                           ? 'auto'
-                          : `calc(-${width + 50}px + ${
-                              -doodle.offsetX || '0px'
+                          : `calc(-${width + 50}px - ${
+                              doodle.offsetX || '0px'
                             })`,
                         width: width,
                         zIndex: -1,
+                        transform: `rotate(${rotation}deg) scaleX(${scale}) scaleY(${scale})`,
                       }}
                     />
                   )

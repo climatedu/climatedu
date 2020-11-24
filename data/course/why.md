@@ -234,7 +234,6 @@ The smaller the numbers get on the scale, the more acidic the substance is, like
 
 <figcaption><a href="https://noaa.maps.arcgis.com/apps/MapSeries/index.html?appid=adec7620009d439c85109ab9aa1ea227" target="_blank" rel="noopener">Measuring Changes in Ocean pH</a>, image from the NOAA Ocean Acidification site.</figcaption>
 
-
 But what does this have to do with the carbon cycle? It is confusing that while the amount of carbon dioxide in the atmosphere is increasing, the ocean’s pH is decreasing instead. But the ocean’s pH depends on the amount of CO<sub>2</sub> in the ocean, and this ultimately is affected by the amount of CO<sub>2</sub> in the atmosphere. To understand this, we’re going to look at some data from [this online activity by NOAA](https://noaa.maps.arcgis.com/apps/MapSeries/index.html?appid=adec7620009d439c85109ab9aa1ea227) on ocean acidification (and, by the way, if you are interested in learning more about this, there are plenty more activities there to try). Take a look at the following graph of measurements scientists have taken in Hawaii since the 1960s. Make sure to look at the legend so you understand what the graph says.
 
 ![Graph of atmospheric CO2, ocean CO2, and ocean pH over time in Hawaii](./images/2-hawaii.png)
