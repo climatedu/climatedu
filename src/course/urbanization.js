@@ -7,12 +7,15 @@ import Unit from '../components/unit'
 const Urbanization = ({ data }) => {
   return (
     <Unit {...data.markdownRemark}>
-      <img src={data.file.publicURL} sx={{
-        width: '100vw',
-        position: 'relative',
-        bottom: '-10px',
-        mt: '2em'
-      }}/>
+      <img
+        src={data.file.publicURL}
+        sx={{
+          width: '100vw',
+          position: 'relative',
+          bottom: '-10px',
+          mt: '2em',
+        }}
+      />
     </Unit>
   )
 }

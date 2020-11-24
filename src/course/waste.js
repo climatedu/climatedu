@@ -8,12 +8,15 @@ import Unit from '../components/unit'
 const Waste = ({ data }) => {
   return (
     <Unit {...data.markdownRemark}>
-      <Image fluid={{...data.imageSharp.fluid}} sx={{
-        position: 'absolute',
-        bottom: 0,
-        left: 0,
-        width: '100vw',
-      }}/>
+      <Image
+        fluid={{ ...data.imageSharp.fluid }}
+        sx={{
+          position: 'absolute',
+          bottom: 0,
+          left: 0,
+          width: '100vw',
+        }}
+      />
     </Unit>
   )
 }

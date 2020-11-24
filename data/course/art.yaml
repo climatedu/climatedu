@@ -65,3 +65,20 @@ sections:
   - location: '2.9'
     doodles:
       - file: ./doodles/lightning.svg
+  - location: '4.1'
+    doodles:
+      - file: ./doodles/chips1.png
+  - location: '4.1'
+    doodles:
+      - file: ./doodles/can1.png
+        right: true
+  - location: '4.2'
+    doodles:
+      - file: ./doodles/sixpack1.png
+  - location: '4.3'
+    doodles:
+      - file: ./doodles/bottle2.png
+        right: true
+  - location: '4.4'
+    doodles:
+      - file: ./doodles/straws.png

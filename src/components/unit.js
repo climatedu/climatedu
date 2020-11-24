@@ -71,7 +71,10 @@ const Unit = ({ html, frontmatter, children }) => {
     .sort((a, b) => a.frontmatter.unit - b.frontmatter.unit)
 
   const [navOpen, setNavOpen] = useState(false)
-  const [scrollLocation, setScrollLocation] = useState({ percent: 0, colorPercent: 0 })
+  const [scrollLocation, setScrollLocation] = useState({
+    percent: 0,
+    colorPercent: 0,
+  })
 
   const unitRef = React.createRef()
   const [contentRef, setContentRef] = useState({ current: null })
@@ -101,11 +104,21 @@ const Unit = ({ html, frontmatter, children }) => {
     if (unitRef.current)
       setScrollLocation({
         percent: scrollLocation.percent,
-        colorPercent:
-          frontmatter.scrollcolorbottom ? (unitRef.current.scrollTop > (unitRef.current.scrollHeight - unitRef.current.offsetHeight*2) ? (unitRef.current.scrollTop - (unitRef.current.scrollHeight - unitRef.current.offsetHeight*2))/unitRef.current.offsetHeight : 0)
-          : (unitRef.current.scrollTop / (unitRef.current.scrollHeight - unitRef.current.offsetHeight)),
+        colorPercent: frontmatter.scrollcolorbottom
+          ? unitRef.current.scrollTop >
+            unitRef.current.scrollHeight - unitRef.current.offsetHeight * 2
+            ? (unitRef.current.scrollTop -
+                (unitRef.current.scrollHeight -
+                  unitRef.current.offsetHeight * 2)) /
+              unitRef.current.offsetHeight
+            : 0
+          : unitRef.current.scrollTop /
+            (unitRef.current.scrollHeight - unitRef.current.offsetHeight),
       })
-    setTimeout(() => {if (typeof requestAnimationFrame !== 'undefined') requestAnimationFrame(scrollColor)}, 100)
+    setTimeout(() => {
+      if (typeof requestAnimationFrame !== 'undefined')
+        requestAnimationFrame(scrollColor)
+    }, 100)
   }
   if (frontmatter.scrollcolor) scrollColor()
   return (
@@ -207,14 +220,12 @@ const Unit = ({ html, frontmatter, children }) => {
             zIndex: 997,
           }}
           onClick={() => {
-            setScrollLocation(
-              {
-                colorPercent: scrollLocation.colorPercent,
-                percent:
-                  unitRef.current.scrollTop /
-                  (unitRef.current.scrollHeight - unitRef.current.offsetHeight),
-              }
-            )
+            setScrollLocation({
+              colorPercent: scrollLocation.colorPercent,
+              percent:
+                unitRef.current.scrollTop /
+                (unitRef.current.scrollHeight - unitRef.current.offsetHeight),
+            })
             setNavOpen(true)
           }}
         >
