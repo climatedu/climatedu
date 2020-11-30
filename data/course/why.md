@@ -236,7 +236,7 @@ So where is all that ice going? Well… into the ocean. Let's read the following
 
 Next, let's watch this video from Our Changing Climate, which explains nuisance flooding and provides a nice visualization of the data trends.
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/_xKKs0hGPxo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div style="position: relative; width: 100%; padding-bottom: 56.25%;"><iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://www.youtube-nocookie.com/embed/_xKKs0hGPxo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
 
 Many cities are at risk, and especially the ones near the coast. Let's visit Google Earth's models of sea level rise in prominent cities at different temperature levels.
