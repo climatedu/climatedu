@@ -8,10 +8,15 @@ import Unit from '../components/unit'
 const Food = ({ data }) => {
   return (
     <Unit {...data.markdownRemark}>
-      <Box sx={{ position: 'relative', width: '100vw' }}><Image fluid={{...data.imageSharp.fluid}} sx={{
-        maxWidth: '600px',
-        ml: 'auto'
-      }}/></Box>
+      <Box sx={{ position: 'relative', width: '100vw' }}>
+        <Image
+          fluid={{ ...data.imageSharp.fluid }}
+          sx={{
+            maxWidth: '600px',
+            ml: 'auto',
+          }}
+        />
+      </Box>
     </Unit>
   )
 }
