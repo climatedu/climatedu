@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import { jsx, Box, Grid } from 'theme-ui'
-import { TeamProfile } from '../../components/teamProfile'
+import { TeamProfile, OrganizationProfile } from '../../components/teamProfile'
 import { graphql } from 'gatsby'
 import Layout from '../../components/layout'
 import PageHeader from '../../components/pageheader'
@@ -13,10 +13,57 @@ const calcColumnStart = pos =>
     .map(({ n, i }) => 2 * (i % n) + (i >= n ? 2 : 1))
 
 const about = ({ data }) => {
+  console.log(data)
   return (
     <Layout>
       <Box>
         <PageHeader primary='Our Team' />
+        <Grid
+          sx={{
+            mt: 2,
+            mx: [4, 5],
+            mb: 5,
+            gridTemplateColumns: nCols.map(n => `repeat(${n * 2}, 1fr)`),
+            columnGap: 4,
+            rowGap: 4,
+          }}
+        >
+          {data.currentPeople.edges.map(({ node }) => (
+            <TeamProfile
+              key={node.pos}
+              sx={{
+                gridColumnStart: calcColumnStart(node.pos),
+                gridColumnEnd: calcColumnStart(node.pos).map(c => c + 2),
+              }}
+              data={node}
+            />
+          ))}
+        </Grid>
+
+        <PageHeader primary='Organizations' />
+        <Grid
+          sx={{
+            mt: 2,
+            mx: [4, 5],
+            mb: 5,
+            gridTemplateColumns: nCols.map(n => `repeat(${n * 2}, 1fr)`),
+            columnGap: 4,
+            rowGap: 4,
+          }}
+        >
+          {data.organizations.edges.map(({ node }) => (
+            <OrganizationProfile
+              key={node.pos}
+              sx={{
+                gridColumnStart: calcColumnStart(node.pos),
+                gridColumnEnd: calcColumnStart(node.pos).map(c => c + 2),
+              }}
+              data={node}
+            />
+          ))}
+        </Grid>
+
+        <PageHeader primary='Past Members' />
         <Grid
           sx={{
             mt: 2,
@@ -26,7 +73,7 @@ const about = ({ data }) => {
             rowGap: 4,
           }}
         >
-          {data.allPeopleYaml.edges.map(({ node }) => (
+          {data.pastPeople.edges.map(({ node }) => (
             <TeamProfile
               key={node.pos}
               sx={{
@@ -46,11 +93,29 @@ export default about
 
 export const query = graphql`
   query {
-    allPeopleYaml(sort: { fields: pos, order: ASC }) {
+    currentPeople: allCurrentPeopleYaml(sort: { fields: pos, order: ASC }) {
       edges {
         node {
           pos
-          ...TeamProfileInformation
+          ...CurrentMemberProfileInformation
+        }
+      }
+    }
+
+    pastPeople: allPastPeopleYaml(sort: { fields: pos, order: ASC }) {
+      edges {
+        node {
+          pos
+          ...PastMemberProfileInformation
+        }
+      }
+    }
+
+    organizations: allOrganizationsYaml(sort: { fields: pos, order: ASC }) {
+      edges {
+        node {
+          pos
+          ...OrganizationProfileInformation
         }
       }
     }

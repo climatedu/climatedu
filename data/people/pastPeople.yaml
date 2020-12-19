@@ -1,0 +1,17 @@
+- name: Clarence Lam
+  pos: 1
+  avatar: ./avatars/clam.jpg
+  school: Montgomery Blair H.S.
+  team: Site Development
+
+- name: Robert Chen
+  pos: 2
+  avatar: ./avatars/robert.jpg
+  school: Interlake High School
+  team: Site Development
+
+- name: Darin Mao
+  pos: 3
+  avatar: ./avatars/darin.jpg
+  school: Thomas Jefferson High School for Science and Technology
+  team: Site Development
