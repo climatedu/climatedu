@@ -53,6 +53,7 @@ const Unit = ({ html, frontmatter, children }) => {
             }
             rotation
             scale
+            sticky
           }
         }
       }
@@ -100,12 +101,14 @@ const Unit = ({ html, frontmatter, children }) => {
       setSectionHeights(sections)
     }
   }, [])
+
   const opacify = (text, opacity) =>
     ((a, p) =>
       `rgba(${p(a, 0)}, ${p(a, 2)}, ${p(a, 4)}, ${opacity})`)(
       text.slice(1),
       (a, n) => parseInt(a.slice(n, n + 2), 16)
     )
+
   function scrollColor() {
     if (unitRef.current)
       setScrollLocation({
@@ -306,6 +309,7 @@ const Unit = ({ html, frontmatter, children }) => {
               </Link>
             </h2>
           ) : null}
+
           {sectionHeights.length
             ? doodles.map(section => {
                 const random = new seedrandom(
@@ -321,6 +325,49 @@ const Unit = ({ html, frontmatter, children }) => {
 
                   const rotation = doodle.rotation || 0
                   const scale = doodle.scale || 1
+
+                  if (doodle.sticky) {
+                    return (
+                      <Box
+                        sx={{
+                          position: 'absolute',
+                          top: `calc(${
+                            ((sectionHeights[section.index][1] / 10) *
+                              random() +
+                              sectionHeights[section.index][0] +
+                              (sectionHeights[section.index][1] * index) /
+                                section.doodles.length) *
+                              100 +
+                            '%'
+                          } + ${doodle.offsetY || '0px'})`,
+                          left: left
+                            ? `calc(-${width + 50}px + ${
+                                doodle.offsetX || '0px'
+                              })`
+                            : 'auto',
+                          right: left
+                            ? 'auto'
+                            : `calc(-${width + 50}px - ${
+                                doodle.offsetX || '0px'
+                              })`,
+                          backgroundColor: 'red',
+                          width: width,
+                          zIndex: -1,
+                          height: sectionHeights[section.index][1] * 100 + '%',
+                        }}
+                      >
+                        <img
+                          key={index}
+                          src={doodle.url}
+                          sx={{
+                            width: width,
+                            transform: `rotate(${rotation}deg) scaleX(${scale}) scaleY(${scale})`,
+                          }}
+                        />
+                      </Box>
+                    )
+                  }
+
                   return (
                     <img
                       key={index}
