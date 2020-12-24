@@ -92,16 +92,19 @@ sections:
   - location: '4.6'
     doodles:
       - file: ./doodles/rackright.png
-        scale: 4
+        scale: 6
         sticky: true
+        offsetX: 50px
   - location: '4.6'
     doodles:
       - file: ./doodles/rackleft.png
         right: true
-        scale: 4
+        scale: 6
         sticky: true
+        offsetX: -50px
   - location: '4.7'
     doodles:
       - file: ./doodles/hydroflask.svg
         right: true
         rotation: 1
+        offsetY: 200px

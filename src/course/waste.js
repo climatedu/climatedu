@@ -1,6 +1,6 @@
 /** @jsx jsx **/
 import { graphql } from 'gatsby'
-import { Box, jsx } from 'theme-ui'
+import { jsx } from 'theme-ui'
 import Image from 'gatsby-image'
 
 import Unit from '../components/unit'

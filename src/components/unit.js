@@ -1,20 +1,15 @@
 /** @jsx jsx **/
-import { useState, useCallback } from 'react'
-import React from 'react'
-import { Box, Flex, Heading, IconButton, Styled, jsx } from 'theme-ui'
+import React, { useState, useCallback } from 'react'
+import { Box, IconButton, Styled, jsx } from 'theme-ui'
 import { css } from '@theme-ui/css'
 import { Global } from '@emotion/core'
 import 'react-toastify/dist/ReactToastify.min.css'
 import { useStaticQuery, graphql, Link } from 'gatsby'
-import Image from 'gatsby-image'
 import { GiHamburgerMenu } from 'react-icons/gi'
-import { BsGearFill } from 'react-icons/bs'
 import seedrandom from 'seedrandom'
 
-import Navbar from './navbar'
 import SEO from './seo'
-import Layout from './layout'
-import PageHeader from './pageheader'
+
 import Container from './container'
 import SideNav, { getColor } from './sidenav'
 
@@ -87,20 +82,23 @@ const Unit = ({ html, frontmatter, children }) => {
   const [contentRef, setContentRef] = useState({ current: null })
   const navButtonRef = React.createRef()
   const [sectionHeights, setSectionHeights] = useState([])
-  const contentCallbackRef = useCallback(content => {
-    setContentRef({ current: content })
-    if (sectionHeights.length === 0 && content != null) {
-      let sections = Array.from(content.querySelectorAll('h2'))
-      sections = sections.map((s, i) => [
-        (s.offsetTop + s.offsetHeight * 2) / content.scrollHeight,
-        (sections[i + 1]
-          ? sections[i + 1].offsetTop / content.scrollHeight
-          : 1) -
+  const contentCallbackRef = useCallback(
+    content => {
+      setContentRef({ current: content })
+      if (sectionHeights.length === 0 && content != null) {
+        let sections = Array.from(content.querySelectorAll('h2'))
+        sections = sections.map((s, i) => [
           (s.offsetTop + s.offsetHeight * 2) / content.scrollHeight,
-      ])
-      setSectionHeights(sections)
-    }
-  }, [])
+          (sections[i + 1]
+            ? sections[i + 1].offsetTop / content.scrollHeight
+            : 1) -
+            (s.offsetTop + s.offsetHeight * 2) / content.scrollHeight,
+        ])
+        setSectionHeights(sections)
+      }
+    },
+    [sectionHeights.length]
+  )
 
   const opacify = (text, opacity) =>
     ((a, p) =>
@@ -265,7 +263,6 @@ const Unit = ({ html, frontmatter, children }) => {
               padding: '8px 16px',
               color: frontmatter.text,
               fontSize: '20px',
-              width: '100%',
               '&:focus': {
                 outline: 'none',
               },
@@ -312,7 +309,7 @@ const Unit = ({ html, frontmatter, children }) => {
 
           {sectionHeights.length
             ? doodles.map(section => {
-                const random = new seedrandom(
+                const random = seedrandom(
                   frontmatter.unit + '.' + section.index
                 )
                 return section.doodles.map((doodle, index) => {
@@ -350,8 +347,6 @@ const Unit = ({ html, frontmatter, children }) => {
                             : `calc(-${width + 50}px - ${
                                 doodle.offsetX || '0px'
                               })`,
-                          backgroundColor: 'red',
-                          width: width,
                           zIndex: -1,
                           height: sectionHeights[section.index][1] * 100 + '%',
                         }}
@@ -362,6 +357,8 @@ const Unit = ({ html, frontmatter, children }) => {
                           sx={{
                             width: width,
                             transform: `rotate(${rotation}deg) scaleX(${scale}) scaleY(${scale})`,
+                            position: 'sticky',
+                            top: '50%',
                           }}
                         />
                       </Box>
