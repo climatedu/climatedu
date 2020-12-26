@@ -108,3 +108,7 @@ sections:
         right: true
         rotation: 1
         offsetY: 200px
+  - location: '5.1'
+    doodles:
+      - file: ./doodles/barn.svg
+        scale: 3
