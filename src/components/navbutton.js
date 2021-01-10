@@ -17,11 +17,34 @@ const DesktopNavLink = props => (
       whiteSpace: 'nowrap',
       px: 3,
       py: 2,
+      textAlign: 'center',
       borderRadius: 10,
       fontSize: 3,
       '&.active': {
         bg: 'secondary',
       },
+      '&:hover, &:focus, &.active': {
+        color: 'primary',
+      },
+    }}
+  />
+)
+
+const DesktopNavLinkLogin = props => (
+  <Link
+    {...props}
+    sx={{
+      color: 'primary',
+      textDecoration: 'none',
+      fontWeight: 'bold',
+      display: 'inline-block',
+      whiteSpace: 'nowrap',
+      px: 3,
+      py: 2,
+      textAlign: 'center',
+      borderRadius: 10,
+      fontSize: 3,
+      backgroundColor: 'secondary',
       '&:hover, &:focus, &.active': {
         color: 'primary',
       },
@@ -48,7 +71,14 @@ const MobileNavLink = props => (
   />
 )
 
-const DesktopNavButton = ({ location, text, dropdown, children, ...props }) => {
+const DesktopNavButton = ({
+  location,
+  text,
+  dropdown,
+  children,
+  isLogin,
+  ...props
+}) => {
   const [open, setOpen] = useState(false)
 
   const setDropdown = state => () => {
@@ -62,46 +92,65 @@ const DesktopNavButton = ({ location, text, dropdown, children, ...props }) => {
       sx={{
         position: 'relative',
         /* eslint-disable prettier/prettier */
-        '&:hover > .active:first-child': dropdown
+        '&:hover > .active:first-of-type': dropdown
           ? {
               borderBottomLeftRadius: 0,
               borderBottomRightRadius: 0,
             }
           : {},
         /* eslint-enable prettier/prettier */
-        '& > .active:first-child + div': {
+        '& > .active:first-of-type + div': {
           borderTopLeftRadius: 0,
         },
       }}
       {...props}
     >
-      <DesktopNavLink
-        to={location}
-        partiallyActive={dropdown}
-        onClick={
-          dropdown &&
-          (e => {
-            e.preventDefault()
-          })
-        }
-        sx={{
-          width: '100%',
-          transition: 'border-radius .3s ease',
-        }}
-      >
-        {text}
-        {dropdown && (
-          <BsCaretDownFill
-            sx={{
-              transform: open ? 'rotate(-180deg)' : '',
-              verticalAlign: 'middle',
-              transition: 'transform .3s ease',
-              ml: 2,
-            }}
-          />
-        )}
-        {children}
-      </DesktopNavLink>
+      {isLogin ? (
+        <DesktopNavLinkLogin
+          to={location}
+          onClick={
+            dropdown &&
+            (e => {
+              e.preventDefault()
+            })
+          }
+          sx={{
+            width: '100%',
+            transition: 'border-radius .3s ease',
+          }}
+        >
+          {text}
+          {children}
+        </DesktopNavLinkLogin>
+      ) : (
+        <DesktopNavLink
+          to={location}
+          partiallyActive={dropdown !== null}
+          onClick={
+            dropdown &&
+            (e => {
+              e.preventDefault()
+            })
+          }
+          sx={{
+            width: '100%',
+            transition: 'border-radius .3s ease',
+          }}
+        >
+          {text}
+          {dropdown && (
+            <BsCaretDownFill
+              sx={{
+                transform: open ? 'rotate(-180deg)' : '',
+                verticalAlign: 'middle',
+                transition: 'transform .3s ease',
+                ml: 2,
+              }}
+            />
+          )}
+          {children}
+        </DesktopNavLink>
+      )}
       {dropdown && (
         <Box
           bg='secondary'
@@ -139,7 +188,7 @@ const MobileNavButton = ({ location, text, dropdown, children, ...props }) => {
     <Box {...props}>
       <MobileNavLink
         to={location}
-        partiallyActive={dropdown}
+        partiallyActive={dropdown !== null}
         onClick={dropdown && toggleOpen}
       >
         {text}

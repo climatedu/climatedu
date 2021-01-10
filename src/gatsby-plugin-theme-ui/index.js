@@ -74,6 +74,24 @@ export default {
         borderColor: 'primary',
       },
     },
+    darkened: {
+      fontFamily: 'body',
+      borderWidth: 3,
+      borderRadius: 10,
+      borderColor: 'primary',
+      borderStyle: 'solid',
+      px: 3,
+      py: 2,
+      color: 'secondary',
+      fontSize: 3,
+      bg: 'text',
+      cursor: 'pointer',
+      outline: 'none',
+      '&:hover': {
+        bg: 'primary',
+        borderColor: 'primary',
+      },
+    },
     icon: {
       cursor: 'pointer',
       borderRadius: 999,
@@ -85,6 +103,53 @@ export default {
         color: 'primary',
       },
     },
+    looksLikeAnInput: {
+      fontFamily: 'body',
+      bg: 'secondary',
+      borderStyle: 'solid',
+      borderWidth: 3,
+      borderRadius: 10,
+      borderColor: 'text',
+      px: 3,
+      py: 2,
+      color: 'text',
+      fontSize: 3,
+      outline: 'none',
+      '&:hover': {
+        color: 'primary',
+        borderColor: 'primary',
+        outline: 'none',
+      },
+      '&:visited': {
+        color: 'primary',
+        borderColor: 'text',
+      },
+      '&::placeholder': {
+        color: 'text',
+      },
+    },
+    danger: {
+      fontFamily: 'body',
+      bg: 'rgba(0,0,0,0)',
+      borderStyle: 'solid',
+      borderWidth: 3,
+      borderRadius: 10,
+      borderColor: 'red',
+      px: 3,
+      py: 2,
+      color: 'red',
+      fontSize: 3,
+      outline: 'none',
+      '&:hover': {
+        color: '#940000',
+        borderColor: '#940000',
+        outline: 'none',
+      },
+      '&:visited': {
+        color: 'primary',
+        borderColor: 'red',
+      },
+    },
   },
   text: {
     heading: {
@@ -94,6 +159,7 @@ export default {
   forms: {
     input: {
       fontFamily: 'body',
+      borderStyle: 'solid',
       borderWidth: 3,
       borderRadius: 10,
       borderColor: 'text',
