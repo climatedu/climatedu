@@ -1,5 +1,5 @@
 ---
-slug: 'why-does-it-matter'
+slug: 'impacts'
 unit: 2
 title: 'Why does climate change matter?'
 background: '#f5e1ba'
