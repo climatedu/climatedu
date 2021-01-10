@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { Box, IconButton, Image, Grid, jsx } from 'theme-ui'
+import { Box, IconButton, Image, Flex, jsx } from 'theme-ui'
 import logo from '../media/climatedu.png'
 import { useStaticQuery, graphql } from 'gatsby'
 
@@ -53,24 +53,21 @@ const Navbar = ({ navbarOpen, setNavbarOpen }) => {
       }}
     >
       <Image src={logo} alt='climatedu logo' sx={{ maxHeight: '100%' }} />
-      <Grid
+      <Flex
+        as='ul'
         sx={{
-          display: ['none', null, 'grid'],
+          listStyle: 'none',
+          display: ['none', null, 'flex'],
           alignItems: 'baseline',
           p: 0,
-          gridTemplateColumns: '25% 25% 25% 25%',
-          width: '65%',
-          columnGap: 0,
         }}
       >
         {links.map((props, i) => (
           <DesktopNavButton
             key={i}
+            as='li'
             sx={{
               mr: 3,
-              gridColumnStart: i + 1,
-              gridColumnEnd: i + 2,
-              padding: 0,
             }}
             {...props}
           />
@@ -81,11 +78,8 @@ const Navbar = ({ navbarOpen, setNavbarOpen }) => {
             location='/login/'
             text='Login'
             dropdown={null}
-            key={4}
-            sx={{
-              gridColumnStart: 4,
-              gridColumnEnd: 5,
-            }}
+            as='li'
+            key={links.length+1}
             isLogin={loginPath || registerPath}
           >
             <IoMdPerson
@@ -98,14 +92,11 @@ const Navbar = ({ navbarOpen, setNavbarOpen }) => {
           </DesktopNavButton>
         ) : (
           <DesktopNavButton
+            as='li'
             location='/account/'
             text='Account'
             dropdown={null}
-            key={4}
-            sx={{
-              gridColumnStart: 4,
-              gridColumnEnd: 5,
-            }}
+            key={links.length+1}
           >
             <IoMdPerson
               sx={{
@@ -116,7 +107,7 @@ const Navbar = ({ navbarOpen, setNavbarOpen }) => {
             />
           </DesktopNavButton>
         )}
-      </Grid>
+      </Flex>
       <IconButton
         sx={{
           p: 3,
