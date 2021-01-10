@@ -1,0 +1,107 @@
+sections:
+  - location: '1.1'
+    doodles:
+      - file: ./doodles/mentalhealth.svg
+        width: 150
+  - location: '1.2'
+    doodles:
+      - file: ./doodles/lightning.svg
+      - file: ./doodles/volcano.svg
+  - location: '1.3'
+    doodles:
+      - file: ./doodles/sun.svg
+      - file: ./doodles/earth.svg
+  - location: '1.4'
+    doodles:
+      - file: ./doodles/ch4.svg
+        left: true
+      - file: ./doodles/co2.svg
+        right: true
+      - file: ./doodles/n2o.svg
+        right: true
+        offsetY: 10px
+        offsetX: 0px
+      - file: ./doodles/o3.svg
+        left: true
+  - location: '1.5'
+    doodles:
+      - file: ./doodles/flower.svg
+      - file: ./doodles/mangrove.svg
+  - location: '1.6'
+    doodles:
+      - file: ./doodles/sandwich.svg
+  - location: '1.7'
+    doodles:
+      - file: ./doodles/satellite.svg
+      - file: ./doodles/earth.svg
+  - location: '2.1'
+    doodles:
+      - file: ./doodles/lightning.svg
+  - location: '2.2'
+    doodles:
+      - file: ./doodles/lightning.svg
+        right: true
+  - location: '2.3'
+    doodles:
+      - file: ./doodles/lightning.svg
+  - location: '2.4'
+    doodles:
+      - file: ./doodles/lightning.svg
+        right: true
+  - location: '2.5'
+    doodles:
+      - file: ./doodles/lightning.svg
+  - location: '2.6'
+    doodles:
+      - file: ./doodles/lightning.svg
+        right: true
+  - location: '2.7'
+    doodles:
+      - file: ./doodles/lightning.svg
+  - location: '2.8'
+    doodles:
+      - file: ./doodles/lightning.svg
+        right: true
+  - location: '2.9'
+    doodles:
+      - file: ./doodles/lightning.svg
+  - location: '4.1'
+    doodles:
+      - file: ./doodles/chips1.svg
+        rotation: -15
+  - location: '4.1'
+    doodles:
+      - file: ./doodles/can1.svg
+        right: true
+        rotation: 10
+  - location: '4.2'
+    doodles:
+      - file: ./doodles/sixpack2.svg
+  - location: '4.3'
+    doodles:
+      - file: ./doodles/bottle2.svg
+        right: true
+  - location: '4.4'
+    doodles:
+      - file: ./doodles/apple.svg
+        rotation: -20
+  - location: '4.5'
+    doodles:
+      - file: ./doodles/tote.svg
+        right: true
+  - location: '4.6'
+    doodles:
+      - file: ./doodles/rackright.png
+        scale: 4
+        offsetX: -12em
+  - location: '4.6'
+    doodles:
+      - file: ./doodles/rackleft.png
+        right: true
+        scale: 4
+        offsetX: 12em
+  - location: '4.7'
+    doodles:
+      - file: ./doodles/hydroflask.svg
+        right: true
+        rotation: 1
