@@ -2,6 +2,7 @@
 import { Button, Box, Label, Input, jsx, Textarea, Flex } from 'theme-ui'
 import { toast } from 'react-toastify'
 import { navigate, useStaticQuery } from 'gatsby'
+import React from 'react'
 
 import Course from '../components/course'
 import PageHeader from '../components/pageheader'
@@ -9,10 +10,10 @@ import Container from '../components/container'
 import getFirebase from '../firebase'
 import Progress from '../components/progress'
 
-import useAuth from '../util/auth'
+import db from '../util/db'
 
 const Dashboard = () => {
-  const user = useAuth(true)
+  const {user, account} = db.useAuth(true)
   const firebaseApp = getFirebase()
 
   const logout = async e => {
@@ -49,11 +50,23 @@ const Dashboard = () => {
     .map(n => n.node)
     .sort((a, b) => a.frontmatter.unit - b.frontmatter.unit)
 
+  const classCode = React.createRef()
+
+  const handleJoinClass = async e => {
+    e.preventDefault()
+    try {
+      await db.joinClass(user, classCode.current.value)
+      classCode.current.value = ''
+    } catch (err) {
+      toast.error('Class does not exist.')
+    }
+  }
+
   return (
     <Course>
       <PageHeader primary='Welcome to your dashboard!' />
       <Container>
-        {user !== null ? (
+        {user !== null && account !== null ? (
           <Box
             sx={{
               maxWidth: 'container',
@@ -86,7 +99,7 @@ const Dashboard = () => {
                 Send
               </Button>
             </Box>
-            <Box as='form' sx={{flex: '1 1 0', ml: [0, 0, 4]}}>
+            <Box onSubmit={handleJoinClass} as='form' sx={{flex: '1 1 0', ml: [0, 0, 4]}}>
               <h1 sx={{mb: 3}}>Join a class</h1>
               <Input
                 sx={{
@@ -97,6 +110,7 @@ const Dashboard = () => {
                 id='coursecode'
                 placeholder='Class Code'
                 required='required'
+                ref={classCode}
               />
               <Button
                 sx={{
