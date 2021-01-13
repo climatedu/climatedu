@@ -46,6 +46,13 @@ module.exports = {
     {
       resolve: 'gatsby-source-filesystem',
       options: {
+        name: 'hero',
+        path: path.resolve(__dirname, 'data/hero/'),
+      },
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
         name: 'config',
         path: path.resolve(__dirname, 'data/config/'),
       },

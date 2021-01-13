@@ -19,11 +19,10 @@ import Container from './container'
 import SideNav, { getColor } from './sidenav'
 import AppendHead from 'react-append-head';
 
-import firebase from 'firebase/app'
-import 'firebase/auth'
-import 'firebase/firestore'
+import useFirebase from '../firebase'
 
 const Unit = ({ html, frontmatter, children }) => {
+  const firebaseApp = useFirebase()
   const data = useStaticQuery(graphql`
     {
       site {

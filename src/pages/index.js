@@ -39,6 +39,7 @@ const Section = ({ header, children, ...props }) => {
 }
 
 const Home = ({ data }) => {
+  console.log(data)
   const onRegister = () => {
     navigate('/register/')
   }
@@ -210,7 +211,7 @@ export const query = graphql`
       }
     }
     allMarkdownRemark(
-      filter: { fields: { sourceInstanceName: { eq: "course" } } }
+      filter: { fileAbsolutePath: { glob: "**/hero/*.md" } }
       sort: { fields: frontmatter___unit }
     ) {
       edges {
@@ -220,7 +221,7 @@ export const query = graphql`
             text
             title
           }
-          excerpt(format: HTML)
+          excerpt(format: HTML, pruneLength: 99999)
         }
       }
     }
