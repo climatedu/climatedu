@@ -105,3 +105,16 @@ sections:
       - file: ./doodles/hydroflask.svg
         right: true
         rotation: 1
+questions:
+  - unit: 1
+    key: 1
+    prompt: "Are fish heads ever seen drinking cappuccino in italian restaurants with oriental women, yeah?"
+  - unit: 1
+    key: 2
+    prompt: "Yeah yeah yeh yeah yeah yeah yeah?"
+  - unit: 1
+    key: 3
+    prompt: "Freedom's just another word for nothing left to lose?"
+  - unit: 1
+    key: 4
+    prompt: "I'm so tired."

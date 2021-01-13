@@ -49,7 +49,7 @@ Reflecting on that video, are the words you used to describe climate still appro
 
 **Q: Was the visual of the clothing you wear on a specific day versus the clothing in your closet helpful? Can you think of another analogy illustrating the difference between climate and weather?**
 
-<textarea data-unit="1" data-key="1" id="1.2" placeholder="Enter your response here." onblur="updateResponse(this)"></textarea>
+<textarea data-unit="1" data-key="2" id="1.1" placeholder="Enter your response here." onblur="updateResponse(this)" oninput="editedResponse(this)"></textarea>
 
 
 ## The ins and outs of sunlight and our atmosphere

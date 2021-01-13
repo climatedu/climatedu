@@ -17,17 +17,6 @@ const Dashboard = () => {
   const {user, account, classroom, students} = db.useAuth(true)
   const firebaseApp = getFirebase()
 
-  const logout = async e => {
-    e.preventDefault()
-    try {
-      await firebaseApp.auth().signOut()
-      toast.success('Logged out!')
-      navigate('/')
-    } catch (e) {
-      toast.error(e.message)
-    }
-  }
-
   const data = useStaticQuery(graphql`
     {allMarkdownRemark(
       filter: { fileAbsolutePath: { glob: "**/course/*.md" } }
@@ -89,7 +78,6 @@ const Dashboard = () => {
       teacherClassCode.current.value = ''
       toast.success("Classroom created!")
     } catch (err) {
-      console.log(err)
       toast.error('A classroom is already using that code. Please choose a different one.')
     }
   }
@@ -131,7 +119,7 @@ const Dashboard = () => {
         >
         {user !== null && account !== null ? (account.type === 'Student' ? (
           <><h1 sx={{mb: 3}}>Course progress</h1>
-          <Progress data={units}/>
+          <Progress data={units} account={account}/>
           <h1 sx={{mb: 3}}>Announcements</h1>
           <Box>No announcements for now!</Box>
           <Flex sx={{display: ['block', 'block', 'flex']}}>
@@ -195,7 +183,7 @@ const Dashboard = () => {
             <h1>{classroom.title}</h1>
             <h2 sx={{fontWeight: 'normal'}}>Join Code: {classroom.code}</h2>
             <h1>Students</h1>
-            {students ? students.map(s => <Dropdown key={s.id} contents={<Progress data={units}/>} text={s.name} textStyle={{fontSize: 4, mb: 3}}/>) : null}
+            {students ? students.map(s => <Dropdown key={s.id} contents={<Progress data={units} account={s}/>} text={s.name} textStyle={{fontSize: 4, mb: 3}}/>) : null}
           </>)
         ) : null)) : null}
         </Box>

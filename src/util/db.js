@@ -17,7 +17,7 @@ const useAuth = authRequired => {
         if (auth === null) navigate('/')
         setUser(auth)
         firebaseApp.firestore().collection("accounts").doc(auth.uid).onSnapshot(function (a) {
-          setAccount(a.data())
+          setAccount({id: a.id, ...a.data()})
           a = a.data()
           if (a && a.class) {
             setTimeout(() => firebaseApp.firestore().collection("classes").doc(a.class).get().then(function (c) {
@@ -57,4 +57,20 @@ function createClass(user, title, code) {
   return firebaseApp.firestore().collection("classes").doc(code).set({title, owner: user.uid})
 }
 
-export default {useAuth, joinClass, leaveFeedback, createClass}
+function useResponses(uid, unit) {
+  const [responses, setResponses] = useState(null)
+  useEffect(() => {
+    if (!firebaseApp) return
+    let unsubscribe = firebaseApp.firestore().collection('accounts').doc(uid).collection('responses').doc(unit.toString()).onSnapshot(function (r) {
+      setResponses(r.data())
+    })
+    return ()=>unsubscribe()
+  }, [firebaseApp, uid, unit])
+  return responses
+}
+
+function teacherFeedback(uid, unit, key, feedback) {
+  return firebaseApp.firestore().collection('accounts').doc(uid).collection('responses').doc(unit.toString()).update({['feedback.'+key]: feedback})
+}
+
+export default {useAuth, joinClass, leaveFeedback, createClass, useResponses, teacherFeedback}

@@ -4,8 +4,8 @@ import { navigate } from 'gatsby'
 import React from 'react'
 import { HiChatAlt } from 'react-icons/hi'
 
-const Progress = ({data}) => {
-  return (
+const Progress = ({ data, account }) => {
+  return (account !== null ?
   <Grid sx={{gridGap: '0 8px', gridTemplateColumns: 'auto min-content min-content', fontSize: 3}}>
   {data.map(({frontmatter}) => {
     frontmatter.percent = Math.random()
@@ -17,12 +17,12 @@ const Progress = ({data}) => {
             <Box sx={{width: `${frontmatter.percent*100}%`, bg: frontmatter.highlight, height: '100%', position: 'absolute', borderRadius: '10px'}}/>
           </Box>
         </Flex>
-      <HiChatAlt tabIndex="0" sx={{alignSelf: 'center', gridColumn: 2, color: frontmatter.highlight, cursor: 'pointer', '&:focus, &:hover': {color: frontmatter.text, outline: 'none'}}}/>
+      <HiChatAlt onClick={()=>{navigate('/responses/?unit='+frontmatter.unit+'&student='+account.id)}} tabIndex="0" sx={{alignSelf: 'center', gridColumn: 2, color: frontmatter.highlight, cursor: 'pointer', '&:focus, &:hover': {color: frontmatter.text, outline: 'none'}}}/>
       <Box sx={{gridColumn: 3, color: frontmatter.highlight, fontWeight: 'bold'}}>{Math.round(frontmatter.percent*100)}%</Box></React.Fragment>
     )
   })}
   </Grid>
-  )
+  : null)
 }
 
 export default Progress
