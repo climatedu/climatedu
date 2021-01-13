@@ -93,7 +93,7 @@ const Login = ({ data }) => {
           <Flex sx={{ width: '100%' }}>
             <Button sx={{ mb: 4, marginLeft: 'auto' }}>Let&apos;s go!</Button>
           </Flex>
-
+          {/*
           <Button
             variant='looksLikeAnInput'
             sx={{
@@ -114,6 +114,7 @@ const Login = ({ data }) => {
             />
             Sign in with Google
           </Button>
+          */}
 
           <Box sx={{ mb: 3 }}>
             <GatsbyLink
