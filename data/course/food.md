@@ -197,6 +197,7 @@ To learn more about regenerative agriculture, check out [this site.](https://reg
 **Permaculture** is a bit tricky to define, but involves creating solutions that allow us to work with our surroundings, with nature, as opposed to against it. We want to allow the land and humans to work together to provide mutual benefits in a symbiotic relationship. Watch this following video from Our Changing Climate and read the article to learn a bit more about permaculture.
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/QXTXNSWOAqQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 *   [What is permaculture?](https://medium.com/permaculturewomen/permaculture-what-it-is-and-what-it-isnt-834266a54d20), Medium article
 
 **Q: After watching the video and reading the article, how would you describe permaculture in your own words? What is the goal of interactions between nature and humans in permaculture?**

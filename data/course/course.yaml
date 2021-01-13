@@ -65,6 +65,33 @@ sections:
   - location: '2.9'
     doodles:
       - file: ./doodles/lightning.svg
+  - location: '3.1'
+    doodles:
+      - file: ./doodles/dinofossil.svg
+        rotation: -15
+        offsetY: -10em
+      - file: ./doodles/nuclear.png
+        right: true
+        scale: 2
+        offsetY: -45em
+      - file: ./doodles/solar.png
+        offsetY: -18em
+        scale: 2
+        right: true
+  - location: '3.3'
+    doodles:
+      - file: ./doodles/renewable.png
+        scale: 1.5
+  - location: '3.4'
+    doodles:
+      - file: ./doodles/light3.svg
+        scale: 3
+        right: false
+        offsetY: -15em
+      - file: ./doodles/earthsprout.png
+        scale: 2
+        right: true
+        offsetY: 54em
   - location: '4.1'
     doodles:
       - file: ./doodles/chips1.svg
@@ -103,6 +130,14 @@ sections:
       - file: ./doodles/hydroflask.svg
         right: true
         rotation: 1
+  - location: '5.1'
+    doodles:
+      - file: ./doodles/goat.svg
+        scale: 3
+        right: true
+        rotation: 20
+        offsetY: -10em
+        offsetX: 5em
 questions:
   - unit: 1
     key: 1
