@@ -1,3 +1,8 @@
 import db from './db'
 
-export default db.useAuth
+function useAuth (authRequired) {
+  const {user} = db.useAuth(authRequired)
+  return user
+}
+
+export default useAuth

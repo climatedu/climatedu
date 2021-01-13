@@ -9,11 +9,12 @@ import PageHeader from '../components/pageheader'
 import Container from '../components/container'
 import getFirebase from '../firebase'
 import Progress from '../components/progress'
+import Dropdown from '../components/dropdown'
 
 import db from '../util/db'
 
 const Dashboard = () => {
-  const {user, account} = db.useAuth(true)
+  const {user, account, classroom} = db.useAuth(true)
   const firebaseApp = getFirebase()
 
   const logout = async e => {
@@ -75,6 +76,28 @@ const Dashboard = () => {
       toast.error('Error leaving feedback, please try again later or manually contact us.')
     }
   }
+  const classInput =
+    (<Box onSubmit={handleJoinClass} as='form'>
+      {classroom === null ? <h1 sx={{mb: 3}}>Join a class</h1> : <h1/>}
+      <Input
+        sx={{
+          width: ['100%'],
+          mb: 3,
+        }}
+        name='coursecode'
+        id='coursecode'
+        placeholder='Class Code'
+        required='required'
+        ref={classCode}
+      />
+      <Button
+        sx={{
+          cursor: 'pointer',
+        }}
+      >
+        Join Class
+      </Button>
+    </Box>)
 
   return (
     <Course>
@@ -93,48 +116,28 @@ const Dashboard = () => {
             <h1 sx={{mb: 3}}>Announcements</h1>
             <Box>No announcements for now!</Box>
             <Flex sx={{display: ['block', 'block', 'flex']}}>
-            <Box onSubmit={handleLeaveFeedback} as='form' sx={{flex: '1 1 0', mr: [0, 0, 4]}}>
-              <h1 sx={{mb: 3}}>Give us feedback</h1>
-              <Textarea
-                sx={{
-                  width: ['100%'],
-                  mb: 3,
-                }}
-                name='feedback'
-                id='feedback'
-                placeholder='Feedback'
-                required='required'
-                ref={feedbackBox}
-              />
-              <Button
-                sx={{
-                  cursor: 'pointer',
-                }}
-              >
-                Send
-              </Button>
-            </Box>
-            <Box onSubmit={handleJoinClass} as='form' sx={{flex: '1 1 0', ml: [0, 0, 4]}}>
-              <h1 sx={{mb: 3}}>Join a class</h1>
-              <Input
-                sx={{
-                  width: ['100%'],
-                  mb: 3,
-                }}
-                name='coursecode'
-                id='coursecode'
-                placeholder='Class Code'
-                required='required'
-                ref={classCode}
-              />
-              <Button
-                sx={{
-                  cursor: 'pointer',
-                }}
-              >
-                Join Class
-              </Button>
-            </Box>
+              <Box onSubmit={handleLeaveFeedback} as='form' sx={{flex: '1 1 0', mr: [0, 0, 4]}}>
+                <h1 sx={{mb: 3}}>Give us feedback</h1>
+                <Textarea
+                  sx={{
+                    width: ['100%'],
+                    mb: 3,
+                  }}
+                  name='feedback'
+                  id='feedback'
+                  placeholder='Feedback'
+                  required='required'
+                  ref={feedbackBox}
+                />
+                <Button
+                  sx={{
+                    cursor: 'pointer',
+                  }}
+                >
+                  Send
+                </Button>
+              </Box>
+              <Box sx={{flex: '1 1 0', ml: [0, 0, 4]}}>{classroom === null ? classInput : <><h1 sx={{mb: 3}}>{classroom.title}</h1><Dropdown text={`Switch classes?`} textStyle={{fontSize: 4, whiteSpace: 'pre-line'}} contents={classInput}/></>}</Box>
             </Flex>
           </Box>
         ) : null}
