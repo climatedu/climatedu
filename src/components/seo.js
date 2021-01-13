@@ -34,7 +34,7 @@ const SEO = ({ title, description, image, scripts }) => {
       )}
       {seo.image && <meta property='og:image' content={seo.image} />}
       <link rel='icon' type='image/png' href='/climatedumini.png' />
-      {scripts.map(s => s)}
+      {scripts ? scripts.map(s => s) : null}
     </Helmet>
   )
 }
