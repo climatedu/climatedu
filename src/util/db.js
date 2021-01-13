@@ -27,4 +27,16 @@ function joinClass (user, classCode) {
   return firebaseApp.firestore().collection("accounts").doc(user.uid).update({class: classCode})
 }
 
-export default {useAuth, joinClass}
+
+function leaveFeedback (user, feedback){
+  return firebaseApp.firestore().collection("feedback").add({
+    uid: user.uid,
+    feedback: feedback,
+    name: user.displayName,
+    email: user.email,
+  })
+}
+
+
+
+export default {useAuth, joinClass, leaveFeedback}

@@ -50,15 +50,29 @@ const Dashboard = () => {
     .map(n => n.node)
     .sort((a, b) => a.frontmatter.unit - b.frontmatter.unit)
 
-  const classCode = React.createRef()
+  const classCode = React.useRef()
 
   const handleJoinClass = async e => {
     e.preventDefault()
     try {
       await db.joinClass(user, classCode.current.value)
       classCode.current.value = ''
+      toast.success('Successfully joined class!')
     } catch (err) {
       toast.error('Class does not exist.')
+    }
+  }
+
+  const feedbackBox = React.useRef()
+
+  const handleLeaveFeedback = async e => {
+    e.preventDefault()
+    try {
+      await db.leaveFeedback(user, feedbackBox.current.value)
+      feedbackBox.current.value = ''
+      toast.success("We've received your feedback!")
+    } catch (err) {
+      toast.error('Error leaving feedback, please try again later or manually contact us.')
     }
   }
 
@@ -77,9 +91,9 @@ const Dashboard = () => {
             <h1 sx={{mb: 3}}>Course progress</h1>
             <Progress data={units}/>
             <h1 sx={{mb: 3}}>Announcements</h1>
-            <Box>fdsa</Box>
+            <Box>No announcements for now!</Box>
             <Flex sx={{display: ['block', 'block', 'flex']}}>
-            <Box as='form' sx={{flex: '1 1 0', mr: [0, 0, 4]}}>
+            <Box onSubmit={handleLeaveFeedback} as='form' sx={{flex: '1 1 0', mr: [0, 0, 4]}}>
               <h1 sx={{mb: 3}}>Give us feedback</h1>
               <Textarea
                 sx={{
@@ -90,6 +104,7 @@ const Dashboard = () => {
                 id='feedback'
                 placeholder='Feedback'
                 required='required'
+                ref={feedbackBox}
               />
               <Button
                 sx={{
