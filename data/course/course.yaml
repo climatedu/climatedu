@@ -138,6 +138,27 @@ sections:
         rotation: 20
         offsetY: -10em
         offsetX: 5em
+  - location: '6.1'
+    doodles:
+      - file: ./doodles/truck.png
+        scale: 6
+        offsetX: "-4em"
+        offsetY: "-22em"
+  - location: '6.3'
+    doodles:
+      - file: ./doodles/trainfront.svg
+        sticky: true
+        scale: 3
+        offsetX: "-7em"
+        offsetY: "-11em"
+  - location: '6.3'
+    doodles:
+      - file: ./doodles/trainback.svg
+        sticky: true
+        scale: 3
+        offsetX: "7em"
+        offsetY: "-11em"
+        right: true
 questions:
   - unit: 1
     key: 1
