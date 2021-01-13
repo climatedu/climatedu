@@ -16,7 +16,6 @@ const Responses = ({location}) => {
   const params = new URLSearchParams(location.search)
   const {user, account, classroom, students} = db.useAuth(true)
   const firebaseApp = getFirebase()
-  if (!params.get('student') || !params.get('unit')) navigate('/dashboard/')
 
   const data = useStaticQuery(graphql`
     {
