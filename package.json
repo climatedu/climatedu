@@ -27,6 +27,7 @@
     "gatsby-remark-unwrap-images": "^1.0.2",
     "glider-js": "^1.7.3",
     "react": "^16.12.0",
+    "react-append-head": "^1.0.11",
     "react-datepicker": "^3.2.2",
     "react-dom": "^16.12.0",
     "react-glider": "^2.0.1",

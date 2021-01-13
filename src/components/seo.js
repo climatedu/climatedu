@@ -4,7 +4,7 @@ import { Helmet } from 'react-helmet'
 import { useLocation } from '@reach/router'
 import { useStaticQuery, graphql } from 'gatsby'
 
-const SEO = ({ title, description, image, scripts }) => {
+const SEO = ({ title, description, image }) => {
   const { pathname } = useLocation()
   const { site } = useStaticQuery(query)
 
@@ -34,7 +34,6 @@ const SEO = ({ title, description, image, scripts }) => {
       )}
       {seo.image && <meta property='og:image' content={seo.image} />}
       <link rel='icon' type='image/png' href='/climatedumini.png' />
-      {scripts ? scripts.map(s => s) : null}
     </Helmet>
   )
 }

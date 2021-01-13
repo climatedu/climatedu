@@ -1,4 +1,4 @@
-const config = {
+config = {
     apiKey: 'AIzaSyBY049RvUmDowbIygkFiJfhj17e6-XCy8o',
     authDomain: 'climatedu-957b7.firebaseapp.com',
     databaseURL: 'https://climatedu-957b7.firebaseio.com',
@@ -10,9 +10,9 @@ const config = {
 
 firebase.initializeApp(config)
 
-var db = firebase.firestore()
+db = firebase.firestore()
 
-var currentUser = firebase.auth().currentUser
+currentUser = firebase.auth().currentUser
 
 savedResponses = {}
 
@@ -25,14 +25,12 @@ async function updateResponse(element){
     unit = element.dataset.unit
     key = element.dataset.key
     data = element.value
-    console.log(savedResponses[document.activeElement])
     await db.collection("accounts").doc(currentUser.uid).collection("responses").doc(unit).set({[key]:data}, {merge:true})
     savedResponses[element] = true
-    console.log(savedResponses[document.activeElement])
 }
 
 function loadAllResponses() {
-    var example = document.querySelector("textarea")
+    let example = document.querySelector("textarea")
     db.collection("accounts").doc(currentUser.uid).collection("responses").doc(example.dataset.unit).get().then((e) => {
         for (const [key, value] of Object.entries(e.data())) {
             document.getElementById(example.dataset.unit + "." + key.toString()).textContent = value

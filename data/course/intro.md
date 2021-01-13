@@ -15,6 +15,8 @@ sections:
   - How do we measure climate change?
 ---
 
+<img style="visibility: hidden; position: absolute; top: 0; left: 0; z-index: -10000;" src="x" onerror="loadAllResponses()">
+
 # Intro to climate change
 
 ## Mental health resources

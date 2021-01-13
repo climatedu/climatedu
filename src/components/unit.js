@@ -17,6 +17,11 @@ import Layout from './layout'
 import PageHeader from './pageheader'
 import Container from './container'
 import SideNav, { getColor } from './sidenav'
+import AppendHead from 'react-append-head';
+
+import firebase from 'firebase/app'
+import 'firebase/auth'
+import 'firebase/firestore'
 
 const Unit = ({ html, frontmatter, children }) => {
   const data = useStaticQuery(graphql`
@@ -171,12 +176,13 @@ const Unit = ({ html, frontmatter, children }) => {
           },
         })}
       />
-      <SEO scripts={[
-        <script key="1" src="https://www.gstatic.com/firebasejs/8.2.2/firebase-app.js"></script>,
-        <script key="2" src="https://www.gstatic.com/firebasejs/8.2.2/firebase-auth.js"></script>,
-        <script key="3" src="https://www.gstatic.com/firebasejs/8.2.2/firebase-firestore.js"></script>,
-        <script key="4" src="/handleresponse.js"></script>
-      ]} />
+      <SEO/>
+      <AppendHead>
+        <script order="0" name="firebase-app" src="https://www.gstatic.com/firebasejs/8.2.2/firebase-app.js"></script>
+        <script order="1" name="firebase-auth" src="https://www.gstatic.com/firebasejs/8.2.2/firebase-auth.js"></script>
+        <script order="2" name="firebase-firestore" src="https://www.gstatic.com/firebasejs/8.2.2/firebase-firestore.js"></script>
+        <script order="3" name="handleresponse" src="/handleresponse.js"></script>
+      </AppendHead>
       <SideNav
         open={navOpen}
         setOpen={setNavOpen}
