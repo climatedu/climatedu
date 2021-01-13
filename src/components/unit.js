@@ -171,7 +171,12 @@ const Unit = ({ html, frontmatter, children }) => {
           },
         })}
       />
-      <SEO />
+      <SEO scripts={[
+        <script key="1" src="https://www.gstatic.com/firebasejs/8.2.2/firebase-app.js"></script>,
+        <script key="2" src="https://www.gstatic.com/firebasejs/8.2.2/firebase-auth.js"></script>,
+        <script key="3" src="https://www.gstatic.com/firebasejs/8.2.2/firebase-firestore.js"></script>,
+        <script key="4" src="/handleresponse.js"></script>
+      ]} />
       <SideNav
         open={navOpen}
         setOpen={setNavOpen}

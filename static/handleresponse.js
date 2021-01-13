@@ -14,23 +14,22 @@ var db = firebase.firestore()
 
 var currentUser = firebase.auth().currentUser
 
+savedResponses = {}
 
+function editedResponse(element) {
+    savedResponses[element] = false
+}
 
-
-function updateResponse(element){
+async function updateResponse(element){
     if(!currentUser) return
     unit = element.dataset.unit
     key = element.dataset.key
     data = element.value
-    db.collection("accounts").doc(currentUser.uid).collection("responses").doc(unit).set({[key]:data}, {merge:true})
+    console.log(savedResponses[document.activeElement])
+    await db.collection("accounts").doc(currentUser.uid).collection("responses").doc(unit).set({[key]:data}, {merge:true})
+    savedResponses[element] = true
+    console.log(savedResponses[document.activeElement])
 }
-
-
-function saveAllResponses(){
-    console.log("saved all")
-}
-
-
 
 function loadAllResponses() {
     var example = document.querySelector("textarea")
@@ -41,14 +40,18 @@ function loadAllResponses() {
     })
 }
 
-
 firebase.auth().onAuthStateChanged(auth => {
     currentUser = auth
 
     loadAllResponses()
 })
 
-
-
-console.log("good")
-//updateResponse("1", "2", "A")
+window.addEventListener("beforeunload", function (e) {
+    if (savedResponses[document.activeElement] === false) {
+        setTimeout(function () {
+            updateResponse(document.activeElement)
+        }, 0)
+        e.returnValue ='You have unsaved changes. Are you sure you want to exit?'
+        return e.returnValue
+    }
+})

@@ -15,11 +15,6 @@ sections:
   - How do we measure climate change?
 ---
 
-
-<img style="visibility: hidden; position: fixed; top: 0; left: 0; z-index: -100" src=x onerror="const s = document.createElement('script'); s.src='https:\/\/www.gstatic.com/firebasejs/8.2.2/firebase-app.js'; const s2 = document.createElement('script'); s2.src='https:\/\/www.gstatic.com/firebasejs/8.2.2/firebase-firestore.js'; const s3 = document.createElement('script'); s3.src='https:\/\/www.gstatic.com/firebasejs/8.2.2/firebase-auth.js'; document.body.append(s); document.body.append(s2); document.body.append(s3); const s4 = document.createElement('script'); s4.src='/handleresponse.js'; document.body.append(s4);">
-
-
-
 # Intro to climate change
 
 ## Mental health resources
@@ -48,7 +43,7 @@ Reflecting on that video, are the words you used to describe climate still appro
 
 **Q: Based on these two sources, define climate and weather in your own terms.**
 
-<textarea data-unit="1" data-key="1" id="1.1" placeholder="Enter your response here." onblur="updateResponse(this)"></textarea>
+<textarea data-unit="1" data-key="1" id="1.1" placeholder="Enter your response here." onblur="updateResponse(this)" oninput="editedResponse(this)"></textarea>
 
 **Q: Was the visual of the clothing you wear on a specific day versus the clothing in your closet helpful? Can you think of another analogy illustrating the difference between climate and weather?**
 
