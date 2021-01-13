@@ -322,6 +322,7 @@ const Unit = ({ html, frontmatter, children }) => {
                 const random = new seedrandom(
                   frontmatter.unit + '.' + section.index
                 )
+                // console.log(section.doodles)
                 return section.doodles.map((doodle, index) => {
                   const width = doodle.width || 100
                   const left = doodle.right
@@ -332,6 +333,9 @@ const Unit = ({ html, frontmatter, children }) => {
 
                   const rotation = doodle.rotation || 0
                   const scale = doodle.scale || 1
+
+                  console.log(sectionHeights)
+                  console.log(section.index)
                   return (
                     <img
                       key={index}
