@@ -25,25 +25,31 @@ const Account = ({ data }) => {
     }
   }
 
+  const visitDashboard = async e => {
+    e.preventDefault()
+    navigate('/dashboard/')
+  }
+
   return (
     <Layout>
       <PageHeader primary='Account' />
       <Container>
         {user !== null ? (
-          <Box
-            sx={{
-              maxWidth: 'container',
-              m: 'auto',
-              flexDirection: 'column',
-            }}
-          >
-            <Button
-              variant='danger'
-              sx={{ width: '50%', m: 'auto 0' }}
-              onClick={logout}
+          <Box>
+            <Box
+              sx={{
+                maxWidth: 'container',
+                m: 'auto',
+                flexDirection: 'column',
+              }}
             >
-              Logout {user.displayName}
-            </Button>
+              <Button
+                sx={{ width: '100%', m: 'auto 0'}}
+                onClick={visitDashboard}
+              >
+                Visit course dashboard
+              </Button>
+            </Box>
           </Box>
         ) : null}
       </Container>
