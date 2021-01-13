@@ -138,9 +138,8 @@ The battery system is one of the most important parts of an EV. EV batteries are
 More and more people are buying and using EVs to replace their ICE vehicles.
     
 
-<p id="gdcalert6" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image6.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert7">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-![alt_text](images/image6.png "image_tooltip")
-Caption: Annual global vehicle sales. (Source: BloombergNEF)
+![Annual global vehicle sales](./images/6-vehicles.png)
+<figcaption>Annual global vehicle sales. (Source: BloombergNEF)</figcaption>
 
 Let's take a look at more data on EVs in 2020 from Bloomberg NEF.
 

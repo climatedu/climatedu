@@ -9,7 +9,7 @@ const Transportation = ({ data }) => {
   return (
     <Unit {...data.markdownRemark}>
       <Image
-        fluid={{ ...data.imageSharp.fluid }}
+        fluid={{ ...data.railImage.fluid }}
         sx={{
           position: 'absolute',
           bottom: 0,
@@ -28,7 +28,7 @@ export const pageQuery = graphql`
     markdownRemark(frontmatter: { slug: { eq: $slug } }) {
       ...Unit
     }
-    imageSharp(fluid: { originalName: { eq: "TrainBackground.png" } }) {
+    railImage: imageSharp(fluid: { originalName: { eq: "TrainBackground.png" } }) {
       fluid(maxWidth: 2560, traceSVG: {}) {
         ...GatsbyImageSharpFluid_tracedSVG
       }

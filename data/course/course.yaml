@@ -159,6 +159,40 @@ sections:
         offsetX: "7em"
         offsetY: "-11em"
         right: true
+  - location: '7.1'
+    doodles:
+      - file: ./doodles/balcony1_v2.svg
+        scale: 2
+        offsetY: "-4em"
+  - location: '7.3'
+    doodles:
+      - file: ./doodles/smokeblob.svg
+        scale: 5
+        offsetX: "2em"
+        right: true
+  - location: '7.4'
+    doodles:
+      - file: ./doodles/balcony3_v3.svg
+        scale: 2.5
+        offsetX: "-5em"
+  - location: '7.5'
+    doodles:
+      - file: ./doodles/plants.svg
+        scale: 2
+        right: true
+  - location: '8.1'
+    doodles:
+      - file: ./doodles/protest_signs.svg
+        scale: 4
+        offsetX: "-9em"
+        offsetY: "10em"
+  - location: '8.5'
+    doodles:
+      - file: ./doodles/papers_squiggles.svg
+        scale: 2
+        offsetX: "7em"
+        offsetY: "-5em"
+        right: true
 questions:
   - unit: 1
     key: 1
