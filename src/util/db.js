@@ -9,6 +9,7 @@ const useAuth = authRequired => {
   const [user, setUser] = useState(null)
   const [account, setAccount] = useState(null)
   const [classroom, setClassroom] = useState(null)
+  const [students, setStudents] = useState(null)
   useEffect(() => {
     if (!firebaseApp) return
     if (authRequired) {
@@ -20,7 +21,12 @@ const useAuth = authRequired => {
           a = a.data()
           if (a && a.class) {
             setTimeout(() => firebaseApp.firestore().collection("classes").doc(a.class).get().then(function (c) {
-              setClassroom(c.data())
+              setClassroom({code: c.id, ...c.data()})
+              firebaseApp.firestore().collection("accounts").where("class", "==", c.id).where("teacher", "==", auth.uid).where("type", "==", "Student").onSnapshot(function (s) {
+                let stu = []
+                s.forEach(d => stu.push({id: d.id, ...d.data()}))
+                setStudents(stu)
+              })
             }), 100)
           } else {
             setClassroom(null)
@@ -30,11 +36,11 @@ const useAuth = authRequired => {
     }
     return firebaseApp.auth().onAuthStateChanged(setUser)
   }, [firebaseApp, authRequired])
-  return {user, account, classroom}
+  return {user, account, classroom, students}
 }
 
 function joinClass (user, classCode) {
-  return firebaseApp.firestore().collection("accounts").doc(user.uid).update({class: classCode})
+  return firebaseApp.firestore().collection("classes").doc(classCode).get().then((result) => firebaseApp.firestore().collection("accounts").doc(user.uid).update({class: classCode, teacher: result.data().owner}))
 }
 
 
@@ -47,6 +53,8 @@ function leaveFeedback (user, feedback){
   })
 }
 
+function createClass(user, title, code) {
+  return firebaseApp.firestore().collection("classes").doc(code).set({title, owner: user.uid})
+}
 
-
-export default {useAuth, joinClass, leaveFeedback}
+export default {useAuth, joinClass, leaveFeedback, createClass}

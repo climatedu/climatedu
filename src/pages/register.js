@@ -80,6 +80,7 @@ const Register = ({ data }) => {
         .doc(userNew.uid)
         .set({
           type: type,
+          name: name
         })
 
       toast.success('Signed up!')

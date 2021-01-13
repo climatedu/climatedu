@@ -14,7 +14,7 @@ import Dropdown from '../components/dropdown'
 import db from '../util/db'
 
 const Dashboard = () => {
-  const {user, account, classroom} = db.useAuth(true)
+  const {user, account, classroom, students} = db.useAuth(true)
   const firebaseApp = getFirebase()
 
   const logout = async e => {
@@ -76,6 +76,24 @@ const Dashboard = () => {
       toast.error('Error leaving feedback, please try again later or manually contact us.')
     }
   }
+
+  const teacherClassTitle = React.useRef()
+  const teacherClassCode = React.useRef()
+
+  const handleCreateClass = async e => {
+    e.preventDefault()
+    try {
+      await db.createClass(user, teacherClassTitle.current.value, teacherClassCode.current.value)
+      await db.joinClass(user, teacherClassCode.current.value)
+      teacherClassTitle.current.value = ''
+      teacherClassCode.current.value = ''
+      toast.success("Classroom created!")
+    } catch (err) {
+      console.log(err)
+      toast.error('A classroom is already using that code. Please choose a different one.')
+    }
+  }
+
   const classInput =
     (<Box onSubmit={handleJoinClass} as='form'>
       {classroom === null ? <h1 sx={{mb: 3}}>Join a class</h1> : <h1/>}
@@ -103,44 +121,84 @@ const Dashboard = () => {
     <Course>
       <PageHeader primary='Welcome to your dashboard!' />
       <Container>
-        {user !== null && account !== null ? (
-          <Box
-            sx={{
-              maxWidth: 'container',
-              m: 'auto',
-              flexDirection: 'column',
-            }}
-          >
-            <h1 sx={{mb: 3}}>Course progress</h1>
-            <Progress data={units}/>
-            <h1 sx={{mb: 3}}>Announcements</h1>
-            <Box>No announcements for now!</Box>
-            <Flex sx={{display: ['block', 'block', 'flex']}}>
-              <Box onSubmit={handleLeaveFeedback} as='form' sx={{flex: '1 1 0', mr: [0, 0, 4]}}>
-                <h1 sx={{mb: 3}}>Give us feedback</h1>
-                <Textarea
-                  sx={{
-                    width: ['100%'],
-                    mb: 3,
-                  }}
-                  name='feedback'
-                  id='feedback'
-                  placeholder='Feedback'
-                  required='required'
-                  ref={feedbackBox}
-                />
-                <Button
-                  sx={{
-                    cursor: 'pointer',
-                  }}
-                >
-                  Send
-                </Button>
-              </Box>
-              <Box sx={{flex: '1 1 0', ml: [0, 0, 4]}}>{classroom === null ? classInput : <><h1 sx={{mb: 3}}>{classroom.title}</h1><Dropdown text={`Switch classes?`} textStyle={{fontSize: 4, whiteSpace: 'pre-line'}} contents={classInput}/></>}</Box>
-            </Flex>
-          </Box>
-        ) : null}
+        <Box
+          sx={{
+            maxWidth: 'container',
+            m: 'auto',
+            mb: 4,
+            flexDirection: 'column',
+          }}
+        >
+        {user !== null && account !== null ? (account.type === 'Student' ? (
+          <><h1 sx={{mb: 3}}>Course progress</h1>
+          <Progress data={units}/>
+          <h1 sx={{mb: 3}}>Announcements</h1>
+          <Box>No announcements for now!</Box>
+          <Flex sx={{display: ['block', 'block', 'flex']}}>
+            <Box onSubmit={handleLeaveFeedback} as='form' sx={{flex: '1 1 0', mr: [0, 0, 4]}}>
+              <h1 sx={{mb: 3}}>Give us feedback</h1>
+              <Textarea
+                sx={{
+                  width: ['100%'],
+                  mb: 3,
+                }}
+                name='feedback'
+                id='feedback'
+                placeholder='Feedback'
+                required='required'
+                ref={feedbackBox}
+              />
+              <Button
+                sx={{
+                  cursor: 'pointer',
+                }}
+              >
+                Send
+              </Button>
+            </Box>
+            <Box sx={{flex: '1 1 0', ml: [0, 0, 4]}}>{classroom === null ? classInput : <><h1 sx={{mb: 3}}>{classroom.title}</h1><Dropdown text={`Switch classes?`} textStyle={{fontSize: 4, whiteSpace: 'pre-line'}} contents={classInput}/></>}</Box>
+          </Flex></>
+        ) : (account.type === 'Teacher' ? (
+          classroom === null ? (<Box as='form' onSubmit={handleCreateClass}>
+            <h1 sx={{mb: 3}}>Create a classroom to get started.</h1>
+            <Input
+              sx={{
+                width: ['100%'],
+                mb: 3,
+              }}
+              name='classtitle'
+              id='classtitle'
+              placeholder='Class Title'
+              required='required'
+              ref={teacherClassTitle}
+            />
+            <Input
+              sx={{
+                width: ['100%'],
+                mb: 3,
+              }}
+              name='coursecode'
+              id='coursecode'
+              placeholder='Class Join Code'
+              required='required'
+              ref={teacherClassCode}
+            />
+            <p>Make sure your class code is not guessable so only your students can join.</p>
+            <Button
+              sx={{
+                cursor: 'pointer',
+              }}
+            >
+              Create Class
+            </Button>
+          </Box>) : (<>
+            <h1>{classroom.title}</h1>
+            <h2 sx={{fontWeight: 'normal'}}>Join Code: {classroom.code}</h2>
+            <h1>Students</h1>
+            {students ? students.map(s => <Dropdown key={s.id} contents={<Progress data={units}/>} text={s.name} textStyle={{fontSize: 4, mb: 3}}/>) : null}
+          </>)
+        ) : null)) : null}
+        </Box>
       </Container>
     </Course>
   )
