@@ -4,11 +4,11 @@ import { Box, jsx } from 'theme-ui'
 
 import Unit from '../components/unit'
 
-const Why = ({ data }) => {
+const Impacts = ({ data }) => {
   return <Unit {...data.markdownRemark} />
 }
 
-export default Why
+export default Impacts
 
 export const pageQuery = graphql`
   query($slug: String!) {

@@ -46,9 +46,7 @@ firebase.auth().onAuthStateChanged(auth => {
 
 window.addEventListener("beforeunload", function (e) {
     if (savedResponses[document.activeElement] === false) {
-        setTimeout(function () {
-            updateResponse(document.activeElement)
-        }, 0)
+        updateResponse(document.activeElement)
         e.returnValue ='You have unsaved changes. Are you sure you want to exit?'
         return e.returnValue
     }

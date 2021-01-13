@@ -87,20 +87,16 @@ sections:
         rotation: -20
   - location: '4.5'
     doodles:
-      - file: ./doodles/tote.svg
-        right: true
-  - location: '4.6'
-    doodles:
       - file: ./doodles/rackright.png
         scale: 4
         offsetX: -12em
-  - location: '4.6'
+  - location: '4.5'
     doodles:
       - file: ./doodles/rackleft.png
         right: true
         scale: 4
         offsetX: 12em
-  - location: '4.7'
+  - location: '4.6'
     doodles:
       - file: ./doodles/hydroflask.svg
         right: true
