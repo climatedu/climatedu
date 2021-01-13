@@ -16,6 +16,8 @@ sections:
 
 # Urbanization
 
+## The growing problem
+
 When you think of urbanization, what first comes to mind? The tall skyscrapers of New York City or the crowded crosswalks from Tokyo? Throughout history, millions of people have moved from the country to cities for economic, social, and political reasons. Unsurprisingly, this urbanization is an ongoing global trend! More than half the world population currently live in urban areas, and it’s projected that almost 7 billion people will live in urban areas by 2050 ([source](https://ourworldindata.org/urbanization#how-many-people-will-live-in-urban-areas-in-the-future)).
 
 Air pollution and fossil fuel usage are probably some of the first environmental impacts you’d associate with urbanization, and you’d be right to do so. But besides those, there are many other factors of urbanization that contribute to the overall climate crisis. Let’s watch the following video from the Science Museum of Virginia to learn about urban heat islands. 
