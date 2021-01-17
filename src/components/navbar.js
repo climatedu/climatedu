@@ -7,6 +7,9 @@ import { useStaticQuery, graphql } from 'gatsby'
 import { DesktopNavButton, MobileNavButton } from './navbutton'
 
 import { IoMdPerson, IoMdMenu, IoMdClose } from 'react-icons/io'
+import { GrInstagram } from 'react-icons/gr'
+
+import Link from './link'
 
 import Container from './container'
 
@@ -55,6 +58,20 @@ const Navbar = ({ navbarOpen, setNavbarOpen }) => {
           p: 0,
         }}
       >
+        <Link to='https://instagram.com/climateduteam'>
+          <GrInstagram
+            size='2em'
+            sx={{
+              position: 'relative',
+              top: '0.6em',
+              mr: '36px',
+              ':hover': {
+                color: 'primary',
+              },
+            }}
+          />
+        </Link>
+
         {links.map((props, i) => (
           <DesktopNavButton key={i} as='li' sx={{ mr: 3 }} {...props} />
         ))}
