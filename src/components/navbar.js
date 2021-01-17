@@ -7,11 +7,15 @@ import { DesktopNavButton, MobileNavButton } from './navbutton'
 
 import { IoMdPerson, IoMdMenu, IoMdClose } from 'react-icons/io'
 
+import { GrInstagram } from 'react-icons/gr'
+
 import { useMatch } from '@reach/router'
 
 import Container from './container'
 
 import useAuth from '../util/auth'
+
+import Link from './link'
 
 const Navbar = ({ navbarOpen, setNavbarOpen }) => {
   const user = useAuth(false)
@@ -62,6 +66,20 @@ const Navbar = ({ navbarOpen, setNavbarOpen }) => {
           p: 0,
         }}
       >
+        <Link to='https://instagram.com/climateduteam'>
+          <GrInstagram
+            size='2em'
+            sx={{
+              position: 'relative',
+              top: '0.6em',
+              mr: '36px',
+              ':hover': {
+                color: 'primary',
+              },
+            }}
+          />
+        </Link>
+
         {links.map((props, i) => (
           <DesktopNavButton
             key={i}
@@ -79,7 +97,7 @@ const Navbar = ({ navbarOpen, setNavbarOpen }) => {
             text='Login'
             dropdown={null}
             as='li'
-            key={links.length+1}
+            key={links.length + 1}
             isLogin={loginPath || registerPath}
           >
             <IoMdPerson
@@ -91,22 +109,22 @@ const Navbar = ({ navbarOpen, setNavbarOpen }) => {
             />
           </DesktopNavButton>
         ) : (
-          <DesktopNavButton
-            as='li'
-            location='/account/'
-            text='Account'
-            dropdown={null}
-            key={links.length+1}
-          >
-            <IoMdPerson
-              sx={{
-                fontSize: '125%',
-                verticalAlign: 'text-top',
-                ml: 1,
-              }}
-            />
-          </DesktopNavButton>
-        )}
+            <DesktopNavButton
+              as='li'
+              location='/account/'
+              text='Account'
+              dropdown={null}
+              key={links.length + 1}
+            >
+              <IoMdPerson
+                sx={{
+                  fontSize: '125%',
+                  verticalAlign: 'text-top',
+                  ml: 1,
+                }}
+              />
+            </DesktopNavButton>
+          )}
       </Flex>
       <IconButton
         sx={{

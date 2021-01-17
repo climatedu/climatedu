@@ -13,6 +13,8 @@ import { IoIosMegaphone, IoIosPaper } from 'react-icons/io'
 import { FaBrain } from 'react-icons/fa'
 import { MdLaptopMac } from 'react-icons/md'
 
+import Link from '../components/link'
+
 const icons = { IoIosMegaphone, IoIosPaper, FaBrain, MdLaptopMac }
 
 const Section = ({ header, children, ...props }) => {
@@ -74,6 +76,27 @@ const Home = ({ data }) => {
         >
           Register today!
         </Button>
+        <Heading
+          as='h2'
+          sx={{
+            fontSize: 4,
+            mt: 3,
+            mb: 2,
+          }}
+        >
+          <Link
+            to='https://preview.climatedu.org/course/intro'
+            sx={{
+              color: 'text',
+              textDecoration: 'none',
+              ':hover': {
+                textDecoration: 'underline',
+              },
+            }}
+          >
+            While our site is under construction, check out our preview here &gt;
+          </Link>
+        </Heading>
       </PageHeader>
       <Container pt={4}>
         <Grid
