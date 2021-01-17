@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import { jsx, Box, Grid } from 'theme-ui'
-import { TeamProfile, OrganizationProfile } from '../../components/teamProfile'
+import { TeamProfile, PartnerProfile } from '../../components/teamProfile'
 import { graphql } from 'gatsby'
 import Layout from '../../components/layout'
 import PageHeader from '../../components/pageheader'
@@ -40,7 +40,7 @@ const about = ({ data }) => {
           ))}
         </Grid>
 
-        <PageHeader primary='Organizations' />
+        <PageHeader primary='Partners &amp; Organizations' />
         <Grid
           sx={{
             mt: 2,
@@ -51,8 +51,8 @@ const about = ({ data }) => {
             rowGap: 4,
           }}
         >
-          {data.organizations.edges.map(({ node }) => (
-            <OrganizationProfile
+          {data.partners.edges.map(({ node }) => (
+            <PartnerProfile
               key={node.pos}
               sx={{
                 gridColumnStart: calcColumnStart(node.pos),
@@ -111,11 +111,11 @@ export const query = graphql`
       }
     }
 
-    organizations: allOrganizationsYaml(sort: { fields: pos, order: ASC }) {
+    partners: allPartnersYaml(sort: { fields: pos, order: ASC }) {
       edges {
         node {
           pos
-          ...OrganizationProfileInformation
+          ...PartnerProfileInformation
         }
       }
     }

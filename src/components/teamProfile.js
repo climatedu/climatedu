@@ -27,7 +27,7 @@ export const TeamProfile = ({ data, ...props }) => (
   </Box>
 )
 
-export const OrganizationProfile = ({ data, ...props }) => (
+export const PartnerProfile = ({ data, ...props }) => (
   <Box {...props}>
     <Flex
       sx={{
@@ -45,7 +45,9 @@ export const OrganizationProfile = ({ data, ...props }) => (
     </Flex>
     <Grid gap={1} mt={2} sx={{ textAlign: 'center' }}>
       <Heading sx={{ fontSize: [3, 4] }}>{data.name}</Heading>
-      <Text sx={{ fontSize: 2 }}>{data.desc}</Text>
+      <Heading sx={{ fontSize: [3, 4] }}>{data.name2}</Heading>
+      <Text sx={{ fontSize: 2, fontStyle: 'italic' }}>{data.desc}</Text>
+      <Text sx={{ fontSize: 2 }}>{data.org}</Text>
     </Grid>
   </Box>
 )
@@ -76,10 +78,9 @@ export const query = graphql`
       }
     }
     school
-    team
   }
 
-  fragment OrganizationProfileInformation on OrganizationsYaml {
+  fragment PartnerProfileInformation on PartnersYaml {
     name
     avatar {
       childImageSharp {
@@ -89,5 +90,7 @@ export const query = graphql`
       }
     }
     desc
+    org
+    name2
   }
 `
