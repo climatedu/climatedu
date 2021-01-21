@@ -112,26 +112,32 @@
   school: Montgomery Blair H.S.
   team: Content Development & Design & Social Media
 
-- name: Anna O'Sullivan
-  pos: 20
-  avatar: ./avatars/anna.jpg
-  school: Potomac School
-  team: Social Media
-
-- name: Shanthi Ashok
-  pos: 21
-  avatar: ./avatars/shanthi.jpg
-  school: Oakton H.S.
-  team: Social Media
-
 - name: Claire Hwang
-  pos: 22
+  pos: 20
   avatar: ./avatars/claire.jpg
   school: Montgomery Blair H.S.
   team: Design
 
 - name: Yuri Kim
-  pos: 23
+  pos: 21
   avatar: ./avatars/yuri.jpg
   school: Montgomery Blair H.S.
   team: Design
+
+- name: Kseniya Voranava
+  pos: 22
+  avatar: ./avatars/kseniya.jpg
+  school: Montgomery Blair H.S.
+  team: Social Media
+
+- name: Anna O'Sullivan
+  pos: 23
+  avatar: ./avatars/anna.jpg
+  school: Potomac School
+  team: Social Media
+
+- name: Shanthi Ashok
+  pos: 24
+  avatar: ./avatars/shanthi.jpg
+  school: Oakton H.S.
+  team: Social Media
