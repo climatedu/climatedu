@@ -1,102 +1,137 @@
-
-- name: Asha Baron
-  pos: 10
-  avatar: ./avatars/asha.jpg
-  school: Montgomery Blair H.S.
-  team: Outreach & Business
-
-- name: Bracklinn Williams
-  pos: 2
-  avatar: ./avatars/bracklinn.jpg
-  school: Montgomery Blair H.S.
-  team: Content Development
-
-- name: Christina Chen
-  pos: 8
-  avatar: ./avatars/christina.jpg
-  school: Montgomery Blair H.S.
-  team: Content Development & Design & Social Media
-
-- name: Claire Hwang
-  pos: 14
-  avatar: ./avatars/claire.jpg
-  school: Montgomery Blair H.S.
-  team: Design
-
-- name: Esther Tang
-  pos: 4
-  avatar: ./avatars/esther.jpg
-  school: Montgomery Blair H.S.
-  team: Content Development & Design & Social Media
-
-- name: James Mu
-  pos: 9
-  avatar: ./avatars/james.jpg
-  school: Thomas S. Wootton H.S.
-  team: Outreach
-
-- name: Jennifer Li
-  pos: 5
-  avatar: ./avatars/jennifer.jpg
-  school: Montgomery Blair H.S.
-  team: Content Development & Outreach
-
-- name: Joshua Wang
-  pos: 17
-  avatar: ./avatars/josh.jpg
-  school: Montgomery Blair H.S.
-  team: Site Development
-
-- name: Joy Xu
-  pos: 12
-  avatar: ./avatars/joy.jpg
-  school: Montgomery Blair H.S.
-  team: Social Media & Business
-
-- name: Katie Groen
-  pos: 3
-  avatar: ./avatars/katie.jpg
-  school: Montgomery Blair H.S.
-  team: Content Development
-
-- name: Kevin Higgs
-  pos: 16
-  avatar: ./avatars/kevin.jpg
-  school: Montgomery Blair H.S.
-  team: Site Development
-
-- name: Nicole Tran
-  pos: 6
-  avatar: ./avatars/nicole.png
-  school: Montgomery Blair H.S.
-  team: Content Development
-
-- name: Shifra Dayak
-  pos: 7
-  avatar: ./avatars/shifra.JPG
-  school: University of Maryland
-  team: Content Development & Outreach
-
-- name: Shruti Chauhan
-  pos: 11
-  avatar: ./avatars/shruti.jpg
-  school: Montgomery Blair H.S.
-  team: Social Media & Business
-
 - name: Vivian Li
   pos: 1
   avatar: ./avatars/vivian.jpg
   school: Montgomery Blair H.S.
   team: Founder & Project Lead
 
-- name: Yuri Kim
+- name: James Mu
+  pos: 2
+  avatar: ./avatars/james.jpg
+  school: Thomas S. Wootton H.S.
+  team: Outreach Lead
+
+- name: Christina Chen
+  pos: 3
+  avatar: ./avatars/christina.jpg
+  school: Montgomery Blair H.S.
+  team: Social Media Lead & Design
+
+- name: Bracklinn Williams
+  pos: 4
+  avatar: ./avatars/bracklinn.jpg
+  school: Montgomery Blair H.S.
+  team: Content Development
+
+- name: Katie Groen
+  pos: 5
+  avatar: ./avatars/katie.jpg
+  school: Montgomery Blair H.S.
+  team: Content Development
+
+- name: Esther Tang
+  pos: 6
+  avatar: ./avatars/esther.jpg
+  school: Montgomery Blair H.S.
+  team: Content Development & Design & Social Media
+
+- name: Eva Allred
+  pos: 7
+  avatar: ./avatars/eva.jpg
+  school: Montgomery Blair H.S.
+  team: Content Development
+
+- name: Jennifer Li
+  pos: 8
+  avatar: ./avatars/jennifer.jpg
+  school: Montgomery Blair H.S.
+  team: Content Development & Outreach
+
+- name: Nicole Tran
+  pos: 9
+  avatar: ./avatars/nicole.png
+  school: Montgomery Blair H.S.
+  team: Content Development
+
+- name: Nicole Chowdhury
+  pos: 10
+  avatar: ./avatars/nicky.jpg
+  school: McLean H.S.
+  team: Content Development
+
+- name: Joshua Wang
+  pos: 11
+  avatar: ./avatars/josh.jpg
+  school: Montgomery Blair H.S.
+  team: Site Development
+
+- name: Kevin Higgs
+  pos: 12
+  avatar: ./avatars/kevin.jpg
+  school: Montgomery Blair H.S.
+  team: Site Development
+
+- name: Asha Baron
+  pos: 13
+  avatar: ./avatars/asha.jpg
+  school: Montgomery Blair H.S.
+  team: Outreach & Business
+
+- name: Michelle Wong
+  pos: 14
+  avatar: ./avatars/michelle.png
+  school: Richard Montgomery H.S.
+  team: Outreach
+
+- name: Achraf Azzaoui
   pos: 15
-  avatar: ./avatars/yuri.jpg
+  avatar: ./avatars/achraf.jpg
+  school: Thomas Jefferson H.S. for Science and Technology
+  team: Outreach
+
+- name: Shifra Dayak
+  pos: 16
+  avatar: ./avatars/shifra.JPG
+  school: University of Maryland
+  team: Content Development & Social Media
+
+- name: Joy Xu
+  pos: 17
+  avatar: ./avatars/joy.jpg
+  school: Montgomery Blair H.S.
+  team: Social Media & Business
+
+- name: Shruti Chauhan
+  pos: 18
+  avatar: ./avatars/shruti.jpg
+  school: Montgomery Blair H.S.
+  team: Social Media & Business
+
+- name: Yuyu Yang
+  pos: 19
+  avatar: ./avatars/yuyu.jpg
+  school: Montgomery Blair H.S.
+  team: Content Development & Design & Social Media
+
+- name: Anna O'Sullivan
+  pos: 20
+  avatar: ./avatars/anna.jpg
+  school: Potomac School
+  team: Social Media
+
+- name: Shanthi Ashok
+  pos: 21
+  avatar: ./avatars/shanthi.jpg
+  school: Oakton H.S.
+  team: Social Media
+
+- name: Claire Hwang
+  pos: 22
+  avatar: ./avatars/claire.jpg
   school: Montgomery Blair H.S.
   team: Design
 
-- name: Yuyu Yang
-  pos: 13
-  avatar: avatars/yuyu.jpg
+- name: Yuri Kim
+  pos: 23
+  avatar: ./avatars/yuri.jpg
   school: Montgomery Blair H.S.
-  team: Design & Content Development
+  team: Design

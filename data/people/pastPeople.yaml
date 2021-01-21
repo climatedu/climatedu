@@ -1,38 +1,38 @@
-- name: Clarence Lam
+- name: Darin Mao
   pos: 1
+  avatar: ./avatars/darin.jpg
+  school: Thomas Jefferson H.S. for Science and Technology
+
+- name: Lillian Zhou
+  pos: 2
+  avatar: ./avatars/lillian.jpg
+  school: Montgomery Blair H.S.
+  team: Content Development & Outreach
+
+- name: Anika Seth
+  pos: 3
+  avatar: ./avatars/anika.jpg
+  school: Montgomery Blair H.S.
+  team: Outreach & Business
+
+- name: Clarence Lam
+  pos: 4
   avatar: ./avatars/clam.jpg
   school: Montgomery Blair H.S.
 
 - name: Robert Chen
-  pos: 2
+  pos: 5
   avatar: ./avatars/robert.jpg
   school: Interlake High School
 
-- name: Darin Mao
-  pos: 3
-  avatar: ./avatars/darin.jpg
-  school: Thomas Jefferson High School for Science and Technology
-
 - name: Leela Mehta-Harwitz
-  pos: 4
+  pos: 6
   avatar: ./avatars/leela.jpg
   school: Montgomery Blair H.S.
   team: Content Development
 
 - name: Philip Papurt
-  pos: 5
+  pos: 7
   avatar: ./avatars/ginkoid.png
   school: Mount Lebanon H.S.
   team: Site Development
-
-- name: Anika Seth
-  pos: 6
-  avatar: ./avatars/anika.jpg
-  school: Montgomery Blair H.S.
-  team: Outreach & Business
-
-- name: Lillian Zhou
-  pos: 7
-  avatar: ./avatars/lillian.jpg
-  school: Montgomery Blair H.S.
-  team: Content Development & Outreach
