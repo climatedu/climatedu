@@ -63,7 +63,7 @@ const about = ({ data }) => {
           ))}
         </Grid>
 
-        <PageHeader primary='Past Members' />
+        <PageHeader primary='Past Contributors' />
         <Grid
           sx={{
             mt: 2,
