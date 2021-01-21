@@ -10,6 +10,10 @@ import { IoMdPerson, IoMdMenu, IoMdClose } from 'react-icons/io'
 
 import Container from './container'
 
+import { GrInstagram } from 'react-icons/gr'
+
+import Link from './link'
+
 const Navbar = ({ navbarOpen, setNavbarOpen }) => {
   const user = useAuth()
   const {
@@ -55,6 +59,20 @@ const Navbar = ({ navbarOpen, setNavbarOpen }) => {
           p: 0,
         }}
       >
+        <Link to='https://instagram.com/climateduteam'>
+          <GrInstagram
+            size='2em'
+            sx={{
+              position: 'relative',
+              top: '0.6em',
+              mr: '36px',
+              ':hover': {
+                color: 'primary',
+              },
+            }}
+          />
+        </Link>
+
         {links.map((props, i) => (
           <DesktopNavButton key={i} as='li' sx={{ mr: 3 }} {...props} />
         ))}
