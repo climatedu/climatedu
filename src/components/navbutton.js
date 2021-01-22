@@ -62,10 +62,12 @@ const DesktopNavButton = ({ location, text, dropdown, children, ...props }) => {
       sx={{
         position: 'relative',
         /* eslint-disable prettier/prettier */
-        '&:hover > .active:first-child': dropdown ? {
-          borderBottomLeftRadius: 0,
-          borderBottomRightRadius: 0,
-        } : {},
+        '&:hover > .active:first-child': dropdown
+          ? {
+              borderBottomLeftRadius: 0,
+              borderBottomRightRadius: 0,
+            }
+          : {},
         /* eslint-enable prettier/prettier */
         '& > .active:first-child + div': {
           borderTopLeftRadius: 0,

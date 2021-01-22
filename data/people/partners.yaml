@@ -1,0 +1,33 @@
+- name: Diane Lill
+  pos: 1
+  avatar: ./avatars/DianeLillheadshot.jpg
+  desc: GreenKids Director
+  org: Audubon Naturalist Society
+
+- name: Larissa Johnson
+  pos: 2
+  avatar: ./avatars/LarissaJohnson.jpg
+  desc: Residential Energy Program Manager
+  org: Montgomery County Department of Environmental Protection
+
+- name: Laurie C. Jenkins
+  pos: 3
+  avatar: ./avatars/laurie.png
+  desc: PreK-12 Environmental Literacy Supervisor
+  org: Montgomery County Public Schools
+
+- name: Montgomery
+  name2: Energy Connection
+  pos: 4
+  avatar: ./avatars/MontgomeryEnergyConnection.png
+
+- name: Rini Saha
+  pos: 5
+  avatar: ./avatars/RiniSaha.png
+  desc: Founder
+  org: GreenThinker DC
+
+- name: Youth Climate
+  name2: Action Team
+  pos: 6
+  avatar: ./avatars/youthclimateactionteam.png
