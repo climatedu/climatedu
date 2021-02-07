@@ -74,13 +74,16 @@ const Register = ({ data }) => {
         displayName: name,
       })
 
+      console.log(name)
+      console.log(userNew.uid)
+
       await firebaseApp
         .firestore()
         .collection('accounts')
         .doc(userNew.uid)
         .set({
           type: type,
-          name: name
+          name: name,
         })
 
       toast.success('Signed up!')

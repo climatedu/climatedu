@@ -1,5 +1,5 @@
 /** @jsx jsx **/
-import { useState, useCallback } from 'react'
+import { useState, useCallback, useEffect } from 'react'
 import React from 'react'
 import { Box, Flex, Heading, IconButton, Styled, jsx } from 'theme-ui'
 import { css } from '@theme-ui/css'
@@ -112,7 +112,9 @@ const Unit = ({ html, frontmatter, children }) => {
       (a, n) => parseInt(a.slice(n, n + 2), 16)
     )
   function scrollColor() {
-    if (unitRef.current)
+    if (unitRef.current) {
+      console.log(scrollLocation)
+
       setScrollLocation({
         percent: scrollLocation.percent,
         colorPercent: frontmatter.scrollcolorbottom
@@ -126,12 +128,37 @@ const Unit = ({ html, frontmatter, children }) => {
           : unitRef.current.scrollTop /
             (unitRef.current.scrollHeight - unitRef.current.offsetHeight),
       })
+    }
     setTimeout(() => {
       if (typeof requestAnimationFrame !== 'undefined')
         requestAnimationFrame(scrollColor)
     }, 100)
   }
+
+  useEffect(() => {
+    return function cleanup() {
+      console.log(1111)
+      console.log(unitRef)
+      if(unitRef.current != null){
+        const percentRead = (unitRef.current.scrollTop / (unitRef.current.scrollHeight - unitRef.current.offsetHeight)) * 100
+
+        console.log(2222)
+
+        firebaseApp
+          .firestore()
+          .collection('accounts')
+          .doc(firebase.auth().currentUser.uid)
+          .collection('progress')
+          .doc('test')
+          .set({
+            bruh: "bruh",
+          })
+      }
+    }
+  })
+
   if (frontmatter.scrollcolor) scrollColor()
+
   return (
     <Styled.root
       sx={{
