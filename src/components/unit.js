@@ -17,7 +17,11 @@ import Layout from './layout'
 import PageHeader from './pageheader'
 import Container from './container'
 import SideNav, { getColor } from './sidenav'
-import AppendHead from 'react-append-head';
+import AppendHead from 'react-append-head'
+
+import firebase from 'firebase/app'
+
+import useAuth from '../util/auth'
 
 import useFirebase from '../firebase'
 
@@ -133,16 +137,32 @@ const Unit = ({ html, frontmatter, children }) => {
     }, 100)
   }
 
-  const [saveId, setSaveId] = React.useState(0)
+  const [readProgress, setReadProgress] = React.useState(0)
 
-  const saveReadProgress = () => {
-    console.log(1111)
+  const saveReadProgress = async () => {
+    if (firebase.auth().currentUser == null) return
 
     if (unitRef.current != null) {
       const percentRead = Math.ceil(unitRef.current.scrollTop / (unitRef.current.scrollHeight - unitRef.current.offsetHeight) * 100)
 
-      console.log(2222)
-      console.log(percentRead)
+      if (readProgress === 0) {
+        console.log(4)
+        const d = await firebaseApp
+          .firestore()
+          .collection('accounts')
+          .doc(firebase.auth().currentUser.uid)
+          .collection('progress')
+          .doc(frontmatter.unit.toString())
+          .get()
+        setReadProgress(d.data().percent)
+
+        if (percentRead <= d.data().percent) return
+      }
+
+      if (percentRead <= readProgress) return
+
+      setReadProgress(percentRead)
+
       firebaseApp
         .firestore()
         .collection('accounts')
@@ -152,19 +172,15 @@ const Unit = ({ html, frontmatter, children }) => {
         .set({
           percent: percentRead,
         })
-      console.log(3)
     }
   }
-
-  const autosave = () => {
-    if (saveId) clearTimeout(saveId)
-
-    setSaveId(setTimeout(saveReadProgress, 1000))
-  }
+  useAuth(null)
 
   useEffect(() => {
+    window.addEventListener('scroll', saveReadProgress, true)
+
     return () => {
-      window.addEventListener('scroll', autosave, true)
+      window.removeEventListener('scroll', saveReadProgress, true)
     }
   })
 
