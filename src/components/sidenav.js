@@ -238,7 +238,18 @@ const SideNav = ({
             justifyContent: 'space-between',
           }}
         >
-          <h1 sx={{ mt: 0 }}>climatedu</h1>
+          <h1
+            sx={{
+              mt: 0,
+              textDecoration: 'underline',
+              cursor: 'pointer',
+            }}
+            onClick={() => {
+              navigate('/')
+            }}
+          >
+            climatedu
+          </h1>
           <IconButton
             sx={{
               mx: '1em',
