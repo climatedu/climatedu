@@ -113,8 +113,6 @@ const Unit = ({ html, frontmatter, children }) => {
     )
   function scrollColor() {
     if (unitRef.current) {
-      console.log(scrollLocation)
-
       setScrollLocation({
         percent: scrollLocation.percent,
         colorPercent: frontmatter.scrollcolorbottom
@@ -135,25 +133,38 @@ const Unit = ({ html, frontmatter, children }) => {
     }, 100)
   }
 
+  const [saveId, setSaveId] = React.useState(0)
+
+  const saveReadProgress = () => {
+    console.log(1111)
+
+    if (unitRef.current != null) {
+      const percentRead = Math.ceil(unitRef.current.scrollTop / (unitRef.current.scrollHeight - unitRef.current.offsetHeight) * 100)
+
+      console.log(2222)
+      console.log(percentRead)
+      firebaseApp
+        .firestore()
+        .collection('accounts')
+        .doc(firebase.auth().currentUser.uid)
+        .collection('progress')
+        .doc(frontmatter.unit.toString())
+        .set({
+          percent: percentRead,
+        })
+      console.log(3)
+    }
+  }
+
+  const autosave = () => {
+    if (saveId) clearTimeout(saveId)
+
+    setSaveId(setTimeout(saveReadProgress, 1000))
+  }
+
   useEffect(() => {
-    return function cleanup() {
-      console.log(1111)
-      console.log(unitRef)
-      if(unitRef.current != null){
-        const percentRead = (unitRef.current.scrollTop / (unitRef.current.scrollHeight - unitRef.current.offsetHeight)) * 100
-
-        console.log(2222)
-
-        firebaseApp
-          .firestore()
-          .collection('accounts')
-          .doc(firebase.auth().currentUser.uid)
-          .collection('progress')
-          .doc('test')
-          .set({
-            bruh: "bruh",
-          })
-      }
+    return () => {
+      window.addEventListener('scroll', autosave, true)
     }
   })
 
