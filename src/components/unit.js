@@ -327,7 +327,6 @@ const Unit = ({ html, frontmatter, children }) => {
               padding: '8px 16px',
               color: frontmatter.text,
               fontSize: '20px',
-              width: '100%',
               '&:focus': {
                 outline: 'none',
               },
@@ -390,6 +389,7 @@ const Unit = ({ html, frontmatter, children }) => {
                   if (doodle.sticky) {
                     return (
                       <Box
+                        key={index}
                         sx={{
                           position: 'absolute',
                           top: `calc(${((sectionHeights[section.index][1] / 10) *
