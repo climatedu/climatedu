@@ -92,11 +92,7 @@ const DesktopNavButton = ({
       sx={{
         position: 'relative',
         /* eslint-disable prettier/prettier */
-<<<<<<< HEAD
         '&:hover > .active:first-of-type': dropdown
-=======
-        '&:hover > .active:first-child': dropdown
->>>>>>> a020b0061c1d5f83722911aed1f566529aaa8eb5
           ? {
               borderBottomLeftRadius: 0,
               borderBottomRightRadius: 0,
