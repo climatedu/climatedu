@@ -14,6 +14,7 @@ import { useMatch } from '@reach/router'
 import Container from './container'
 
 import useAuth from '../util/auth'
+import { GrInstagram } from 'react-icons/gr'
 
 import Link from './link'
 
@@ -79,6 +80,13 @@ const Navbar = ({ navbarOpen, setNavbarOpen }) => {
             }}
           />
         </Link>
+<<<<<<< HEAD
+=======
+
+        {links.map((props, i) => (
+          <DesktopNavButton key={i} as='li' sx={{ mr: 3 }} {...props} />
+        ))}
+>>>>>>> master
 
         {links.map((props, i) => (
           <DesktopNavButton
