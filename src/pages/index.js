@@ -1,6 +1,6 @@
+/** @jsx jsx */
 import { graphql, navigate } from 'gatsby'
 import { Box, Button, Flex, Grid, Heading, Text, jsx } from 'theme-ui'
-/** @jsx jsx */
 
 import Glider from 'react-glider'
 import 'glider-js/glider.min.css'
@@ -41,8 +41,9 @@ const Section = ({ header, children, ...props }) => {
 }
 
 const Home = ({ data }) => {
+  console.log(data)
   const onRegister = () => {
-    navigate('/login')
+    navigate('/register/')
   }
 
   return (
@@ -75,7 +76,6 @@ const Home = ({ data }) => {
         >
           Register today!
         </Button>
-
         <Heading
           as='h2'
           sx={{
@@ -234,7 +234,7 @@ export const query = graphql`
       }
     }
     allMarkdownRemark(
-      filter: { fields: { sourceInstanceName: { eq: "course" } } }
+      filter: { fileAbsolutePath: { glob: "**/hero/*.md" } }
       sort: { fields: frontmatter___unit }
     ) {
       edges {
@@ -244,7 +244,7 @@ export const query = graphql`
             text
             title
           }
-          excerpt(format: HTML)
+          excerpt(format: HTML, pruneLength: 99999)
         }
       }
     }

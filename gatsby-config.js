@@ -15,7 +15,17 @@ module.exports = {
     {
       resolve: 'gatsby-transformer-remark',
       options: {
-        excerpt_separator: '<!-- end -->',
+        plugins: [
+          {
+            resolve: 'gatsby-remark-images',
+            options: {
+              maxWidth: 500,
+              tracedSVG: true,
+            },
+          },
+          'gatsby-remark-copy-linked-files',
+          'gatsby-remark-unwrap-images',
+        ],
       },
     },
     'gatsby-plugin-theme-ui',
@@ -31,6 +41,13 @@ module.exports = {
       options: {
         name: 'course',
         path: path.resolve(__dirname, 'data/course/'),
+      },
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'hero',
+        path: path.resolve(__dirname, 'data/hero/'),
       },
     },
     {
@@ -85,11 +102,17 @@ module.exports = {
         text: 'Home',
       },
       {
-        location: '/about/',
+        location: '/about',
         text: 'About',
         dropdown: [
-          { location: '/about/team', text: 'Our Team' },
-          { location: '/about/mission', text: 'Our Mission' },
+          {
+            location: '/about/team/',
+            text: 'Our Team',
+          },
+          {
+            location: '/about/mission/',
+            text: 'Our Mission',
+          },
         ],
       },
       {

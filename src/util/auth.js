@@ -1,13 +1,7 @@
-import { useEffect, useState } from 'react'
-import useFirebase from '../firebase'
+import db from './db'
 
-const useAuth = () => {
-  const firebaseApp = useFirebase()
-  const [user, setUser] = useState(null)
-  useEffect(() => {
-    if (!firebaseApp) return
-    return firebaseApp.auth().onAuthStateChanged(setUser)
-  }, [firebaseApp])
+function useAuth (authRequired) {
+  const {user} = db.useAuth(authRequired)
   return user
 }
 

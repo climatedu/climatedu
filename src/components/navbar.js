@@ -1,6 +1,5 @@
 /** @jsx jsx */
 import { Box, IconButton, Image, Flex, jsx } from 'theme-ui'
-import useAuth from '../util/auth'
 import logo from '../media/climatedu.png'
 import { useStaticQuery, graphql } from 'gatsby'
 
@@ -8,14 +7,20 @@ import { DesktopNavButton, MobileNavButton } from './navbutton'
 
 import { IoMdPerson, IoMdMenu, IoMdClose } from 'react-icons/io'
 
+import { GrInstagram } from 'react-icons/gr'
+
+import { useMatch } from '@reach/router'
+
 import Container from './container'
 
+import useAuth from '../util/auth'
 import { GrInstagram } from 'react-icons/gr'
 
 import Link from './link'
 
 const Navbar = ({ navbarOpen, setNavbarOpen }) => {
-  const user = useAuth()
+  const user = useAuth(false)
+
   const {
     site: {
       siteMetadata: { navLinks: links },
@@ -36,6 +41,9 @@ const Navbar = ({ navbarOpen, setNavbarOpen }) => {
       }
     }
   `)
+
+  const loginPath = useMatch('/login/')
+  const registerPath = useMatch('/register/')
 
   return (
     <Container
@@ -72,20 +80,59 @@ const Navbar = ({ navbarOpen, setNavbarOpen }) => {
             }}
           />
         </Link>
+<<<<<<< HEAD
+=======
 
         {links.map((props, i) => (
           <DesktopNavButton key={i} as='li' sx={{ mr: 3 }} {...props} />
         ))}
+>>>>>>> master
 
-        <DesktopNavButton as='li' location='/login/' text='Login'>
-          <IoMdPerson
+        {links.map((props, i) => (
+          <DesktopNavButton
+            key={i}
+            as='li'
             sx={{
-              fontSize: '125%',
-              verticalAlign: 'text-top',
-              ml: 1,
+              mr: 3,
             }}
+            {...props}
           />
-        </DesktopNavButton>
+        ))}
+
+        {user === null ? (
+          <DesktopNavButton
+            location='/login/'
+            text='Login'
+            dropdown={null}
+            as='li'
+            key={links.length + 1}
+            isLogin={loginPath || registerPath}
+          >
+            <IoMdPerson
+              sx={{
+                fontSize: '125%',
+                verticalAlign: 'text-top',
+                ml: 1,
+              }}
+            />
+          </DesktopNavButton>
+        ) : (
+            <DesktopNavButton
+              as='li'
+              location='/account/'
+              text='Account'
+              dropdown={null}
+              key={links.length + 1}
+            >
+              <IoMdPerson
+                sx={{
+                  fontSize: '125%',
+                  verticalAlign: 'text-top',
+                  ml: 1,
+                }}
+              />
+            </DesktopNavButton>
+          )}
       </Flex>
       <IconButton
         sx={{

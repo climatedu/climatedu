@@ -1,0 +1,720 @@
+sections:
+  - location: '1.1'
+    doodles:
+      - file: ./doodles/mentalhealth.svg
+        width: 150
+  - location: '1.2'
+    doodles:
+      - file: ./doodles/lightning.svg
+      - file: ./doodles/volcano.svg
+  - location: '1.3'
+    doodles:
+      - file: ./doodles/sun.svg
+      - file: ./doodles/earth.svg
+  - location: '1.4'
+    doodles:
+      - file: ./doodles/ch4.svg
+        left: true
+      - file: ./doodles/co2.svg
+        right: true
+      - file: ./doodles/n2o.svg
+        right: true
+        offsetY: 10px
+        offsetX: 0px
+      - file: ./doodles/o3.svg
+        left: true
+  - location: '1.5'
+    doodles:
+      - file: ./doodles/flower.svg
+      - file: ./doodles/mangrove.svg
+  - location: '1.6'
+    doodles:
+      - file: ./doodles/sandwich.svg
+  - location: '1.7'
+    doodles:
+      - file: ./doodles/satellite.svg
+      - file: ./doodles/earth.svg
+  - location: '2.1'
+    doodles:
+      - file: ./doodles/lightning.svg
+  - location: '2.2'
+    doodles:
+      - file: ./doodles/lightning.svg
+        right: true
+  - location: '2.3'
+    doodles:
+      - file: ./doodles/lightning.svg
+  - location: '2.4'
+    doodles:
+      - file: ./doodles/lightning.svg
+        right: true
+  - location: '2.5'
+    doodles:
+      - file: ./doodles/lightning.svg
+  - location: '2.6'
+    doodles:
+      - file: ./doodles/lightning.svg
+        right: true
+  - location: '2.7'
+    doodles:
+      - file: ./doodles/lightning.svg
+  - location: '2.8'
+    doodles:
+      - file: ./doodles/lightning.svg
+        right: true
+  - location: '2.9'
+    doodles:
+      - file: ./doodles/lightning.svg
+  - location: '3.1'
+    doodles:
+      - file: ./doodles/dinofossil.svg
+        rotation: -15
+        offsetY: -10em
+      - file: ./doodles/nuclear.png
+        right: true
+        scale: 2
+        offsetY: -45em
+      - file: ./doodles/solar.png
+        offsetY: -18em
+        scale: 2
+        right: true
+  - location: '3.3'
+    doodles:
+      - file: ./doodles/renewable.png
+        scale: 1.5
+  - location: '3.4'
+    doodles:
+      - file: ./doodles/light3.svg
+        scale: 3
+        right: false
+        offsetY: -15em
+      - file: ./doodles/earthsprout.png
+        scale: 2
+        right: true
+        offsetY: 54em
+  - location: '4.1'
+    doodles:
+      - file: ./doodles/chips1.svg
+        rotation: -15
+  - location: '4.1'
+    doodles:
+      - file: ./doodles/can1.svg
+        right: true
+        rotation: 10
+  - location: '4.2'
+    doodles:
+      - file: ./doodles/sixpack2.svg
+  - location: '4.3'
+    doodles:
+      - file: ./doodles/bottle2.svg
+        right: true
+  - location: '4.4'
+    doodles:
+      - file: ./doodles/apple.svg
+        rotation: -20
+  - location: '4.5'
+    doodles:
+      - file: ./doodles/rackright.png
+        scale: 4
+        offsetX: -12em
+        sticky: true
+  - location: '4.5'
+    doodles:
+      - file: ./doodles/rackleft.png
+        right: true
+        scale: 4
+        offsetX: 12em
+        sticky: true
+  - location: '4.6'
+    doodles:
+      - file: ./doodles/hydroflask.svg
+        right: true
+        rotation: 1
+  - location: '5.1'
+    doodles:
+      - file: ./doodles/goat.svg
+        scale: 3
+        right: true
+        rotation: 20
+        offsetY: -10em
+        offsetX: 5em
+  - location: '6.1'
+    doodles:
+      - file: ./doodles/truck.png
+        scale: 6
+        offsetX: '-4em'
+        offsetY: '-22em'
+  - location: '6.3'
+    doodles:
+      - file: ./doodles/trainfront.svg
+        sticky: true
+        scale: 3
+        offsetX: '-7em'
+        offsetY: '-11em'
+  - location: '6.3'
+    doodles:
+      - file: ./doodles/trainback.svg
+        sticky: true
+        scale: 3
+        offsetX: '7em'
+        offsetY: '-11em'
+        right: true
+  - location: '7.1'
+    doodles:
+      - file: ./doodles/balcony1_v2.svg
+        scale: 2
+        offsetY: '-4em'
+  - location: '7.3'
+    doodles:
+      - file: ./doodles/smokeblob.svg
+        scale: 5
+        offsetX: '2em'
+        right: true
+  - location: '7.4'
+    doodles:
+      - file: ./doodles/balcony3_v3.svg
+        scale: 2.5
+        offsetX: '-5em'
+  - location: '7.5'
+    doodles:
+      - file: ./doodles/plants.svg
+        scale: 2
+        right: true
+  - location: '8.1'
+    doodles:
+      - file: ./doodles/protest_signs.svg
+        scale: 4
+        offsetX: '-9em'
+        offsetY: '10em'
+  - location: '8.5'
+    doodles:
+      - file: ./doodles/papers_squiggles.svg
+        scale: 2
+        offsetX: '7em'
+        offsetY: '-5em'
+        right: true
+questions:
+  - unit: 1
+    key: 1
+    id: 1.1
+    prompt: 'Based on these two sources, define climate and weather in your own terms.'
+  - unit: 1
+    key: 2
+    id: 1.2
+    prompt: 'Was the visual of the clothing you wear on a specific day versus the clothing in your closet helpful? Can you think of another analogy illustrating the difference between climate and weather?'
+  - unit: 1
+    key: 3
+    id: 1.3
+    prompt: 'Summarize what you learned in the video (Ex: where does Earth’s energy come from? What are some ways that the planet is heated or cooled? What is the connection between the color of surfaces and the amount of energy they absorb/reflect?)'
+  - unit: 1
+    key: 4
+    id: 1.4
+    prompt: 'How do regional imbalances in energy contribute to and drive oceanic and meteorologic patterns?'
+  - unit: 1
+    key: 5
+    id: 1.5
+    prompt: 'What are some examples of greenhouse gases (what the video refers to as “electrically-lopsided”)? What do they do to infrared radiation?'
+  - unit: 1
+    key: 6
+    id: 1.6
+    prompt: 'Before you read another article, predict the effect of increasing greenhouse gas emissions by humans on the Earth’s energy budget.'
+  - unit: 1
+    key: 7
+    id: 1.7
+    prompt: 'What are some natural phenomena that produce greenhouse gases? What are some man-made producers?'
+  - unit: 1
+    key: 8
+    id: 1.8
+    prompt: 'What is the relationship between increased carbon dioxide in the atmosphere and global warming?'
+  - unit: 1
+    key: 9
+    id: 1.9
+    prompt: 'Do you know any other examples of carbon sinks or carbon sources? Can they only be natural, or can you have man-made carbon sources and carbon sinks too?'
+  - unit: 1
+    key: 10
+    id: 1.10
+    prompt: "When's your Earth Overshoot Day? How many Earths would we need if everyone lived like you? Sum up your results from the many pages, and reflect on what they mean."
+  - unit: 1
+    key: 11
+    id: 1.11
+    prompt: 'Play around with some of the variables, such as how often you drive by car or eat animal products. How do these change your footprint? Which variables seem to have a larger effect?'
+  - unit: 1
+    key: 12
+    id: 1.12
+    prompt: 'What sources would you point someone to if they asked for evidence of climate change?'
+  - unit: 1
+    key: 13
+    id: 1.13
+    prompt: 'How would you respond to someone who argues that the earth’s climate has changed in the past and that modern climate change is natural?'
+  - unit: 2
+    key: 1
+    id: 2.1
+    prompt: "What's on the news right now? Find a recent event (news article, broadcast video, research paper, etc.) that might have occurred because of or been worsened by climate change and summarize below."
+  - unit: 2
+    key: 2
+    id: 2.2
+    prompt: 'How are the disruptions of the jet stream and the Gulf stream similar? How are they different? Consider their causes, behaviors, and effects.'
+  - unit: 2
+    key: 3
+    id: 2.3
+    prompt: 'Review and reflect. How will climate change likely affect weather in your region? Consider both everyday weather and extreme weather events. How should your community adapt in the face of these changes?'
+  - unit: 2
+    key: 4
+    id: 2.4
+    prompt: 'What did you learn about your region? Are there trends that you can pick out? Where are the forests located? How does your location stack up with other areas?'
+  - unit: 2
+    key: 5
+    id: 2.5
+    prompt: 'Why is sea ice important? What effect will climate change have on it?'
+  - unit: 2
+    key: 6
+    id: 2.6
+    prompt: 'How do they compare to Global Sea Level? Do you see one as more important?'
+  - unit: 2
+    key: 7
+    id: 2.7
+    prompt: 'Consider why their breakaways are significant to the overall landmass. Do you think these melts were caused by climate change?  How will they affect the future of the cryosphere?'
+  - unit: 2
+    key: 8
+    id: 2.8
+    prompt: 'How would you describe the connection between flow and ice shelves?'
+  - unit: 2
+    key: 9
+    id: 2.9
+    prompt: 'Why does melting ice cause more warming?'
+  - unit: 2
+    key: 10
+    id: 2.10
+    prompt: 'What are some ways communities are adapting to the extreme weather and rising sea levels?'
+  - unit: 2
+    key: 11
+    id: 2.11
+    prompt: 'What did you notice from the Google Earth videos? What surprised you? Which temperature increase would you rather experience?'
+  - unit: 2
+    key: 12
+    id: 2.12
+    prompt: 'Can you think of any other potential effects of rising sea levels? If you can’t think of any new ones, consider other potential consequences of the effects discussed above.'
+  - unit: 2
+    key: 13
+    id: 2.13
+    prompt: 'Pick the right conclusions to make about this graph.'
+  - unit: 2
+    key: 14
+    id: 2.14
+    prompt: 'When you first open the site, what color is the ocean mainly? What does this mean? When you move the slider to some time between 2020 and 2030, what changes have you noticed? When you move the slider all the way to the right to the year 2100, what color is almost gone now? What color do you see more now? What does that mean for the animals that require aragonite to make their shells?'
+  - unit: 2
+    key: 15
+    id: 2.15
+    prompt: 'Which genetic (heritable) change did you find the most interesting? Briefly describe the change and why it is advantageous.'
+  - unit: 2
+    key: 16
+    id: 2.16
+    prompt: 'Briefly predict what might happen and why that might be the case.'
+  - unit: 2
+    key: 17
+    id: 2.17
+    prompt: 'What kinds of adaptations and innovations would we need to combat increased cardiovascular disease, at the root or otherwise? This is a pretty big question, so feel free to get creative. Anything goes!'
+  - unit: 2
+    key: 18
+    id: 2.18
+    prompt: 'What are other examples of conditions you can think of that might be worsened by climate change? Try thinking about how you feel after an exercise session on a hot day.'
+  - unit: 2
+    key: 19
+    id: 2.19
+    prompt: 'Imagine how increasing temperature and humidity will affect you and your community. now consider how it might affect a community in the developing world. what might be different?'
+  - unit: 2
+    key: 20
+    id: 2.20
+    prompt: 'Make a prediction: What actions aggravate climate change that might also affect air quality?'
+  - unit: 2
+    key: 21
+    id: 2.21
+    prompt: 'What was the pollution in your city on the worst air quality day of the year? What level would it be considered?'
+  - unit: 2
+    key: 22
+    id: 2.22
+    prompt: 'In which city was the most recent air quality crisis? How concentrated were the PM 2.5 particles? Is this even within the EPA’s air quality categorization scale?'
+  - unit: 2
+    key: 23
+    id: 2.23
+    prompt: 'What are some events in China or in Brazil that caused high PM 2.5 pollution during 2019?'
+  - unit: 2
+    key: 24
+    id: 2.24
+    prompt: 'What are some actions that you can take to help lower air pollution?'
+  - unit: 2
+    key: 25
+    id: 2.25
+    prompt: 'What did you learn about how climate change may worsen the spread of dengue fever and lyme disease? How do you think climate change will worsen the spread of other diseases based on what you learned?'
+  - unit: 2
+    key: 26
+    id: 2.26
+    prompt: 'What is the link between climate change and waterborne disease? How might flooding impact some communities more than others?'
+  - unit: 2
+    key: 27
+    id: 2.27
+    prompt: 'Which impacts in the article(s) did you anticipate? Which were new to you? Did you have any ideas that the article did not discuss?'
+  - unit: 2
+    key: 28
+    id: 2.28
+    prompt: 'Pick two of the following locations (Greece, Houston, Nigeria, Guatemala, India, and New York City) and compare them: which challenges do they share, and which are unique?'
+  - unit: 2
+    key: 29
+    id: 2.29
+    prompt: 'Look back at all the numbers you have written down. Behind each one is a story just like you encountered in the New York Times article. Take a moment to reflect and to appreciate the extent and scale of what you have read about. You can use the submission box as a space for thoughts, questions, or any method that helps you process what you’ve read.'
+  - unit: 2
+    key: 30
+    id: 2.30
+    prompt: 'Activity: Pick an indigenous people or region of indigenous peoples, either from the above report or from anywhere in the world, to research further. Describe at least three specific ways that climate change threatens the survival, health, livelihoods, culture, or other aspects of the lives of the people you have chosen.'
+  - unit: 3
+    key: 1
+    id: 3.1
+    prompt: 'Which impact did you find most alarming? Tell a story about it below, as if you were telling a friend or family member.'
+  - unit: 3
+    key: 2
+    id: 3.2
+    prompt: 'How do you feel about shifting to nuclear energy as a climate solution? Do you trust the up-and-coming technology?'
+  - unit: 3
+    key: 3
+    id: 3.3
+    prompt: "Pick one of the mentioned energy sources and dig a little deeper. What are its pros and cons? Or, investigate online for another energy source that hasn't been mentioned yet. There are some weird ones out there!"
+  - unit: 3
+    key: 4
+    id: 3.4
+    prompt: 'Fossil fuels negatively impact the environment’s health and our health, but we still use them to get energy. What are some methods you know of to get energy that are healthier for the environment?'
+  - unit: 3
+    key: 5
+    id: 3.5
+    prompt: 'What was your favorite renewable energy solution from the Our Changing Climate video? Why?'
+  - unit: 3
+    key: 6
+    id: 3.6
+    prompt: 'Is PTX actually environmentally friendly in itself? Why do you think this is the case?'
+  - unit: 3
+    key: 7
+    id: 3.7
+    prompt: 'What are the different PTX methods? What do you think are their respective benefits?'
+  - unit: 3
+    key: 8
+    id: 3.8
+    prompt: 'Do you think the enormous cost of putting these turbines into the sea is worth it? How are floating wind turbines different from offshore turbines?'
+  - unit: 4
+    key: 1
+    id: 4.1
+    prompt: 'Name three things you learned, two things you were surprised by, and one question you still have.'
+  - unit: 4
+    key: 2
+    id: 4.2
+    prompt: 'Summarize a section of your choice from the article.'
+  - unit: 4
+    key: 3
+    id: 4.3
+    prompt: 'Which countries are paying the most for plastic waste? Choose a country—how much does that country pay, and which sector does it lose the most from?'
+  - unit: 4
+    key: 4
+    id: 4.4
+    prompt: 'How do these photos make you feel? Out of the 11 photos, which one impacted you the most? Which one was the most memorable?'
+  - unit: 4
+    key: 5
+    id: 4.5
+    prompt: 'Summarize the article. How did the information make you feel?'
+  - unit: 4
+    key: 6
+    id: 4.6
+    prompt: 'Name two things you were surprised that could or could not be recycled.'
+  - unit: 4
+    key: 7
+    id: 4.7
+    prompt: 'What are the recycling requirements for your county or city? What can you recycle, and what should you avoid? Was there anything that surprised you?'
+  - unit: 4
+    key: 8
+    id: 4.8
+    prompt: "Robbins's article mentions several specific disadvantages associated with replacing our current plastics with bioplastics. Explain one of your choice."
+  - unit: 4
+    key: 9
+    id: 4.9
+    prompt: "Of Meri's list of substitutes, what do you find most useful in your own life? Are there some items that stick out to you? Was there any commonly wasteful item that didn't have a substitute on Meri's list? How could you make that item sustainable?"
+  - unit: 4
+    key: 10
+    id: 4.10
+    prompt: "What is one thing you've learned about fast fashion? What is one action you can take to reduce your textile waste?"
+  - unit: 4
+    key: 11
+    id: 4.11
+    prompt: "What's something you enjoy, or something you do every day? Is it sustainable, or does it contribute to waste in some way? Are there ways that you can make that activity have a lesser negative impact or a greater positive impact on the environment?"
+  - unit: 4
+    key: 12
+    id: 4.12
+    prompt: "Try going zero-waste for 48 hours, and report back, writing down each piece of waste that you weren't able to avoid. How did you do? What was the most difficult part?"
+  - unit: 5
+    key: 1
+    id: 5.1
+    prompt: 'What are some sources of freshwater that are accessible to humans? Did you know about all of them? If you didn’t know about one or more of the freshwater sources, look it up and write about it here.'
+  - unit: 5
+    key: 2
+    id: 5.2
+    prompt: 'Set a timer for 2 minutes and write down a list of what you use water for every day. What did you come up with? What are some ways you can reduce your water consumption?'
+  - unit: 5
+    key: 3
+    id: 5.3
+    prompt: 'How did the images throughout the video make you feel? What were you surprised by? Summarize some of the adverse land effects of climate change and the implications (hint: what happens with extreme weather events? How does that affect food security?).'
+  - unit: 5
+    key: 4
+    id: 5.4
+    prompt: 'Are you surprised? What did you learn?'
+  - unit: 5
+    key: 5
+    id: 5.5
+    prompt: 'Reflecting on what you’ve just learned about agricultural emissions and land use, what are your two biggest takeaways? Take some time to consider how learning this information makes you feel and what you can do to potentially change your lifestyle or inform others.'
+  - unit: 5
+    key: 6
+    id: 5.6
+    prompt: 'Brainstorm a quick list of some of the intermittent steps in the food transportation process.'
+  - unit: 5
+    key: 7
+    id: 5.7
+    prompt: 'How do these terms relate to each other? Is there a common thread that you see?'
+  - unit: 5
+    key: 8
+    id: 5.8
+    prompt: 'Write a reflection about what you learned or things you found interesting about the environmental costs of food transportation.'
+  - unit: 5
+    key: 9
+    id: 5.9
+    prompt: 'Which of the solutions did you like the most from the Climate Lab video and the podcasts? Which do you think would be most effective? How does behavioral psychology play a role in bringing about these changes?'
+  - unit: 5
+    key: 10
+    id: 5.10
+    prompt: 'With information from the blast fishing video and your own research, describe how these two practices are detrimental to marine life.'
+  - unit: 5
+    key: 11
+    id: 5.11
+    prompt: 'Briefly summarize the four steps of the aquaculture production chain.'
+  - unit: 5
+    key: 12
+    id: 5.12
+    prompt: 'How is aquaculture more sustainable than most other farming practices?'
+  - unit: 5
+    key: 13
+    id: 5.13
+    prompt: 'Pick one of the following: large pens offshore, man-made coastal pods, and fish farming on land. What are the benefits and drawbacks of your chosen method?'
+  - unit: 5
+    key: 14
+    id: 5.14
+    prompt: 'Overall, what are the environmental ramifications of aquaculture? Can you think of other consequences?'
+  - unit: 5
+    key: 15
+    id: 5.15
+    prompt: 'Pick one of the countries mentioned, and describe their agricultural developments and the benefits of these practices.'
+  - unit: 5
+    key: 16
+    id: 5.16
+    prompt: 'Which technique did you find most interesting? Pick one method and explain the reasoning behind it.'
+  - unit: 5
+    key: 17
+    id: 5.17
+    prompt: 'After watching the video and reading the article, how would you describe permaculture in your own words? What is the goal of interactions between nature and humans in permaculture?'
+  - unit: 6
+    key: 1
+    id: 6.1
+    prompt: 'How do you think the emissions changed after 2010?'
+  - unit: 6
+    key: 2
+    id: 6.2
+    prompt: 'Take a look at three of the countries you see in the graphic.  Research what factors (like agriculture, manufacturing, or others) contribute to the emissions from those three countries.'
+  - unit: 6
+    key: 3
+    id: 6.3
+    prompt: 'What patterns do you see? Why is this the case? Why do you think some high and upper middle-income countries have such a small amount of emissions?'
+  - unit: 6
+    key: 4
+    id: 6.4
+    prompt: 'What did you learn and find interesting in the video? Why did you choose to watch this video?'
+  - unit: 6
+    key: 5
+    id: 6.5
+    prompt: 'How do you think your local, state, and national government can help increase the use of public transportation?'
+  - unit: 6
+    key: 6
+    id: 6.6
+    prompt: 'The video talks a bit about new ways technology, such as smart traffic lights, are tackling this issue. Can you think about some other ways technology can help reduce emissions?'
+  - unit: 6
+    key: 7
+    id: 6.7
+    prompt: 'Take a look at your (or another family member’s) online shopping activity this past month. How many orders have you made? How long did it take for each order to arrive? What changes do you think you (or your family member) can make to your online shopping habits to make it greener?'
+  - unit: 6
+    key: 8
+    id: 6.8
+    prompt: 'What are your thoughts on a world without cars?'
+  - unit: 6
+    key: 9
+    id: 6.9
+    prompt: "What is a crazy green transportation idea that you'd like to see happen in the future?"
+  - unit: 6
+    key: 10
+    id: 6.10
+    prompt: 'How safe do you feel biking? If you don’t bike around as your main mode of transportation, what deters you from doing so? What are some solutions you think your city or town can make to make it more bike friendly?'
+  - unit: 6
+    key: 11
+    id: 6.11
+    prompt: 'When do they predict CO2 emissions from road transport will stop rising? Will it be too late by then?'
+  - unit: 7
+    key: 1
+    id: 7.1
+    prompt: 'What are the contributing factors of urban heat islands? Why are urban heat islands harmful?'
+  - unit: 7
+    key: 2
+    id: 7.2
+    prompt: 'If you compare just the 2020 world map to the 2050 world map, what differences do you see? Can you think of possible causes for these differences?'
+  - unit: 7
+    key: 3
+    id: 7.3
+    prompt: 'Describe two solutions to urban heat islands that you learned about. Can you think of your own?'
+  - unit: 7
+    key: 4
+    id: 7.4
+    prompt: 'How are the secondary pollutants formed and how do these pollutants affect human health? What kinds of cities are the most vulnerable to photochemical smog (hint: their surrounding geographies)?'
+  - unit: 7
+    key: 5
+    id: 7.5
+    prompt: 'What trends, if any, do you see in the graph? Which crop(s) lost the most yield and what implications does that have in our lives? What do you predict will happen in future years?'
+  - unit: 7
+    key: 6
+    id: 7.6
+    prompt: 'Why is planting trees helpful in preventing smog and urban heat islands? Imagine a city near you: what would it be like to walk through it if it was filled with more trees?'
+  - unit: 7
+    key: 7
+    id: 7.7
+    prompt: 'What is the fracking fluid’s role in collecting oil and natural gases? What is flow-back liquid and how can it be dealt with? Why is fracking so controversial?'
+  - unit: 7
+    key: 8
+    id: 7.8
+    prompt: 'Explain the specific impacts on the environment of two types of mining that you learned about.'
+  - unit: 7
+    key: 9
+    id: 7.9
+    prompt: 'What are two ways that the KXL pipeline could worsen the environment? Why is the pipeline so controversial and what are your stances on the issue?'
+  - unit: 7
+    key: 10
+    id: 7.10
+    prompt: 'What do you notice about the resulting land? How does the vegetation (or lack thereof) seem to be affected? What about the “water” sources (black + orange pools) in the photos?'
+  - unit: 7
+    key: 11
+    id: 7.11
+    prompt: 'Where in the US do the sites seem to be most concentrated? Can you think of reasons why that area has the most Superfund sites?'
+  - unit: 7
+    key: 12
+    id: 7.12
+    prompt: 'How does the lead poisoning affect Anik? What were your personal reactions to the video?'
+  - unit: 7
+    key: 13
+    id: 7.13
+    prompt: 'Compare the state of the coral reef environment before and after the ecotourists worked on conserving biodiversity.'
+  - unit: 7
+    key: 14
+    id: 7.14
+    prompt: 'What are data centers and how do they contribute to greenhouse gas emissions?'
+  - unit: 7
+    key: 15
+    id: 7.15
+    prompt: 'In a few sentences, compare the amount of runoff that results based on the precipitation. Write a similar comparison of runoff based on the three land types that you were asked to toggle among. What is the most ideal scenario for minimized runoff?'
+  - unit: 7
+    key: 16
+    id: 7.16
+    prompt: 'What happens to the sewage in wet weather and why is this “combined sewer” so dangerous for us and the environment?  Based on the speaker’s principles, define stormwater green infrastructure. Why should rooftops be the focus surface of green infrastructure? What is the purpose of plants in the sponge analogy?'
+  - unit: 7
+    key: 17
+    id: 7.17
+    prompt: 'Where is it mainly used? How does it work? What are the benefits? Who does it benefit?'
+  - unit: 8
+    key: 1
+    id: 8.1
+    prompt: 'Summarize what you learned in the video, or tell us about what you found most interesting. How would you explain this video to a friend?'
+  - unit: 8
+    key: 2
+    id: 8.2
+    prompt: 'Read through each of the described solutions. Which one did you find most interesting, and why?'
+  - unit: 8
+    key: 3
+    id: 8.3
+    prompt: 'What is carbon capture and storage used for? Why is it so important?'
+  - unit: 8
+    key: 4
+    id: 8.4
+    prompt: 'There are many different ways to capture carbon. What do they all do chemically that is the same? What are the three methods of doing this and how do they differ? What do you think are the different advantages of each?'
+  - unit: 8
+    key: 5
+    id: 8.5
+    prompt: 'The title of the video is “A Horrible Idea We Might Have To Do”. Many scientists agree that geoengineering is a horrible idea and do not support it at all. Why do you think this is the case? What are some concerns people might have?'
+  - unit: 8
+    key: 6
+    id: 8.6
+    prompt: 'What are your opinions on these “silver bullet solutions”? What are the pros and cons to each of them?'
+  - unit: 8
+    key: 7
+    id: 8.7
+    prompt: 'Write up a short summary and analysis of what you read. What did you learn?'
+  - unit: 8
+    key: 8
+    id: 8.8
+    prompt: 'Describe the relationship between taking individual and collective action on climate change. What are some of the pitfalls of relying only on individual action? Why is collective action necessary as well?'
+  - unit: 8
+    key: 9
+    id: 8.9
+    prompt: 'Why do some people say developing countries are to blame? What are some facts that you learned in the video that discredit this? In the end, who needs to take climate action?'
+  - unit: 8
+    key: 10
+    id: 8.10
+    prompt: 'Which countries can continue at their current pace, and which other countries have to flatten, reduce, or eliminate? Using your knowledge from the previous video, explain a plausible scenario or solution, and justify your answer.'
+  - unit: 8
+    key: 11
+    id: 8.11
+    prompt: 'What have you heard about the Green New Deal?'
+  - unit: 8
+    key: 12
+    id: 8.12
+    prompt: 'Describe what the GND is. What are the two main sections described in the video?'
+  - unit: 8
+    key: 13
+    id: 8.13
+    prompt: "How do you feel about the Green New Deal, and in what ways have your perceptions of it changed? Do you feel like there are concerns that Gunn-Wright didn't address? What are some ways that we can eliminate the misconceptions that she mentioned?"
+  - unit: 8
+    key: 14
+    id: 8.14
+    prompt: Explain the cap-and-trade program described in the first article and the carbon tax described in the second. What is the difference between the two? What are their potential benefits and drawbacks?"
+  - unit: 8
+    key: 15
+    id: 8.15
+    prompt: 'Summarize the initiatives of one of the five states mentioned in the article. Do you think those measures will be effective? OR Research what your state is working on to combat climate change. How does your state stack up against the ones mentioned in the article?'
+  - unit: 8
+    key: 16
+    id: 8.16
+    prompt: 'What if you ran your own city, state, or country? How would you use policy to curb global warming? Which laws would you pass first? Would you stick to what governments are doing right now, or do you have new ideas?'
+  - unit: 8
+    key: 17
+    id: 8.17
+    prompt: 'What are your thoughts about the climate crisis and its impacts? Have you suffered from climate stress?'
+  - unit: 8
+    key: 18
+    id: 8.18
+    prompt: 'How have companies tried to sow doubt about the climate crisis? Why is it hard for people to grasp the concept of climate change in the abstract?'
+  - unit: 8
+    key: 19
+    id: 8.19
+    prompt: "In the video, we're told to focus on personal experiences to build trust and safety. After listening to the other person, how will you tell your story? (How did you learn about climate change, why does it matter to you, and what do you care about most?)"
+  - unit: 8
+    key: 20
+    id: 8.20
+    prompt: 'List some of the counterpoints you think will be most helpful in your conversations about climate change.'
+  - unit: 8
+    key: 21
+    id: 8.21
+    prompt: 'What are your thoughts on individual vs collective action? How can you incorporate both into your life?'
+  - unit: 8
+    key: 22
+    id: 8.22
+    prompt: 'Have you ever been to a climate protest? How did it make you feel? Do you have any funny or interesting stories to tell about the experience?'
+  - unit: 8
+    key: 23
+    id: 8.23
+    prompt: "What's your move? How do you plan to support the health and safety of our planet?"
