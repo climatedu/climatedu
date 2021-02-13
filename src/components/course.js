@@ -13,9 +13,7 @@ import SEO from './seo'
 import useAuth from '../util/auth'
 import getFirebase from '../firebase'
 
-import {
-  IoMdExit,
-} from 'react-icons/io'
+import { IoMdExit } from 'react-icons/io'
 
 const Course = ({ children, bg }) => {
   const user = useAuth(true)
@@ -31,7 +29,6 @@ const Course = ({ children, bg }) => {
       toast.error(e.message)
     }
   }
-
 
   const data = useStaticQuery(graphql`
     {
@@ -81,7 +78,14 @@ const Course = ({ children, bg }) => {
         })}
       />
       <SEO />
-      <h1 sx={{ fontSize: '2em', textAlign: 'right', mx: 5, mt: 4}}><Box as='span' onClick={logout} sx={{cursor: 'pointer'}}>Log out <IoMdExit sx={{ position: 'relative', top: '0.4em', size: '1.6em' }}/></Box></h1>
+      <h1 sx={{ fontSize: '2em', textAlign: 'right', mx: 5, mt: 4 }}>
+        <Box as='span' onClick={logout} sx={{ cursor: 'pointer' }}>
+          Log out{' '}
+          <IoMdExit
+            sx={{ position: 'relative', top: '0.4em', size: '1.6em' }}
+          />
+        </Box>
+      </h1>
       <Box
         as='main'
         sx={{

@@ -73,4 +73,32 @@ function teacherFeedback(uid, unit, key, feedback) {
   return firebaseApp.firestore().collection('accounts').doc(uid).collection('responses').doc(unit.toString()).update({['feedback.'+key]: feedback})
 }
 
-export default {useAuth, joinClass, leaveFeedback, createClass, useResponses, teacherFeedback}
+
+function loadProgress(account, unitCount){
+  const [progress, setProgress] = useState(new Array(unitCount).fill(0))
+
+  useEffect(()=>{
+    if (!firebaseApp) return
+
+    let unsubscribe = firebaseApp
+      .firestore()
+      .collection('accounts')
+      .doc(account.id)
+      .collection('progress')
+      .onSnapshot((collection) =>{
+        const temp = new Array(unitCount).fill(0)
+        collection.docs.map((doc, idx) => {
+          temp[idx] = (doc.data().percent | 0) / 100
+        })
+
+        setProgress(temp)
+      })
+
+    return unsubscribe
+  }, [firebaseApp, account, unitCount])
+
+  return progress
+}
+
+
+export default {useAuth, joinClass, leaveFeedback, createClass, useResponses, teacherFeedback, loadProgress}

@@ -146,7 +146,7 @@ const Unit = ({ html, frontmatter, children }) => {
       const percentRead = Math.ceil(unitRef.current.scrollTop / (unitRef.current.scrollHeight - unitRef.current.offsetHeight) * 100)
 
       if (readProgress === 0) {
-        console.log(4)
+
         const d = await firebaseApp
           .firestore()
           .collection('accounts')
@@ -154,9 +154,12 @@ const Unit = ({ html, frontmatter, children }) => {
           .collection('progress')
           .doc(frontmatter.unit.toString())
           .get()
-        setReadProgress(d.data().percent)
+        
+        if(d.data() !== undefined){
+          setReadProgress(d.data().percent)
 
-        if (percentRead <= d.data().percent) return
+          if (percentRead <= d.data().percent) return
+        }
       }
 
       if (percentRead <= readProgress) return

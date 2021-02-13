@@ -10,11 +10,14 @@ import useAuth from '../util/auth'
 
 import useFirebase from '../firebase'
 
+import db from '../util/db'
+
 const Progress = ({ data, account }) => {
   if (account === null) return null
 
   const firebaseApp = useFirebase()
 
+  /*
   const [unitProgress, setUnitProgress] = useState(new Array(data.length).fill(0))
   const [loaded, setLoaded] = useState(false)
 
@@ -23,21 +26,26 @@ const Progress = ({ data, account }) => {
       const collection = await firebaseApp
         .firestore()
         .collection('accounts')
-        .doc(firebase.auth().currentUser.uid)
+        .doc(account.id)
         .collection('progress')
         .get()
 
       const temp = new Array(data.length).fill(0)
-      
-      collection.docs.map((doc, idx) => {
-        temp[idx] = (doc.data().percent)/100 | 0
-      })
 
+      collection.docs.map((doc, idx) => {
+        temp[idx] = (doc.data().percent | 0) / 100
+      })
+      
       setUnitProgress(temp)
       setLoaded(true)
     }
     f()
   }
+
+  db.loadProgress(account, data.length)
+  */
+
+  let unitProgress = db.loadProgress(account, data.length)
 
   return (
     <Grid

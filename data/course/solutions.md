@@ -28,7 +28,7 @@ With **adaptation**, we make choices that reduce the damage that climate change 
 
 On the other hand, **mitigation** aims to reduce how much the earth’s climate changes in the first place. This means changing our lifestyles and economies to reduce our output of greenhouse gases, such as by increasing the use of renewable energy or reducing the consumption of meat. Let's take a look at this article from NASA, which goes over these two strategies in more depth.
 
-*   [Article on adaptation vs mitigation by NASA](https://climate.nasa.gov/solutions/adaptation-mitigation/)
+- [Article on adaptation vs mitigation by NASA](https://climate.nasa.gov/solutions/adaptation-mitigation/)
 
 In our battle against climate change, we'll have to use both adaptation and mitigation strategies. With adaptation, we can clean up the damage that's already been done, like drawing down greenhouse gases. Mitigation, by investing in clean energy and other tactics, is also necessary to prevent further damage. However, we also need to prevent future damage to come with mitigation, like investing in clean energy to stop more carbon from entering the atmosphere.
 
@@ -45,9 +45,9 @@ Project Drawdown is a nonprofit organization whose primary goal is to get us to 
 
 <textarea data-unit="8" data-key="1" id="8.1" placeholder="Enter your response here." onblur="updateResponse(this)" oninput="editedResponse(this)"></textarea>
 
-Next, explore Project Drawdown's solutions by visiting their website. 
+Next, explore Project Drawdown's solutions by visiting their website.
 
-*   [https://drawdown.org/solutions/table-of-solutions](https://drawdown.org/solutions/table-of-solutions)
+- [https://drawdown.org/solutions/table-of-solutions](https://drawdown.org/solutions/table-of-solutions)
 
 If you want to go above and beyond, we encourage you to read the full book from Project Drawdown, _Drawdown: The Most Comprehensive Plan Ever Proposed to Reverse Global Warming_, and let us know what you think.
 
@@ -57,9 +57,9 @@ While there are gadgets currently being engineered to remove carbon from the atm
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/gSXOxrjCA40" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Restoring forests, protecting wildlife biodiversity, and rebuilding coastal habitats are all top priority when it comes to natural solutions. Now, let's dive deeper by visiting the Natural Climate Solutions web page. 
+Restoring forests, protecting wildlife biodiversity, and rebuilding coastal habitats are all top priority when it comes to natural solutions. Now, let's dive deeper by visiting the Natural Climate Solutions web page.
 
-*   [Natural Climate Solutions](http://naturalclimatesolutions.org/)
+- [Natural Climate Solutions](http://naturalclimatesolutions.org/)
 
 **Q: Read through each of the described solutions. Which one did you find most interesting, and why?**
 
@@ -67,13 +67,13 @@ Restoring forests, protecting wildlife biodiversity, and rebuilding coastal habi
 
 Planting trees has been hailed as the hallmark of going green, but new research finds that it might actually harm some land areas. Should we stop planting trees? Let's check out this infographic to find out.
 
-*   [Should we stop planting trees?](https://www.instagram.com/p/CGIkj9eJLdi/), @climateduteam on Instagram
+- [Should we stop planting trees?](https://www.instagram.com/p/CGIkj9eJLdi/), @climateduteam on Instagram
 
 Trees aren't the only carbon sink that we should be investing in as a natural solution. In his TED Talk, Tim Flannery explains why seaweed is a great option for biological carbon drawdown. In fact, it might even be better than planting trees!
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/tuvxXnQrRv8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Seaweed's going to get big—he's betting on it now. Seaweed farms are also a two-in-one solution, not only drawing down carbon but also providing a great environment for sustainable aquaculture that we can rely on in the future. 
+Seaweed's going to get big—he's betting on it now. Seaweed farms are also a two-in-one solution, not only drawing down carbon but also providing a great environment for sustainable aquaculture that we can rely on in the future.
 
 Hemp is yet another natural solution that we can use for carbon capture, in addition to forests and seaweed. Let's check out this video from the YEARS Project, where Morgan Schacker explains hemp's potential.
 
@@ -83,11 +83,11 @@ In addition to carbon capture, we can use hempcrete in our buildings, hemp fiber
 
 ## Innovative technologies
 
-Technology obviously has done a lot of harm to our planet, but people are now working on using it to help save the planet and counter climate change! Many engineers and scientists have been inventing and working on new ways to help. 
+Technology obviously has done a lot of harm to our planet, but people are now working on using it to help save the planet and counter climate change! Many engineers and scientists have been inventing and working on new ways to help.
 
 **Carbon capture and storage: **One way people have been trying to undo climate change is taking the carbon directly out of the atmosphere and storing it somewhere else (such as the ground). This general umbrella of innovations falls under carbon capture and storage (CCS). Read the following article and watch the video at the end.
 
-*   [What is CCUS?](https://www.ccsassociation.org/discover-ccus/explore-ccus/), CCS Association webpage
+- [What is CCUS?](https://www.ccsassociation.org/discover-ccus/explore-ccus/), CCS Association webpage
 
 **Q: What is carbon capture and storage used for? Why is it so important?**
 
@@ -97,15 +97,15 @@ Technology obviously has done a lot of harm to our planet, but people are now wo
 
 <textarea data-unit="8" data-key="4" id="8.4" placeholder="Enter your response here." onblur="updateResponse(this)" oninput="editedResponse(this)"></textarea>
 
-**	**
+\*\* \*\*
 
 Another cool way people have been trying to store carbon more efficiently is through plants. Read this next article to find out more.
 
-*   [What If GMOs Can Fight Climate Change?](https://www.forbes.com/sites/jeffmcmahon/2019/05/07/what-about-gmos-that-fight-climate-change/#414f443d3e1b), Forbes article
+- [What If GMOs Can Fight Climate Change?](https://www.forbes.com/sites/jeffmcmahon/2019/05/07/what-about-gmos-that-fight-climate-change/#414f443d3e1b), Forbes article
 
-**Geoengineering:** People have become more and more anxious to find  ways to combat climate change (if you can not tell from this entire course already).  People are proposing **geoengineering solutions**, which directly involve changing the environment to intervene with climate change.
+**Geoengineering:** People have become more and more anxious to find ways to combat climate change (if you can not tell from this entire course already). People are proposing **geoengineering solutions**, which directly involve changing the environment to intervene with climate change.
 
-One popular proposal is Stratospheric Aerosol Injection (SAI). The idea behind SAI is injecting inorganic particles–such as sulfur dioxide–into the stratosphere to block sunlight. Carbon Capture and Storage and Solar Radiation Management fall under this broad category. Some other examples: cloud seeding, tropical reforestation, ocean iron fertilization, and building thicker sea ice. 
+One popular proposal is Stratospheric Aerosol Injection (SAI). The idea behind SAI is injecting inorganic particles–such as sulfur dioxide–into the stratosphere to block sunlight. Carbon Capture and Storage and Solar Radiation Management fall under this broad category. Some other examples: cloud seeding, tropical reforestation, ocean iron fertilization, and building thicker sea ice.
 
 Geo-engineering approaches exhibit vast unpredictability and potentially great risk, and should not be enacted without careful study and evaluation of both the direct and side effects and ethical and moral issues. Let's watch this video to find out.
 
@@ -126,7 +126,7 @@ To see what other people have to say about this, and to learn about a couple oth
 
 **Urban Reimagining:** We have already looked at how Manhattan could change if we live in a world without cars. Many people are focusing specifically on urban innovations in design and technology. One company that focuses on this is Sidewalk Labs. Take a look at their blog and choose one article to read.
 
-*   [Sidewalk Labs webpage](https://www.sidewalklabs.com/)
+- [Sidewalk Labs webpage](https://www.sidewalklabs.com/)
 
 **Q: Write up a short summary and analysis of what you read. What did you learn?**
 
@@ -146,7 +146,7 @@ Quickly mobilizing the public to take action falls largely in the hands of the g
 
 Past U.S. government administrations laid the groundwork with Environmental Protection Agency (EPA) laws, with notable work falling under Richard Nixon's presidency. Let's read this article from _The Atlantic_, where Robinson Meyer explains the history of how the U.S. protects the environment.
 
-*   [How the U.S. Protects the Environment, From Nixon to Trump](https://www.theatlantic.com/science/archive/2017/03/how-the-epa-and-us-environmental-law-works-a-civics-guide-pruitt-trump/521001/), The Atlantic article
+- [How the U.S. Protects the Environment, From Nixon to Trump](https://www.theatlantic.com/science/archive/2017/03/how-the-epa-and-us-environmental-law-works-a-civics-guide-pruitt-trump/521001/), The Atlantic article
 
 Countries that have signed on to the Paris Agreement understand that they collectively need to reduce emissions and halt climate change, but there's significant disagreement when it comes to who needs to reduce emissions the fastest.. Developing countries who want to innovate quicker and catch up to the world stage expect larger, more developed countries to take the lead with intense cuts to emissions and economic investments in green infrastructure. On the other hand, those more developed countries believe that developing countries shouldn't continue polluting the planet in the name of "innovation." It's a complicated issue, so let's watch the following video from Kurzgesagt to learn more.
 
@@ -156,9 +156,9 @@ Countries that have signed on to the Paris Agreement understand that they collec
 
 <textarea data-unit="8" data-key="9" id="8.9" placeholder="Enter your response here." onblur="updateResponse(this)" oninput="editedResponse(this)"></textarea>
 
-Using your knowledge about some of the nuances associated with who should take the "blame" for climate change, let's explore this interactive visualizer from the New York Times. How much would each country have to contribute in order to collectively stay within our carbon budget? 
+Using your knowledge about some of the nuances associated with who should take the "blame" for climate change, let's explore this interactive visualizer from the New York Times. How much would each country have to contribute in order to collectively stay within our carbon budget?
 
-*   [Global carbon budget interactive](https://www.nytimes.com/interactive/2017/08/29/opinion/climate-change-carbon-budget.html?mtrref=www.nytimes.com&assetType=PAYWALL), NYT interactive
+- [Global carbon budget interactive](https://www.nytimes.com/interactive/2017/08/29/opinion/climate-change-carbon-budget.html?mtrref=www.nytimes.com&assetType=PAYWALL), NYT interactive
 
 **Q: Which countries can continue at their current pace, and which other countries have to flatten, reduce, or eliminate? Using your knowledge from the previous video, explain a plausible scenario or solution, and justify your answer.**
 
@@ -172,7 +172,7 @@ How is America fighting climate change today? We're actually not doing great—t
 
 <textarea data-unit="8" data-key="11" id="8.11" placeholder="Enter your response here." onblur="updateResponse(this)" oninput="editedResponse(this)"></textarea>
 
- Let's check out this video from Vox that breaks down exactly what's in the Green New Deal.
+Let's check out this video from Vox that breaks down exactly what's in the Green New Deal.
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/GxIDJWCbk6I" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -184,7 +184,7 @@ Next, let's watch a couple of videos from the series, "The Truth About the Green
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/uVyMfBpEZuA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Next time you hear the $93 trillion number, make sure to call it out in the name of stopping misinformation. In fact, investing money now for a safer future is the only way to avoid paying the infinitely many costs associated with a lack of climate action, including loss of infrastructure, increased environmental-related health conditions, and all of those terrifying impacts mentioned in Unit 2: "Why does climate change matter?".
+Next time you hear the \$93 trillion number, make sure to call it out in the name of stopping misinformation. In fact, investing money now for a safer future is the only way to avoid paying the infinitely many costs associated with a lack of climate action, including loss of infrastructure, increased environmental-related health conditions, and all of those terrifying impacts mentioned in Unit 2: "Why does climate change matter?".
 
 One of those impacts mentioned in "Why does climate change matter?" was actually an ethical consideration: the irresponsible actions of corporations impact marginalized communities the most. The Green New Deal seeks to bring equity to American communities, addressing an issue core to environmentalism. In this second video from the YEARS Project, Rhiana Gunn-Wright explains how the Green New Deal works toward solving equity issues, and why it's so important that it does.
 
@@ -195,15 +195,16 @@ One of those impacts mentioned in "Why does climate change matter?" was actually
 <textarea data-unit="8" data-key="13" id="8.13" placeholder="Enter your response here." onblur="updateResponse(this)" oninput="editedResponse(this)"></textarea>
 
 While all five videos from the series are certainly informative and useful, we specifically took a look at the first two. Feel free to watch the other three if you desire!
+
 ### Putting a price on carbon
 
 Beyond the overarching legislature that would set American in a new, green direction focused on a renewable energy sector, the government can also tackle emissions by placing a price on carbon. Read this article from the Climate Lab and watch the first video, which discusses how California's cap-and-trade program lowered emissions, boosted the economy, and lent a helping hand to communities in need.
 
-*   [The California model: make polluters pay](https://www.universityofcalifornia.edu/longform/california-model-make-polluters-pay), Climate Lab article
+- [The California model: make polluters pay](https://www.universityofcalifornia.edu/longform/california-model-make-polluters-pay), Climate Lab article
 
-Similar to a cap-and-trade program, a carbon tax would place a direct tax on emissions, providing a monetary incentive for businesses to cut down on fossil fuel reliance. The fee-and-dividend proposition divides money raised from carbon taxes and fees and cuts a check to every individual. Check out this next article from Yale Environment 360, where Bill McKibben discusses the need for a carbon tax, as well as some of its drawbacks. 
+Similar to a cap-and-trade program, a carbon tax would place a direct tax on emissions, providing a monetary incentive for businesses to cut down on fossil fuel reliance. The fee-and-dividend proposition divides money raised from carbon taxes and fees and cuts a check to every individual. Check out this next article from Yale Environment 360, where Bill McKibben discusses the need for a carbon tax, as well as some of its drawbacks.
 
-*   [Why we need a carbon tax, and why it won't be enough](https://e360.yale.edu/features/why_we_need_a_carbon_tax_and_why_it_won_be_enough), Yale E360 article
+- [Why we need a carbon tax, and why it won't be enough](https://e360.yale.edu/features/why_we_need_a_carbon_tax_and_why_it_won_be_enough), Yale E360 article
 
 McKibben specifically emphasizes that a carbon tax can't be our only solution to the emissions and the climate crisis; it must be implemented in conjunction with other solutions, too.
 
@@ -211,9 +212,9 @@ McKibben specifically emphasizes that a carbon tax can't be our only solution to
 
 <textarea data-unit="8" data-key="14" id="8.14" placeholder="Enter your response here." onblur="updateResponse(this)" oninput="editedResponse(this)"></textarea>
 
-Although our current administration has induced national setbacks to establishing a greener America and stalled progress for the Green New Deal, state and city governments are carving their own environmentally-positive paths. Many have passed [their own versions of the Green New Deal](https://www.sierraclub.org/trade/green-new-deal-already-underway-states-and-cities), including Maine, New York City, Washington, D.C., and Seattle. While rebuilding the economy after pandemic lockdowns, some states have plans to do so on a cleaner, greener, platform. Let's read this article from InsideClimate News, which discusses five state plans that  utilize COVID-19 stimulus funds to support clean energy and carbon-cutting programs.
+Although our current administration has induced national setbacks to establishing a greener America and stalled progress for the Green New Deal, state and city governments are carving their own environmentally-positive paths. Many have passed [their own versions of the Green New Deal](https://www.sierraclub.org/trade/green-new-deal-already-underway-states-and-cities), including Maine, New York City, Washington, D.C., and Seattle. While rebuilding the economy after pandemic lockdowns, some states have plans to do so on a cleaner, greener, platform. Let's read this article from InsideClimate News, which discusses five state plans that utilize COVID-19 stimulus funds to support clean energy and carbon-cutting programs.
 
-*   [States are doing what big government won't to stop climate change](https://insideclimatenews.org/news/08092020/states-rural-government-coronavirus-stimulus-climate-change?utm_source=InsideClimate+News&utm_campaign=b298d46663-&utm_medium=email&utm_term=0_29c928ffb5-b298d46663-327969729), InsideClimate News 
+- [States are doing what big government won't to stop climate change](https://insideclimatenews.org/news/08092020/states-rural-government-coronavirus-stimulus-climate-change?utm_source=InsideClimate+News&utm_campaign=b298d46663-&utm_medium=email&utm_term=0_29c928ffb5-b298d46663-327969729), InsideClimate News
 
 **CHOOSE ONE (OR DO BOTH): Summarize the initiatives of one of the five states mentioned in the article. Do you think those measures will be effective? OR Research what your state is working on to combat climate change. How does your state stack up against the ones mentioned in the article?**
 
@@ -227,10 +228,11 @@ Although our current administration has induced national setbacks to establishin
 
 **OPTIONAL: if you're feeling up to the challenge, complete the En-ROADS guided assignment. You'll be able to experiment with the En-ROADS simulator to create a scenario that not only solves climate change, but also does it in a way that uplifts our economy and society. Think of it like enacting your own Green New Deal!**
 
-*   [En-Roads assignment](https://www.climateinteractive.org/tools/guided-assignment/)
+- [En-Roads assignment](https://www.climateinteractive.org/tools/guided-assignment/)
+
 ## But doesn’t fighting climate change hurt the economy?
 
-Yes, policies like carbon prices will cost us jobs in fossil fuel industries and carbon-intensive businesses. But these losses will be balanced out by new jobs in renewable energy, environmental conservation, new infrastructure projects, and more. Research from Canada suggests that these new jobs will likely outnumber the old jobs, with 160,000 jobs being created in Canada alone  while only 50,000 in fossil fuel industries will be lost ([source](https://cleanenergycanada.org/report/the-fast-lane-tracking-the-energy-revolution-2019/)). This is because most fossil fuel industries gain their value from minerals in the ground, like oil and coal, while renewables gain their value from human labor and technology. Profits from oil mostly go to whoever has the rights to the reserves, with comparatively few workers to pay salaries to, while renewable energy profits are spread out among a greater number of workers ([source](https://www.cbc.ca/news/business/employment-climate-economy-1.5384311)). Renewable energy prices are getting low enough to compete with fossil fuels: three quarters of US coal infrastructure is now more expensive than using renewable energy ([source](https://www.wri.org/blog/2020/07/economic-benefits-climate-action-us)). And while carbon taxes take money out of the economy, that money can be reinvested right back in as economic stimulus or welfare for the unemployed.
+Yes, policies like carbon prices will cost us jobs in fossil fuel industries and carbon-intensive businesses. But these losses will be balanced out by new jobs in renewable energy, environmental conservation, new infrastructure projects, and more. Research from Canada suggests that these new jobs will likely outnumber the old jobs, with 160,000 jobs being created in Canada alone while only 50,000 in fossil fuel industries will be lost ([source](https://cleanenergycanada.org/report/the-fast-lane-tracking-the-energy-revolution-2019/)). This is because most fossil fuel industries gain their value from minerals in the ground, like oil and coal, while renewables gain their value from human labor and technology. Profits from oil mostly go to whoever has the rights to the reserves, with comparatively few workers to pay salaries to, while renewable energy profits are spread out among a greater number of workers ([source](https://www.cbc.ca/news/business/employment-climate-economy-1.5384311)). Renewable energy prices are getting low enough to compete with fossil fuels: three quarters of US coal infrastructure is now more expensive than using renewable energy ([source](https://www.wri.org/blog/2020/07/economic-benefits-climate-action-us)). And while carbon taxes take money out of the economy, that money can be reinvested right back in as economic stimulus or welfare for the unemployed.
 
 We don’t have to pick between the economy and fighting climate change. From 2005 to 2017, the state of Maryland cut their emissions 38% while still experiencing 18% GDP growth, and DC cut their emissions 33% and saw 21% GDP growth ([source](https://www.wri.org/blog/2020/07/decoupling-emissions-gdp-us)). During that time, 40 other states also managed to curb their emissions without shrinking their economies, as did the United States on net and twenty other countries. This false dichotomy—the economy or the climate—we’ve been fed is simply not true.
 
@@ -262,7 +264,7 @@ Despite learning decades ago about how terrible their industry would be for the 
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/TbW_1MtC2So" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Not only did 80% of Americans agree in the 1980s that climate change was a real issue, it was not politicized in the way it is today (and it still shouldn't be today). Exxon went against their own science repeatedly out of  short-sightedness and greed. Media sources developed a habit of framing the climate crisis as a "debate," and journalists tried to find sources and evidence for both sides of that "debate." Only in recent years have journalists attempted to represent the truth: that the vast majority of scientists agree that climate change is real. Today, corporations are still trying to manipulate narratives around climate change, stalling climate action and climate policy in the interest of profits at the expense of regular people.
+Not only did 80% of Americans agree in the 1980s that climate change was a real issue, it was not politicized in the way it is today (and it still shouldn't be today). Exxon went against their own science repeatedly out of short-sightedness and greed. Media sources developed a habit of framing the climate crisis as a "debate," and journalists tried to find sources and evidence for both sides of that "debate." Only in recent years have journalists attempted to represent the truth: that the vast majority of scientists agree that climate change is real. Today, corporations are still trying to manipulate narratives around climate change, stalling climate action and climate policy in the interest of profits at the expense of regular people.
 
 **Q: How have companies tried to sow doubt about the climate crisis? Why is it hard for people to grasp the concept of climate change in the abstract?**
 
@@ -270,11 +272,11 @@ Not only did 80% of Americans agree in the 1980s that climate change was a real 
 
 ### Talking about climate change
 
-Well, we're not the government, so how do we personally go about enacting structural change? Ideally, a government serves the interests of its people, so the overarching goal is to show that in addition to you, there are _a lot_ of people who care about this issue. Simply talking to others around you about the prevalence of the climate crisis is already a form of activism. In fact, climate scientist Katharine Hayhoe says that talking about the climate crisis is one of the most impactful things we can do. 
+Well, we're not the government, so how do we personally go about enacting structural change? Ideally, a government serves the interests of its people, so the overarching goal is to show that in addition to you, there are _a lot_ of people who care about this issue. Simply talking to others around you about the prevalence of the climate crisis is already a form of activism. In fact, climate scientist Katharine Hayhoe says that talking about the climate crisis is one of the most impactful things we can do.
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/etFPa-tVo5c" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Helping climate deniers understand the truth and science behind climate change is important, but what's the most successful way to talk about it with them? We know _why _we should talk about climate change, but _how _should we talk about it? Core disagreements, like ones about climate change, can quickly spiral into raging arguments, where neither person is listening to the other at all—which means that you won't be able to get your message across. While you might be eager to dish out the facts (and you're thinking _they _should really be listening to _you_), it's important to take a step back and create a productive and open-minded environment for discussion. In the following animation, the Alliance for Climate Education explains the secret to successfully talking about climate change.
+Helping climate deniers understand the truth and science behind climate change is important, but what's the most successful way to talk about it with them? We know _why \_we should talk about climate change, but \_how \_should we talk about it? Core disagreements, like ones about climate change, can quickly spiral into raging arguments, where neither person is listening to the other at all—which means that you won't be able to get your message across. While you might be eager to dish out the facts (and you're thinking \_they \_should really be listening to \_you_), it's important to take a step back and create a productive and open-minded environment for discussion. In the following animation, the Alliance for Climate Education explains the secret to successfully talking about climate change.
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/RkklaXhbTuA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -284,7 +286,7 @@ That's it! Even though you have important information to spread, the first step 
 
 <textarea data-unit="8" data-key="19" id="8.19" placeholder="Enter your response here." onblur="updateResponse(this)" oninput="editedResponse(this)"></textarea>
 
-Curious about more tactics that help you talk about climate change? Professor Jes Thompson from Northern Michigan University outlines the top five _worst _offenders when it comes to talking about climate change:
+Curious about more tactics that help you talk about climate change? Professor Jes Thompson from Northern Michigan University outlines the top five \_worst \_offenders when it comes to talking about climate change:
 
 ![5 Worst Offenders in Climate Communication](./images/8-offenders.png)
 
@@ -292,13 +294,13 @@ Instead, we should focus on who our audience is, and tie climate change to how i
 
 ### Combatting common counterpoints
 
-Large oil and fossil fuel companies successfully confused the American public by blurring the story of the climate crisis, and now it’s up to us to tell the truth. How do we respond to some of the most common counterpoints against climate change? 
+Large oil and fossil fuel companies successfully confused the American public by blurring the story of the climate crisis, and now it’s up to us to tell the truth. How do we respond to some of the most common counterpoints against climate change?
 
 First of all, use information that you learned while taking this course! Many counterpoints just take a bit more understanding and context to rebut, and you've certainly gathered a lot of that information in the previous units. However, many sources have also compiled quick, snappy, and accurate answers to some of the most common questions. In fact, Coby Beck from Grist has assembled an extensive list of articles from his series "How to talk to a climate skeptic," all in one place. Feel free to take a skim right now, and pull these out from your arsenal the next time you need to address a counterpoint.
 
-*   [Common Denier Arguments](https://opr.ca.gov/facts/common-denier-arguments.html), California Governor's Office of Planning and Research
-*   [How to talk to a climate skeptic: a complete list](https://grist.org/series/skeptics/), Grist
-*   [Skeptical Science](https://www.skepticalscience.com/)
+- [Common Denier Arguments](https://opr.ca.gov/facts/common-denier-arguments.html), California Governor's Office of Planning and Research
+- [How to talk to a climate skeptic: a complete list](https://grist.org/series/skeptics/), Grist
+- [Skeptical Science](https://www.skepticalscience.com/)
 
 **Q: List some of the counterpoints you think will be most helpful in your conversations about climate change.**
 
@@ -308,11 +310,11 @@ Great! Those sources (and our course) address confusions regarding whether clima
 
 As Green New Deal policy lead Rhiana Gunn-Wright mentioned, if we don't invest in a safer tomorrow, then we'll be facing a much greater cost later on. Looking for a source, or more specifics? The Harvard Business Review outlines why fighting climate change is actually more economically beneficial in the following article. Written in 2017, some of its prophecies have already come true (like the cost of more frequent human pandemics).
 
-*   [If You Think Fighting Climate Change Will Be Expensive, Calculate the Cost of Letting It Happen](https://hbr.org/2017/06/if-you-think-fighting-climate-change-will-be-expensive-calculate-the-cost-of-letting-it-happen), Harvard Business Review
+- [If You Think Fighting Climate Change Will Be Expensive, Calculate the Cost of Letting It Happen](https://hbr.org/2017/06/if-you-think-fighting-climate-change-will-be-expensive-calculate-the-cost-of-letting-it-happen), Harvard Business Review
 
-What about people who believe that we need to take action with policy, but that they personally can't do anything about climate change? Let them know that one of the most effective ways of taking action is to talk to others about it! Reaching out to our social circles is something we can all do—and for free, too.  Beyond spreading the word, there's value in making individual changes like trying a more plant-based diet and minimizing our waste. While the impact of one individual might not seem like much, the repeated actions of many individuals accumulate quickly. Furthermore, when we make small changes in our own lives, we create ripple effects in communities around us by starting more conversations and implicitly encouraging others. 
+What about people who believe that we need to take action with policy, but that they personally can't do anything about climate change? Let them know that one of the most effective ways of taking action is to talk to others about it! Reaching out to our social circles is something we can all do—and for free, too. Beyond spreading the word, there's value in making individual changes like trying a more plant-based diet and minimizing our waste. While the impact of one individual might not seem like much, the repeated actions of many individuals accumulate quickly. Furthermore, when we make small changes in our own lives, we create ripple effects in communities around us by starting more conversations and implicitly encouraging others.
 
-In his blog post for Sierra Club, ["Yes, Actually, Individual Responsibility is Essential to Solving the Climate Crisis,"](https://www.sierraclub.org/sierra/yes-actually-individual-responsibility-essential-solving-climate-crisis) Jason Mark explains that individual action doesn't distract from taking collecting action and keeping the blame on large corporations. In fact, it empowers taking collective action. Our personal actions have power beyond the impact they have on our planet—they also "deepen our commitment to environmental sustainability" and encourage us to start living the life we want to see. 
+In his blog post for Sierra Club, ["Yes, Actually, Individual Responsibility is Essential to Solving the Climate Crisis,"](https://www.sierraclub.org/sierra/yes-actually-individual-responsibility-essential-solving-climate-crisis) Jason Mark explains that individual action doesn't distract from taking collecting action and keeping the blame on large corporations. In fact, it empowers taking collective action. Our personal actions have power beyond the impact they have on our planet—they also "deepen our commitment to environmental sustainability" and encourage us to start living the life we want to see.
 
 Individual actions foster an emotional investment in the climate crisis, which then pushes those individuals to _want_ to take more actions, including collective and political ones. As Mark puts it, "When we take responsibility for the environmental consequences of our daily actions, we feel like we are in control. And when you’re in control of your own life, perhaps then you’ll feel more empowered to take control of—or at least play a role in—larger political systems." Moreover, connecting our values to concrete actions also sparks the discussion around us, and speaks volumes to how important the crisis really is to us as individuals.
 
