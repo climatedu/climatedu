@@ -61,7 +61,7 @@ const Responses = ({ location }) => {
           {user !== null && account !== null
             ? account.type === 'Student' || account.type === 'Teacher'
               ? questions
-                  .filter(q => q.unit === params.get('unit'))
+                  .filter(q => q.unit === parseInt(params.get('unit')))
                   .map(question => (
                     <React.Fragment key={question.key}>
                       <h3 sx={{ mb: 4 }}>{question.prompt}</h3>
