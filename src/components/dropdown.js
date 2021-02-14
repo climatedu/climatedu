@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import { Box, jsx } from 'theme-ui'
 import { BsCaretDownFill } from 'react-icons/bs'
-import { useState } from 'react'
+import React, { useState } from 'react'
 
 const merge = (obj, other) => (other ? { ...obj, ...other } : obj)
 
@@ -13,7 +13,7 @@ const Dropdown = ({ text, textStyle, contents }) => {
   }
 
   return (
-    <>
+    <React.Fragment>
       <Box
         sx={merge(
           {
@@ -34,7 +34,7 @@ const Dropdown = ({ text, textStyle, contents }) => {
         />
       </Box>
       {open ? contents : null}
-    </>
+    </React.Fragment>
   )
 }
 

@@ -1,4 +1,5 @@
-config = {
+/* eslint-disable */
+const config = {
   apiKey: 'AIzaSyBY049RvUmDowbIygkFiJfhj17e6-XCy8o',
   authDomain: 'climatedu-957b7.firebaseapp.com',
   databaseURL: 'https://climatedu-957b7.firebaseio.com',
@@ -9,11 +10,11 @@ config = {
 
 firebase.initializeApp(config)
 
-db = firebase.firestore()
+const db = firebase.firestore()
 
-currentUser = firebase.auth().currentUser
+let currentUser = firebase.auth().currentUser
 
-savedResponses = {}
+let savedResponses = {}
 
 function editedResponse(element) {
   savedResponses[element] = false
