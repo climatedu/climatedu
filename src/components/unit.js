@@ -1,20 +1,14 @@
 /** @jsx jsx **/
-import { useState, useCallback, useEffect } from 'react'
-import React from 'react'
-import { Box, Flex, Heading, IconButton, Styled, jsx } from 'theme-ui'
+import React, { useState, useCallback, useEffect } from 'react'
+import { Box, IconButton, Styled, jsx } from 'theme-ui'
 import { css } from '@theme-ui/css'
 import { Global } from '@emotion/core'
 import 'react-toastify/dist/ReactToastify.min.css'
 import { useStaticQuery, graphql, Link } from 'gatsby'
-import Image from 'gatsby-image'
 import { GiHamburgerMenu } from 'react-icons/gi'
-import { BsGearFill } from 'react-icons/bs'
 import seedrandom from 'seedrandom'
 
-import Navbar from './navbar'
 import SEO from './seo'
-import Layout from './layout'
-import PageHeader from './pageheader'
 import Container from './container'
 import SideNav, { getColor } from './sidenav'
 import AppendHead from 'react-append-head'
@@ -23,10 +17,10 @@ import firebase from 'firebase/app'
 
 import useAuth from '../util/auth'
 
-import useFirebase from '../firebase'
+import getFirebase from '../firebase'
 
 const Unit = ({ html, frontmatter, children }) => {
-  const firebaseApp = useFirebase()
+  const firebaseApp = getFirebase()
   const data = useStaticQuery(graphql`
     {
       site {
@@ -95,20 +89,23 @@ const Unit = ({ html, frontmatter, children }) => {
   const [contentRef, setContentRef] = useState({ current: null })
   const navButtonRef = React.createRef()
   const [sectionHeights, setSectionHeights] = useState([])
-  const contentCallbackRef = useCallback(content => {
-    setContentRef({ current: content })
-    if (sectionHeights.length === 0 && content != null) {
-      let sections = Array.from(content.querySelectorAll('h2'))
-      sections = sections.map((s, i) => [
-        (s.offsetTop + s.offsetHeight * 2) / content.scrollHeight,
-        (sections[i + 1]
-          ? sections[i + 1].offsetTop / content.scrollHeight
-          : 1) -
+  const contentCallbackRef = useCallback(
+    content => {
+      setContentRef({ current: content })
+      if (sectionHeights.length === 0 && content != null) {
+        let sections = Array.from(content.querySelectorAll('h2'))
+        sections = sections.map((s, i) => [
           (s.offsetTop + s.offsetHeight * 2) / content.scrollHeight,
-      ])
-      setSectionHeights(sections)
-    }
-  }, [])
+          (sections[i + 1]
+            ? sections[i + 1].offsetTop / content.scrollHeight
+            : 1) -
+            (s.offsetTop + s.offsetHeight * 2) / content.scrollHeight,
+        ])
+        setSectionHeights(sections)
+      }
+    },
+    [sectionHeights.length]
+  )
   const opacify = (text, opacity) =>
     ((a, p) =>
       `rgba(${p(a, 0)}, ${p(a, 2)}, ${p(a, 4)}, ${opacity})`)(
@@ -143,10 +140,13 @@ const Unit = ({ html, frontmatter, children }) => {
     if (firebase.auth().currentUser == null) return
 
     if (unitRef.current != null) {
-      const percentRead = Math.ceil(unitRef.current.scrollTop / (unitRef.current.scrollHeight - unitRef.current.offsetHeight) * 100)
+      const percentRead = Math.ceil(
+        (unitRef.current.scrollTop /
+          (unitRef.current.scrollHeight - unitRef.current.offsetHeight)) *
+          100
+      )
 
       if (readProgress === 0) {
-
         const d = await firebaseApp
           .firestore()
           .collection('accounts')
@@ -154,8 +154,8 @@ const Unit = ({ html, frontmatter, children }) => {
           .collection('progress')
           .doc(frontmatter.unit.toString())
           .get()
-        
-        if(d.data() !== undefined){
+
+        if (d.data() !== undefined) {
           setReadProgress(d.data().percent)
 
           if (percentRead <= d.data().percent) return
@@ -233,12 +233,24 @@ const Unit = ({ html, frontmatter, children }) => {
           },
         })}
       />
-      <SEO/>
+      <SEO />
       <AppendHead>
-        <script order="0" name="firebase-app" src="https://www.gstatic.com/firebasejs/8.2.2/firebase-app.js"></script>
-        <script order="1" name="firebase-auth" src="https://www.gstatic.com/firebasejs/8.2.2/firebase-auth.js"></script>
-        <script order="2" name="firebase-firestore" src="https://www.gstatic.com/firebasejs/8.2.2/firebase-firestore.js"></script>
-        <script order="3" name="handleresponse" src="/handleresponse.js"></script>
+        <script
+          order='0'
+          name='firebase-app'
+          src='https://www.gstatic.com/firebasejs/8.2.2/firebase-app.js'
+        />
+        <script
+          order='1'
+          name='firebase-auth'
+          src='https://www.gstatic.com/firebasejs/8.2.2/firebase-auth.js'
+        />
+        <script
+          order='2'
+          name='firebase-firestore'
+          src='https://www.gstatic.com/firebasejs/8.2.2/firebase-firestore.js'
+        />
+        <script order='3' name='handleresponse' src='/handleresponse.js' />
       </AppendHead>
       <SideNav
         open={navOpen}
@@ -375,9 +387,11 @@ const Unit = ({ html, frontmatter, children }) => {
           ) : null}
           {sectionHeights.length
             ? doodles.map(section => {
+                /* eslint-disable */
                 const random = new seedrandom(
                   frontmatter.unit + '.' + section.index
                 )
+                /* eslint-enable */
 
                 return section.doodles.map((doodle, index) => {
                   const width = doodle.width || 100
@@ -395,7 +409,8 @@ const Unit = ({ html, frontmatter, children }) => {
                         key={index}
                         sx={{
                           position: 'absolute',
-                          top: `calc(${((sectionHeights[section.index][1] / 10) *
+                          top: `calc(${
+                            ((sectionHeights[section.index][1] / 10) *
                               random() +
                               sectionHeights[section.index][0] +
                               (sectionHeights[section.index][1] * index) /

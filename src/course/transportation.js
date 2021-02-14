@@ -1,6 +1,6 @@
 /** @jsx jsx **/
 import { graphql } from 'gatsby'
-import { Box, jsx } from 'theme-ui'
+import { jsx } from 'theme-ui'
 import Image from 'gatsby-image'
 
 import Unit from '../components/unit'
@@ -28,7 +28,9 @@ export const pageQuery = graphql`
     markdownRemark(frontmatter: { slug: { eq: $slug } }) {
       ...Unit
     }
-    railImage: imageSharp(fluid: { originalName: { eq: "TrainBackground.png" } }) {
+    railImage: imageSharp(
+      fluid: { originalName: { eq: "TrainBackground.png" } }
+    ) {
       fluid(maxWidth: 2560, traceSVG: {}) {
         ...GatsbyImageSharpFluid_tracedSVG
       }

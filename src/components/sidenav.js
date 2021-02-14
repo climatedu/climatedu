@@ -1,16 +1,10 @@
 /** @jsx jsx */
-import { Box, IconButton, Image, Flex, jsx, Grid } from 'theme-ui'
-import useAuth from '../util/auth'
-import logo from '../media/climatedu.png'
-import { useStaticQuery, graphql, navigate } from 'gatsby'
+import { Box, IconButton, Flex, jsx, Grid } from 'theme-ui'
+import { navigate } from 'gatsby'
 import React, { useState } from 'react'
 
-import { DesktopNavButton, MobileNavButton } from './navbutton'
-
-import { IoMdPerson, IoMdMenu, IoMdClose, IoIosArrowBack } from 'react-icons/io'
+import { IoIosArrowBack } from 'react-icons/io'
 import { BsGrid3X3Gap } from 'react-icons/bs'
-
-import Container from './container'
 
 // https://stackoverflow.com/a/46543292/9749629
 function hexToRgb(hex) {

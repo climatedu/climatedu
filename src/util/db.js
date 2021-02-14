@@ -1,9 +1,8 @@
 import { useEffect, useState } from 'react'
 import { navigate } from 'gatsby'
-import useFirebase from '../firebase'
-import { toast } from 'react-toastify'
+import getFirebase from '../firebase'
 
-const firebaseApp = useFirebase()
+const firebaseApp = getFirebase()
 
 const useAuth = authRequired => {
   const [user, setUser] = useState(null)
@@ -16,36 +15,65 @@ const useAuth = authRequired => {
       return firebaseApp.auth().onAuthStateChanged(auth => {
         if (auth === null) navigate('/')
         setUser(auth)
-        firebaseApp.firestore().collection("accounts").doc(auth.uid).onSnapshot(function (a) {
-          setAccount({id: a.id, ...a.data()})
-          a = a.data()
-          if (a && a.class) {
-            setTimeout(() => firebaseApp.firestore().collection("classes").doc(a.class).get().then(function (c) {
-              setClassroom({code: c.id, ...c.data()})
-              firebaseApp.firestore().collection("accounts").where("class", "==", c.id).where("teacher", "==", auth.uid).where("type", "==", "Student").onSnapshot(function (s) {
-                let stu = []
-                s.forEach(d => stu.push({id: d.id, ...d.data()}))
-                setStudents(stu)
-              })
-            }), 100)
-          } else {
-            setClassroom(null)
-          }
-        })
+        firebaseApp
+          .firestore()
+          .collection('accounts')
+          .doc(auth.uid)
+          .onSnapshot(function (a) {
+            setAccount({ id: a.id, ...a.data() })
+            a = a.data()
+            if (a && a.class) {
+              setTimeout(
+                () =>
+                  firebaseApp
+                    .firestore()
+                    .collection('classes')
+                    .doc(a.class)
+                    .get()
+                    .then(function (c) {
+                      setClassroom({ code: c.id, ...c.data() })
+                      firebaseApp
+                        .firestore()
+                        .collection('accounts')
+                        .where('class', '==', c.id)
+                        .where('teacher', '==', auth.uid)
+                        .where('type', '==', 'Student')
+                        .onSnapshot(function (s) {
+                          const stu = []
+                          s.forEach(d => stu.push({ id: d.id, ...d.data() }))
+                          setStudents(stu)
+                        })
+                    }),
+                100
+              )
+            } else {
+              setClassroom(null)
+            }
+          })
       })
     }
     return firebaseApp.auth().onAuthStateChanged(setUser)
-  }, [firebaseApp, authRequired])
-  return {user, account, classroom, students}
+  }, [authRequired])
+  return { user, account, classroom, students }
 }
 
-function joinClass (user, classCode) {
-  return firebaseApp.firestore().collection("classes").doc(classCode).get().then((result) => firebaseApp.firestore().collection("accounts").doc(user.uid).update({class: classCode, teacher: result.data().owner}))
+function joinClass(user, classCode) {
+  return firebaseApp
+    .firestore()
+    .collection('classes')
+    .doc(classCode)
+    .get()
+    .then(result =>
+      firebaseApp
+        .firestore()
+        .collection('accounts')
+        .doc(user.uid)
+        .update({ class: classCode, teacher: result.data().owner })
+    )
 }
 
-
-function leaveFeedback (user, feedback){
-  return firebaseApp.firestore().collection("feedback").add({
+function leaveFeedback(user, feedback) {
+  return firebaseApp.firestore().collection('feedback').add({
     uid: user.uid,
     feedback: feedback,
     name: user.displayName,
@@ -54,38 +82,53 @@ function leaveFeedback (user, feedback){
 }
 
 function createClass(user, title, code) {
-  return firebaseApp.firestore().collection("classes").doc(code).set({title, owner: user.uid})
+  return firebaseApp
+    .firestore()
+    .collection('classes')
+    .doc(code)
+    .set({ title, owner: user.uid })
 }
 
 function useResponses(uid, unit) {
   const [responses, setResponses] = useState(null)
   useEffect(() => {
     if (!firebaseApp) return
-    let unsubscribe = firebaseApp.firestore().collection('accounts').doc(uid).collection('responses').doc(unit.toString()).onSnapshot(function (r) {
-      setResponses(r.data())
-    })
-    return ()=>unsubscribe()
-  }, [firebaseApp, uid, unit])
+    const unsubscribe = firebaseApp
+      .firestore()
+      .collection('accounts')
+      .doc(uid)
+      .collection('responses')
+      .doc(unit.toString())
+      .onSnapshot(function (r) {
+        setResponses(r.data())
+      })
+    return () => unsubscribe()
+  }, [uid, unit])
   return responses
 }
 
 function teacherFeedback(uid, unit, key, feedback) {
-  return firebaseApp.firestore().collection('accounts').doc(uid).collection('responses').doc(unit.toString()).update({['feedback.'+key]: feedback})
+  return firebaseApp
+    .firestore()
+    .collection('accounts')
+    .doc(uid)
+    .collection('responses')
+    .doc(unit.toString())
+    .update({ ['feedback.' + key]: feedback })
 }
 
-
-function loadProgress(account, unitCount){
+function useProgress(account, unitCount) {
   const [progress, setProgress] = useState(new Array(unitCount).fill(0))
 
-  useEffect(()=>{
+  useEffect(() => {
     if (!firebaseApp) return
 
-    let unsubscribe = firebaseApp
+    const unsubscribe = firebaseApp
       .firestore()
       .collection('accounts')
       .doc(account.id)
       .collection('progress')
-      .onSnapshot((collection) =>{
+      .onSnapshot(collection => {
         const temp = new Array(unitCount).fill(0)
         collection.docs.map((doc, idx) => {
           temp[idx] = (doc.data().percent | 0) / 100
@@ -95,10 +138,17 @@ function loadProgress(account, unitCount){
       })
 
     return unsubscribe
-  }, [firebaseApp, account, unitCount])
+  }, [account, unitCount])
 
   return progress
 }
 
-
-export default {useAuth, joinClass, leaveFeedback, createClass, useResponses, teacherFeedback, loadProgress}
+export default {
+  useAuth,
+  joinClass,
+  leaveFeedback,
+  createClass,
+  useResponses,
+  teacherFeedback,
+  useProgress,
+}

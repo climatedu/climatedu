@@ -1,21 +1,18 @@
 /** @jsx jsx */
-import { Button, Box, Label, Input, jsx, Textarea, Flex, Grid } from 'theme-ui'
+import { Button, Box, jsx, Textarea, Flex } from 'theme-ui'
 import { toast } from 'react-toastify'
-import { navigate, useStaticQuery } from 'gatsby'
+import { graphql, useStaticQuery } from 'gatsby'
 import React from 'react'
 
 import Course from '../components/course'
 import PageHeader from '../components/pageheader'
 import Container from '../components/container'
-import getFirebase from '../firebase'
-import Dropdown from '../components/dropdown'
 
 import db from '../util/db'
 
 const Responses = ({ location }) => {
   const params = new URLSearchParams(location.search)
-  const { user, account, classroom, students } = db.useAuth(true)
-  const firebaseApp = getFirebase()
+  const { user, account } = db.useAuth(true)
 
   const data = useStaticQuery(graphql`
     {
@@ -31,16 +28,16 @@ const Responses = ({ location }) => {
 
   const questions = data.courseYaml.questions
 
-  let responses = db.useResponses(params.get('student'), params.get('unit'))
+  const responses = db.useResponses(params.get('student'), params.get('unit'))
 
-  const handleLeaveFeedback = async function (e) {
+  const handleLeaveFeedback = async function (e, key) {
     e.preventDefault()
 
     try {
       await db.teacherFeedback(
         params.get('student'),
         params.get('unit'),
-        this.key,
+        key,
         e.target.elements.feedback.value
       )
       toast.success('The student can now see your feedback!')
@@ -64,11 +61,9 @@ const Responses = ({ location }) => {
           {user !== null && account !== null
             ? account.type === 'Student' || account.type === 'Teacher'
               ? questions
-                  .filter(q => q.unit == params.get('unit'))
+                  .filter(q => q.unit === params.get('unit'))
                   .map(question => (
-                    <React.Fragment
-                      key={question.key}
-                    >
+                    <React.Fragment key={question.key}>
                       <h3 sx={{ mb: 4 }}>{question.prompt}</h3>
                       <Flex sx={{ display: ['block', 'block', 'flex'] }}>
                         <Box sx={{ flex: '1 1 0', mr: [0, 0, 4], mb: 4 }}>
@@ -89,9 +84,9 @@ const Responses = ({ location }) => {
                         <Box sx={{ flex: '1 1 0', ml: [0, 0, 4], mb: 4 }}>
                           {account.type === 'Teacher' ? (
                             <Box
-                              onSubmit={handleLeaveFeedback.bind({
-                                key: question.key,
-                              })}
+                              onSubmit={e => {
+                                handleLeaveFeedback(e, question.key)
+                              }}
                               as='form'
                               sx={{
                                 display: 'flex',
@@ -109,7 +104,7 @@ const Responses = ({ location }) => {
                                 name='feedback'
                                 id='feedback'
                                 defaultValue={responses.feedback[question.key]}
-                                placeholder="Leave your feedback here"
+                                placeholder='Leave your feedback here'
                               />
                               <Button
                                 sx={{

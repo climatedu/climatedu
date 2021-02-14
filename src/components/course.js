@@ -1,22 +1,17 @@
 /** @jsx jsx */
-import { useState } from 'react'
-import { Box, Flex, Heading, IconButton, Styled, jsx } from 'theme-ui'
+import { Box, Styled, jsx } from 'theme-ui'
 import { css } from '@theme-ui/css'
 import { Global } from '@emotion/core'
 import 'react-toastify/dist/ReactToastify.min.css'
-import { useStaticQuery, graphql, navigate } from 'gatsby'
-import Image from 'gatsby-image'
+import { navigate } from 'gatsby'
 import { toast } from 'react-toastify'
 
-import Navbar from './navbar'
 import SEO from './seo'
-import useAuth from '../util/auth'
 import getFirebase from '../firebase'
 
 import { IoMdExit } from 'react-icons/io'
 
 const Course = ({ children, bg }) => {
-  const user = useAuth(true)
   const firebaseApp = getFirebase()
 
   const logout = async e => {
@@ -29,22 +24,6 @@ const Course = ({ children, bg }) => {
       toast.error(e.message)
     }
   }
-
-  const data = useStaticQuery(graphql`
-    {
-      site {
-        siteMetadata {
-          socials {
-            icon
-            href
-            name
-          }
-        }
-      }
-    }
-  `)
-
-  const [navbarOpen, setNavbarOpen] = useState(false)
 
   return (
     <Styled.root
@@ -60,7 +39,7 @@ const Course = ({ children, bg }) => {
         '::-webkit-scrollbar-thumb, *::-webkit-scrollbar-thumb': {
           bg: 'primary',
         },
-        overflowY: navbarOpen ? 'hidden' : 'auto',
+        overflowY: 'auto',
       }}
     >
       <Global

@@ -8,12 +8,12 @@ import Layout from '../components/layout'
 import PageHeader from '../components/pageheader'
 import Container from '../components/container'
 
-import firebase from 'firebase/app'
+// import firebase from 'firebase/app'
 
 import useAuth from '../util/auth'
 import getFirebase from '../firebase'
 
-import { IoLogoGoogle } from 'react-icons/io'
+// import { IoLogoGoogle } from 'react-icons/io'
 
 const Login = ({ data }) => {
   const user = useAuth()
@@ -43,6 +43,7 @@ const Login = ({ data }) => {
     }
   }
 
+  /*
   const googleLogin = async e => {
     e.preventDefault()
 
@@ -57,6 +58,7 @@ const Login = ({ data }) => {
       toast.error(e.message)
     }
   }
+  */
 
   return (
     <Layout>

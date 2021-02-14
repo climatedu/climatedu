@@ -1,13 +1,12 @@
 /** @jsx jsx */
-import { Button, Box, Label, Input, jsx, Textarea, Flex } from 'theme-ui'
+import { Button, Box, Input, jsx, Textarea, Flex } from 'theme-ui'
 import { toast } from 'react-toastify'
-import { navigate, useStaticQuery } from 'gatsby'
+import { graphql, useStaticQuery } from 'gatsby'
 import React from 'react'
 
 import Course from '../components/course'
 import PageHeader from '../components/pageheader'
 import Container from '../components/container'
-import getFirebase from '../firebase'
 import Progress from '../components/progress'
 import Dropdown from '../components/dropdown'
 
@@ -15,7 +14,6 @@ import db from '../util/db'
 
 const Dashboard = () => {
   const { user, account, classroom, students } = db.useAuth(true)
-  const firebaseApp = getFirebase()
 
   const data = useStaticQuery(graphql`
     {
@@ -168,7 +166,7 @@ const Dashboard = () => {
                       <>
                         <h1 sx={{ mb: 3 }}>{classroom.title}</h1>
                         <Dropdown
-                          text={`Switch classes?`}
+                          text='Switch classes?'
                           textStyle={{ fontSize: 4, whiteSpace: 'pre-line' }}
                           contents={classInput}
                         />
@@ -226,9 +224,7 @@ const Dashboard = () => {
                     ? students.map(s => (
                         <Dropdown
                           key={s.id}
-                          contents={
-                            <Progress data={units} account={s} />
-                          }
+                          contents={<Progress data={units} account={s} />}
                           text={s.name}
                           textStyle={{ fontSize: 4, mb: 3 }}
                         />

@@ -1,7 +1,7 @@
 /** @jsx jsx */
-import { Button, Box, Label, Input, jsx, Textarea, Flex } from 'theme-ui'
+import { Box, jsx } from 'theme-ui'
 import { BsCaretDownFill } from 'react-icons/bs'
-import React, { useState } from 'react'
+import { useState } from 'react'
 
 const merge = (obj, other) => (other ? { ...obj, ...other } : obj)
 

@@ -1,51 +1,15 @@
 /** @jsx jsx */
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import { Box, Flex, Grid, jsx } from 'theme-ui'
 import { navigate } from 'gatsby'
 import { HiChatAlt } from 'react-icons/hi'
-
-import firebase from 'firebase/app'
-
-import useAuth from '../util/auth'
-
-import useFirebase from '../firebase'
 
 import db from '../util/db'
 
 const Progress = ({ data, account }) => {
   if (account === null) return null
 
-  const firebaseApp = useFirebase()
-
-  /*
-  const [unitProgress, setUnitProgress] = useState(new Array(data.length).fill(0))
-  const [loaded, setLoaded] = useState(false)
-
-  if (!loaded) {
-    const f = async () => {
-      const collection = await firebaseApp
-        .firestore()
-        .collection('accounts')
-        .doc(account.id)
-        .collection('progress')
-        .get()
-
-      const temp = new Array(data.length).fill(0)
-
-      collection.docs.map((doc, idx) => {
-        temp[idx] = (doc.data().percent | 0) / 100
-      })
-      
-      setUnitProgress(temp)
-      setLoaded(true)
-    }
-    f()
-  }
-
-  db.loadProgress(account, data.length)
-  */
-
-  let unitProgress = db.loadProgress(account, data.length)
+  const unitProgress = db.useProgress(account, data.length)
 
   return (
     <Grid
@@ -56,8 +20,8 @@ const Progress = ({ data, account }) => {
       }}
     >
       {data.map(({ frontmatter }) => {
-        frontmatter.percent = unitProgress[frontmatter.unit-1]
-        let goToUnit = () => navigate('/course/' + frontmatter.slug + '/')
+        frontmatter.percent = unitProgress[frontmatter.unit - 1]
+        const goToUnit = () => navigate('/course/' + frontmatter.slug + '/')
         return (
           <React.Fragment key={frontmatter.unit}>
             <Flex

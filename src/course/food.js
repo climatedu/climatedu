@@ -6,7 +6,6 @@ import Image from 'gatsby-image'
 import Unit from '../components/unit'
 
 const Food = ({ data }) => {
-
   console.log(data)
   return (
     <Unit {...data.markdownRemark}>
@@ -25,7 +24,7 @@ const Food = ({ data }) => {
         <Image
           fluid={{ ...data.barnImage.fluid }}
           sx={{
-            width: "40%",
+            width: '40%',
             ml: 'auto',
           }}
         />
@@ -43,7 +42,7 @@ const Food = ({ data }) => {
         <Image
           fluid={{ ...data.chickenImage.fluid }}
           sx={{
-            width: "6%",
+            width: '6%',
             ml: 'auto',
           }}
         />
@@ -55,14 +54,14 @@ const Food = ({ data }) => {
           bottom: 0,
           left: 0,
           width: '80vw',
-          pointerEvents: "none"
+          pointerEvents: 'none',
         }}
       >
         <Image
           fluid={{ ...data.cowImage.fluid }}
           sx={{
             position: 'relative',
-            maxWidth: "15%",
+            maxWidth: '15%',
           }}
         />
       </Box>

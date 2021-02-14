@@ -81,10 +81,6 @@ const Navbar = ({ navbarOpen, setNavbarOpen }) => {
         </Link>
 
         {links.map((props, i) => (
-          <DesktopNavButton key={i} as='li' sx={{ mr: 3 }} {...props} />
-        ))}
-
-        {links.map((props, i) => (
           <DesktopNavButton
             key={i}
             as='li'
@@ -113,22 +109,22 @@ const Navbar = ({ navbarOpen, setNavbarOpen }) => {
             />
           </DesktopNavButton>
         ) : (
-            <DesktopNavButton
-              as='li'
-              location='/account/'
-              text='Account'
-              dropdown={null}
-              key={links.length + 1}
-            >
-              <IoMdPerson
-                sx={{
-                  fontSize: '125%',
-                  verticalAlign: 'text-top',
-                  ml: 1,
-                }}
-              />
-            </DesktopNavButton>
-          )}
+          <DesktopNavButton
+            as='li'
+            location='/account/'
+            text='Account'
+            dropdown={null}
+            key={links.length + 1}
+          >
+            <IoMdPerson
+              sx={{
+                fontSize: '125%',
+                verticalAlign: 'text-top',
+                ml: 1,
+              }}
+            />
+          </DesktopNavButton>
+        )}
       </Flex>
       <IconButton
         sx={{
