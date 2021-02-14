@@ -8,7 +8,7 @@
     "ignore": ["firebase.json", "**/.*", "**/node_modules/**"]
   },
   "hosting": {
-    "site": "climatedu-preview",
+    "site": "climatedu",
     "public": "public",
     "ignore": ["firebase.json", "**/.*", "**/node_modules/**"]
   }
