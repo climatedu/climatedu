@@ -235,7 +235,6 @@ const SideNav = ({
           <h1
             sx={{
               mt: 0,
-              textDecoration: 'underline',
               cursor: 'pointer',
             }}
             onClick={() => {

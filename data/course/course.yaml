@@ -37,6 +37,9 @@ sections:
   - location: '2.1'
     doodles:
       - file: ./doodles/lightning.svg
+      - file: ./doodles/thermometer.svg
+        right: true
+        scale: 4
   - location: '2.2'
     doodles:
       - file: ./doodles/lightning.svg
@@ -74,24 +77,41 @@ sections:
         right: true
         scale: 2
         offsetY: -45em
+      - file: ./doodles/hydro.png
+        scale: 4
+        offsetX: -10em
+      - file: ./doodles/geothermal.png
+        scale: 4
+        offsetX: -7em
+        offsetY: 30em
       - file: ./doodles/solar.png
         offsetY: -18em
         scale: 2
+        right: true
+      - file: ./doodles/hydrodam.png
+        scale: 3
+        offsetX: 5em
         right: true
   - location: '3.3'
     doodles:
       - file: ./doodles/renewable.png
         scale: 1.5
+      - file: ./doodles/corn1.png
+        scale: 1.5
+        right: true
   - location: '3.4'
     doodles:
       - file: ./doodles/light3.svg
         scale: 3
         right: false
         offsetY: -15em
+      - file: ./doodles/light6.svg
+        scale: 4
+        right: true
       - file: ./doodles/earthsprout.png
         scale: 2
         right: true
-        offsetY: 54em
+        offsetY: 25em
   - location: '4.1'
     doodles:
       - file: ./doodles/chips1.svg
@@ -104,6 +124,13 @@ sections:
   - location: '4.2'
     doodles:
       - file: ./doodles/sixpack2.svg
+        scale: 2
+        offsetX: -5em
+      - file: ./doodles/bottle3.svg
+        right: true
+      - file: ./doodles/bag3.svg
+        scale: 2.5
+        offsetX: -5em
   - location: '4.3'
     doodles:
       - file: ./doodles/bottle2.svg
@@ -112,6 +139,10 @@ sections:
     doodles:
       - file: ./doodles/apple.svg
         rotation: -20
+      - file: ./doodles/tote.svg
+        right: true
+        scale: 2
+        offsetX: 7em
   - location: '4.5'
     doodles:
       - file: ./doodles/rackright.png
@@ -127,6 +158,10 @@ sections:
         sticky: true
   - location: '4.6'
     doodles:
+      - file: ./doodles/can2.svg
+        right: false
+        rotation: -20
+        offsetX: -2em
       - file: ./doodles/hydroflask.svg
         right: true
         rotation: 1
@@ -180,12 +215,6 @@ sections:
       - file: ./doodles/plants.svg
         scale: 2
         right: true
-  - location: '8.1'
-    doodles:
-      - file: ./doodles/protest_signs.svg
-        scale: 4
-        offsetX: '-9em'
-        offsetY: '10em'
   - location: '8.5'
     doodles:
       - file: ./doodles/papers_squiggles.svg
