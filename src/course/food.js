@@ -33,8 +33,8 @@ const Food = ({ data }) => {
       <Box
         sx={{
           position: 'fixed',
-          bottom: 0,
-          right: 0,
+          bottom: '15px',
+          right: '15px',
           width: '80vw',
           pointerEvents: 'none',
         }}
@@ -52,7 +52,24 @@ const Food = ({ data }) => {
         sx={{
           position: 'fixed',
           bottom: 0,
-          left: 0,
+          right: '120px',
+          width: '80vw',
+        }}
+      >
+        <img
+          src={data.goatImage.publicURL}
+          sx={{
+            width: '15%',
+            float: 'right',
+          }}
+        />
+      </Box>
+
+      <Box
+        sx={{
+          position: 'fixed',
+          bottom: '15px',
+          left: '15px',
           width: '80vw',
           pointerEvents: 'none',
         }}
@@ -90,6 +107,9 @@ export const pageQuery = graphql`
       fluid(maxWidth: 600, traceSVG: {}) {
         ...GatsbyImageSharpFluid_tracedSVG
       }
+    }
+    goatImage: file(absolutePath: { glob: "**/course/footers/goat.svg" }) {
+      publicURL
     }
   }
 `

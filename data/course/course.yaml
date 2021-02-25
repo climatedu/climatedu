@@ -165,35 +165,39 @@ sections:
       - file: ./doodles/hydroflask.svg
         right: true
         rotation: 1
-  - location: '5.1'
-    doodles:
-      - file: ./doodles/goat.svg
-        scale: 3
-        right: true
-        rotation: 20
-        offsetY: -10em
-        offsetX: 5em
   - location: '6.1'
     doodles:
       - file: ./doodles/truck.png
         scale: 6
         offsetX: '-4em'
         offsetY: '-22em'
-  - location: '6.3'
-    doodles:
-      - file: ./doodles/trainfront.svg
-        sticky: true
-        scale: 3
-        offsetX: '-7em'
-        offsetY: '-11em'
-  - location: '6.3'
-    doodles:
-      - file: ./doodles/trainback.svg
-        sticky: true
-        scale: 3
-        offsetX: '7em'
-        offsetY: '-11em'
+      - file: ./doodles/car_1.png
+        scale: 2
         right: true
+        offsetX: '10em'
+      - file: ./doodles/car_2.png
+        scale: 2
+        rotation: 180
+        offsetX: '-10em'
+  - location: '6.2'
+    doodles:
+      - file: ./doodles/car_3.png
+        scale: 2
+        rotation: 180
+        offsetX: '-10em'
+      - file: ./doodles/car_4.png
+        scale: 2
+        right: true
+        offsetX: '10em'
+  - location: '6.3'
+    doodles:
+      - file: ./doodles/car_5.png
+        scale: 2
+        rotation: 180
+        offsetX: '-10em'
+      - file: ./doodles/car_6.png
+        scale: 2
+        offsetX: '10em'
   - location: '7.1'
     doodles:
       - file: ./doodles/balcony1_v2.svg
@@ -222,6 +226,21 @@ sections:
         offsetX: '7em'
         offsetY: '-5em'
         right: true
+  - location: '8.7'
+    doodles:
+      - file: ./doodles/speech1.svg
+        scale: 1.5
+        offsetY: '75em'
+        offsetX: '-5em'
+      - file: ./doodles/speech2.svg
+        scale: 2
+        scaleX: -1
+        offsetY: '-30em'
+        offsetX: '8em'
+      - file: ./doodles/speech3.svg
+        scale: 3
+        offsetX: '-9em'
+        offsetY: '-60em'
 questions:
   - unit: 1
     key: 1
