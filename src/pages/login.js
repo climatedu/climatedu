@@ -1,7 +1,7 @@
 /** @jsx jsx */
-import { useCallback, useState } from 'react'
-import { Button, Box, Input, Flex, Label, jsx } from 'theme-ui'
-import { navigate, Link as GatsbyLink } from 'gatsby'
+import { useState } from 'react'
+import { Button, Input, Flex, jsx, Heading } from 'theme-ui'
+import { navigate } from 'gatsby'
 import { toast } from 'react-toastify'
 
 import Layout from '../components/layout'
@@ -24,7 +24,26 @@ const Login = ({ data }) => {
 
   const firebaseApp = getFirebase()
 
+  const onSubmit = async e => {
+    e.preventDefault()
+    if (!firebaseApp) return
+
+    if (!/\S+@\S+\.\S+/.test(email)) {
+      toast.error('Invalid email.')
+      return
+    }
+
+    try {
+      await firebaseApp.firestore().collection('reminders').add({ email })
+      toast.success('Submitted!')
+      navigate('/')
+    } catch (e) {
+      toast.error('Something went wrong. Let us know at hello@climatedu.org.')
+    }
+  }
+
   const [email, setEmail] = useState('')
+  /*
   const handleSetEmail = useCallback(e => setEmail(e.target.value), [])
 
   const [password, setPassword] = useState('')
@@ -43,7 +62,7 @@ const Login = ({ data }) => {
     }
   }
 
-  /*
+  
   const googleLogin = async e => {
     e.preventDefault()
 
@@ -61,6 +80,7 @@ const Login = ({ data }) => {
   */
 
   return (
+    /*
     <Layout>
       <PageHeader primary='Login' />
       <Container>
@@ -95,7 +115,6 @@ const Login = ({ data }) => {
           <Flex sx={{ width: '100%' }}>
             <Button sx={{ mb: 4, marginLeft: 'auto' }}>Let&apos;s go!</Button>
           </Flex>
-          {/*
           <Button
             variant='looksLikeAnInput'
             sx={{
@@ -116,7 +135,6 @@ const Login = ({ data }) => {
             />
             Sign in with Google
           </Button>
-          */}
 
           <Box sx={{ mb: 3 }}>
             <GatsbyLink
@@ -140,6 +158,40 @@ const Login = ({ data }) => {
             </GatsbyLink>
           </Box>
         </Box>
+      </Container>
+    </Layout>
+    */
+    <Layout>
+      <PageHeader
+        primary='Login'
+        secondary="We're still building this course. Come back and join us soon!"
+      />
+      <Container>
+        <Heading
+          sx={{
+            textAlign: 'center',
+            mb: 3,
+          }}
+        >
+          Leave your email, and we&apos;ll remind you:
+        </Heading>
+        <Flex
+          as='form'
+          onSubmit={onSubmit}
+          sx={{
+            maxWidth: 'smallContainer',
+            m: 'auto',
+            flexDirection: 'column',
+          }}
+        >
+          <Input
+            aria-label='Email'
+            value={email}
+            onChange={e => setEmail(e.target.value)}
+            sx={{ mb: 2 }}
+          />
+          <Button>Submit</Button>
+        </Flex>
       </Container>
     </Layout>
   )
