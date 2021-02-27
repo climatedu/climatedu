@@ -28,27 +28,27 @@ Let's learn about each of these energy sources in more depth! **Non-renewable** 
 
 **Coal energy** refers to burning coal in a power plant to generate heat and electricity. The coal we use today was formed hundreds of millions of years ago—even before the dinosaurs! Back then, Earth was covered by huge swamps filled with ferns and plants. As the plants died, they sank to the bottom of the swamps, packed down by dirt and water and stored underground as carbon. Over time, this heat and pressure turned organic matter into coal.
 
-Coal is one of the most popular energy sources to date because it has been cheap to produce. Since coal takes millions of years to form, it's **non-renewable**. Though there is enough coal in the United States to last between 180 and 250 years, burning it can pollute our air, releasing CO2 that increases the effect of global warming. Keeping coal in the ground is one way to reduce greenhouse gas emissions.
+Coal is one of the most popular energy sources to date because it has been cheap to produce. Since coal takes millions of years to form, it's **non-renewable**. Though there is enough coal in the United States to last between 180 and 250 years, burning it can pollute our air, releasing CO2 that increases the effect of global warming. Keeping coal in the ground is one way to reduce greenhouse gas emissions. 
 
-**Natural gas** is an invisible mixture of gases that we can burn to create energy. Like coal, natural gas was formed in the Earth long ago. Sand covered dead plants and animals that sank to the bottom, and layers built up over time as sedimentary rock. Heat from the Earth and pressure from the rock layers turned plant and animal remains into natural gas and petroleum as pockets in the rock. Ever wondered why coal, oil, and natural gas are called **fossil fuels**? They're made from plant and animal fossils!
+**Natural gas** is an invisible mixture of gases that we can burn to create energy. Like coal, natural gas was formed in the Earth long ago. Sand covered dead plants and animals that sank to the bottom, and layers built up over time as sedimentary rock. Heat from the Earth and pressure from the rock layers turned plant and animal remains into natural gas and petroleum as pockets in the rock. Ever wondered why coal, oil, and natural gas are called **fossil fuels**? They're made from plant and animal fossils! 
 
 Today, we harness this energy through hydraulic fracturing, also known as fracking. Let's check out this infographic to learn about what exactly fracking is.
 
-- [What's the deal with fracking?](https://www.instagram.com/p/CGa4oOFphaY/), @climateduteam on Instagram
+*   [What's the deal with fracking?](https://www.instagram.com/p/CGa4oOFphaY/), @climateduteam on Instagram
 
-Natural gas is the cleanest fossil fuel since it doesn’t pollute the air as much as coal or oil. However, burning natural gas still releases greenhouse gases like CO2 and methane.
+Natural gas is the cleanest fossil fuel since it doesn’t pollute the air as much as coal or oil, but it still releases greenhouse gases like CO2 and methane.
 
 Although we've relied primarily on fossil fuels for electricity since the Industrial Revolution, it's time to transition away from them as quickly as possible. Carefully read through this explainer from the Union of Concerned Scientists which details the true costs of using coal, oil, and gas to power our planet.
 
-- [The hidden costs of fossil fuels](https://www.ucsusa.org/resources/hidden-costs-fossil-fuels#:~:text=Burning%20fossil%20fuels%20emits%20a,formation%20of%20harmful%20particulate%20matter.), Union of Concerned Scientists
+*   [The hidden costs of fossil fuels](https://www.ucsusa.org/resources/hidden-costs-fossil-fuels#:~:text=Burning%20fossil%20fuels%20emits%20a,formation%20of%20harmful%20particulate%20matter.), Union of Concerned Scientists
 
 **Q: Which impact did you find most alarming? Tell a story about it below, as if you were telling a friend or family member.**
 
 <textarea data-unit="3" data-key="1" id="3.1" placeholder="Enter your response here." onblur="updateResponse(this)" oninput="editedResponse(this)"></textarea>
 
-**Nuclear energy** harnesses energy stored in the nuclei of atoms. We set this energy free using two main methods: fusion and fission. With **fusion**, atoms are combined to make a new atom. For example, the sun's energy comes from fusion. Inside the sun, small hydrogen atoms combine to make larger helium atoms. However, since helium atoms require less energy to be held together, the extra energy is released as light and heat.
+**Nuclear energy** harnesses energy stored in the nuclei of atoms. We set this energy free using two main methods: fusion and fission. With **fusion**, atoms are combined to make a new atom. For example, the sun's energy comes from fusion. Inside the sun, small hydrogen atoms combine to make larger helium atoms. However, since helium atoms require less energy to be held together, the extra energy is released as light and heat. 
 
-With **fission**, one atom is split into two smaller atoms, releasing extra energy as heat and radiation. Usually, we create nuclear energy by splitting uranium atoms. Since uranium is a mineral found in the ground and there's a limited supply, it's **nonrenewable**. However, nuclear energy is also considered to be one of the most environmentally-friendly nonrenewable energy sources since it doesn't producegreenhouse gases the way fossil fuels do.
+With **fission**, one atom is split into two smaller atoms, releasing extra energy as heat and radiation. Usually, we create nuclear energy by splitting uranium atoms. Since uranium is a mineral found in the ground and there's a limited supply, it's **nonrenewable**. However, nuclear energy is also considered to be one of the most environmentally-friendly nonrenewable energy sources since it doesn't produce greenhouse gases the way fossil fuels do.
 
 However, if the concept of nuclear power makes you a little uncomfortable, you're not alone. Nuclear power depends on radioactive fuel, and if its radiation is not properly contained, it can destroy our cells and poison our environment. In addition to heat, fission releases radiation, which can be dangerous in large amounts. It kills cells, poisons our food and water, and can lead to cancerous mutations in plants and animals. No matter how safe the engineered technologies become, these nuclear scientists must fight the harmful first impressions left from decades past. Watch this Climate Lab video from Vox and the University of California about "the fight to rethink (and reinvent) nuclear power" with newer, safer nuclear technologies.
 
@@ -62,13 +62,13 @@ However, if the concept of nuclear power makes you a little uncomfortable, you'r
 
 **Renewable energies** harness natural processes rather than finite stocks of fuel, meaning we'll never run out of them.
 
-**Hydropower** refers to energy we generate using moving water, using either water wheels or dams. **Water wheels** have buckets or boards around a big wheel that turns with the weight of water. **Dams** are usually built across a river, stopping water flow to create a **reservoir **behind the dam. When gates in the dam are opened, water flows down big pipes called penstocks and turns giant turbines, which power generators to make electricity.
+**Hydropower** refers to energy we generate using moving water, using either water wheels or dams. **Water wheels** have buckets or boards around a big wheel that turns with the weight of water. **Dams** are usually built across a river, stopping water flow to create a **reservoir** behind the dam. When gates in the dam are opened, water flows down big pipes called penstocks and turns giant turbines, which power generators to make electricity. 
 
-**Wind** is moving air caused by the uneven heating of Earth’s surface. When the sun shines, some parts of the Earth absorb more solar energy than others. The equator is generally much warmer than the poles because it receives more consistent sunlight that turns into heat. As air warms, it expands and becomes less dense than the cooler air, rising above into the atmosphere. Cooler, denser air nearby flows in to take its place. Today, we use **wind turbines** to harness the power of the wind. When the wind blows, it spins the blades of the wind turbines, which turn a generator to make electricity.
+**Wind** is moving air caused by the uneven heating of Earth’s surface. When the sun shines, some parts of the Earth absorb more solar energy than others. The equator is generally much warmer than the poles because it receives more consistent sunlight that turns into heat. As air warms, it expands and becomes less dense than the cooler air, rising above into the atmosphere. Cooler, denser air nearby flows in to take its place, causing the wind. Today, we use **wind turbines** to harness the power of the wind. When the wind blows, it spins the blades of the wind turbines, which turn a generator to make electricity. 
 
-**Solar energy** harnesses energy that travels from the sun to the Earth in rays. Most of the energy goes off into space and only a small part reaches the Earth, but this amount is large enough to provide energy for life on Earth. Sunlight turns into heat when it hits things—without the sun, the Earth would be so cold that it's uninhabitable. Plants and phytoplankton utilize the Sun's energy via photosynthesis, and they power the rest of the food chain. Sunlight makes rain fall and wind blow, which power hydro and wind energy.
+**Solar energy** harnesses energy that travels from the sun to the Earth in rays. Most of the energy goes off into space and only a small part reaches the Earth, but this amount is large enough to provide energy for life on Earth. Sunlight turns into heat when it hits things—without the sun, the Earth would be so cold that it's uninhabitable. Plants and phytoplankton utilize the Sun's energy via photosynthesis, and they power the rest of the food chain. Sunlight makes rain fall and wind blow, which power hydro and wind energy. 
 
-Solar energy is free, clean, and **renewable**, but the challenge lies in capturing the sunlight, since it is spread all over the Earth as opposed toconcentrating in one place. On a cloudy day, a lot of the light is reflected back into space and never reaches the ground. One way to capture the sunlight is by using solar panels. Curious to know more about how solar panels work? Let's watch this video from TED-Ed, where Richard Komp describes the inner workings of these big blue rectangles.
+Solar energy is free, clean, and **renewable**, but the challenge lies in capturing the sunlight, since it is spread all over the Earth as opposed to being concentrated in one place. On a cloudy day, a lot of the light is reflected back into space and never reaches the ground. One way to capture the sunlight is by using solar panels. Curious to know more about how solar panels work? Let's watch this video from TED-Ed, where Richard Komp describes the inner workings of these big blue rectangles.
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/xKxrkht7CpY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -80,9 +80,10 @@ Solar energy is free, clean, and **renewable**, but the challenge lies in captur
 
 <textarea data-unit="3" data-key="3" id="3.3" placeholder="Enter your response here." onblur="updateResponse(this)" oninput="editedResponse(this)"></textarea>
 
+
 ## Air pollution
 
-We learned previously in "Why does climate change matter?" that small particles like PM 2.5 (particulate matter with a diameter of 2.5 micrometers) have detrimental effects on human health. So what are some sources of these harmful particulates? The most common are the burning of fossil fuels like coal, the combustion of gasoline in vehicles, the smoke emitted from industrial factories, and smoke from wildfires.
+We learned previously in "Why does climate change matter?" that small particles like PM 2.5 (particulate matter with a diameter of 2.5 micrometers) have detrimental effects on human health. So what are some sources of these harmful particulates? The most common are the burning of fossil fuels like coal, the combustion of gasoline in vehicles, the smoke emitted from industrial factories, and smoke from wildfires. 
 
 Regions that are more industrialized and developed tend to have the worst air quality, even in places that dedicate time and energy to battling air pollution. Additionally, regions which might not have historically had worse air quality are seeing changes in that due to climate change. For example, in the United States, wildfires in California have worsened air quality to hazardous levels and caused skies to change color to an ominous orange.
 
@@ -128,17 +129,17 @@ To prevent total climate collapse, we will have to eventually switch to 100% cle
 
 If you're curious about the chemistry behind how Power-to-Gas actually works, here's an [optional video](https://www.youtube.com/watch?v=DFOp-1b65vM).
 
-Next, while wind power is extremely useful, wind speeds are far lower over land than over the ocean. Wind turbines on land can harness only a fraction of the energy that could be harnessed over water. Recently, scientists and engineers have been trying to figure out ways to safely bring wind turbines to the middle of our oceans.
+Next, while wind power is extremely useful, wind speeds are far lower over land than over the ocean. Wind turbines on land can harness only a fraction of the energy that could be harnessed over water. Recently, scientists and engineers have been trying to find ways to safely bring wind turbines to the middle of our oceans.
 
 Here’s an introduction to floating wind turbines and a clip of the world’s very first floating wind farm: the Hywind Scotland Turbines, which were anchored in 2017.
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/sgCA5e7K7r8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Wind turbines are really difficult to move into the ocean. They must stay upright even with all the wind, rough waves, and storms So how do these floating wind turbines work? Watch the following video from Tom Carroll to find out!
+Wind turbines are really difficult to move into the ocean. They must stay upright even with all the wind, rough waves, and storms. So how do these floating wind turbines work? Watch the following video from Tom Carroll to find out!
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Jh0xyK3-ztM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Carroll does very cool experiments modeling wind turbines and floating wind turbines. If you can and are interested, try making one of them yourself!
+Carroll does very interesting experiments modeling wind turbines and floating wind turbines. If you can and are interested, try making one of them yourself!
 
 If you're interested, [here](https://www.rechargenews.com/wind/2020-vision-five-floating-wind-power-technologies-to-watch-this-year/2-1-736157) are a couple of projects to watch out for in the coming years!
 

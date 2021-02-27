@@ -10,22 +10,21 @@ sections:
   - Buying local
   - Solutions
 ---
-
 <img style="visibility: hidden; position: absolute; top: 0; left: 0; z-index: -10000;" src="x" onerror="loadAllResponses()">
 
 # Transportation
 
 ## Public vs. private transportation
 
-### Where do most of our emissions come from?
+### Where do most of our emissions come from?	
 
 If you recall from the energy section, one of the biggest causes for the rising global temperature is fossil fuels. Thus, to prevent the planet from warming up even more, humans must decarbonize.
 
 Greenhouse gases come from a variety of sources, with a surprising fraction coming from transportation. Take a look at the following brochure from the American Public Transportation Association to learn about the climate issues with transportation and how public transportation can help alleviate these problems.
 
-- [Public Transportation Reduces Greenhouse Gases and Conserves Energy](https://www.apta.com/wp-content/uploads/Resources/resources/reportsandpublications/Documents/greenhouse_brochure.pdf), American Public Transportation Association
+*   [Public Transportation Reduces Greenhouse Gases and Conserves Energy](https://www.apta.com/wp-content/uploads/Resources/resources/reportsandpublications/Documents/greenhouse_brochure.pdf), American Public Transportation Association
 
-Right now in the United States, 28% of carbon emissions come from transportation. The United States emits the most amount of total carbon dioxide globally.
+Right now in the United States, 28% of carbon emissions come from transportation. The United States emits some of the highest amounts of carbon dioxide globally.
 
 ![Total U.S. Greenhouse Gas Emissions by Economic Sector in 2018](./images/6-transpowheel.png)
 
@@ -41,7 +40,7 @@ Next, let's analyze a few graphics from this [blog post](https://www.wri.org/blo
 
 ![Map of emissions by country](./images/6-countries.png)
 
-**Q: Take a look at three of the countries you see in the graphic. Research what factors (like agriculture, manufacturing, or others) contribute to the emissions from those three countries.**
+**Q: Take a look at three of the countries you see in the graphic.  Research what factors (like agriculture, manufacturing, or others) contribute to the emissions from those three countries.**
 
 <textarea data-unit="6" data-key="2" id="6.2" placeholder="Enter your response here." onblur="updateResponse(this)" oninput="editedResponse(this)"></textarea>
 
@@ -53,22 +52,22 @@ Next, let's analyze a few graphics from this [blog post](https://www.wri.org/blo
 
 Next, choose one of the videos from this page to watch. If you're interested, feel free to read through the whole page and watch all the videos.
 
-- [CLIMATE CHANGE & TRANSPORT](https://www.theconsciouschallenge.org/ecologicalfootprintbibleoverview/climate-change-transport), The Conscious Club
+*   [CLIMATE CHANGE & TRANSPORT](https://www.theconsciouschallenge.org/ecologicalfootprintbibleoverview/climate-change-transport), The Conscious Club
 
 **Q: What did you learn and find interesting in the video? Why did you choose to watch this video?**
 
 <textarea data-unit="6" data-key="4" id="6.4" placeholder="Enter your response here." onblur="updateResponse(this)" oninput="editedResponse(this)"></textarea>
 
-We can reduce our carbon emissions from transportation in a number of ways—one of the main solutions people have been looking at is public transportation. Although the United States currently has a lot of public transportation, it is being used significantly less than other nations, such as the UK.
+We can reduce our carbon emissions from transportation in a number of ways—one of the main solutions people have been looking at is public transportation. Although the United States currently has a lot of public transportation, it is still being used significantly less than some other nations, such as the UK.
 
 **Q: How do you think your local, state, and national government can help increase the use of public transportation?**
 
 <textarea data-unit="6" data-key="5" id="6.5" placeholder="Enter your response here." onblur="updateResponse(this)" oninput="editedResponse(this)"></textarea>
 
-Take a look at this article to learn more about the relationship between climate change and transportation, and read the second article to learn more about the benefits of public transportation.
+Take a look at this article to learn more about the relationship between climate change and transportation, and read the second article to learn more about the benefits of public transportation. 
 
-- [Climate Change and Public Transportation](http://bic.asn.au/information-for-moving-people/climate-change-and-public-transport)
-- [Why is public transportation good for the environment?](https://www.nationalexpresstransit.com/blog/why-is-public-transportation-good-for-the-environment/)
+*   [Climate Change and Public Transportation](http://bic.asn.au/information-for-moving-people/climate-change-and-public-transport)
+*   [Why is public transportation good for the environment?](https://www.nationalexpresstransit.com/blog/why-is-public-transportation-good-for-the-environment/)
 
 In fact, we could get rid of our carbon emissions from transportation altogether. One solution that could get us there is the zero-carbon grid. The zero-carbon grid combines onshore wind, offshore wind, solar, geothermal, biomass, nuclear, hydro and optimizes them to run everything, including our vehicles. Watch this video to learn about how the zero-carbon grid works and how it can help us.
 
@@ -82,7 +81,7 @@ However, by saving yourself some time, you may have sacrificed the climate. You 
 
 The problem is that people want to get their stuff as quickly as possible. Since you probably would rather get your pair of shoes in two days rather than...let’s say seven, companies are going to put out more trucks on the road with fewer items in each truck for maximum efficiency.
 
-Trucks are the vehicles creating the most pollution as they rely on diesel fuel to move around. So having a bunch of passenger cars on the road may actually be cleaner than having a couple of delivery trucks driving around everywhere.
+Trucks are the vehicles creating the most pollution as they rely on diesel fuel to move around. So having a bunch of passenger cars on the road may actually be cleaner than having a couple of delivery trucks driving around everywhere. 
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/5HOijUtExiM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -96,13 +95,13 @@ So while engineers continue developing ways to reduce truck emissions, what can 
 
 <textarea data-unit="6" data-key="7" id="6.7" placeholder="Enter your response here." onblur="updateResponse(this)" oninput="editedResponse(this)"></textarea>
 
-## Solution
+## Solutions
 
-Of course, it is going to be extremely difficult for the world to just suddenly get rid of cars. However, because of how long this issue has been left unattended, slower approaches to shifting away from carbon-emitting transportation will not be enough. One popular solution is not to completely stop using cars, but rather to replace our current cars with more environmentally friendly ones. Still, though,we will have to improve on other modes of transportation — especially public transportation.
+Of course, it is going to be extremely difficult for the world to just suddenly get rid of cars. However, because of how long this issue has been left unattended, slower approaches to shifting away from carbon-emitting transportation will not be enough. One popular solution is not to completely stop using cars, but rather to replace our current cars with more environmentally friendly ones. Still, though, we will have to improve on other modes of transportation —  especially public transportation. 
 
-Humans have always been drawn to cities — centers of innovation and commerce that bring large amounts of change. Yet cities are huge contributors to climate change, consuming 80% of Earth's energy. There needs to be a drastic change in the way humans move and live in urban areas. Read this article that was written in 2020, during the coronavirus pandemic, about developing a car-free city.
+Humans have always been drawn to cities —  centers of innovation and commerce that bring large amounts of change. Yet cities are huge contributors to climate change, consuming 80% of Earth's energy. There needs to be a drastic change in the way humans move and live in urban areas. Read this article that was written in 2020, during the coronavirus pandemic, about developing a car-free city.
 
-- [I've seen a future without cars, and it's amazing](https://www.nytimes.com/2020/07/09/opinion/sunday/ban-cars-manhattan-cities.html), NYT article
+*   [I've seen a future without cars, and it's amazing](https://www.nytimes.com/2020/07/09/opinion/sunday/ban-cars-manhattan-cities.html), NYT article
 
 **Q: What are your thoughts on a world without cars?**
 
@@ -110,7 +109,7 @@ Humans have always been drawn to cities — centers of innovation and commerce t
 
 Next, read this silly piece of satire from the Onion ([here's](https://www.youtube.com/watch?v=io58hl1Z0TY) an explainer, if you don't know about satire).
 
-- [Future Of Green Transportation May Be 16-Ton Possum That Passengers Cling To Like Babies](https://www.theonion.com/experts-say-future-of-green-transportation-may-be-16-to-1844636887), Onion article
+*   [Future Of Green Transportation May Be 16-Ton Possum That Passengers Cling To Like Babies](https://www.theonion.com/experts-say-future-of-green-transportation-may-be-16-to-1844636887), Onion article
 
 Obviously, this is not actually going to happen. But…
 
@@ -122,7 +121,7 @@ Obviously, this is not actually going to happen. But…
 
 During the Covid-19 Pandemic, there has been an immense surge of bikers. This is awesome since bikes are a carbon-free transportation method. However, this change revealed how our cities and towns aren’t prepared for a huge increase in bikers.
 
-Watch this video to see how the U.S. can become more bike friendly: [https://www.youtube.com/watch?v=KclFJVZJdRI](https://www.youtube.com/watch?v=KclFJVZJdRI)
+Watch this video to see how the U.S. can become more bike friendly: [https://www.youtube.com/watch?v=KclFJVZJdRI](https://www.youtube.com/watch?v=KclFJVZJdRI) 
 
 **Q: How safe do you feel biking? If you don’t bike around as your main mode of transportation, what deters you from doing so? What are some solutions you think your city or town can make to make it more bike friendly?**
 
@@ -130,21 +129,22 @@ Watch this video to see how the U.S. can become more bike friendly: [https://www
 
 <span style="text-decoration:underline;">EVs</span>
 
-Some of you may have already heard of Electric-Vehicle (EV) batteries. EV batteries power the electric motors of Battery Electric Vehicles (BEVs) and Hybrid Electric Vehicles (HEVs) and are the accepted replacement for the internal combustion engine (ICE) vehicles — vehicles that use gasoline or diesel. To learn more about these different types of electric vehicles, take a look at the following guide from EVgo.
+Some of you may have already heard of Electric-Vehicle (EV) batteries. EV batteries power the electric motors of Battery Electric Vehicles (BEVs) and Hybrid Electric Vehicles (HEVs) and are the accepted replacement for the internal combustion engine (ICE) vehicles —  vehicles that use gasoline or diesel.  To learn more about these different types of electric vehicles, take a look at the following guide from EVgo.
 
-- [Types of Electric Vehicles](https://www.evgo.com/why-evs/types-of-electric-vehicles/), EVgo article
+*   [Types of Electric Vehicles](https://www.evgo.com/why-evs/types-of-electric-vehicles/), EVgo article
 
-The battery system is one of the most important parts of an EV. EV batteries are rechargeable due to a reversible chemical reaction. This chemical process makes it possible to discharge and charge the battery. When discharging (when the battery is being used), electrical current flows from cathode (+) to anode (-). When charging, the electrical current flows from anode (-) to cathode (+). The most common type of EV battery is lithium-ion, but there are also lead-acid, nickel-metal hydride, zebra, and more.
+The battery system is one of the most important parts of an EV. EV batteries are rechargeable due to a reversible chemical reaction. This chemical process makes it possible to discharge and charge the battery. When discharging (when the battery is being used), electrical current flows from cathode (+) to anode (-). When charging, the electrical current flows from anode (-) to cathode (+). The most common type of EV battery is lithium-ion, but there are also lead-acid, nickel-metal hydride, zebra, and more. 
 
 More and more people are buying and using EVs to replace their ICE vehicles.
+    
 
-![Annual global vehicle sales](./images/6-vehicles.png)
-
-<figcaption>Annual global vehicle sales. (Source: BloombergNEF)</figcaption>
+<p id="gdcalert6" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image6.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert7">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+![alt_text](images/image6.png "image_tooltip")
+Caption: Annual global vehicle sales. (Source: BloombergNEF)
 
 Let's take a look at more data on EVs in 2020 from Bloomberg NEF.
 
-- [Electric Vehicle Outlook 2020](https://about.bnef.com/electric-vehicle-outlook/), Bloomberg NEF
+*   [Electric Vehicle Outlook 2020](https://about.bnef.com/electric-vehicle-outlook/), Bloomberg NEF
 
 **Q: When do they predict CO2 emissions from road transport will stop rising? Will it be too late by then?**
 
