@@ -32,7 +32,7 @@ export default {
   sizes: {
     container: '960px',
     smallContainer: '300px',
-    mobileNav: '250px',
+    mobileNav: '500px',
   },
   images: {
     avatar: {

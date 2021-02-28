@@ -14,6 +14,7 @@ sections:
   - Our carbon footprint
   - How do we measure climate change?
 ---
+
 <img style="visibility: hidden; position: absolute; top: 0; left: 0; z-index: -10000;" src="x" onerror="loadAllResponses()">
 
 # Intro to climate change
@@ -46,13 +47,13 @@ Reflecting on that video, are the words you used to describe climate still appro
 
 <textarea data-unit="1" data-key="1" id="1.1" placeholder="Enter your response here." onblur="updateResponse(this)" oninput="editedResponse(this)"></textarea>
 
-**Q: Was the visual of the clothing you wear on a specific day versus the clothing in your closet helpful? Can you think of another analogy illustrating the difference between climate and weather?** 
+**Q: Was the visual of the clothing you wear on a specific day versus the clothing in your closet helpful? Can you think of another analogy illustrating the difference between climate and weather?**
 
 <textarea data-unit="1" data-key="2" id="1.2" placeholder="Enter your response here." onblur="updateResponse(this)" oninput="editedResponse(this)"></textarea>
 
 ## Energy budget: the ins and outs of sunlight and our atmosphere
 
-Before learning more in-depth about greenhouse gases, we need to understand Earth’s energy budget. Watch the following video by NASA Goddard, and pay close attention to the path that energy takes through our atmosphere (how it enters, where it is absorbed, and so on). 
+Before learning more in-depth about greenhouse gases, we need to understand Earth’s energy budget. Watch the following video by NASA Goddard, and pay close attention to the path that energy takes through our atmosphere (how it enters, where it is absorbed, and so on).
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/82jE-yvB8xU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -60,7 +61,7 @@ Before learning more in-depth about greenhouse gases, we need to understand Eart
 
 <textarea data-unit="1" data-key="3" id="1.3" placeholder="Enter your response here." onblur="updateResponse(this)" oninput="editedResponse(this)"></textarea>
 
-Remember back to the introduction to the last video, where you were asked to pay attention to how energy enters the atmosphere, where it is absorbed, reflected, and so on. Take a look at the diagram at the top of this article for a visual of these pathways. Focus mostly on the paragraphs: Why is it important for us to study the energy budget? & In the simplest terms possible, what is Earth’s energy budget? 
+Remember back to the introduction to the last video, where you were asked to pay attention to how energy enters the atmosphere, where it is absorbed, reflected, and so on. Take a look at the diagram at the top of this article for a visual of these pathways. Focus mostly on the paragraphs: Why is it important for us to study the energy budget? & In the simplest terms possible, what is Earth’s energy budget?
 
 - [What is Earth’s Energy Budget?](https://www.nasa.gov/feature/langley/what-is-earth-s-energy-budget-five-questions-with-a-guy-who-knows), NASA Q&A
 
@@ -74,7 +75,7 @@ Here’s an introduction video to greenhouse gases, an important part of our atm
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/sTvqIijqvTg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-One analogy that was especially useful in this source was a game of pinball, trying to bounce rays out of the atmosphere. The video describes how having more greenhouse gases keeps the rays trapped longer, making it harder to bounce rays out of the atmosphere. 
+One analogy that was especially useful in this source was a game of pinball, trying to bounce rays out of the atmosphere. The video describes how having more greenhouse gases keeps the rays trapped longer, making it harder to bounce rays out of the atmosphere.
 
 **Q: What are some examples of greenhouse gases (what the video refers to as “electrically-lopsided”)? What do they do to infrared radiation?**
 
@@ -98,13 +99,13 @@ Now, read the background reading from PBS Learning Media and watch the accompany
 
 ## Carbon cycle
 
-Let’s continue with something that might seem unrelated. When you see the words “water cycle,” what’s the first thing you picture? Most people can picture how water cycles through our environment. 
+Let’s continue with something that might seem unrelated. When you see the words “water cycle,” what’s the first thing you picture? Most people can picture how water cycles through our environment.
 
-However, when it comes to the words “carbon cycle,” it’s more difficult to picture. Unlike water, carbon dioxide — also known as CO2 —  is invisible. It doesn’t rain down in storms or fill an entire ocean. Just because you can’t see it, though, doesn’t mean it’s not important. 
+However, when it comes to the words “carbon cycle,” it’s more difficult to picture. Unlike water, carbon dioxide — also known as CO2 — is invisible. It doesn’t rain down in storms or fill an entire ocean. Just because you can’t see it, though, doesn’t mean it’s not important.
 
 In fact, carbon dioxide is one of the biggest **greenhouse gases**. Like we learned about previously, carbon dioxide can absorb infrared radiation from the Earth’s surface and act as a blanket. As CO2 concentrations rise in the atmosphere, more radiation is trapped, and Earth gets warmer. So why does the atmospheric concentration increase? Because the carbon cycle gets disturbed.
 
-Just like how oceans and clouds store water in the water cycle, there are places where carbon is stored in the carbon cycle. A **carbon sink** is a reservoir that absorbs carbon from the atmosphere and stores it. So what are some examples of these carbon sinks? 
+Just like how oceans and clouds store water in the water cycle, there are places where carbon is stored in the carbon cycle. A **carbon sink** is a reservoir that absorbs carbon from the atmosphere and stores it. So what are some examples of these carbon sinks?
 
 The most common example is a forest. As the plants in a forest photosynthesize, they use CO2 in the air and store it. As forests grow bigger and more trees are planted, more and more carbon is absorbed from the atmosphere. It is estimated that around 2,200 gigatons (1 gigaton = 1 billion tons) of carbon is stored in plants and soil globally. This is about 25% of the carbon emitted to the atmosphere by humans.
 
@@ -116,10 +117,8 @@ Another example of a carbon sink is the ocean! Known as the “oceanic sink”, 
 
 So if we have these methods of storing CO2, why can’t we find a way to put all of our extra CO2 there too? The issue is, these natural carbon sinks have a maximum limit. For example, when too much CO2 is present in the ocean, **ocean acidification** occurs, which can harm marine life.
 
-Additionally, these carbon sinks can become **carbon sources** instead. Just as a cloud can store water and release it as rain, natural carbon sinks also sometimes release more carbon than they store. When deforestation occurs, the carbon that these forests contained turns into CO2 emissions. This is also the case with reserves of coal, oil, and natural gases — also known as **fossil fuels**. Undisturbed, the CO2 trapped in these reservoirs is not released to the atmosphere. However, when humans use these fuels, they release a lot of carbon into the atmosphere. 
-	
+Additionally, these carbon sinks can become **carbon sources** instead. Just as a cloud can store water and release it as rain, natural carbon sinks also sometimes release more carbon than they store. When deforestation occurs, the carbon that these forests contained turns into CO2 emissions. This is also the case with reserves of coal, oil, and natural gases — also known as **fossil fuels**. Undisturbed, the CO2 trapped in these reservoirs is not released to the atmosphere. However, when humans use these fuels, they release a lot of carbon into the atmosphere.
 One way that people can help re-collect the CO2 released from carbon sources is through **carbon sequestration**! By changing how people use land, either through **afforestation**, where forests are planted on land that didn’t have forests before, or **reforestation**, where forests are planted on land that used to have forests, the effects of CO2 in the atmosphere can be diminished.
-	
 One good way of keeping carbon sinks, carbon sources, and carbon sequestration straight is to think about it like this: a forest that is getting cut down is an example of a carbon source, planting new forests and letting them grow is a type of carbon sequestration, and the forests themselves are the carbon sinks!
 
 **Q: Do you know any other examples of carbon sinks or carbon sources? Can they only be natural, or can you have man-made carbon sources and carbon sinks too?**
@@ -134,13 +133,13 @@ Our **carbon footprint** is defined by the total amount of greenhouse gases that
 <br>
 <figcaption>Living Large, Our Climate Our Future Ep. 2</figcaption>
 
-Pretty crazy, right? As you can see, there's a tight link tying the space and resources we use to the energy that we consume, which directly leads to a larger carbon footprint when powered by fossil fuels like coal, oil, and natural gas. A larger carbon footprint means more greenhouse gases in the atmosphere, which in turn means more sunlight trapped on a hotter earth. 
+Pretty crazy, right? As you can see, there's a tight link tying the space and resources we use to the energy that we consume, which directly leads to a larger carbon footprint when powered by fossil fuels like coal, oil, and natural gas. A larger carbon footprint means more greenhouse gases in the atmosphere, which in turn means more sunlight trapped on a hotter earth.
 
 It's more complicated than using electricity at home or driving around, though. Check out this fun video by NPR's Skunk Bear breaking down the carbon footprint caused by eating a single BLT sandwich.
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/jRQEi-C5GDg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Are you curious about your carbon footprint? Let's get an estimate with an ecological footprint calculator! You might need to ask a parent for help, with questions like how many miles your car travels per year, or the size of your house in square feet. 
+Are you curious about your carbon footprint? Let's get an estimate with an ecological footprint calculator! You might need to ask a parent for help, with questions like how many miles your car travels per year, or the size of your house in square feet.
 
 - [Ecological Footprint Calculator](https://www.footprintcalculator.org/), Global Footprint Network
 
@@ -165,15 +164,17 @@ Now, let's read the following article to understand the Global Climate Observing
 Of course, there are many other variables, some of which you might have included in your brainstorming. The variables described in the article are regional temperature, permafrost and snow cover, changes in ocean currents and salinity, precipitation, changes in the biosphere (be it changes in vegetation cover or animal migration schedules), but there are many more. For simplicity, we’ll focus on these seven.
 
 How do we measure these variables?
+
 - For temperature measurements, there are thousands of weather stations around the world that gather data on temperature, precipitation, and other weather variables. Combining this data to determine global temperature can be a little complicated, but you can learn more about this process in [this](https://www.carbonbrief.org/explainer-how-do-scientists-measure-global-temperature) optional reading.
 - Ocean height and surface temperature are measured with satellites, while acidity, salinity, and subsurface temperature can be measured with ship instruments or moored buoys.
 - The cryosphere indicators (glaciers and sea ice) are mainly measured with satellite imagery, as well as aerial photography and radar from planes [such as operation IceBridge](https://icebridge.gsfc.nasa.gov/). Many other variables, like snow and vegetation cover, are also measured this way.
 
-As for measuring atmosphere composition, it’s a little bit more complicated. Explore the following website to learn more about the process: 
+As for measuring atmosphere composition, it’s a little bit more complicated. Explore the following website to learn more about the process:
 
 - [Measuring atmospheric composition](https://gcos.wmo.int/en/global-climate-indicators)
 
-We recommend taking a look at these pages of the site: 
+We recommend taking a look at these pages of the site:
+
 - Air Sampling Network Introduction
 - Surface Network
 - Aircraft

@@ -41,6 +41,8 @@ const Navbar = ({ navbarOpen, setNavbarOpen }) => {
     }
   `)
 
+  console.log(links)
+
   const loginPath = useMatch('/login/')
   const registerPath = useMatch('/register/')
 
@@ -61,7 +63,7 @@ const Navbar = ({ navbarOpen, setNavbarOpen }) => {
         as='ul'
         sx={{
           listStyle: 'none',
-          display: ['none', null, 'flex'],
+          display: ['none', 'none', null, 'flex'],
           alignItems: 'baseline',
           p: 0,
         }}
@@ -132,7 +134,7 @@ const Navbar = ({ navbarOpen, setNavbarOpen }) => {
           height: '5em',
           width: '5em',
           color: 'primary',
-          display: ['inline-flex', null, 'none'],
+          display: ['inline-flex', 'inline-flex', null, 'none'],
         }}
         onClick={() => {
           setNavbarOpen(true)
@@ -153,7 +155,7 @@ const Navbar = ({ navbarOpen, setNavbarOpen }) => {
       />
       <Box
         sx={{
-          display: ['block', null, 'none'],
+          display: ['block', 'block', null, 'none'],
           position: 'fixed',
           top: 0,
           right: 0,

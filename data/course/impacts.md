@@ -31,13 +31,12 @@ We've just discussed the basics of climate change. So--who cares? Let's review a
 
 ### Extreme weather
 
-What evidence do we have that climate change is impacting extreme weather? Let's watch this next video to learn about attribution science. 
+What evidence do we have that climate change is impacting extreme weather? Let's watch this next video to learn about attribution science.
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/L4U4H5xLCoM?start=112" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 So while we can’t say for certain that an individual storm was caused by climate change, we can say that climate change made the storm more likely to occur or perhaps more severe. We can also blame climate change for a general trend of longer storm seasons, more storms, and greater severity.
 If you want to better understand these probabilities, watch [this optional video](https://youtu.be/RJmrCw5ztp8) about hundred-year floods (it has some cool dice!).
-	
 But of course, hurricanes aren’t the only kind of extreme weather that will be affected by climate change. Let’s talk about what changes we expect to see, why, and how we might be able to adapt.
 
 **Heatwaves:** when the Earth gets warmer, it makes sense that we’ll experience that warmer world, though it’s not as simple as the daily temperature being a few degrees warmer every day. One of the effects we will see is that heat waves (periods of intense heat) will be more frequent, more severe, and longer-lasting. “The National Climate Assessment estimates 20-30 more days over 90º F in most areas by mid-century. A recent study projects that the annual number of days with a heat index above 100º F will double, and days with a heat index above 105º F will triple, nationwide, when compared to the end of the 20th century” (source). Heatwaves are deadly because they not only cause heat stroke, but they can also exacerbate health conditions like asthma, kidney disease, and insomnia. Resilience methods include cooling centers and more efficient power grids for handling the increased load of air conditioning, as well as green roofs, cool pavement, and increased tree cover in cities to keep them cool.
@@ -66,7 +65,7 @@ These extreme weather events ravage the news, too. Let's read through this artic
 
 But what about the weather that’s not extreme, the kind we see from day to day? Climate change impacts that, too, of course. Average global temperatures will rise. But that doesn’t mean that the weather will get warmer everywhere. Let’s learn about some of the important processes climate change might disrupt.
 
-Watch this video to learn about the jet stream disruption. 
+Watch this video to learn about the jet stream disruption.
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/yQliow4ghtU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -94,13 +93,13 @@ Remember that bit about migration and war that came up in the first video—it r
 
 Our planet’s forests are some of the most valuable resources we have. They provide us with clean air, construction material, food, and more. Even more importantly, they are one of the most important defenses against climate change!
 
-Who cares if we cut down all the trees? Sure, it sounds like a bad idea, but what would really happen to a city without trees? Let's watch this TED-Ed video to find out. 
+Who cares if we cut down all the trees? Sure, it sounds like a bad idea, but what would really happen to a city without trees? Let's watch this TED-Ed video to find out.
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/zarll9bx6FI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### Habitat loss and fragmentation
 
-If you ever thought that deforestation is unrelated to your current lives, let’s take a look at how deforestation played a role in causing pandemics and epidemics that have changed the course of society. 
+If you ever thought that deforestation is unrelated to your current lives, let’s take a look at how deforestation played a role in causing pandemics and epidemics that have changed the course of society.
 
 Covid-19, SARs, and Ebola are three highly infectious diseases that plague the human species since 2002, and all three leaped to humans from wild animals that lived in dense tropical forests. As we slash and burn the forest habitat to create land for agriculture, the chances of us coming in contact with wildlife that carries infectious microbes increases. Watch this animated video from one of our team members to learn more.
 
@@ -110,7 +109,7 @@ The occurrence of Covid-19 is catastrophic; however, this can pivot our attentio
 
 ### Wildfires
 
-Although wildfires are natural occurrences within some forest ecosystems, fire seasons are becoming increasingly more extreme and widespread. The continuously hot and dry weather caused by climate change creates favorable conditions for more frequent and higher intensity wildfires. Fires, either ignited by humans or lightning, are much more likely to burn over larger areas and at hotter temperatures with drier conditions. Forests degraded by logging and disease, and fragmented by deforestation are also more susceptible to fire [(source)](https://www.globalforestwatch.org/topics/fires/#slides/1). 
+Although wildfires are natural occurrences within some forest ecosystems, fire seasons are becoming increasingly more extreme and widespread. The continuously hot and dry weather caused by climate change creates favorable conditions for more frequent and higher intensity wildfires. Fires, either ignited by humans or lightning, are much more likely to burn over larger areas and at hotter temperatures with drier conditions. Forests degraded by logging and disease, and fragmented by deforestation are also more susceptible to fire [(source)](https://www.globalforestwatch.org/topics/fires/#slides/1).
 
 Rainforests like the Amazon are especially affected. You may recall seeing videos last year of the Amazon burning; though our attention may have moved elsewhere, the situation has not improved. It is estimated that 2020 was an even more devastating year for the Amazon as well as the indigenous people who call it home. Let's watch this next video to learn a little more about what the Amazon forest first can tell us about deforestation.
 
@@ -132,11 +131,11 @@ There’s a lot of ice in our poles, and it’s melting fast. But how much would
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/b6CPsGanO_U" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-So, that's what would happen if all the ice were to melt. But with the climate change we are predicting, just how much ice do we expect to melt?  Let's check out this article from NASA about the long-term sea level rise from melting ice in Greenland.
+So, that's what would happen if all the ice were to melt. But with the climate change we are predicting, just how much ice do we expect to melt? Let's check out this article from NASA about the long-term sea level rise from melting ice in Greenland.
 
 - [Study Predicts More Long-Term Sea Level Rise from Greenland Ice](https://www.nasa.gov/feature/goddard/2019/study-predicts-more-long-term-sea-level-rise-from-greenland-ice), NASA
 
-There are two main types of ice: ice that forms in the ocean, or sea ice, and ice that forms on land, such as glaciers, icebergs, ice sheets, etc. Sea ice impacts climate in two main ways: reflecting sunlight back into space, and changing the surrounding salt concentration when it forms. 
+There are two main types of ice: ice that forms in the ocean, or sea ice, and ice that forms on land, such as glaciers, icebergs, ice sheets, etc. Sea ice impacts climate in two main ways: reflecting sunlight back into space, and changing the surrounding salt concentration when it forms.
 
 If emissions stabilize by the end of the century, based on IceBridge’s glacial mass model we lose 26-57% of the total mass currently. However, if they continue to increase, we could lose up to 99% of glacial mass by 3000. If they decrease, we can limit the losses to only 8-25% - still a large number, but much more manageable.
 
@@ -144,17 +143,17 @@ If emissions stabilize by the end of the century, based on IceBridge’s glacial
 
 <textarea data-unit="2" data-key="5" id="2.5" placeholder="Enter your response here." onblur="updateResponse(this)" oninput="editedResponse(this)"></textarea>
 
-NASA has put together a few articles that describe major factors that impact sea level. Let's first take a look at the tabs under Global Sea Level. 
+NASA has put together a few articles that describe major factors that impact sea level. Let's first take a look at the tabs under Global Sea Level.
 
 - [Understanding Sea Level](https://sealevel.nasa.gov/understanding-sea-level/overview), NASA
 
-Now take a look at the tabs under Regional Sea Level. 
+Now take a look at the tabs under Regional Sea Level.
 
 **Q: How do they compare to Global Sea Level? Do you see one as more important?**
 
 <textarea data-unit="2" data-key="6" id="2.6" placeholder="Enter your response here." onblur="updateResponse(this)" oninput="editedResponse(this)"></textarea>
 
-Lastly, take a look at the By The Numbers and the Key Indicators tab. By The Numbers provides a nice numerical breakdown of the changes happening, and the Key Indicators provides a more graphical view. 
+Lastly, take a look at the By The Numbers and the Key Indicators tab. By The Numbers provides a nice numerical breakdown of the changes happening, and the Key Indicators provides a more graphical view.
 
 ### Current events in the cryosphere
 
@@ -162,7 +161,7 @@ The **cryosphere** is the part of the earth's surface characterized by the prese
 
 - Recent major melts [(Larsen Ice Shelf A, B, C, and D)](https://earthobservatory.nasa.gov/world-of-change/LarsenB), NASA
 
-**Q: Consider why their breakaways are significant to the overall landmass. Do you think these melts were caused by climate change?  How will they affect the future of the cryosphere?**
+**Q: Consider why their breakaways are significant to the overall landmass. Do you think these melts were caused by climate change? How will they affect the future of the cryosphere?**
 
 <textarea data-unit="2" data-key="7" id="2.7" placeholder="Enter your response here." onblur="updateResponse(this)" oninput="editedResponse(this)"></textarea>
 
@@ -170,7 +169,7 @@ Next, let's check out the Global Ice Viewer from NASA to explore the ablation da
 
 - [Global Ice Viewer](https://climate.nasa.gov/interactives/global-ice-viewer/#/), NASA
 
-Look at the ice flow map under the Antarctic tab. Pick an area of fast flow, and look at a map of the ice shelves in the corresponding area. 
+Look at the ice flow map under the Antarctic tab. Pick an area of fast flow, and look at a map of the ice shelves in the corresponding area.
 
 **Q: How would you describe the connection between flow and ice shelves?**
 
@@ -228,11 +227,11 @@ Many cities are at risk, especially ones near the coast. Let's visit Google Eart
 
 So what? The oceans are rising. I’m not on the coast. Why should I care?
 
-Well, as it turns out, a lot of infrastructure is at risk. The interconnected nature of American infrastructure for key systems like the internet means that just one foot of sea level rise could plunge 20% of America’s internet infrastructure under water, due to its concentration in coastal cities like New York and Miami. 
+Well, as it turns out, a lot of infrastructure is at risk. The interconnected nature of American infrastructure for key systems like the internet means that just one foot of sea level rise could plunge 20% of America’s internet infrastructure under water, due to its concentration in coastal cities like New York and Miami.
 
 Costs for rebuilding and protecting this infrastructure won’t be cheap. Even the cabling built to be water resistant will likely not survive being permanently submerged. These internet disruptions won’t just affect jobs and businesses, but could throw off everything from traffic lights to flight patterns, which are now online. If you’re interested in learning more about the internet and climate change, you can read [this optional source](https://www.nationalgeographic.com/science/2018/07/news-internet-underwater-sea-level-rise/).
 
-Another form of infrastructure that will be affected is the power grid. Nuclear plants need a constant supply of water to maintain their cooling systems, and many draw this water from the ocean. Depending on where you draw the line, between 25 and 40% of power plants are located along the coasts, with this figure potentially rising as high as 66% among new plants. 
+Another form of infrastructure that will be affected is the power grid. Nuclear plants need a constant supply of water to maintain their cooling systems, and many draw this water from the ocean. Depending on where you draw the line, between 25 and 40% of power plants are located along the coasts, with this figure potentially rising as high as 66% among new plants.
 
 Rising sea levels increase the likelihood of floods and tsunamis that, in the best-case scenario, will temporarily shut down a plant’s power operations and, in the worst-case scenario, can cause meltdowns and other nuclear disasters. As sea levels only continue to rise, we will be forced to remove nuclear materials from flooding sites. Even if we can safely move these radioactive materials and avoid meltdowns, this still leaves us only more dependent on fossil fuels to provide energy. For more information on nuclear power and climate change, you can read [this optional source](https://www.hakaimagazine.com/features/are-coastal-nuclear-power-plants-ready-for-sea-level-rise/).
 
@@ -250,7 +249,7 @@ Usually, this cycle keeps the levels of carbon steady in the air, the water, and
 
 <figcaption>The change in the ocean’s pH over time.</figcaption>
 
-Before we talk about how organisms in the ocean are affected by changes in the carbon cycle, we need to talk about how the ocean water is affected. In the picture above, the line is tracking changes in something called “oceanic pH.” This is the measure of how acidic or alkaline the ocean water is. The acidity is inversely related to the concentration of hydrogen ions in the water. In the water, these are individual atoms of the first element in the periodic table, hydrogen that have lost their only electron. 
+Before we talk about how organisms in the ocean are affected by changes in the carbon cycle, we need to talk about how the ocean water is affected. In the picture above, the line is tracking changes in something called “oceanic pH.” This is the measure of how acidic or alkaline the ocean water is. The acidity is inversely related to the concentration of hydrogen ions in the water. In the water, these are individual atoms of the first element in the periodic table, hydrogen that have lost their only electron.
 
 ![The periodic table with hydrogen emphasized.](./images/2-periodic-table.png)
 
@@ -310,7 +309,7 @@ You’ve already learned about a lot of negative impacts of climate change. Here
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/8tZooDsX8Fo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Before you go on to learn about species extinction, let’s review what was discussed in the video. Harmful algae blooms occur when colonies of algae and cyanobacteria grow out of control. When this happens, harmful toxins that hurt fish, humans, animals, and the entire system are produced. As the algae decay, they take in oxygen from the surrounding water, discolor the water, and can get into drinking water. 
+Before you go on to learn about species extinction, let’s review what was discussed in the video. Harmful algae blooms occur when colonies of algae and cyanobacteria grow out of control. When this happens, harmful toxins that hurt fish, humans, animals, and the entire system are produced. As the algae decay, they take in oxygen from the surrounding water, discolor the water, and can get into drinking water.
 
 How does this relate to climate change? We have seen that increased nitrogen and phosphorus in the water leads to more blooms, much of it coming from fertilizers and agricultural products. We are also seeing that increased rainfall and higher temperatures are making these blooms start earlier in the season and last longer. Human actions are directly making harmful algae blooms longer and severe, which will have profound ripple effects on water ecosystems.
 
@@ -332,17 +331,17 @@ The video describes a distinction between plastic (non inheritable) and genetic 
 
 ## Human health
 
-Climate and weather have always played vital roles in human health. Climate influences the flora and fauna (plants and animals) that grow around us and provide sustenance; it determines the way in which we interact with our fellow creatures; and of course, humans thrive in a relatively small set of temperatures that we are lucky to currently experience here on Earth.  
+Climate and weather have always played vital roles in human health. Climate influences the flora and fauna (plants and animals) that grow around us and provide sustenance; it determines the way in which we interact with our fellow creatures; and of course, humans thrive in a relatively small set of temperatures that we are lucky to currently experience here on Earth.
 
 ### Heat-related disease
 
-Cardiovascular diseases (disorders of the heart and blood vessels) are the #1 cause of death globally. As temperatures increase, how do you think the incidence and severity of cardiovascular disease might change? Would it change much? 
+Cardiovascular diseases (disorders of the heart and blood vessels) are the #1 cause of death globally. As temperatures increase, how do you think the incidence and severity of cardiovascular disease might change? Would it change much?
 
 **Q: Briefly predict what might happen and why that might be the case.**
 
 <textarea data-unit="2" data-key="16" id="2.16" placeholder="Enter your response here." onblur="updateResponse(this)" oninput="editedResponse(this)"></textarea>
 
-Now take a look at this [case study published in the Iranian Journal of Public Health](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5395536). What did they conclude about the relationship between climate change and higher temperatures (at least past a certain point)? Tip: You don’t have to read the body of the paper to figure this out. If this can be generalized, what are the implications for the future? 
+Now take a look at this [case study published in the Iranian Journal of Public Health](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5395536). What did they conclude about the relationship between climate change and higher temperatures (at least past a certain point)? Tip: You don’t have to read the body of the paper to figure this out. If this can be generalized, what are the implications for the future?
 
 **Q: What kinds of adaptations and innovations would we need to combat increased cardiovascular disease, at the root or otherwise? This is a pretty big question, so feel free to get creative. Anything goes!**
 
@@ -356,7 +355,7 @@ After you’ve pondered that for a minute or two, briefly check out the followin
 
 - [Climate Change and Health](https://www.cambridgepublichealth.org/climate-change/), Cambridge Public Health.
 
-**Humidity** describes the amount of water vapor in the air. Have you ever noticed the "feels like" section on your weather app? While the app says it'll be 76 degrees one day, it also says that it'll feel like 85 degrees instead. This isn't a mistake! High humidity creates a stickier,  sweatier environment, making it seem hotter than it really is. The heat index is a more accurate representation of how the weather might feel to us, taking both relative humidity and temperature into account.
+**Humidity** describes the amount of water vapor in the air. Have you ever noticed the "feels like" section on your weather app? While the app says it'll be 76 degrees one day, it also says that it'll feel like 85 degrees instead. This isn't a mistake! High humidity creates a stickier, sweatier environment, making it seem hotter than it really is. The heat index is a more accurate representation of how the weather might feel to us, taking both relative humidity and temperature into account.
 
 ![Heat index](./images/2-noaa.png)
 
@@ -364,7 +363,7 @@ Let's watch this next video from the YEARS Project, which explains how humidity 
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/hgdLRECOQI8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Think about how you would illustrate the disparate effects of climate change on different types of people. 
+Think about how you would illustrate the disparate effects of climate change on different types of people.
 
 **Q: Imagine how increasing temperature and humidity will affect you and your community. Now consider how it might affect a community in the developing world. What might be different?**
 
@@ -434,7 +433,7 @@ Read this article from the National Resources Defense Council (NRDC). Skim the f
 
 Food security is when all people at all times have physical, economic, and social access to sufficient, safe, and nutritious food to lead active and healthy lives ([source](https://www.youtube.com/watch?v=v24wT16OU2w)). If you’d like to learn more, watch the following [optional video](https://www.youtube.com/watch?v=krU01hlCdxo) from the World Economic Forum.
 
-Reflect on all the other impacts of climate change you have learned about so far. Brainstorm ways that this might affect the production and distribution of food, particularly for people who are at the greatest risk of food insecurity. Then read this article from Columbia University's Earth Institute, which explains the impact of climate change on agriculture. 
+Reflect on all the other impacts of climate change you have learned about so far. Brainstorm ways that this might affect the production and distribution of food, particularly for people who are at the greatest risk of food insecurity. Then read this article from Columbia University's Earth Institute, which explains the impact of climate change on agriculture.
 
 - [How will climate change impact our food?](https://blogs.ei.columbia.edu/2018/07/25/climate-change-food-agriculture/), State of the Planet article
 
@@ -448,7 +447,7 @@ You can also read [this optional article](http://www.fao.org/climatechange/16606
 
 Perhaps one of the most frustrating responses to fighting climate change is the argument that “reducing emissions would require disrupting the economy.” But it’s important to remember that climate change will deeply affect just about every aspect of our lives. And that, of course, includes the economy.
 
-Surely, compared to all the other impacts we’ve gone over so far, the economy should be the least of our worries, you might say. But remember that during recessions, people lose their jobs and healthcare, small businesses struggle, and the impoverished suffer. When the stock market falls, people lose their retirement savings. And while preventing climate change may cause some damage, the economic and human suffering that it will bring far outweighs the sacrifices involved in preventing it. 
+Surely, compared to all the other impacts we’ve gone over so far, the economy should be the least of our worries, you might say. But remember that during recessions, people lose their jobs and healthcare, small businesses struggle, and the impoverished suffer. When the stock market falls, people lose their retirement savings. And while preventing climate change may cause some damage, the economic and human suffering that it will bring far outweighs the sacrifices involved in preventing it.
 
 Studies find that the impacts of climate change could cost the economy at least $150 trillion over the next hundred years, and possibly as much as $792 trillion ([source](https://www.cbsnews.com/news/climate-change-action-economic-benefit-study-finds/#:~:text=Specifically%20the%20team%20found%20that,to%20keep%20warming%20in%20check.)). Let’s go over where those costs are coming from. Before we start, go over what you’ve learned and make a list of all the ways you think climate change will impact the economy. As you read, add anything new you learn to your list. Ours is by no means exhaustive.
 
@@ -456,7 +455,7 @@ Studies find that the impacts of climate change could cost the economy at least 
 
 We’ve all seen the photos of devastation caused by hurricanes and floods and wildfires. These are the obvious economic impacts: people left homeless, businesses forced to close because they can’t afford to repair their buildings, the dollar sums of damage reported on the news. But these aren’t the only impacts. When infrastructure like roads and bridges are destroyed, shipping and transport are disrupted: businesses can’t replenish their stocks and employees can’t travel to work. When one step in a supply chain is taken out, the whole production line grinds to halt. Disasters can also hamper internet connection, locking people and businesses out of the modern information economy.
 
-And it’s not just the extreme weather that’s bad. Studies have found that heat waves and rising temperatures decrease productivity and increase employee absences ([source](https://epic.uchicago.edu/news/hot-temperatures-decrease-worker-productivity-economic-output/)). The loss of productivity is especially prevalent in manual labor and construction jobs, which become more dangerous as temperatures increase. However, absenteeism remains strong regardless of the job. Whether or not this is linked to heat-related health issues is unknown, but the evidence makes clear that the economy will slow as the globe warms, likely by around $2 trillion or more ([source](https://journals.sagepub.com/doi/full/10.1177/1010539514568711)).
+And it’s not just the extreme weather that’s bad. Studies have found that heat waves and rising temperatures decrease productivity and increase employee absences ([source](https://epic.uchicago.edu/news/hot-temperatures-decrease-worker-productivity-economic-output/)). The loss of productivity is especially prevalent in manual labor and construction jobs, which become more dangerous as temperatures increase. However, absenteeism remains strong regardless of the job. Whether or not this is linked to heat-related health issues is unknown, but the evidence makes clear that the economy will slow as the globe warms, likely by around \$2 trillion or more ([source](https://journals.sagepub.com/doi/full/10.1177/1010539514568711)).
 
 ### Rising sea levels
 
@@ -466,9 +465,9 @@ Rising sea levels will flood and displace coastal cities, where millions of peop
 
 It’s difficult to dispute the threats climate change poses to the natural world. Instead, people argue that we should focus on the interests of people over plants and animals. Such a take, however, ignores just how much of the world is dependent on those species.
 
-As referenced in previous sections, the fishing industry is likely to suffer greatly due to warming, acidifying oceans. Shellfish die as they are unable to build their shells. Schools of fish move towards colder water at the poles, away from the people who depend on them for food. Parasites and diseases expand their ranges. Fish migration and breeding seasons are thrown out of sync. Together, these factors spell a collapse of fisheries around the world. The hundreds of millions of people for whom seafood is a staple of their diet will suffer, but we will also see substantial job loss among the people providing those fish. The industry could lose as much as $10 billion a year, with many small scale and equatorial fisheries losing their entire livelihoods ([source](https://www.forbes.com/sites/janetwburns/2016/10/06/global-fisheries-will-lose-10b-a-year-to-climate-change-by-2050/?sh=20c7359e7d65)).
+As referenced in previous sections, the fishing industry is likely to suffer greatly due to warming, acidifying oceans. Shellfish die as they are unable to build their shells. Schools of fish move towards colder water at the poles, away from the people who depend on them for food. Parasites and diseases expand their ranges. Fish migration and breeding seasons are thrown out of sync. Together, these factors spell a collapse of fisheries around the world. The hundreds of millions of people for whom seafood is a staple of their diet will suffer, but we will also see substantial job loss among the people providing those fish. The industry could lose as much as \$10 billion a year, with many small scale and equatorial fisheries losing their entire livelihoods ([source](https://www.forbes.com/sites/janetwburns/2016/10/06/global-fisheries-will-lose-10b-a-year-to-climate-change-by-2050/?sh=20c7359e7d65)).
 
-Additionally, the natural world is critical to global tourism. Safaris in Africa, rainforest tours in Costa Rica, and national parks in the United States all rely on their biodiversity and natural beauty to draw visitors. Climate change won’t just bring about extinctions; there are also countless jobs that will be lost when species go extinct and habitats collapse. For example, it’s estimated that Florida’s coral reefs alone generate $1.6 billion of revenue, all of which will vanish if the reefs do ([source](http://www.oas.org/macc/Docs/TourismIssues.doc)). Even non-environmental tourism will be affected, as beaches are submerged and ski resorts lose their snow.
+Additionally, the natural world is critical to global tourism. Safaris in Africa, rainforest tours in Costa Rica, and national parks in the United States all rely on their biodiversity and natural beauty to draw visitors. Climate change won’t just bring about extinctions; there are also countless jobs that will be lost when species go extinct and habitats collapse. For example, it’s estimated that Florida’s coral reefs alone generate \$1.6 billion of revenue, all of which will vanish if the reefs do ([source](http://www.oas.org/macc/Docs/TourismIssues.doc)). Even non-environmental tourism will be affected, as beaches are submerged and ski resorts lose their snow.
 
 ### Food and water shortages
 
@@ -477,6 +476,7 @@ Between water shortages, rising temperatures, extreme weather, changes in insect
 Climate-driven crop failures, when combined with the damage climate change will inflict to fishing and supply chains, will deal a major blow to food security, as discussed above. Even if we manage to avoid widespread famine, food prices will rise ([source](https://blogs.ei.columbia.edu/2011/03/22/climate-change-to-exacerbate-rising-food-prices/)). Those who can afford their next meal may struggle affording much more than that. In addition, rising food prices can cause economic inflation, leading to even greater poverty ([source](https://www.oecd.org/dev/pgd/46921010.pdf)).
 
 ### Cause for hope
+
 So are we really caught between a rock and a hard place? We either slow our economy deliberately with carbon prices and environmental regulations, or we let it be ravaged by climate change?
 
 Well, we’ll let you in on a little secret. What you’ve heard about how fighting climate change will hurt the economy and cost millions of jobs is (mostly) not true. We’ll explain more about this in a future section.
@@ -496,6 +496,7 @@ First, let's examine some of these dire situations around the world through this
 <textarea data-unit="2" data-key="28" id="2.28" placeholder="Enter your response here." onblur="updateResponse(this)" oninput="editedResponse(this)"></textarea>
 
 Now, read at least the first two sections of this article from BBC that describes the "climate apartheid" as well as this article from CNBC that covers pre-existing health conditions and "green gentrification."
+
 - ['Climate apartheid' between rich and poor looms](https://www.bbc.com/news/world-48755154), BBC article
 - [Climate change in the U.S. will hurt poor people the most](https://www.cnbc.com/2018/11/26/climate-change-will-hurt-poor-people-the-most-federal-report.html), CNBC article
 
@@ -518,7 +519,7 @@ Now, let's check out this article from the New York Times (which is also availab
 
 - [The Great Climate Migration Has Begun](https://www.nytimes.com/interactive/2020/07/23/magazine/climate-migration.html), NYT article
 
-The rest of the article is optional, although we strongly recommend the section between  “II: How climate moves people” and “One afternoon last summer,” as well as the final section starting from “There is no more natural and fundamental adaptation to a changing climate.”
+The rest of the article is optional, although we strongly recommend the section between “II: How climate moves people” and “One afternoon last summer,” as well as the final section starting from “There is no more natural and fundamental adaptation to a changing climate.”
 
 **Q: Look back at all the numbers you have written down. Behind each one is a story just like you encountered in the New York Times article. Take a moment to reflect and to appreciate the extent and scale of what you have read about. You can use the submission box as a space for thoughts, questions, or any method that helps you process what you’ve read.**
 

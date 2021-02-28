@@ -102,7 +102,7 @@ module.exports = {
         text: 'Home',
       },
       {
-        location: '/about',
+        location: '/about/',
         text: 'About',
         dropdown: [
           {
@@ -114,6 +114,10 @@ module.exports = {
             text: 'Our Mission',
           },
         ],
+      },
+      {
+        location: '/sources/',
+        text: 'Sources',
       },
       {
         location: '/contact/',
