@@ -24,7 +24,7 @@ const Login = ({ data }) => {
 
   const firebaseApp = getFirebase()
 
-  const onSubmit = async e => {
+  /* const onSubmit = async e => {
     e.preventDefault()
     if (!firebaseApp) return
 
@@ -41,9 +41,10 @@ const Login = ({ data }) => {
       toast.error('Something went wrong. Let us know at hello@climatedu.org.')
     }
   }
+  */
 
   const [email, setEmail] = useState('')
-  /*
+  
   const handleSetEmail = useCallback(e => setEmail(e.target.value), [])
 
   const [password, setPassword] = useState('')
@@ -62,7 +63,7 @@ const Login = ({ data }) => {
     }
   }
 
-  
+  /*
   const googleLogin = async e => {
     e.preventDefault()
 
@@ -80,7 +81,7 @@ const Login = ({ data }) => {
   */
 
   return (
-    /*
+    
     <Layout>
       <PageHeader primary='Login' />
       <Container>
@@ -115,6 +116,7 @@ const Login = ({ data }) => {
           <Flex sx={{ width: '100%' }}>
             <Button sx={{ mb: 4, marginLeft: 'auto' }}>Let&apos;s go!</Button>
           </Flex>
+          {/*}
           <Button
             variant='looksLikeAnInput'
             sx={{
@@ -135,6 +137,7 @@ const Login = ({ data }) => {
             />
             Sign in with Google
           </Button>
+            */}
 
           <Box sx={{ mb: 3 }}>
             <GatsbyLink
@@ -160,7 +163,7 @@ const Login = ({ data }) => {
         </Box>
       </Container>
     </Layout>
-    */
+    /*
     <Layout>
       <PageHeader
         primary='Login'
@@ -196,5 +199,6 @@ const Login = ({ data }) => {
     </Layout>
   )
 }
-
+*/
 export default Login
+}
