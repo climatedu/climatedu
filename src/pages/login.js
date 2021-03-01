@@ -126,17 +126,6 @@ const Login = ({ data }) => {
               Don&apos;t have an account? Sign up
             </GatsbyLink>
           </Box>
-
-          <Box>
-            <GatsbyLink
-              to='#'
-              sx={{
-                color: 'primary',
-              }}
-            >
-              Forgot password?
-            </GatsbyLink>
-          </Box>
         </Box>
       </Container>
     </Layout>
