@@ -1,7 +1,7 @@
 /** @jsx jsx */
-import { useState } from 'react'
-import { Button, Input, Flex, jsx, Heading } from 'theme-ui'
-import { navigate } from 'gatsby'
+import { useState, useCallback } from 'react'
+import { Button, Input, Flex, jsx, Box, Label } from 'theme-ui'
+import { navigate, Link as GatsbyLink } from 'gatsby'
 import { toast } from 'react-toastify'
 
 import Layout from '../components/layout'
@@ -24,6 +24,7 @@ const Login = ({ data }) => {
 
   const firebaseApp = getFirebase()
 
+  /*
   const onSubmit = async e => {
     e.preventDefault()
     if (!firebaseApp) return
@@ -41,9 +42,10 @@ const Login = ({ data }) => {
       toast.error('Something went wrong. Let us know at hello@climatedu.org.')
     }
   }
+  */
 
   const [email, setEmail] = useState('')
-  /*
+
   const handleSetEmail = useCallback(e => setEmail(e.target.value), [])
 
   const [password, setPassword] = useState('')
@@ -62,7 +64,7 @@ const Login = ({ data }) => {
     }
   }
 
-  
+  /*
   const googleLogin = async e => {
     e.preventDefault()
 
@@ -80,7 +82,6 @@ const Login = ({ data }) => {
   */
 
   return (
-    /*
     <Layout>
       <PageHeader primary='Login' />
       <Container>
@@ -115,27 +116,6 @@ const Login = ({ data }) => {
           <Flex sx={{ width: '100%' }}>
             <Button sx={{ mb: 4, marginLeft: 'auto' }}>Let&apos;s go!</Button>
           </Flex>
-          <Button
-            variant='looksLikeAnInput'
-            sx={{
-              width: '100%',
-              fontSize: 4,
-              cursor: 'pointer',
-              mb: 4,
-            }}
-            onClick={googleLogin}
-          >
-            <IoLogoGoogle
-              aria-hidden
-              sx={{
-                position: 'relative',
-                top: 1,
-                left: -2,
-              }}
-            />
-            Sign in with Google
-          </Button>
-
           <Box sx={{ mb: 3 }}>
             <GatsbyLink
               to='/register/'
@@ -160,7 +140,7 @@ const Login = ({ data }) => {
         </Box>
       </Container>
     </Layout>
-    */
+    /*
     <Layout>
       <PageHeader
         primary='Login'
@@ -194,6 +174,7 @@ const Login = ({ data }) => {
         </Flex>
       </Container>
     </Layout>
+    */
   )
 }
 

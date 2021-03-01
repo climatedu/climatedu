@@ -94,8 +94,7 @@ const Home = ({ data }) => {
               },
             }}
           >
-            While our site is under construction, check out our preview here
-            &gt;
+            Check out a preview of our course here&gt;
           </Link>
         </Heading>
       </PageHeader>
