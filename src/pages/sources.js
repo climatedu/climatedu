@@ -25,6 +25,9 @@ const Sources = ({ data }) => {
                 color: 'text',
               },
             },
+            h1: {
+              color: 'primary',
+            },
           }}
         />
       </Container>

@@ -114,6 +114,8 @@ const Dashboard = () => {
     </Box>
   )
 
+  console.log()
+
   return (
     <Course>
       <PageHeader primary='Welcome to your dashboard!' />
