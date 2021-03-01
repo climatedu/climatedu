@@ -185,7 +185,7 @@
 ## Air pollution
 
 - [See How the World’s Most Polluted Air Compares With Your City’s](https://www.nytimes.com/interactive/2019/12/02/climate/air-pollution-compare-ar-ul.html), New York Times
-- [https://environmentamerica.org/news/ame/new-report-power-plants-emit-three-times-pollution-all-nation%E2%80%99s-cars#:~:text=Coal%2Dfired%20power%20plants%20are,nation's%20total%20global%20warming%20pollution](https://environmentamerica.org/news/ame/new-report-power-plants-emit-three-times-pollution-all-nation%E2%80%99s-cars#:~:text=Coal%2Dfired%20power%20plants%20are,nation's%20total%20global%20warming%20pollution)., Environment America
+- [Power Plants Emit Three Times the Pollution of All the Nation’s Cars](https://environmentamerica.org/news/ame/new-report-power-plants-emit-three-times-pollution-all-nation%E2%80%99s-cars#:~:text=Coal%2Dfired%20power%20plants%20are,nation's%20total%20global%20warming%20pollution)., Environment America
 
 ## Renewable energy solutions
 
