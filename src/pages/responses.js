@@ -42,7 +42,7 @@ const Responses = ({ location }) => {
       )
       toast.success('The student can now see your feedback!')
     } catch (err) {
-      toast.error('Error leaving feedback.')
+      toast.error('Error leaving feedback. Is there a student response?')
     }
   }
 

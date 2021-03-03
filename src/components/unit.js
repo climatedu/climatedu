@@ -7,7 +7,7 @@ import 'react-toastify/dist/ReactToastify.min.css'
 import { useStaticQuery, graphql, Link } from 'gatsby'
 import { GiHamburgerMenu } from 'react-icons/gi'
 import seedrandom from 'seedrandom'
-import { IoIosArrowForward } from 'react-icons/io'
+import { IoIosArrowForward, IoIosHome } from 'react-icons/io'
 
 import SEO from './seo'
 import Container from './container'
@@ -319,15 +319,30 @@ const Unit = ({ html, frontmatter, children }) => {
           <GiHamburgerMenu size='100%' />
         </IconButton>
         <h2 sx={{ fontSize: '1.5em', textAlign: 'right', mx: 5, mt: 4 }}>
-          <Box>
+          <Box
+            sx={{
+              display: ['none', 'block', 'block'],
+            }}
+          >
             <Link
-              sx={{ textDecoration: 'none' }}
-              to={`/dashboard/`}
+              sx={{
+                textDecoration: 'none',
+              }}
+              to='/dashboard/'
             >
-              Back to dashboard{' '}
+              Back to dashboard&nbsp;
             </Link>
             <IoIosArrowForward
               sx={{ position: 'relative', top: '0.2em', size: '1.1em' }}
+            />
+          </Box>
+          <Box
+            sx={{
+              display: ['block', 'none', 'none'],
+            }}
+          >
+            <IoIosHome
+              sx={{ position: 'relative', top: '-0.5em', size: '2em' }}
             />
           </Box>
         </h2>
@@ -335,7 +350,7 @@ const Unit = ({ html, frontmatter, children }) => {
           sx={{
             position: 'relative',
             zIndex: 0,
-            mt: '6em',
+            mt: ['2em', '6em', '6em'],
             mb: '2em',
             textarea: {
               boxSizing: 'border-box',
