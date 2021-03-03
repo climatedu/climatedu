@@ -103,7 +103,7 @@ const Responses = ({ location }) => {
                                 }}
                                 name='feedback'
                                 id='feedback'
-                                defaultValue={responses.feedback[question.key]}
+                                defaultValue={responses?.feedback[question.key]}
                                 placeholder='Leave your feedback here'
                               />
                               <Button
