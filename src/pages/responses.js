@@ -42,7 +42,7 @@ const Responses = ({ location }) => {
       )
       toast.success('The student can now see your feedback!')
     } catch (err) {
-      toast.error('Error leaving feedback.')
+      toast.error('Error leaving feedback. Is there a student response?')
     }
   }
 
@@ -103,7 +103,7 @@ const Responses = ({ location }) => {
                                 }}
                                 name='feedback'
                                 id='feedback'
-                                defaultValue={responses.feedback[question.key]}
+                                defaultValue={responses?.feedback[question.key]}
                                 placeholder='Leave your feedback here'
                               />
                               <Button

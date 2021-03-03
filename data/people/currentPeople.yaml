@@ -46,98 +46,80 @@
   school: Montgomery Blair H.S.
   team: Content Development & Outreach
 
-- name: Nicole Tran
-  pos: 9
-  avatar: ./avatars/nicole.png
-  school: Montgomery Blair H.S.
-  team: Content Development
-
 - name: Nicole Chowdhury
-  pos: 10
+  pos: 9
   avatar: ./avatars/nicky.jpg
   school: McLean H.S.
   team: Content Development
 
 - name: Joshua Wang
-  pos: 11
+  pos: 10
   avatar: ./avatars/josh.jpg
   school: Montgomery Blair H.S.
   team: Site Development
 
 - name: Kevin Higgs
-  pos: 12
+  pos: 11
   avatar: ./avatars/kevin.jpg
   school: Montgomery Blair H.S.
   team: Site Development
 
-- name: Asha Baron
-  pos: 13
-  avatar: ./avatars/asha.jpg
-  school: Montgomery Blair H.S.
-  team: Outreach & Business
-
 - name: Michelle Wong
-  pos: 14
+  pos: 12
   avatar: ./avatars/michelle.png
   school: Richard Montgomery H.S.
   team: Outreach
 
 - name: Achraf Azzaoui
-  pos: 15
+  pos: 13
   avatar: ./avatars/achraf.jpg
   school: Thomas Jefferson H.S. for Science and Technology
   team: Outreach
 
 - name: Shifra Dayak
-  pos: 16
+  pos: 14
   avatar: ./avatars/shifra.JPG
   school: University of Maryland
   team: Content Development & Social Media
 
 - name: Joy Xu
-  pos: 17
+  pos: 15
   avatar: ./avatars/joy.jpg
   school: Montgomery Blair H.S.
   team: Social Media & Business
 
 - name: Shruti Chauhan
-  pos: 18
+  pos: 16
   avatar: ./avatars/shruti.jpg
   school: Montgomery Blair H.S.
   team: Social Media & Business
 
 - name: Yuyu Yang
-  pos: 19
+  pos: 17
   avatar: ./avatars/yuyu.jpg
   school: Montgomery Blair H.S.
   team: Content Development & Design & Social Media
 
 - name: Claire Hwang
-  pos: 20
+  pos: 18
   avatar: ./avatars/claire.jpg
   school: Montgomery Blair H.S.
   team: Design
 
 - name: Yuri Kim
-  pos: 21
+  pos: 19
   avatar: ./avatars/yuri.jpg
   school: Montgomery Blair H.S.
   team: Design
 
-- name: Kseniya Voranava
-  pos: 22
-  avatar: ./avatars/kseniya.jpg
-  school: Montgomery Blair H.S.
+- name: Shanthi Ashok
+  pos: 20
+  avatar: ./avatars/shanthi.jpg
+  school: Oakton H.S.
   team: Social Media
 
 - name: Anna O'Sullivan
-  pos: 23
+  pos: 21
   avatar: ./avatars/anna.jpg
   school: Potomac School
-  team: Social Media
-
-- name: Shanthi Ashok
-  pos: 24
-  avatar: ./avatars/shanthi.jpg
-  school: Oakton H.S.
   team: Social Media
