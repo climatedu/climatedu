@@ -7,6 +7,7 @@ import 'react-toastify/dist/ReactToastify.min.css'
 import { useStaticQuery, graphql, Link } from 'gatsby'
 import { GiHamburgerMenu } from 'react-icons/gi'
 import seedrandom from 'seedrandom'
+import { IoIosArrowForward } from 'react-icons/io'
 
 import SEO from './seo'
 import Container from './container'
@@ -317,6 +318,19 @@ const Unit = ({ html, frontmatter, children }) => {
         >
           <GiHamburgerMenu size='100%' />
         </IconButton>
+        <h2 sx={{ fontSize: '1.5em', textAlign: 'right', mx: 5, mt: 4 }}>
+          <Box>
+            <Link
+              sx={{ textDecoration: 'none' }}
+              to={`/dashboard/`}
+            >
+              Back to dashboard{' '}
+            </Link>
+            <IoIosArrowForward
+              sx={{ position: 'relative', top: '0.2em', size: '1.1em' }}
+            />
+          </Box>
+        </h2>
         <Container
           sx={{
             position: 'relative',

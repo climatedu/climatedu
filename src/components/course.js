@@ -57,7 +57,7 @@ const Course = ({ children, bg }) => {
         })}
       />
       <SEO />
-      <h1 sx={{ fontSize: '2em', textAlign: 'right', mx: 5, mt: 4 }}>
+      <h1 sx={{ fontSize: '1.5em', textAlign: 'right', mx: 5, mt: 4 }}>
         <Box as='span' onClick={logout} sx={{ cursor: 'pointer' }}>
           Log out{' '}
           <IoMdExit

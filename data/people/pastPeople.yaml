@@ -9,30 +9,48 @@
   school: Montgomery Blair H.S.
   team: Content Development & Outreach
 
-- name: Anika Seth
+- name: Nicole Tran
   pos: 3
+  avatar: ./avatars/nicole.png
+  school: Montgomery Blair H.S.
+  team: Content Development
+
+- name: Asha Baron
+  pos: 4
+  avatar: ./avatars/asha.jpg
+  school: Montgomery Blair H.S.
+  team: Outreach & Business
+
+- name: Anika Seth
+  pos: 5
   avatar: ./avatars/anika.jpg
   school: Montgomery Blair H.S.
   team: Outreach & Business
 
 - name: Clarence Lam
-  pos: 4
+  pos: 6
   avatar: ./avatars/clam.jpg
   school: Montgomery Blair H.S.
 
 - name: Robert Chen
-  pos: 5
+  pos: 7
   avatar: ./avatars/robert.jpg
   school: Interlake H.S.
 
 - name: Leela Mehta-Harwitz
-  pos: 6
+  pos: 8
   avatar: ./avatars/leela.jpg
   school: Montgomery Blair H.S.
   team: Content Development
 
 - name: Philip Papurt
-  pos: 7
+  pos: 9
   avatar: ./avatars/ginkoid.png
   school: Mount Lebanon H.S.
   team: Site Development
+
+- name: Kseniya Voranava
+  pos: 10
+  avatar: ./avatars/kseniya.jpg
+  school: Montgomery Blair H.S.
+  team: Social Media
