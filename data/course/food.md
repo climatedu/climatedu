@@ -6,11 +6,11 @@ background: '#f7e2e1'
 text: '#5c0a05'
 highlight: '#82322e'
 sections:
-  - Land/water usage
+  - Land & water usage
   - Diet
   - Food transportation
   - Food waste
-  - Fishing + Aquaculture
+  - Fishing & aquaculture
   - Farms of the future
 ---
 
@@ -122,7 +122,7 @@ Here are a few short podcast episodes (about a minute each) that focus on 3 solu
 
 <textarea data-unit="5" data-key="9" id="5.9" placeholder="Enter your response here." onblur="updateResponse(this)" oninput="editedResponse(this)"></textarea>
 
-## Fishing + Aquaculture
+## Fishing & aquaculture
 
 Throughout this chapter of the course, we’ve talked a lot about land-based agriculture, but it is important to remember that a huge part of our nutritional diet comes from the ocean. Every prawn, crabcake, and piece of sushi that we consume comes from the mass seafood industry. In 2018 alone, global fish production is estimated to have been about 179 million tonnes (1 tonne = 1000 kg), and 156 million tonnes were for human consumption. Due to the increasing demand in seafood, fish species have been overfished and hunted to the point of extinction, disrupting migration patterns and decreasing biodiversity. For example, bottom trawling, a commercial fishing technique, takes giant nets and drags them across the ocean floor to pick up fish, stirring up sediment and damaging the corals there. To give you a sense of the global scale of bottom trawling, the United Nations estimate that up to 95% of global ocean damage is directly caused by bottom trawling. Blast fishing (watch the following video) and cyanide fishing are also extremely harmful but common practices in the fishing industry.
 

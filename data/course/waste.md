@@ -85,6 +85,7 @@ You may have noticed that many of our sources have mentioned the toxins micropla
 Finally, watch the first two minutes of this video from Oceana for some dramatic visuals of the plastic we've dumped in the oceans. It's terrifying, but let's think—how can we solve this?
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Yomf5pBN8dY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## Can't we just recycle?
 
 Those impacts sound pretty scary. But no worries, right? Recycling will solve all of our problems! Well… not really. We've been raised on this mantra: "Reduce, Reuse, Recycle." It’s hanging on posters in the cafeteria, echoed in school PSAs, and promoted as a way to go green. However, recycling isn't a long-term solution. Like putting a Band-Aid on a bullet wound, recycling is a feeble attempt to adapt to a full-blown crisis. Let's watch a video from It's Okay To Be Smart, where Dr. Joe Hanson explains why recycling is broken today.

@@ -13,6 +13,7 @@ sections:
   - Rising sea levels
   - Ocean acidification
   - Algae blooms
+  - Species extinction
   - Human health
   - Food security
   - Economic impacts

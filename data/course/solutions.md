@@ -6,12 +6,12 @@ background: '#e2d1f0'
 text: '#401d5c'
 highlight: '#7c529e'
 sections:
-  - Adaptation vs mitigation
+  - Adaptation vs. mitigation
   - Project Drawdown, a cause for hope
-  - Nature based solutions
+  - Nature-based solutions
   - Innovative technologies
   - Legislation
-  - But doesn’t fighting climate change hurt the economy?
+  - The economics of fighting climate change
   - Spreading awareness
   - What you can do right now
 ---
@@ -20,7 +20,7 @@ sections:
 
 # What can we do?
 
-## Adaptation vs mitigation
+## Adaptation vs. mitigation
 
 Strategies that we can take to combat climate change generally fall into one of two categories: adaptation and mitigation. What's the difference?
 
@@ -51,7 +51,7 @@ Next, explore Project Drawdown's solutions by visiting their website.
 
 If you want to go above and beyond, we encourage you to read the full book from Project Drawdown, _Drawdown: The Most Comprehensive Plan Ever Proposed to Reverse Global Warming_, and let us know what you think.
 
-## Nature based solutions
+## Nature-based solutions
 
 While there are gadgets currently being engineered to remove carbon from the atmosphere, one of the most powerful tools in our arsenal happens to also be the most natural: trees! As mentioned in Unit 1: Intro to Climate Change, trees and vegetation store significant amounts of Earth's carbon. Unlike mammals, plants use photosynthesis to create food, taking _in_ carbon dioxide, and giving _out_ oxygen for us to breathe. We already know that trees cool us down—without sufficient green space, urban heat islands are significantly hotter than their surrounding land. Let's watch this basic overview of natural solutions at our disposal from the YEARS Project.
 
@@ -230,7 +230,7 @@ Although our current administration has induced national setbacks to establishin
 
 - [En-Roads assignment](https://www.climateinteractive.org/tools/guided-assignment/)
 
-## But doesn’t fighting climate change hurt the economy?
+## The economics of fighting climate change
 
 Yes, policies like carbon prices will cost us jobs in fossil fuel industries and carbon-intensive businesses. But these losses will be balanced out by new jobs in renewable energy, environmental conservation, new infrastructure projects, and more. Research from Canada suggests that these new jobs will likely outnumber the old jobs, with 160,000 jobs being created in Canada alone while only 50,000 in fossil fuel industries will be lost ([source](https://cleanenergycanada.org/report/the-fast-lane-tracking-the-energy-revolution-2019/)). This is because most fossil fuel industries gain their value from minerals in the ground, like oil and coal, while renewables gain their value from human labor and technology. Profits from oil mostly go to whoever has the rights to the reserves, with comparatively few workers to pay salaries to, while renewable energy profits are spread out among a greater number of workers ([source](https://www.cbc.ca/news/business/employment-climate-economy-1.5384311)). Renewable energy prices are getting low enough to compete with fossil fuels: three quarters of US coal infrastructure is now more expensive than using renewable energy ([source](https://www.wri.org/blog/2020/07/economic-benefits-climate-action-us)). And while carbon taxes take money out of the economy, that money can be reinvested right back in as economic stimulus or welfare for the unemployed.
 

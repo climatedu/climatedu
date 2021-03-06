@@ -214,7 +214,7 @@ sections:
       - file: ./doodles/balcony3_v3.svg
         scale: 2.5
         offsetX: '-5em'
-  - location: '7.5'
+  - location: '7.4'
     doodles:
       - file: ./doodles/plants.svg
         scale: 2
