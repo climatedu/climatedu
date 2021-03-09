@@ -59,6 +59,9 @@ const Unit = ({ html, frontmatter, children }) => {
             sticky
           }
         }
+        questions {
+          unit
+        }
       }
     }
   `)
@@ -140,12 +143,31 @@ const Unit = ({ html, frontmatter, children }) => {
   const saveReadProgress = async () => {
     if (firebase.auth().currentUser == null) return
 
+    const questionsAnswered = Object.entries(
+      (await firebaseApp.firestore()
+      .collection('accounts')
+      .doc(firebase.auth().currentUser.uid)
+      .collection('responses')
+      .doc(frontmatter.unit.toString())
+      .get()).data()
+    ).length
+
+    let questionCount = 0
+
+    for (const x of data.courseYaml.questions) {
+      if (x.unit == frontmatter.unit) {
+        questionCount++
+      }
+    }
+
     if (unitRef.current != null) {
-      const percentRead = Math.ceil(
-        (unitRef.current.scrollTop /
-          (unitRef.current.scrollHeight - unitRef.current.offsetHeight)) *
-          100
-      )
+      // const percentRead = Math.ceil(
+      //   (unitRef.current.scrollTop /
+      //     (unitRef.current.scrollHeight - unitRef.current.offsetHeight)) *
+      //     100
+      // )
+
+      const percentRead = Math.ceil(questionsAnswered / questionCount * 100)
 
       if (readProgress === 0) {
         const d = await firebaseApp

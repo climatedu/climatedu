@@ -17,7 +17,9 @@ let currentUser = firebase.auth().currentUser
 let savedResponses = {}
 
 function editedResponse(element) {
-  savedResponses[element] = false
+  key = element.dataset.key
+  savedResponses[key] = false
+  /* console.log(savedResponses) */
 }
 
 async function updateResponse(element) {
@@ -31,7 +33,8 @@ async function updateResponse(element) {
     .collection('responses')
     .doc(unit)
     .set({ [key]: data }, { merge: true })
-  savedResponses[element] = true
+  savedResponses[key] = true
+  console.log(savedResponses)
 }
 
 function loadAllResponses() {
