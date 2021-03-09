@@ -169,7 +169,7 @@ const SideNav = ({
         >
           <Box
             sx={{
-              width: `${scrollLocation.percent * 100}%`,
+              width: `${scrollLocation.percent}%`,
               mr: 'auto',
               backgroundColor: frontmatter.text,
               height: '100%',
@@ -178,7 +178,7 @@ const SideNav = ({
           />
         </Box>
         <Box sx={{ textAlign: 'center', fontSize: '1.2em', mb: '1em' }}>
-          {Math.round(scrollLocation.percent * 100)}%
+          {scrollLocation.percent}%
         </Box>
         <IconButton
           sx={{

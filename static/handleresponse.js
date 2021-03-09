@@ -17,7 +17,8 @@ let currentUser = firebase.auth().currentUser
 let savedResponses = {}
 
 function editedResponse(element) {
-  savedResponses[element] = false
+  key = element.dataset.key
+  savedResponses[key] = false
 }
 
 async function updateResponse(element) {
@@ -31,7 +32,11 @@ async function updateResponse(element) {
     .collection('responses')
     .doc(unit)
     .set({ [key]: data }, { merge: true })
-  savedResponses[element] = true
+  if (data == '') {
+    savedResponses[key] = false
+  } else {
+    savedResponses[key] = true
+  }
 }
 
 function loadAllResponses() {
@@ -57,7 +62,7 @@ firebase.auth().onAuthStateChanged(auth => {
 })
 
 window.addEventListener('beforeunload', function (e) {
-  if (savedResponses[document.activeElement] === false) {
+  if (savedResponses[document.activeElement.dataset.key] === false) {
     updateResponse(document.activeElement)
     e.returnValue = 'You have unsaved changes. Are you sure you want to exit?'
     return e.returnValue
