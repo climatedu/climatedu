@@ -20,7 +20,7 @@ const Progress = ({ data, account }) => {
       }}
     >
       {data.map(({ frontmatter }) => {
-        frontmatter.percent = unitProgress[frontmatter.unit - 1]
+        frontmatter.percent = unitProgress[frontmatter.unit] || 0
         const goToUnit = () => navigate('/course/' + frontmatter.slug + '/')
         return (
           <React.Fragment key={frontmatter.unit}>
