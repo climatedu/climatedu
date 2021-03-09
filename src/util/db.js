@@ -118,7 +118,7 @@ function teacherFeedback(uid, unit, key, feedback) {
 }
 
 function useProgress(account, unitCount) {
-  const [progress, setProgress] = useState(new Array(unitCount).fill(0))
+  const [progress, setProgress] = useState({})
 
   useEffect(() => {
     if (!firebaseApp) return
@@ -129,12 +129,12 @@ function useProgress(account, unitCount) {
       .doc(account.id)
       .collection('progress')
       .onSnapshot(collection => {
-        const temp = new Array(unitCount).fill(0)
+        const ret = {}
         collection.docs.map((doc, idx) => {
-          temp[idx] = (doc.data().percent | 0) / 100
+          ret[doc.id] = (doc.data().percent | 0) / 100
         })
 
-        setProgress(temp)
+        setProgress(ret)
       })
 
     return unsubscribe

@@ -114,7 +114,8 @@ module.exports = {
             text: 'Our Mission',
           },
           {
-            location: 'https://mygreenmontgomery.org/2020/high-school-student-designs-climate-education-course-for-middle-schoolers/',
+            location:
+              'https://mygreenmontgomery.org/2020/high-school-student-designs-climate-education-course-for-middle-schoolers/',
             text: 'In the News',
           },
         ],
