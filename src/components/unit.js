@@ -59,6 +59,9 @@ const Unit = ({ html, frontmatter, children }) => {
             sticky
           }
         }
+        questions {
+          unit
+        }
       }
     }
   `)
@@ -80,10 +83,11 @@ const Unit = ({ html, frontmatter, children }) => {
     .map(n => n.node)
     .sort((a, b) => a.frontmatter.unit - b.frontmatter.unit)
 
+  const [answeredProgress, setAnsweredProgress] = React.useState(0)
   const [navOpen, setNavOpen] = useState(false)
   const [scrollLocation, setScrollLocation] = useState({
-    percent: 0,
-    colorPercent: 0,
+    percent: answeredProgress,
+    colorPercent: answeredProgress,
   })
 
   const unitRef = React.createRef()
@@ -116,17 +120,18 @@ const Unit = ({ html, frontmatter, children }) => {
   function scrollColor() {
     if (unitRef.current) {
       setScrollLocation({
-        percent: scrollLocation.percent,
-        colorPercent: frontmatter.scrollcolorbottom
-          ? unitRef.current.scrollTop >
-            unitRef.current.scrollHeight - unitRef.current.offsetHeight * 2
-            ? (unitRef.current.scrollTop -
-                (unitRef.current.scrollHeight -
-                  unitRef.current.offsetHeight * 2)) /
-              unitRef.current.offsetHeight
-            : 0
-          : unitRef.current.scrollTop /
-            (unitRef.current.scrollHeight - unitRef.current.offsetHeight),
+        percent: answeredProgress,
+        colorPercent: answeredProgress,
+        // colorPercent: frontmatter.scrollcolorbottom
+        //   ? unitRef.current.scrollTop >
+        //     unitRef.current.scrollHeight - unitRef.current.offsetHeight * 2
+        //     ? (unitRef.current.scrollTop -
+        //         (unitRef.current.scrollHeight -
+        //           unitRef.current.offsetHeight * 2)) /
+        //       unitRef.current.offsetHeight
+        //     : 0
+        //   : unitRef.current.scrollTop /
+        //     (unitRef.current.scrollHeight - unitRef.current.offsetHeight),
       })
     }
     setTimeout(() => {
@@ -135,37 +140,59 @@ const Unit = ({ html, frontmatter, children }) => {
     }, 100)
   }
 
-  const [readProgress, setReadProgress] = React.useState(0)
-
-  const saveReadProgress = async () => {
+  const saveAnsweredProgress = async () => {
     if (firebase.auth().currentUser == null) return
 
-    if (unitRef.current != null) {
-      const percentRead = Math.ceil(
-        (unitRef.current.scrollTop /
-          (unitRef.current.scrollHeight - unitRef.current.offsetHeight)) *
-          100
-      )
+    const unitResponses = (
+      await firebaseApp
+        .firestore()
+        .collection('accounts')
+        .doc(firebase.auth().currentUser.uid)
+        .collection('responses')
+        .doc(frontmatter.unit.toString())
+        .get()
+    ).data()
 
-      if (readProgress === 0) {
-        const d = await firebaseApp
-          .firestore()
-          .collection('accounts')
-          .doc(firebase.auth().currentUser.uid)
-          .collection('progress')
-          .doc(frontmatter.unit.toString())
-          .get()
+    if (unitResponses == null) return
 
-        if (d.data() !== undefined) {
-          setReadProgress(d.data().percent)
+    let answerCount = 0
 
-          if (percentRead <= d.data().percent) return
-        }
+    for (const y of Object.entries(unitResponses)) {
+      if (y[1] !== '') {
+        answerCount++
       }
+    }
 
-      if (percentRead <= readProgress) return
+    let questionCount = 0
 
-      setReadProgress(percentRead)
+    for (const x of data.courseYaml.questions) {
+      if (x.unit === frontmatter.unit) {
+        questionCount++
+      }
+    }
+
+    if (unitRef.current !== null) {
+      const percentAnswered = Math.ceil((answerCount / questionCount) * 100)
+
+      // if (answeredProgress === 0) {
+      //   const d = await firebaseApp
+      //     .firestore()
+      //     .collection('accounts')
+      //     .doc(firebase.auth().currentUser.uid)
+      //     .collection('progress')
+      //     .doc(frontmatter.unit.toString())
+      //     .get()
+
+      //   if (d.data() !== undefined) {
+      //     setAnsweredProgress(d.data().percent)
+
+      //     // if (percentRead <= d.data().percent) return (change variable name to "answered" if using later)
+      //   }
+      // }
+
+      // if (percentRead <= readProgress) return (change variable name to "answered" if using later)
+
+      setAnsweredProgress(percentAnswered)
 
       firebaseApp
         .firestore()
@@ -174,17 +201,19 @@ const Unit = ({ html, frontmatter, children }) => {
         .collection('progress')
         .doc(frontmatter.unit.toString())
         .set({
-          percent: percentRead,
+          percent: percentAnswered,
+          colorPercent: percentAnswered,
         })
     }
   }
   useAuth(null)
 
   useEffect(() => {
-    window.addEventListener('scroll', saveReadProgress, true)
+    saveAnsweredProgress()
+    window.addEventListener('click', saveAnsweredProgress, true)
 
     return () => {
-      window.removeEventListener('scroll', saveReadProgress, true)
+      window.removeEventListener('click', saveAnsweredProgress, true)
     }
   })
 
@@ -308,10 +337,8 @@ const Unit = ({ html, frontmatter, children }) => {
           }}
           onClick={() => {
             setScrollLocation({
-              colorPercent: scrollLocation.colorPercent,
-              percent:
-                unitRef.current.scrollTop /
-                (unitRef.current.scrollHeight - unitRef.current.offsetHeight),
+              colorPercent: answeredProgress,
+              percent: answeredProgress,
             })
             setNavOpen(true)
           }}
