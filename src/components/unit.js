@@ -351,7 +351,11 @@ const Unit = ({ html, frontmatter, children }) => {
         </IconButton>
         <h2
           sx={{
-            display: (typeof window !== 'undefined' && firebase.auth().currentUser !== null) ? 'block' : 'none',
+            display:
+              typeof window !== 'undefined' &&
+              firebase.auth().currentUser !== null
+                ? 'block'
+                : 'none',
             fontSize: '1.5em',
             textAlign: 'right',
             mx: 5,

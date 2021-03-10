@@ -15,8 +15,6 @@ import Container from './container'
 
 import useAuth from '../util/auth'
 
-import Link from './link'
-
 const Navbar = ({ navbarOpen, setNavbarOpen }) => {
   const user = useAuth(false)
 
