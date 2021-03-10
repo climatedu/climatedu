@@ -169,7 +169,7 @@ const SideNav = ({
         >
           <Box
             sx={{
-              width: `${scrollLocation.percent}%`,
+              width: `${scrollLocation.progress}%`,
               mr: 'auto',
               backgroundColor: frontmatter.text,
               height: '100%',
@@ -178,7 +178,7 @@ const SideNav = ({
           />
         </Box>
         <Box sx={{ textAlign: 'center', fontSize: '1.2em', mb: '1em' }}>
-          {scrollLocation.percent}%
+          {scrollLocation.progress}%
         </Box>
         <IconButton
           sx={{

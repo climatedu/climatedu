@@ -7,7 +7,8 @@ import 'react-toastify/dist/ReactToastify.min.css'
 import { useStaticQuery, graphql, Link } from 'gatsby'
 import { GiHamburgerMenu } from 'react-icons/gi'
 import seedrandom from 'seedrandom'
-import { IoIosArrowForward, IoIosHome } from 'react-icons/io'
+import { IoIosArrowForward } from 'react-icons/io'
+import { AiFillHome } from 'react-icons/ai'
 
 import SEO from './seo'
 import Container from './container'
@@ -86,8 +87,9 @@ const Unit = ({ html, frontmatter, children }) => {
   const [answeredProgress, setAnsweredProgress] = React.useState(0)
   const [navOpen, setNavOpen] = useState(false)
   const [scrollLocation, setScrollLocation] = useState({
-    percent: answeredProgress,
-    colorPercent: answeredProgress,
+    percent: 0,
+    colorPercent: 0,
+    progress: answeredProgress,
   })
 
   const unitRef = React.createRef()
@@ -120,18 +122,18 @@ const Unit = ({ html, frontmatter, children }) => {
   function scrollColor() {
     if (unitRef.current) {
       setScrollLocation({
-        percent: answeredProgress,
-        colorPercent: answeredProgress,
-        // colorPercent: frontmatter.scrollcolorbottom
-        //   ? unitRef.current.scrollTop >
-        //     unitRef.current.scrollHeight - unitRef.current.offsetHeight * 2
-        //     ? (unitRef.current.scrollTop -
-        //         (unitRef.current.scrollHeight -
-        //           unitRef.current.offsetHeight * 2)) /
-        //       unitRef.current.offsetHeight
-        //     : 0
-        //   : unitRef.current.scrollTop /
-        //     (unitRef.current.scrollHeight - unitRef.current.offsetHeight),
+        percent: scrollLocation.percent,
+        colorPercent: frontmatter.scrollcolorbottom
+          ? unitRef.current.scrollTop >
+            unitRef.current.scrollHeight - unitRef.current.offsetHeight * 2
+            ? (unitRef.current.scrollTop -
+                (unitRef.current.scrollHeight -
+                  unitRef.current.offsetHeight * 2)) /
+              unitRef.current.offsetHeight
+            : 0
+          : unitRef.current.scrollTop /
+            (unitRef.current.scrollHeight - unitRef.current.offsetHeight),
+        progress: answeredProgress,
       })
     }
     setTimeout(() => {
@@ -201,8 +203,7 @@ const Unit = ({ html, frontmatter, children }) => {
         .collection('progress')
         .doc(frontmatter.unit.toString())
         .set({
-          percent: percentAnswered,
-          colorPercent: percentAnswered,
+          progressPercent: percentAnswered,
         })
     }
   }
@@ -337,15 +338,26 @@ const Unit = ({ html, frontmatter, children }) => {
           }}
           onClick={() => {
             setScrollLocation({
-              colorPercent: answeredProgress,
-              percent: answeredProgress,
+              colorPercent: scrollLocation.colorPercent,
+              percent:
+                unitRef.current.scrollTop /
+                (unitRef.current.scrollHeight - unitRef.current.offsetHeight),
+              progress: answeredProgress,
             })
             setNavOpen(true)
           }}
         >
           <GiHamburgerMenu size='100%' />
         </IconButton>
-        <h2 sx={{ fontSize: '1.5em', textAlign: 'right', mx: 5, mt: 4 }}>
+        <h2
+          sx={{
+            display: firebase.auth().currentUser === null ? 'none' : 'block',
+            fontSize: '1.5em',
+            textAlign: 'right',
+            mx: 5,
+            mt: 4,
+          }}
+        >
           <Box
             sx={{
               display: ['none', 'block', 'block'],
@@ -368,7 +380,7 @@ const Unit = ({ html, frontmatter, children }) => {
               display: ['block', 'none', 'none'],
             }}
           >
-            <IoIosHome
+            <AiFillHome
               sx={{ position: 'relative', top: '-0.5em', size: '2em' }}
             />
           </Box>

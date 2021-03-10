@@ -131,7 +131,7 @@ function useProgress(account, unitCount) {
       .onSnapshot(collection => {
         const ret = {}
         collection.docs.map((doc, idx) => {
-          ret[doc.id] = (doc.data().percent | 0) / 100
+          ret[doc.id] = (doc.data().progressPercent | 0) / 100
         })
 
         setProgress(ret)

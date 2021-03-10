@@ -113,8 +113,8 @@ const Navbar = ({ navbarOpen, setNavbarOpen }) => {
         ) : (
           <DesktopNavButton
             as='li'
-            location='/account/'
-            text='Account'
+            location='/dashboard/'
+            text='Dashboard'
             dropdown={null}
             key={links.length + 1}
           >

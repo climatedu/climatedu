@@ -3,13 +3,14 @@ import { Box, Styled, jsx } from 'theme-ui'
 import { css } from '@theme-ui/css'
 import { Global } from '@emotion/core'
 import 'react-toastify/dist/ReactToastify.min.css'
-import { navigate } from 'gatsby'
+import { navigate, Link } from 'gatsby'
 import { toast } from 'react-toastify'
 
 import SEO from './seo'
 import getFirebase from '../firebase'
 
 import { IoMdExit } from 'react-icons/io'
+import { AiFillHome } from 'react-icons/ai'
 
 const Course = ({ children, bg }) => {
   const firebaseApp = getFirebase()
@@ -57,14 +58,28 @@ const Course = ({ children, bg }) => {
         })}
       />
       <SEO />
-      <h1 sx={{ fontSize: '1.5em', textAlign: 'right', mx: 5, mt: 4 }}>
-        <Box as='span' onClick={logout} sx={{ cursor: 'pointer' }}>
-          Log out{' '}
-          <IoMdExit
-            sx={{ position: 'relative', top: '0.4em', size: '1.6em' }}
-          />
-        </Box>
-      </h1>
+      <div sx={{ display: 'flex', justifyContent: 'space-between' }}>
+        <h1 sx={{ fontSize: '1.5em', mx: 5, mt: 4 }}>
+          <Link sx={{ textDecoration: 'none' }} to='/'>
+            <AiFillHome
+              sx={{
+                position: 'relative',
+                top: '0.4em',
+                size: '1.6em',
+                color: 'text',
+              }}
+            />
+          </Link>
+        </h1>
+        <h1 sx={{ fontSize: '1.5em', mx: 5, mt: 4 }}>
+          <Box as='span' onClick={logout} sx={{ cursor: 'pointer' }}>
+            Log out{' '}
+            <IoMdExit
+              sx={{ position: 'relative', top: '0.4em', size: '1.6em' }}
+            />
+          </Box>
+        </h1>
+      </div>
       <Box
         as='main'
         sx={{

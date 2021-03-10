@@ -19,7 +19,7 @@ const Register = ({ data }) => {
   const user = useAuth()
 
   if (user) {
-    navigate('/account/')
+    navigate('/dashboard/')
   }
 
   const firebaseApp = getFirebase()

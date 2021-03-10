@@ -85,7 +85,7 @@ const Home = ({ data }) => {
           }}
         >
           <Link
-            to='https://preview.climatedu.org/course/intro'
+            to='/course/intro'
             sx={{
               color: 'text',
               textDecoration: 'none',
