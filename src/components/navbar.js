@@ -68,10 +68,11 @@ const Navbar = ({ navbarOpen, setNavbarOpen }) => {
           p: 0,
         }}
       >
-        <Link to='https://instagram.com/climateduteam'>
+        <a href='https://instagram.com/climateduteam'>
           <GrInstagram
             size='2em'
             sx={{
+              color: 'text',
               position: 'relative',
               top: '0.6em',
               mr: '36px',
@@ -80,7 +81,7 @@ const Navbar = ({ navbarOpen, setNavbarOpen }) => {
               },
             }}
           />
-        </Link>
+        </a>
 
         {links.map((props, i) => (
           <DesktopNavButton
