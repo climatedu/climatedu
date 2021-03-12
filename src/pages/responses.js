@@ -16,6 +16,15 @@ const Responses = ({ location }) => {
 
   const data = useStaticQuery(graphql`
     {
+      allMarkdownRemark(
+        filter: { fileAbsolutePath: { glob: "**/course/*.md" } }
+      ) {
+        edges {
+          node {
+            ...Unit
+          }
+        }
+      }
       courseYaml {
         questions {
           unit
@@ -29,6 +38,10 @@ const Responses = ({ location }) => {
   const questions = data.courseYaml.questions
 
   const responses = db.useResponses(params.get('student'), params.get('unit'))
+
+  const units = data.allMarkdownRemark.edges
+    .map(n => n.node)
+    .sort((a, b) => a.frontmatter.unit - b.frontmatter.unit)
 
   const handleLeaveFeedback = async function (e, key) {
     e.preventDefault()
@@ -48,7 +61,7 @@ const Responses = ({ location }) => {
 
   return (
     <Course>
-      <PageHeader primary={'Unit ' + params.get('unit') + ' Responses'} />
+      <PageHeader primary={'Unit ' + params.get('unit') + ': ' + units[frontmatter.unit].frontmatter.title + ' Responses'} />
       <Container>
         <Box
           sx={{

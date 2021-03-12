@@ -1,0 +1,2 @@
+# Redirect default Netlify subdomain to primary domain
+https://climatedu.netlify.app/* https://climatedu.org/:splat 301!
