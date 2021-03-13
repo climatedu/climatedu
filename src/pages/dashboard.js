@@ -204,8 +204,8 @@ const Dashboard = () => {
                     ref={teacherClassCode}
                   />
                   <p>
-                    Make sure your class code is not guessable so only your
-                    students can join.
+                    Make sure your class code is not guessable, so only your
+                    students should be able to join.
                   </p>
                   <Button
                     sx={{
@@ -232,6 +232,29 @@ const Dashboard = () => {
                         />
                       ))
                     : null}
+                  <h1 sx={{ mb: 3 }}>Announcements</h1>
+                  <Box>No announcements for now!</Box>
+                  <Box onSubmit={handleLeaveFeedback} as='form'>
+                    <h1 sx={{ mb: 3 }}>Give us feedback</h1>
+                    <Textarea
+                      sx={{
+                        width: ['100%'],
+                        mb: 3,
+                      }}
+                      name='feedback'
+                      id='feedback'
+                      placeholder='Feedback'
+                      required='required'
+                      ref={feedbackBox}
+                    />
+                    <Button
+                      sx={{
+                        cursor: 'pointer',
+                      }}
+                    >
+                      Send
+                    </Button>
+                  </Box>
                 </>
               )
             ) : null
