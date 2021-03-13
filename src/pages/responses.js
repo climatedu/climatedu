@@ -2,7 +2,7 @@
 import { Button, Box, jsx, Textarea, Flex } from 'theme-ui'
 import { toast } from 'react-toastify'
 import { graphql, useStaticQuery } from 'gatsby'
-import React from 'react'
+import React, { useState } from 'react'
 
 import Course from '../components/course'
 import PageHeader from '../components/pageheader'
@@ -10,12 +10,24 @@ import Container from '../components/container'
 
 import db from '../util/db'
 
-const Responses = ({ location }) => {
+import getFirebase from '../firebase'
+
+const Responses = ({ location, frontmatter }) => {
+  const firebaseApp = getFirebase()
   const params = new URLSearchParams(location.search)
   const { user, account } = db.useAuth(true)
 
   const data = useStaticQuery(graphql`
     {
+      allMarkdownRemark(
+        filter: { fileAbsolutePath: { glob: "**/course/*.md" } }
+      ) {
+        edges {
+          node {
+            ...Responses
+          }
+        }
+      }
       courseYaml {
         questions {
           unit
@@ -26,9 +38,28 @@ const Responses = ({ location }) => {
     }
   `)
 
+  const units = data.allMarkdownRemark.edges
+    .map(n => n.node)
+    .sort((a, b) => a.frontmatter.unit - b.frontmatter.unit)
+
   const questions = data.courseYaml.questions
 
   const responses = db.useResponses(params.get('student'), params.get('unit'))
+
+  const [name, setName] = useState('')
+
+  const nameGetter = async function () {
+    const name = (
+      await firebaseApp
+        .firestore()
+        .collection('accounts')
+        .doc(params.get('student'))
+        .get()
+    ).get('name')
+    setName(name)
+  }
+
+  nameGetter()
 
   const handleLeaveFeedback = async function (e, key) {
     e.preventDefault()
@@ -48,7 +79,15 @@ const Responses = ({ location }) => {
 
   return (
     <Course>
-      <PageHeader primary={'Unit ' + params.get('unit') + ' Responses'} />
+      <PageHeader
+        primary={
+          'Unit ' +
+          params.get('unit') +
+          ': ' +
+          units[params.get('unit') - 1]?.frontmatter?.title
+        }
+        secondary={name + "'s responses"}
+      />
       <Container>
         <Box
           sx={{
@@ -141,5 +180,21 @@ const Responses = ({ location }) => {
     </Course>
   )
 }
+
+export const query = graphql`
+  fragment Responses on MarkdownRemark {
+    frontmatter {
+      slug
+      title
+      background
+      scrollcolor
+      scrollcolorbottom
+      text
+      highlight
+      sections
+      unit
+    }
+  }
+`
 
 export default Responses

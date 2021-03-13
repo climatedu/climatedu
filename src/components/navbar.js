@@ -39,8 +39,6 @@ const Navbar = ({ navbarOpen, setNavbarOpen }) => {
     }
   `)
 
-  console.log(links)
-
   const loginPath = useMatch('/login/')
   const registerPath = useMatch('/register/')
 
