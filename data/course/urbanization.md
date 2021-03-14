@@ -76,7 +76,7 @@ Everyone has a general idea of what smog is - usually a yellowish dense fog or h
 
 <textarea data-unit="7" data-key="5" id="7.5" placeholder="Enter your response here." onblur="updateResponse(this)" oninput="editedResponse(this)"></textarea>
 
-Remember the story in the “What can we do?” section about Uruk and Anuradhapura? As a quick refresher, Uruk’s farmers chopped down their trees to make space for more crops and infrastructure. But without trees to filter their water supply, Uruk’s irrigation became contaminated and rendered the soil way too salty to grow agriculture. Contrastingly, in Anuradhapura, where trees were held sacred, their irrigation system ended up working with the surrounding forests and their population grew twofold.
+Remember the story from Unit 2 ("Why does climate change matter?") about Uruk and Anuradhapura? As a quick refresher, Uruk’s farmers chopped down their trees to make space for more crops and infrastructure. But without trees to filter their water supply, Uruk’s irrigation became contaminated and rendered the soil way too salty to grow agriculture. Contrastingly, in Anuradhapura, where trees were held sacred, their irrigation system ended up working with the surrounding forests and their population grew twofold.
 
 This historical example shows us just how important trees are, especially as the most natural solution for smog and urban hotspots. Watch this video to learn the ways in which trees offer a better quality of life.
 
@@ -242,7 +242,7 @@ You’d think that sending an email or doing a quick Google search doesn’t hav
 
 Infrastructure like bridges, highways, and airports are impressive and have revolutionized the way we live and travel. Water management systems in particular, like city sewage and stormwater runoff networks, are responsible for giving us clean water and preventing environmental contamination. These systems are essential to a healthy lifestyle and environment, but are chronically overused and underfunded. Especially as extreme weather events and climate change related disasters occur more often, untreated stormwater runoff with toxins and trash is increasingly entering our water supply (sources like lakes and reservoirs that feed into nearby towns). In fact, 10 trillion gallons of untreated stormwater runoff, and sometimes literal raw sewage, are estimated to pollute our drinking water and environment every year.
 
-In the water cycle,** evapotranspiration** is the process of transferring water from plants to the atmosphere through evaporation and transpiration. **Infiltration** is the process by which water is soaked into the soil.
+In the water cycle, **evapotranspiration** is the process of transferring water from plants to the atmosphere through evaporation and transpiration. **Infiltration** is the process by which water is soaked into the soil.
 
 Check out this simulation of stormwater runoff based on the land type. Adjust the precipitation levels and toggle among the Developed-High, Barren Land, and Forest options, looking at the numbers for evapotranspiration and infiltration.
 

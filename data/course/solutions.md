@@ -47,7 +47,7 @@ Project Drawdown is a nonprofit organization whose primary goal is to get us to 
 
 Next, explore Project Drawdown's solutions by visiting their website.
 
-- [https://drawdown.org/solutions/table-of-solutions](https://drawdown.org/solutions/table-of-solutions)
+- [Table of Solutions](https://drawdown.org/solutions/table-of-solutions), Project Drawdown
 
 If you want to go above and beyond, we encourage you to read the full book from Project Drawdown, _Drawdown: The Most Comprehensive Plan Ever Proposed to Reverse Global Warming_, and let us know what you think.
 
@@ -85,7 +85,7 @@ In addition to carbon capture, we can use hempcrete in our buildings, hemp fiber
 
 Technology obviously has done a lot of harm to our planet, but people are now working on using it to help save the planet and counter climate change! Many engineers and scientists have been researching and inventing new ways to help.
 
-**Carbon capture and storage: **One way people have been trying to undo climate change is taking the carbon directly out of the atmosphere and storing it somewhere else (such as the ground). This general umbrella of innovations falls under carbon capture and storage (CCS). Read the following article and watch the video at the end.
+**Carbon capture and storage:** One way people have been trying to undo climate change is taking the carbon directly out of the atmosphere and storing it somewhere else (such as the ground). This general umbrella of innovations falls under carbon capture and storage (CCS). Read the following article and watch the video at the end.
 
 - [What is CCUS?](https://www.ccsassociation.org/discover-ccus/explore-ccus/), CCS Association webpage
 
@@ -96,8 +96,6 @@ Technology obviously has done a lot of harm to our planet, but people are now wo
 **Q: There are many different ways to capture carbon. What do they all do chemically that is the same? What are the three methods of doing this and how do they differ? What do you think are the different advantages of each?**
 
 <textarea data-unit="8" data-key="4" id="8.4" placeholder="Enter your response here." onblur="updateResponse(this)" oninput="editedResponse(this)"></textarea>
-
-\*\* \*\*
 
 Another cool way people have been trying to store carbon more efficiently is through plants. Read this next article to find out more.
 
@@ -286,7 +284,7 @@ That's it! Even though you have important information to spread, the first step 
 
 <textarea data-unit="8" data-key="19" id="8.19" placeholder="Enter your response here." onblur="updateResponse(this)" oninput="editedResponse(this)"></textarea>
 
-Curious about more tactics that help you talk about climate change? Professor Jes Thompson from Northern Michigan University outlines the top five \_worst \_offenders when it comes to talking about climate change:
+Curious about more tactics that help you talk about climate change? Professor Jes Thompson from Northern Michigan University outlines the top five _worst_ offenders when it comes to talking about climate change:
 
 ![5 Worst Offenders in Climate Communication](./images/8-offenders.png)
 
@@ -337,7 +335,8 @@ Showing passion and generating awareness can take form in infinitely many ways, 
 Youth climate activists are spearheading the movement, leading organizations like [Sunrise Movement](https://www.sunrisemovement.org/), [Fridays for Future](https://fridaysforfuture.org/), [Extinction Rebellion](https://rebellion.global/), and [Zero Hour](http://thisiszerohour.org/). They're specifically dedicated to showing the world just how much the climate crisis matters. So, what if you want to be a climate activist? How do you go about it? These next guides on why and how you should be an activist are optional, but very useful if you're curious.
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Ie9cACQnqew" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-*   [6 tips for becoming a youth activist (as told by a youth activist)](https://grist.org/justice/6-tips-for-becoming-a-youth-activist-jamie-margolin/), Grist article
+
+- [6 tips for becoming a youth activist (as told by a youth activist)](https://grist.org/justice/6-tips-for-becoming-a-youth-activist-jamie-margolin/), Grist article
 
 As Luisa Neubauer mentions, each one of us should seek to be an "environmental activist" in our own way, whether through organizing mass actions, pressuring politicians, simply spreading the word in daily conversations with family and friends, or another avenue altogether.
 

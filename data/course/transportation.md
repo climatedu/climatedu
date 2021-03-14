@@ -31,7 +31,7 @@ Right now in the United States, 28% of carbon emissions come from transportation
 
 ![2018 U.S. Transportation Sector GHG Emissions by Source](./images/6-transpowheel.png)
 
-Next, let's analyze a few graphics from this [blog post](https://www.wri.org/blog/2019/10/everything-you-need-know-about-fastest-growing-source-global-emissions-transport) from the World Resources Institute:
+Next, let's analyze a few graphics from this [blog post](https://www.wri.org/blog/2019/10/everything-you-need-know-about-fastest-growing-source-global-emissions-transport) from the World Resources Institute. The first graphic charts global emissions by source:
 
 ![Chart of emissions by source](./images/6-emissions.png)
 
@@ -39,11 +39,15 @@ Next, let's analyze a few graphics from this [blog post](https://www.wri.org/blo
 
 <textarea data-unit="6" data-key="1" id="6.1" placeholder="Enter your response here." onblur="updateResponse(this)" oninput="editedResponse(this)"></textarea>
 
+This next graphic comparatively maps emissions by country:
+
 ![Map of emissions by country](./images/6-countries.png)
 
 **Q: Take a look at three of the countries you see in the graphic. Research what factors (like agriculture, manufacturing, or others) contribute to the emissions from those three countries.**
 
 <textarea data-unit="6" data-key="2" id="6.2" placeholder="Enter your response here." onblur="updateResponse(this)" oninput="editedResponse(this)"></textarea>
+
+This final graphic shows countries' comparative emissions, this time organized by income level:
 
 ![Countries organized by income level](./images/6-income.png)
 
@@ -67,8 +71,8 @@ We can reduce our carbon emissions from transportation in a number of ways—one
 
 Take a look at this article to learn more about the relationship between climate change and transportation, and read the second article to learn more about the benefits of public transportation.
 
-- [Climate Change and Public Transportation](http://bic.asn.au/information-for-moving-people/climate-change-and-public-transport)
-- [Why is public transportation good for the environment?](https://www.nationalexpresstransit.com/blog/why-is-public-transportation-good-for-the-environment/)
+- [Climate Change and Public Transportation](http://bic.asn.au/information-for-moving-people/climate-change-and-public-transport), Australian Public Transport Industrial Association
+- [Why is public transportation good for the environment?](https://www.nationalexpresstransit.com/blog/why-is-public-transportation-good-for-the-environment/), National Express Transit
 
 In fact, we could get rid of our carbon emissions from transportation altogether. One solution that could get us there is the zero-carbon grid. The zero-carbon grid combines onshore wind, offshore wind, solar, geothermal, biomass, nuclear, hydro and optimizes them to run everything, including our vehicles. Watch this video to learn about how the zero-carbon grid works and how it can help us.
 
@@ -118,19 +122,15 @@ Obviously, this is not actually going to happen. But…
 
 <textarea data-unit="6" data-key="9" id="6.9" placeholder="Enter your response here." onblur="updateResponse(this)" oninput="editedResponse(this)"></textarea>
 
-<span style="text-decoration:underline;">Biking</span>
+During the Covid-19 Pandemic, there has been an immense surge of bikers. This is amazing, since bikes are a carbon-free transportation method. However, this change revealed how our cities and towns aren’t prepared for a huge increase in bikers. Watch this next video to learn about how the U.S. can become more bike friendly.
 
-During the Covid-19 Pandemic, there has been an immense surge of bikers. This is awesome since bikes are a carbon-free transportation method. However, this change revealed how our cities and towns aren’t prepared for a huge increase in bikers.
-
-Watch this video to see how the U.S. can become more bike friendly: [https://www.youtube.com/watch?v=KclFJVZJdRI](https://www.youtube.com/watch?v=KclFJVZJdRI)
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/KclFJVZJdRI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 **Q: How safe do you feel biking? If you don’t bike around as your main mode of transportation, what deters you from doing so? What are some solutions you think your city or town can make to make it more bike friendly?**
 
 <textarea data-unit="6" data-key="10" id="6.10" placeholder="Enter your response here." onblur="updateResponse(this)" oninput="editedResponse(this)"></textarea>
 
-<span style="text-decoration:underline;">EVs</span>
-
-Some of you may have already heard of Electric-Vehicle (EV) batteries. EV batteries power the electric motors of Battery Electric Vehicles (BEVs) and Hybrid Electric Vehicles (HEVs) and are the accepted replacement for the internal combustion engine (ICE) vehicles — vehicles that use gasoline or diesel. To learn more about these different types of electric vehicles, take a look at the following guide from EVgo.
+Some of you may have already heard of **Electric-Vehicle (EV)** batteries. EV batteries power the electric motors of Battery Electric Vehicles (BEVs) and Hybrid Electric Vehicles (HEVs) and are the accepted replacement for the internal combustion engine (ICE) vehicles — vehicles that use gasoline or diesel. To learn more about these different types of electric vehicles, take a look at the following guide from EVgo.
 
 - [Types of Electric Vehicles](https://www.evgo.com/why-evs/types-of-electric-vehicles/), EVgo article
 
@@ -138,9 +138,7 @@ The battery system is one of the most important parts of an EV. EV batteries are
 
 More and more people are buying and using EVs to replace their ICE vehicles.
 
-<p id="gdcalert6" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image6.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert7">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-![alt_text](images/image6.png "image_tooltip")
-Caption: Annual global vehicle sales. (Source: BloombergNEF)
+![Annual global vehicle sales](./images/6-vehicles.png)
 
 Let's take a look at more data on EVs in 2020 from Bloomberg NEF.
 
