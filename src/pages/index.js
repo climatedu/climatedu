@@ -1,6 +1,16 @@
 /** @jsx jsx */
 import { graphql, navigate } from 'gatsby'
-import { Box, Button, Flex, Grid, Heading, Text, jsx } from 'theme-ui'
+import {
+  Box,
+  Button,
+  Flex,
+  Grid,
+  Heading,
+  Text,
+  jsx,
+  Embed,
+  AspectRatio,
+} from 'theme-ui'
 
 import Glider from 'react-glider'
 import 'glider-js/glider.min.css'
@@ -106,6 +116,7 @@ const Home = ({ data }) => {
             bg: 'background',
             borderRadius: 30,
             p: 4,
+            mb: 4,
           }}
         >
           {data.configYaml.facts.map(({ icon, title, text }, i) => {
@@ -136,6 +147,20 @@ const Home = ({ data }) => {
             )
           })}
         </Grid>
+        <AspectRatio
+          ratio={16 / 9}
+          sx={{
+            p: [0, 0, 4],
+          }}
+        >
+          <Embed
+            src='https://www.youtube.com/embed/fy3QxiL3WzU?rel=0&amp;vq=hd1080'
+            sx={{
+              borderRadius: [15, 20, 25],
+              objectFit: 'cover',
+            }}
+          />
+        </AspectRatio>
         <Section header='Our Course'>
           <Glider
             draggable
