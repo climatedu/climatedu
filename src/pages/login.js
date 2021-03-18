@@ -118,6 +118,16 @@ const Login = ({ data }) => {
           </Flex>
           <Box sx={{ mb: 3 }}>
             <GatsbyLink
+              to='/resetpassword/'
+              sx={{
+                color: 'primary',
+              }}
+            >
+              Forgot password?
+            </GatsbyLink>
+          </Box>
+          <Box sx={{ mb: 3 }}>
+            <GatsbyLink
               to='/register/'
               sx={{
                 color: 'primary',
