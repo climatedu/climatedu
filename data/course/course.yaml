@@ -30,9 +30,23 @@ sections:
   - location: '1.6'
     doodles:
       - file: ./doodles/sandwich.svg
+      - file: ./doodles/sandwich.svg
+        right: true
+        rotation: 180
+        scale: 1.5
   - location: '1.7'
     doodles:
       - file: ./doodles/satellite.svg
+      - file: ./doodles/earth.svg
+      - file: ./doodles/sun.svg
+      - file: ./doodles/co2.svg
+        scale: 1.5
+        right: true
+      - file: ./doodles/co2.svg
+        left: true
+      - file: ./doodles/co2.svg
+        right: true
+      - file: ./doodles/mantis.svg
       - file: ./doodles/earth.svg
   - location: '2.1'
     doodles:
@@ -44,16 +58,21 @@ sections:
     doodles:
       - file: ./doodles/lightning.svg
         right: true
+      - file: ./doodles/volcano.svg
   - location: '2.3'
     doodles:
+      - file: ./doodles/co2.svg
       - file: ./doodles/lightning.svg
   - location: '2.4'
     doodles:
       - file: ./doodles/lightning.svg
+      - file: ./doodles/co2.svg
         right: true
   - location: '2.5'
     doodles:
+      - file: ./doodles/co2.svg
       - file: ./doodles/lightning.svg
+      - file: ./doodles/volcano.svg
   - location: '2.6'
     doodles:
       - file: ./doodles/lightning.svg
@@ -61,29 +80,48 @@ sections:
   - location: '2.7'
     doodles:
       - file: ./doodles/lightning.svg
+      - file: ./doodles/co2.svg
   - location: '2.8'
     doodles:
       - file: ./doodles/lightning.svg
         right: true
+      - file: ./doodles/volcano.svg
   - location: '2.9'
     doodles:
+      - file: ./doodles/co2.svg
       - file: ./doodles/lightning.svg
   - location: '3.1'
     doodles:
-      - file: ./doodles/dinofossil.svg
-        rotation: -15
+      - file: ./doodles/light5.svg
+        left: true
+        offsetY: -40em
+        scale: 3
+      - file: ./doodles/green-light.PNG
+        right: true
+        offsetY: -20em
+        scale: 2
+      - file: ./doodles/Biomass.PNG
+        left: true
+        scale: 2
         offsetY: -10em
+        offsetX: -10em
+      - file: ./doodles/dinofossil.svg
+      - file: ./doodles/atom.PNG
+      - file: ./doodles/fishfossil.svg
       - file: ./doodles/nuclear.png
         right: true
         scale: 2
-        offsetY: -45em
+        offsetY: -30em
       - file: ./doodles/hydro.png
-        scale: 4
-        offsetX: -10em
+        scale: 2
+        offsetX: -5em
+        offsetY: 19em
+        left: true
       - file: ./doodles/geothermal.png
         scale: 4
         offsetX: -7em
         offsetY: 30em
+        left: true
       - file: ./doodles/solar.png
         offsetY: -18em
         scale: 2
@@ -99,12 +137,15 @@ sections:
       - file: ./doodles/corn1.png
         scale: 1.5
         right: true
+      - file: ./doodles/light2.svg
+        scale: 3
+        rotation: 15
+      - file: ./doodles/wind1.png
   - location: '3.4'
     doodles:
       - file: ./doodles/light3.svg
         scale: 3
         right: false
-        offsetY: -15em
       - file: ./doodles/light6.svg
         scale: 4
         right: true
@@ -116,11 +157,12 @@ sections:
     doodles:
       - file: ./doodles/chips1.svg
         rotation: -15
-  - location: '4.1'
-    doodles:
       - file: ./doodles/can1.svg
         right: true
         rotation: 10
+      - file: ./doodles/toothbrush2.svg
+        scale: 2
+        rotation: 30
   - location: '4.2'
     doodles:
       - file: ./doodles/sixpack2.svg
@@ -135,10 +177,20 @@ sections:
     doodles:
       - file: ./doodles/bottle2.svg
         right: true
+      - file: ./doodles/straw1.svg
+        scale: 2
+      - file: ./doodles/toothbrush1.svg
+        scale: 2
+        rotation: -30
+      - file: ./doodles/straws.svg
+        scale: 2
+        right: true
   - location: '4.4'
     doodles:
       - file: ./doodles/apple.svg
         rotation: -20
+      - file: ./doodles/banana.svg
+        scale: 2
       - file: ./doodles/tote.svg
         right: true
         scale: 2
@@ -165,6 +217,10 @@ sections:
       - file: ./doodles/hydroflask.svg
         right: true
         rotation: 1
+  - location: '4.7'
+    doodles:
+      - file: ./doodles/sixpack1.svg
+        scale: 2
   - location: '6.1'
     doodles:
       - file: ./doodles/truck.png
@@ -200,31 +256,114 @@ sections:
         offsetX: '10em'
   - location: '7.1'
     doodles:
+      - file: ./doodles/balcony-2-v3.svg
+        scale: 3
+        offsetY: -100em
+        offsetX: -5em
+        left: true
+      - file: ./doodles/balcony-2-v2.svg
+        scale: 3
+        offsetY: -70em
+        offsetX: 5em
+        right: true
       - file: ./doodles/balcony1_v2.svg
-        scale: 2
-        offsetY: '-4em'
+        scale: 3
+        offsetX: -5em
+        left: true
+  - location: '7.2'
+    doodles:
+      - file: ./doodles/balcony-2.svg
+        scale: 3
+        offsetX: 5em
+        right: true
+      - file: ./doodles/balcony-3-v2.svg
+        scale: 3
+        offsetX: -5em
+        left: true
+      - file: ./doodles/balcony-1-v3.svg
+        scale: 3
+        offsetX: 5em
+        right: true
   - location: '7.3'
     doodles:
       - file: ./doodles/smokeblob.svg
         scale: 5
         offsetX: '2em'
         right: true
-  - location: '7.4'
-    doodles:
-      - file: ./doodles/balcony3_v3.svg
-        scale: 2.5
-        offsetX: '-5em'
-  - location: '7.4'
-    doodles:
-      - file: ./doodles/plants.svg
-        scale: 2
+      - file: ./doodles/balcony-1.svg
+        scale: 3
+        offsetX: -5em
+        left: true
+      - file: ./doodles/balcony-3.svg
+        scale: 3
+        offsetX: 5em
         right: true
+      - file: ./doodles/balcony-2-v3.svg
+        scale: 3
+        offsetX: -5em
+        left: true
+      - file: ./doodles/balcony-2-v2.svg
+        scale: 3
+        offsetX: 5em
+        right: true
+      - file: ./doodles/balcony1_v2.svg
+        scale: 3
+        offsetX: -5em
+        left: true
+      - file: ./doodles/flower-basket.svg
+        scale: 3
+        offsetY: -100em
+        offsetX: -5em
+        left: true
+      - file: ./doodles/balcony-1-v3.svg
+        scale: 3
+        offsetX: 5em
+        right: true
+      - file: ./doodles/balcony-3-v2.svg
+        scale: 3
+        offsetX: -5em
+        left: true
+  - location: '7.4'
+    doodles:
+      - file: ./doodles/balcony-1.svg
+        scale: 3
+        offsetX: -5em
+        left: true
+      - file: ./doodles/balcony-3.svg
+        scale: 3
+        offsetX: 5em
+        right: true
+      - file: ./doodles/plants.svg
+        scale: 2.5
+        right: true
+  - location: '8.2'
+    doodles:
+      - file: ./doodles/co2.svg
+        scale: 1.5
+        right: true
+      - file: ./doodles/co2.svg
+        scale: 2
+        left: true
+  - location: '8.3'
+    doodles:
+      - file: ./doodles/mantis.svg
+      - file: ./doodles/earth.svg
+      - file: ./doodles/plants.svg
+        scale: 3
   - location: '8.5'
     doodles:
       - file: ./doodles/papers_squiggles.svg
         scale: 2
         offsetX: '7em'
         offsetY: '-5em'
+        right: true
+      - file: ./doodles/papers_squiggles.svg
+        scale: 2.5
+        offsetX: '-7em'
+        left: true
+      - file: ./doodles/papers_squiggles.svg
+        scale: 2
+        offsetX: '7em'
         right: true
   - location: '8.7'
     doodles:
@@ -241,6 +380,10 @@ sections:
         scale: 3
         offsetX: '-9em'
         offsetY: '-60em'
+  - location: '8.8'
+    doodles:
+      - file: ./doodles/earthsprout.png
+        scale: 2
 questions:
   - unit: 1
     key: 1

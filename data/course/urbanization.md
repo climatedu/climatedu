@@ -226,7 +226,7 @@ Ecotourists get the best of both worlds - they can experience the thrill of trav
 
 #### Quaternary (information services)
 
-Last but certainly not least, the quaternary sector includes all industries involving knowledge-based services. These include all kinds of media, research, blogging, designing, and more. In this digital age, the internet is so efficient that we don’t visualize the effect that our virtual activity has on the environment. But in reality, the “cloud” that we store data in impacts the environment more drastically than we think. The biggest effect: energy Watch this video to get a grasp on the amount of energy that the Internet uses.
+Last but certainly not least, the quaternary sector includes all industries involving knowledge-based services. These include all kinds of media, research, blogging, designing, and more. In this digital age, the internet is so efficient that we don’t visualize the effect that our virtual activity has on the environment. But in reality, the “cloud” that we store data in impacts the environment more drastically than we think. The biggest effect: energy. Watch this video to get a grasp on the amount of energy that the Internet uses.
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/iZ499mdRgLU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
