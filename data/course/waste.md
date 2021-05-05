@@ -74,7 +74,7 @@ Visit this overview of our global plastic pollution crisis from National Geograp
 
 <textarea data-unit="4" data-key="4" id="4.4" placeholder="Enter your response here." onblur="updateResponse(this)" oninput="editedResponse(this)"></textarea>
 
-You may have noticed that many of our sources have mentioned the toxins microplastics that make their way up the food chain and onto our dinner plates. Take a look at this essay from the New York Times, written by one of our writers (Vivian Li)!
+You may have noticed that many of our sources have mentioned the toxic microplastics that make their way up the food chain and onto our dinner plates. Take a look at this essay from the New York Times, written by one of our writers (Vivian Li)!
 
 - [An Unexpected Dinner Guest](https://www.nytimes.com/2020/05/07/learning/an-unexpected-dinner-guest-marine-plastic-pollution-hides-a-neurological-toxin-in-our-food.html), NYT article
 

@@ -1,0 +1,17 @@
+- name: Kseniya Voranava
+  pos: 10
+  avatar: ./avatars/kseniya.jpg
+  school: Montgomery Blair H.S.
+  team: Social Media
+
+- name: Achraf Azzaoui
+  pos: 13
+  avatar: ./avatars/achraf.jpg
+  school: Thomas Jefferson H.S. for Science and Technology
+  team: Outreach
+
+- name: Anna O'Sullivan
+  pos: 21
+  avatar: ./avatars/anna.jpg
+  school: Potomac School
+  team: Social Media
