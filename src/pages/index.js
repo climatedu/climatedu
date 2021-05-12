@@ -51,7 +51,6 @@ const Section = ({ header, children, ...props }) => {
 }
 
 const Home = ({ data }) => {
-  console.log(data)
   const onRegister = () => {
     navigate('/register/')
   }

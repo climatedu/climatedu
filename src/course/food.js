@@ -6,7 +6,6 @@ import Image from 'gatsby-image'
 import Unit from '../components/unit'
 
 const Food = ({ data }) => {
-  console.log(data)
   return (
     <Unit {...data.markdownRemark}>
       <Box sx={{ mb: '20em' }}>

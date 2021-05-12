@@ -83,9 +83,6 @@ const Unit = ({ html, frontmatter, children }) => {
   const units = data.allMarkdownRemark.edges
     .map(n => n.node)
     .sort((a, b) => a.frontmatter.unit - b.frontmatter.unit)
-  console.log(units)
-
-  console.log('frontmatter \n' + frontmatter)
 
   const [answeredProgress, setAnsweredProgress] = React.useState(0)
   const [navOpen, setNavOpen] = useState(false)

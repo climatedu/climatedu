@@ -13,7 +13,6 @@ const calcColumnStart = pos =>
     .map(({ n, i }) => 2 * (i % n) + (i >= n ? 2 : 1))
 
 const about = ({ data }) => {
-  console.log(data)
   return (
     <Layout>
       <Box>

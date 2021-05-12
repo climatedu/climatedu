@@ -74,9 +74,6 @@ const Register = ({ data }) => {
         displayName: name,
       })
 
-      console.log(name)
-      console.log(userNew.uid)
-
       await firebaseApp
         .firestore()
         .collection('accounts')
