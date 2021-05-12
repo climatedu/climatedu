@@ -2,7 +2,7 @@
 import { Button, Box, jsx, Textarea, Flex } from 'theme-ui'
 import { toast } from 'react-toastify'
 import { graphql, useStaticQuery } from 'gatsby'
-import React, { useState } from 'react'
+import React, { useState, useMemo, useEffect } from 'react'
 
 import Course from '../components/course'
 import PageHeader from '../components/pageheader'
@@ -14,7 +14,9 @@ import getFirebase from '../firebase'
 
 const Responses = ({ location, frontmatter }) => {
   const firebaseApp = getFirebase()
-  const params = new URLSearchParams(location.search)
+  const params = useMemo(() => new URLSearchParams(location.search), [
+    location.search,
+  ])
   const { user, account } = db.useAuth(true)
 
   const data = useStaticQuery(graphql`
@@ -48,18 +50,19 @@ const Responses = ({ location, frontmatter }) => {
 
   const [name, setName] = useState('')
 
-  const nameGetter = async function () {
-    const name = (
-      await firebaseApp
-        .firestore()
-        .collection('accounts')
-        .doc(params.get('student'))
-        .get()
-    ).get('name')
-    setName(name)
-  }
-
-  nameGetter()
+  useEffect(() => {
+    if (firebaseApp == null) return
+    ;(async () => {
+      const name = (
+        await firebaseApp
+          .firestore()
+          .collection('accounts')
+          .doc(params.get('student'))
+          .get()
+      ).get('name')
+      setName(name)
+    })()
+  }, [firebaseApp, params])
 
   const handleLeaveFeedback = async function (e, key) {
     e.preventDefault()
