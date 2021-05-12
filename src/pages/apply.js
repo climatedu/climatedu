@@ -5,8 +5,9 @@ export default function Application() {
   return (
     <>
       <Helmet
-        sx={{
-          cssText: `
+        style={[
+          {
+            cssText: `
                     html { 
                         margin: 0; 
                         height: 100%; 
@@ -21,8 +22,13 @@ export default function Application() {
                         border:0; 
                     }
                 `,
-        }}
+          },
+        ]}
       >
+        <meta
+          name='viewport'
+          content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'
+        />
         <title>climatedu application</title>
       </Helmet>
       <main>
@@ -33,6 +39,10 @@ export default function Application() {
           frameBorder='0'
           allow='camera; microphone; autoplay; encrypted-media;'
           src='https://form.typeform.com/to/nksESU1J?typeform-medium=embed-snippet'
+        />
+        <script
+          type='text/javascript'
+          src='https://embed.typeform.com/embed.js'
         />
       </main>
     </>
