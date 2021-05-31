@@ -204,6 +204,7 @@ export default {
       '& + svg': {
         transform: 'scale(1.5)',
         ml: theme => `${-theme.space[4]}px`,
+        mt: -4,
       },
     },
     textarea: {
