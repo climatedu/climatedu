@@ -241,10 +241,11 @@ const CampRegister = ({ data }) => {
 
           <Label>Ethnicity</Label>
 
-          <Box sx={{ mb: 4 }}>
+          <Box sx={{ mb: 4 }} sx={{ position: 'relative' }}>
             <Label>
               <Checkbox onChange={() => { console.log(1) }} /> Asian
             </Label>
+
             <Label>
               <Checkbox onChange={() => { console.log(1) }} /> Pacific Islander
             </Label>
@@ -342,7 +343,7 @@ const CampRegister = ({ data }) => {
           >
             Parent Permission and Consent
           </Heading>
-          <Box sx={{ mb: 3 }}>
+          <Box sx={{ mb: 3, position: 'relative' }}>
             <Label htmlFor='name' sx={{ mb: 2 }}>
               I grant permission to climatedu, to use my child's image or work for use in climatedu publications, for educational, promotional, documentation, and other related purposes in any media. I hereby waive any right to inspect or approve the finished photographs or electronic matter that may be used in conjunction with them now or in the future, whether that use is known to me or unknown, and I waive any right to royalties or other compensation arising from or related to the use of the image.
             </Label>
