@@ -1,6 +1,17 @@
 /** @jsx jsx */
 import { useCallback, useState } from 'react'
-import { Button, Box, Input, Flex, jsx, Label, Heading, Select } from 'theme-ui'
+import {
+  Button,
+  Box,
+  Input,
+  Flex,
+  jsx,
+  Label,
+  Heading,
+  Select,
+  Checkbox,
+  Radio,
+} from 'theme-ui'
 import { navigate, Link as GatsbyLink } from 'gatsby'
 import { toast } from 'react-toastify'
 
@@ -15,7 +26,7 @@ import firebase from 'firebase/app'
 import useAuth from '../../util/auth'
 import getFirebase from '../../firebase'
 
-const Register = ({ data }) => {
+const CampRegister = ({ data }) => {
   const user = useAuth()
 
   if (user) {
@@ -65,30 +76,7 @@ const Register = ({ data }) => {
       return
     }
 
-    try {
-      await firebaseApp.auth().createUserWithEmailAndPassword(email, password)
-
-      const userNew = firebase.auth().currentUser
-
-      await userNew.updateProfile({
-        displayName: name,
-      })
-
-      await firebaseApp
-        .firestore()
-        .collection('accounts')
-        .doc(userNew.uid)
-        .set({
-          type: type,
-          name: name,
-        })
-
-      toast.success('Signed up!')
-
-      navigate('/')
-    } catch (e) {
-      toast.error(e.message)
-    }
+    toast.error('not implemented yet :)')
   }
 
   return (
@@ -227,6 +215,7 @@ const Register = ({ data }) => {
                 value={passwordConfirm}
                 onChange={handleSetPasswordConfirm}
                 sx={{ mb: 4 }}
+                defaultvalue={-1}
               >
                 <option value='Kindergarten'>Kindergarten</option>
                 <option value='1'>1</option>
@@ -243,13 +232,148 @@ const Register = ({ data }) => {
                 <option value='12'>12</option>
                 <option value='Educator'>Educator</option>
                 <option value='Other'>Other</option>
-                <option value='' selected disabled hidden>
+                <option value='-1' disabled hidden>
                   Select here
                 </option>
               </Select>
             </Box>
           </Flex>
 
+          <Label>Ethnicity</Label>
+
+          <Box sx={{ mb: 4 }}>
+            <Label>
+              <Checkbox onChange={() => { console.log(1) }} /> Asian
+            </Label>
+            <Label>
+              <Checkbox onChange={() => { console.log(1) }} /> Pacific Islander
+            </Label>
+
+            <Label>
+              <Checkbox onChange={() => { console.log(1) }} /> Hispanic / Latino
+            </Label>
+
+            <Label>
+              <Checkbox onChange={() => { console.log(1) }} /> White
+            </Label>
+
+            <Label>
+              <Checkbox onChange={() => { console.log(1) }} />American Indian / Native American
+            </Label>
+
+            <Label>
+              <Checkbox onChange={() => { console.log(1) }} /> Black / African-American
+            </Label>
+
+            <Label>
+              <Checkbox onChange={() => { console.log(1) }} /> Multi-Racial
+            </Label>
+
+            <Label>
+              <Checkbox onChange={() => { console.log(1) }} /> Prefer not to answer
+            </Label>
+
+            <Label>
+              <Checkbox onChange={() => { console.log(1) }} /> Other
+            </Label>
+          </Box>
+
+          <Heading
+            as='h1'
+            sx={{
+              fontSize: 5,
+              mb: 3,
+              color: 'text',
+            }}
+          >
+            Parent Information
+          </Heading>
+
+          <Flex
+            sx={{
+              justifyContent: 'flex-start',
+              mb: 3,
+            }}
+          >
+            <Box sx={{ mr: 4 }}>
+              <Label htmlFor='name'>Parent / Legal Guardian Name</Label>
+              <Input
+                aria-label='firstname'
+                name='firstname'
+                value={name}
+                onChange={handleSetName}
+                sx={{ mb: 3 }}
+              />
+            </Box>
+
+            <Box sx={{ mr: 4 }}>
+              <Label htmlFor='name'>Parent / Legal Guardian Email</Label>
+              <Input
+                aria-label='lastname'
+                name='lastname'
+                value={name}
+                onChange={handleSetName}
+                sx={{ mb: 3 }}
+              />
+            </Box>
+
+            <Box>
+              <Label htmlFor='passwordConfirm'>
+                Parent / Legal Guardian Cell Phone
+              </Label>
+              <Input
+                aria-label='Confirm Password'
+                name='passwordConfirm'
+                type='password'
+                value={passwordConfirm}
+                onChange={handleSetPasswordConfirm}
+                sx={{ mb: 4 }}
+              />
+            </Box>
+          </Flex>
+
+          <Heading
+            as='h1'
+            sx={{
+              fontSize: 5,
+              mb: 3,
+              color: 'text',
+            }}
+          >
+            Parent Permission and Consent
+          </Heading>
+          <Box sx={{ mb: 3 }}>
+            <Label htmlFor='name' sx={{ mb: 2 }}>
+              I grant permission to climatedu, to use my child's image or work for use in climatedu publications, for educational, promotional, documentation, and other related purposes in any media. I hereby waive any right to inspect or approve the finished photographs or electronic matter that may be used in conjunction with them now or in the future, whether that use is known to me or unknown, and I waive any right to royalties or other compensation arising from or related to the use of the image.
+            </Label>
+            <Label>
+              <Radio name='dark-mode' value='yes' />
+              YES, I give consent for climatedu to use photos, videos, and stories of my child for the purposes described above.
+            </Label>
+            <Label>
+              <Radio name='dark-mode' value='no' />
+              NO, I do not give consent for climatedu to use photos, videos, and stories of my child for the purposes described above.
+            </Label>
+          </Box>
+
+          <Box sx={{ mb: 3 }}>
+            <Label htmlFor='name' sx={{ mb: 2 }}>
+              By signing this form, I give permission for my child to enroll in climatedu's Climate Camp and participate in extracurricular activities that are part of the summer program during June 2021 through August 2021.
+            </Label>
+            <Box>
+              <Label htmlFor='passwordConfirm'>
+                Parent Electronic Signature (First and Last Name)
+              </Label>
+              <Input
+                aria-label='Confirm Password'
+                name='passwordConfirm'
+                type='password'
+                value={passwordConfirm}
+                onChange={handleSetPasswordConfirm}
+                sx={{ mb: 4 }}
+              />
+            </Box>
+          </Box>
           <Flex sx={{ width: '100%' }}>
             <Button sx={{ mb: 4, marginLeft: 'auto' }}>Let&apos;s go!</Button>
           </Flex>
@@ -259,4 +383,4 @@ const Register = ({ data }) => {
   )
 }
 
-export default Register
+export default CampRegister
