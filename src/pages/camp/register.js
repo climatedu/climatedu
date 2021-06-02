@@ -35,47 +35,32 @@ const CampRegister = ({ data }) => {
 
   const firebaseApp = getFirebase()
 
-  const [type, setType] = useState('Student')
-  const handleSetType = useCallback(e => {
-    e.preventDefault()
+  const [state, setState] = useState({})
+  const [ethnicity, setEthnicity] = useState({})
 
-    setType(e.target.value)
+  const handleInputChange = useCallback(e => {
+    const target = e.target
+    const name = target.name
+    const value = target.value
+
+    setState(o => ({
+      ...o,
+      [name]: value,
+    }))
   }, [])
 
-  const [name, setName] = useState('')
-  const handleSetName = useCallback(e => setName(e.target.value), [])
+  const handleCheckboxChange = useCallback(e => {
+    const target = e.target
+    const value = target.value
 
-  const [email, setEmail] = useState('')
-  const handleSetEmail = useCallback(e => setEmail(e.target.value), [])
-
-  const [password, setPassword] = useState('')
-  const handleSetPassword = useCallback(e => setPassword(e.target.value), [])
-
-  const [passwordConfirm, setPasswordConfirm] = useState('')
-  const handleSetPasswordConfirm = useCallback(
-    e => setPasswordConfirm(e.target.value),
-    []
-  )
+    setEthnicity(o => ({
+      ...o,
+      [value]: target.checked,
+    }))
+  }, [])
 
   const normalLogin = async e => {
     e.preventDefault()
-    if (!firebaseApp) return
-
-    if (
-      name === '' ||
-      email === '' ||
-      password === '' ||
-      passwordConfirm === ''
-    ) {
-      toast.error('One or more fields are missing.')
-      return
-    }
-
-    if (password !== passwordConfirm) {
-      toast.error('Passwords do not match.')
-      return
-    }
-
     toast.error('not implemented yet :)')
   }
 
@@ -109,35 +94,34 @@ const CampRegister = ({ data }) => {
             }}
           >
             <Box sx={{ mr: 4 }}>
-              <Label htmlFor='name'>First Name</Label>
+              <Label htmlFor='youth_firstname'>First Name</Label>
               <Input
-                aria-label='firstname'
-                name='firstname'
-                value={name}
-                onChange={handleSetName}
+                aria-label='First Name'
+                name='youth_firstname'
+                value={state.youth_firstname || ''}
+                onChange={handleInputChange}
                 sx={{ mb: 3 }}
               />
             </Box>
 
             <Box sx={{ mr: 4 }}>
-              <Label htmlFor='name'>Last Name</Label>
+              <Label htmlFor='youth_lastname'>Last Name</Label>
               <Input
-                aria-label='lastname'
-                name='lastname'
-                value={name}
-                onChange={handleSetName}
+                aria-label='Last Name'
+                name='youth_lastname'
+                value={state.youth_lastname || ''}
+                onChange={handleInputChange}
                 sx={{ mb: 3 }}
               />
             </Box>
 
             <Box>
-              <Label htmlFor='passwordConfirm'>Pronouns</Label>
+              <Label htmlFor='youth_pronouns'>Pronouns</Label>
               <Input
-                aria-label='Confirm Password'
-                name='passwordConfirm'
-                type='password'
-                value={passwordConfirm}
-                onChange={handleSetPasswordConfirm}
+                aria-label='Pronouns'
+                name='youth_pronouns'
+                value={state.youth_pronouns || ''}
+                onChange={handleInputChange}
                 sx={{ mb: 4 }}
               />
             </Box>
@@ -150,37 +134,35 @@ const CampRegister = ({ data }) => {
             }}
           >
             <Box sx={{ mr: 4 }}>
-              <Label htmlFor='email'>Phone Number</Label>
+              <Label htmlFor='youth_phone'>Phone Number</Label>
               <Input
-                aria-label='Email'
-                name='email'
-                value={email}
+                aria-label='Phone'
+                name='youth_phone'
+                value={state.youth_phone || ''}
                 type='tel'
-                onChange={handleSetEmail}
+                onChange={handleInputChange}
                 sx={{ mb: 3, width: '100%' }}
               />
             </Box>
 
             <Box>
-              <Label htmlFor='password'>Youth Email</Label>
+              <Label htmlFor='youth_email'>Youth Email</Label>
               <Input
-                aria-label='Password'
-                name='password'
-                type='password'
-                value={password}
-                onChange={handleSetPassword}
+                aria-label='Email'
+                name='youth_email'
+                value={state.youth_email || ''}
+                onChange={handleInputChange}
                 sx={{ mb: 3 }}
               />
             </Box>
           </Flex>
 
-          <Label htmlFor='passwordConfirm'>Location / Address</Label>
+          <Label htmlFor='youth_location'>Location / Address</Label>
           <Input
-            aria-label='Confirm Password'
-            name='passwordConfirm'
-            type='password'
-            value={passwordConfirm}
-            onChange={handleSetPasswordConfirm}
+            aria-label='Location / Address'
+            name='youth_location'
+            value={state.youth_location || ''}
+            onChange={handleInputChange}
             sx={{ mb: 4 }}
           />
 
@@ -191,31 +173,26 @@ const CampRegister = ({ data }) => {
             }}
           >
             <Box sx={{ width: '48%' }}>
-              <Label htmlFor='passwordConfirm'>
+              <Label htmlFor='youth_school'>
                 School (2021-2022 School Year)
               </Label>
               <Input
-                aria-label='Confirm Password'
-                name='passwordConfirm'
-                type='password'
-                value={passwordConfirm}
-                onChange={handleSetPasswordConfirm}
+                aria-label='School (2021-2022 School Year)'
+                name='youth_school'
+                value={state.youth_school || ''}
+                onChange={handleInputChange}
                 sx={{ mb: 4 }}
               />
             </Box>
 
             <Box sx={{ width: '49%' }}>
-              <Label htmlFor='passwordConfirm'>
-                Grade (2021-2022 School Year)
-              </Label>
+              <Label htmlFor='youth_grade'>Grade (2021-2022 School Year)</Label>
               <Select
-                aria-label='Confirm Password'
-                name='passwordConfirm'
-                type='password'
-                value={passwordConfirm}
-                onChange={handleSetPasswordConfirm}
+                aria-label='Grade (2021-2022 School Year)'
+                name='youth_grade'
+                value={state.youth_grade || '-1'}
+                onChange={handleInputChange}
                 sx={{ mb: 4 }}
-                defaultvalue={-1}
               >
                 <option value='Kindergarten'>Kindergarten</option>
                 <option value='1'>1</option>
@@ -238,44 +215,99 @@ const CampRegister = ({ data }) => {
               </Select>
             </Box>
           </Flex>
-
           <Label>Ethnicity</Label>
 
-          <Box sx={{ mb: 4 }} sx={{ position: 'relative' }}>
+          <Box sx={{ mb: 4, position: 'relative' }}>
             <Label>
-              <Checkbox onChange={() => { console.log(1) }} /> Asian
+              <Checkbox
+                name='youth_ethnicity'
+                value='asian'
+                onChange={handleCheckboxChange}
+                checked={ethnicity.asian || false}
+              />
+              <Label htmlFor='youth_ethnicity'>Asian</Label>
             </Label>
 
             <Label>
-              <Checkbox onChange={() => { console.log(1) }} /> Pacific Islander
+              <Checkbox
+                name='youth_ethnicity'
+                value='pacific_islander'
+                onChange={handleCheckboxChange}
+                checked={ethnicity.pacific_islander || false}
+              />
+              <Label htmlFor='youth_ethnicity'>Pacific Islander</Label>
             </Label>
 
             <Label>
-              <Checkbox onChange={() => { console.log(1) }} /> Hispanic / Latino
+              <Checkbox
+                name='youth_ethnicity'
+                value='hispanic_latino'
+                onChange={handleCheckboxChange}
+                checked={ethnicity.hispanic_latino || false}
+              />
+              <Label htmlFor='youth_ethnicity'>Hispanic / Latino</Label>
             </Label>
 
             <Label>
-              <Checkbox onChange={() => { console.log(1) }} /> White
+              <Checkbox
+                name='youth_ethnicity'
+                value='white'
+                onChange={handleCheckboxChange}
+                checked={ethnicity.white || false}
+              />
+              <Label htmlFor='youth_ethnicity'>White</Label>
             </Label>
 
             <Label>
-              <Checkbox onChange={() => { console.log(1) }} />American Indian / Native American
+              <Checkbox
+                name='youth_ethnicity'
+                value='american_indian_native_american'
+                onChange={handleCheckboxChange}
+                checked={ethnicity.american_indian_native_american || false}
+              />
+              <Label htmlFor='youth_ethnicity'>
+                American Indian / Native American
+              </Label>
             </Label>
 
             <Label>
-              <Checkbox onChange={() => { console.log(1) }} /> Black / African-American
+              <Checkbox
+                name='youth_ethnicity'
+                value='black_african_american'
+                onChange={handleCheckboxChange}
+                checked={ethnicity.black_african_american || false}
+              />
+              <Label htmlFor='youth_ethnicity'>Black / African-American</Label>
             </Label>
 
             <Label>
-              <Checkbox onChange={() => { console.log(1) }} /> Multi-Racial
+              <Checkbox
+                name='youth_ethnicity'
+                value='multi_racial'
+                onChange={handleCheckboxChange}
+                checked={ethnicity.multi_racial || false}
+              />
+              <Label htmlFor='youth_ethnicity'>Multi-Racial</Label>
             </Label>
 
             <Label>
-              <Checkbox onChange={() => { console.log(1) }} /> Prefer not to answer
+              <Checkbox
+                name='youth_ethnicity'
+                value='noanswer'
+                onChange={handleCheckboxChange}
+                checked={ethnicity.noanswer || false}
+              />
+              <Label htmlFor='youth_ethnicity'>Prefer not to answer</Label>
             </Label>
 
             <Label>
-              <Checkbox onChange={() => { console.log(1) }} /> Other
+              <Checkbox
+                name='youth_ethnicity'
+                value='other'
+                onChange={handleCheckboxChange}
+                checked={ethnicity.other || false}
+              />
+              <Label htmlFor='youth_ethnicity'>Other</Label>
             </Label>
           </Box>
 
@@ -297,23 +329,25 @@ const CampRegister = ({ data }) => {
             }}
           >
             <Box sx={{ mr: 4 }}>
-              <Label htmlFor='name'>Parent / Legal Guardian Name</Label>
+              <Label htmlFor='parent_name'>Parent / Legal Guardian Name</Label>
               <Input
-                aria-label='firstname'
-                name='firstname'
-                value={name}
-                onChange={handleSetName}
+                aria-label='Parent / Legal Guardian Name'
+                name='parent_name'
+                value={state.parent_name || ''}
+                onChange={handleInputChange}
                 sx={{ mb: 3 }}
               />
             </Box>
 
             <Box sx={{ mr: 4 }}>
-              <Label htmlFor='name'>Parent / Legal Guardian Email</Label>
+              <Label htmlFor='parent_email'>
+                Parent / Legal Guardian Email
+              </Label>
               <Input
-                aria-label='lastname'
-                name='lastname'
-                value={name}
-                onChange={handleSetName}
+                aria-label='Parent / Legal Guardian Email'
+                name='parent_email'
+                value={state.parent_email}
+                onChange={handleInputChange}
                 sx={{ mb: 3 }}
               />
             </Box>
@@ -323,11 +357,10 @@ const CampRegister = ({ data }) => {
                 Parent / Legal Guardian Cell Phone
               </Label>
               <Input
-                aria-label='Confirm Password'
-                name='passwordConfirm'
-                type='password'
-                value={passwordConfirm}
-                onChange={handleSetPasswordConfirm}
+                aria-label='Parent / Legal Guardian Cell Phone'
+                name='parent_phone'
+                value={state.parent_phone || ''}
+                onChange={handleInputChange}
                 sx={{ mb: 4 }}
               />
             </Box>
@@ -344,33 +377,52 @@ const CampRegister = ({ data }) => {
             Parent Permission and Consent
           </Heading>
           <Box sx={{ mb: 3, position: 'relative' }}>
-            <Label htmlFor='name' sx={{ mb: 2 }}>
-              I grant permission to climatedu, to use my child's image or work for use in climatedu publications, for educational, promotional, documentation, and other related purposes in any media. I hereby waive any right to inspect or approve the finished photographs or electronic matter that may be used in conjunction with them now or in the future, whether that use is known to me or unknown, and I waive any right to royalties or other compensation arising from or related to the use of the image.
+            <Box sx={{ mb: 2 }}>
+              I grant permission to climatedu, to use my child&apos;s image or
+              work for use in climatedu publications, for educational,
+              promotional, documentation, and other related purposes in any
+              media. I hereby waive any right to inspect or approve the finished
+              photographs or electronic matter that may be used in conjunction
+              with them now or in the future, whether that use is known to me or
+              unknown, and I waive any right to royalties or other compensation
+              arising from or related to the use of the image.
+            </Box>
+            <Label>
+              <Radio
+                name='parent_consent'
+                value='yes'
+                onChange={handleInputChange}
+              />
+              YES, I give consent for climatedu to use photos, videos, and
+              stories of my child for the purposes described above.
             </Label>
             <Label>
-              <Radio name='dark-mode' value='yes' />
-              YES, I give consent for climatedu to use photos, videos, and stories of my child for the purposes described above.
-            </Label>
-            <Label>
-              <Radio name='dark-mode' value='no' />
-              NO, I do not give consent for climatedu to use photos, videos, and stories of my child for the purposes described above.
+              <Radio
+                name='parent_consent'
+                value='no'
+                onChange={handleInputChange}
+              />
+              NO, I do not give consent for climatedu to use photos, videos, and
+              stories of my child for the purposes described above.
             </Label>
           </Box>
 
           <Box sx={{ mb: 3 }}>
-            <Label htmlFor='name' sx={{ mb: 2 }}>
-              By signing this form, I give permission for my child to enroll in climatedu's Climate Camp and participate in extracurricular activities that are part of the summer program during June 2021 through August 2021.
-            </Label>
+            <Box sx={{ mb: 2 }}>
+              By signing this form, I give permission for my child to enroll in
+              climatedu&apos;sClimate Camp and participate in extracurricular
+              activities that are part of the summer program during June 2021
+              through August 2021.
+            </Box>
             <Box>
-              <Label htmlFor='passwordConfirm'>
+              <Label htmlFor='parent_signature'>
                 Parent Electronic Signature (First and Last Name)
               </Label>
               <Input
-                aria-label='Confirm Password'
-                name='passwordConfirm'
-                type='password'
-                value={passwordConfirm}
-                onChange={handleSetPasswordConfirm}
+                aria-label='Parent Electronic Signature (First and Last Name)'
+                name='parent_signature'
+                value={state.parent_signature || ''}
+                onChange={handleInputChange}
                 sx={{ mb: 4 }}
               />
             </Box>
