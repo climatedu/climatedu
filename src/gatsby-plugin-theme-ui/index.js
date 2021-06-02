@@ -157,6 +157,9 @@ export default {
     },
   },
   forms: {
+    label: {
+      paddingBottom: 2,
+    },
     input: {
       fontFamily: 'body',
       borderStyle: 'solid',
