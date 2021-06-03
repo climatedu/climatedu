@@ -126,7 +126,9 @@ const CampRegister = ({ data }) => {
               },
             }}
           >
-            Need more information about our camp? Read our article here.
+            We&apos;re so excited to have you join us this summer! If you&apos;d
+            like to learn more about the camp first, check out our information
+            page here.
           </Link>
         </Box>
         <Box
