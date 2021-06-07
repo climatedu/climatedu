@@ -2,7 +2,7 @@
 import React, { useState, useCallback, useEffect } from 'react'
 import { Box, IconButton, Styled, jsx } from 'theme-ui'
 import { css } from '@theme-ui/css'
-import { Global } from '@emotion/core'
+import { Global } from '@emotion/react'
 import 'react-toastify/dist/ReactToastify.min.css'
 import { useStaticQuery, graphql, Link } from 'gatsby'
 import { GiHamburgerMenu } from 'react-icons/gi'
@@ -114,8 +114,7 @@ const Unit = ({ html, frontmatter, children }) => {
     [sectionHeights.length]
   )
   const opacify = (text, opacity) =>
-    ((a, p) =>
-      `rgba(${p(a, 0)}, ${p(a, 2)}, ${p(a, 4)}, ${opacity})`)(
+    ((a, p) => `rgba(${p(a, 0)}, ${p(a, 2)}, ${p(a, 4)}, ${opacity})`)(
       text.slice(1),
       (a, n) => parseInt(a.slice(n, n + 2), 16)
     )

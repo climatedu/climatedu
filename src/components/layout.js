@@ -2,7 +2,7 @@
 import { useState } from 'react'
 import { Box, Flex, Heading, IconButton, Styled, jsx } from 'theme-ui'
 import { css } from '@theme-ui/css'
-import { Global } from '@emotion/core'
+import { Global } from '@emotion/react'
 import 'react-toastify/dist/ReactToastify.min.css'
 import { useStaticQuery, graphql } from 'gatsby'
 import Image from 'gatsby-image'
@@ -98,7 +98,7 @@ const Layout = ({ children, bg }) => {
         }}
       >
         <Image
-          fluid={data.imageSharp.fluid}
+          fluid={data.imageSharp?.fluid}
           sx={{
             bg: bg,
           }}

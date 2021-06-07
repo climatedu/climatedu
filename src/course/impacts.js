@@ -25,7 +25,7 @@ const Impacts = ({ data }) => {
 export default Impacts
 
 export const pageQuery = graphql`
-  query($slug: String!) {
+  query ($slug: String!) {
     markdownRemark(frontmatter: { slug: { eq: $slug } }) {
       ...Unit
     }

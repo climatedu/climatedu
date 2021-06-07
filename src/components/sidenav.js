@@ -8,7 +8,7 @@ import { BsGrid3X3Gap } from 'react-icons/bs'
 
 // https://stackoverflow.com/a/46543292/9749629
 function hexToRgb(hex) {
-  var result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex)
+  const result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex)
   return result
     ? {
         r: parseInt(result[1], 16),
@@ -20,18 +20,18 @@ function hexToRgb(hex) {
 
 export function getColor(startColour, endColour, percentFade) {
   percentFade = percentFade.colorPercent
-  var startRGB = hexToRgb(startColour)
-  var endRGB = hexToRgb(endColour)
+  const startRGB = hexToRgb(startColour)
+  const endRGB = hexToRgb(endColour)
 
-  var diffRed = endRGB.r - startRGB.r
-  var diffGreen = endRGB.g - startRGB.g
-  var diffBlue = endRGB.b - startRGB.b
+  let diffRed = endRGB.r - startRGB.r
+  let diffGreen = endRGB.g - startRGB.g
+  let diffBlue = endRGB.b - startRGB.b
 
   diffRed = diffRed * percentFade + startRGB.r
   diffGreen = diffGreen * percentFade + startRGB.g
   diffBlue = diffBlue * percentFade + startRGB.b
 
-  var result =
+  const result =
     'rgb(' +
     Math.round(diffRed) +
     ', ' +

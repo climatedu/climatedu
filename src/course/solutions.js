@@ -22,7 +22,7 @@ const Solutions = ({ data }) => {
 export default Solutions
 
 export const pageQuery = graphql`
-  query($slug: String!) {
+  query ($slug: String!) {
     markdownRemark(frontmatter: { slug: { eq: $slug } }) {
       ...Unit
     }

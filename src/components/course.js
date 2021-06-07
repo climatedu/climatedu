@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import { Box, Styled, jsx } from 'theme-ui'
 import { css } from '@theme-ui/css'
-import { Global } from '@emotion/core'
+import { Global } from '@emotion/react'
 import 'react-toastify/dist/ReactToastify.min.css'
 import { navigate, Link } from 'gatsby'
 import { toast } from 'react-toastify'

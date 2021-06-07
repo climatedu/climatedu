@@ -21,7 +21,7 @@ const ResetPassword = () => {
   const resetPassword = async e => {
     e.preventDefault()
     if (!firebaseApp) return
-    var emailAddress = email
+    const emailAddress = email
     try {
       await firebaseApp.auth().sendPasswordResetEmail(emailAddress)
       toast.success(
