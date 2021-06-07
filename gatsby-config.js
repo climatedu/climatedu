@@ -102,8 +102,8 @@ module.exports = {
         text: 'Home',
       },
       {
-        location: '/about/',
         text: 'About',
+        location: '/about/',
         dropdown: [
           {
             location: '/about/team/',
@@ -114,6 +114,7 @@ module.exports = {
             text: 'Our Mission',
           },
           {
+            externalLink: true,
             location:
               'https://mygreenmontgomery.org/2020/high-school-student-designs-climate-education-course-for-middle-schoolers/',
             text: 'In the News',
@@ -121,8 +122,22 @@ module.exports = {
         ],
       },
       {
-        location: '/sources/',
-        text: 'Sources',
+        location: null,
+        text: 'Resources',
+        dropdown: [
+          {
+            location: '/sources/',
+            text: 'Sources',
+          },
+          {
+            location: '/apply/',
+            text: 'Apply',
+          },
+          {
+            location: '/camp/',
+            text: 'Camp',
+          },
+        ],
       },
       {
         location: '/contact/',

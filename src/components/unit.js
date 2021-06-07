@@ -114,7 +114,8 @@ const Unit = ({ html, frontmatter, children }) => {
     [sectionHeights.length]
   )
   const opacify = (text, opacity) =>
-    ((a, p) => `rgba(${p(a, 0)}, ${p(a, 2)}, ${p(a, 4)}, ${opacity})`)(
+    ((a, p) =>
+      `rgba(${p(a, 0)}, ${p(a, 2)}, ${p(a, 4)}, ${opacity})`)(
       text.slice(1),
       (a, n) => parseInt(a.slice(n, n + 2), 16)
     )
