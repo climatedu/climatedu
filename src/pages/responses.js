@@ -14,9 +14,10 @@ import getFirebase from '../firebase'
 
 const Responses = ({ location, frontmatter }) => {
   const firebaseApp = getFirebase()
-  const params = useMemo(() => new URLSearchParams(location.search), [
-    location.search,
-  ])
+  const params = useMemo(
+    () => new URLSearchParams(location.search),
+    [location.search]
+  )
   const { user, account } = db.useAuth(true)
 
   const data = useStaticQuery(graphql`

@@ -24,7 +24,7 @@ const Waste = ({ data }) => {
 export default Waste
 
 export const pageQuery = graphql`
-  query($slug: String!) {
+  query ($slug: String!) {
     markdownRemark(frontmatter: { slug: { eq: $slug } }) {
       ...Unit
     }
