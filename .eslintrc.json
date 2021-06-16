@@ -9,8 +9,7 @@
     "plugin:react-hooks/recommended",
     "standard",
     "standard-react",
-    "plugin:prettier/recommended",
-    "prettier"
+    "plugin:prettier/recommended"
   ],
   "parserOptions": {
     "ecmaFeatures": {

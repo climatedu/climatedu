@@ -130,7 +130,7 @@ function useProgress(account, unitCount) {
       .collection('progress')
       .onSnapshot(collection => {
         const ret = {}
-        collection.docs.foreach((doc, idx) => {
+        collection.forEach((doc, idx) => {
           ret[doc.id] = (doc.data().progressPercent | 0) / 100
         })
 

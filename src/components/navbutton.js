@@ -107,7 +107,7 @@ const DesktopNavButton = ({
     >
       {isLogin ? (
         <DesktopNavLinkLogin
-          to={location}
+          to={location || '#'}
           onClick={
             dropdown &&
             (e => {
@@ -124,7 +124,7 @@ const DesktopNavButton = ({
         </DesktopNavLinkLogin>
       ) : (
         <DesktopNavLink
-          to={location}
+          to={location || '#'}
           partiallyActive={dropdown !== null}
           onClick={
             dropdown &&
@@ -187,7 +187,7 @@ const MobileNavButton = ({ location, text, dropdown, children, ...props }) => {
   return (
     <Box {...props}>
       <MobileNavLink
-        to={location}
+        to={location || '#'}
         partiallyActive={dropdown !== null}
         onClick={dropdown && toggleOpen}
       >
