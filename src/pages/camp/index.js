@@ -92,19 +92,23 @@ const Camp = ({ data }) => {
         <Grid gap={1} columns={[1, 2, 4]}>
           <Container sx={{ maxWidth: '100%', textAlign: 'center' }}>
             <Image src={vivian} sx={{ p: 2, borderRadius: 99999 }} />
-            <h2>Vivian Li</h2>
+            <h2 sx={{ my: 0 }}>Vivian Li</h2>
+            <i sx={{ fontSize: 1 }}>University of Southern California</i>
           </Container>
           <Container sx={{ maxWidth: '100%', textAlign: 'center' }}>
             <Image src={bracklinn} sx={{ p: 2, borderRadius: 99999 }} />
-            <h2>Bracklinn Williams</h2>
+            <h2 sx={{ my: 0 }}>Bracklinn Williams</h2>
+            <i sx={{ fontSize: 1 }}>Princeton University</i>
           </Container>
           <Container sx={{ maxWidth: '100%', textAlign: 'center' }}>
             <Image src={michelle} sx={{ p: 2, borderRadius: 99999 }} />
-            <h2>Michelle Wong</h2>
+            <h2 sx={{ my: 0 }}>Michelle Wong</h2>
+            <i sx={{ fontSize: 1 }}>Richard Montgomery HS</i>
           </Container>
           <Container sx={{ maxWidth: '100%', textAlign: 'center' }}>
             <Image src={emily} sx={{ p: 2, borderRadius: 99999 }} />
-            <h2>Emily Johns</h2>
+            <h2 sx={{ my: 0 }}>Emily Johns</h2>
+            <i sx={{ fontSize: 1 }}>Montgomery Blair HS</i>
           </Container>
         </Grid>
         <Box
