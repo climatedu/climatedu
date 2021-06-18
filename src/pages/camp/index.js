@@ -21,7 +21,7 @@ const Camp = ({ data }) => {
     <Layout>
       <PageHeader
         primary='CAMP CLIMATEDU 2021'
-        secondary='A 10-week adventure into sustainability'
+        secondary='A 10-week adventure into sustainability*'
       >
         <Button
           sx={{
@@ -49,12 +49,21 @@ const Camp = ({ data }) => {
         </Button>
       </PageHeader>
       <Container>
-        Want to take our course with a community of excited fellow learners?
-        Here&apos;s your opportunity to become a Sustainabuddy. This summer,
-        we&apos;ll be hosting CAMP CLIMATEDU, and you&apos;re invited!
-        We&apos;ll develop a deeper understanding of the climate together,
-        through pondering discussion questions as a class, playing educational
-        games, and getting active with independent projects.
+        <p>
+          <strong sx={{ color: 'primary' }}>
+            *10 weeks is a lot! Even if you can&apos;t attend every class this
+            summer, we still encourage you to register and participate in any
+            capacity :)
+          </strong>
+        </p>
+        <p>
+          Want to take our course with a community of excited fellow learners?
+          Here&apos;s your opportunity to become a Sustainabuddy. This summer,
+          we&apos;ll be hosting CAMP CLIMATEDU, and you&apos;re invited!
+          We&apos;ll develop a deeper understanding of the climate together,
+          through pondering discussion questions as a class, playing educational
+          games, and getting active with independent projects.
+        </p>
         <p>
           <strong>WHAT</strong>: a 10-week, action-packed adventure into
           sustainability
