@@ -5,6 +5,18 @@
   },
   "hosting": {
     "public": "public",
-    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"]
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+    "redirects": [
+      {
+        "source": "/speakerpanel",
+        "destination": "https://www.eventbrite.com/e/camp-climatedu-2021-speaker-panel-tickets-163449396545",
+        "type": 301
+      },
+      {
+        "source": "/speakerpanelflyer",
+        "destination": "https://drive.google.com/file/d/1Zv-lkgK6xxAMQI4qu8yaUJ4Va9sQbTEM/view?usp=sharing",
+        "type": 301
+      }
+    ]
   }
 }
