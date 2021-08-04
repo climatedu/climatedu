@@ -13,6 +13,14 @@ module.exports = {
     'gatsby-transformer-sharp',
     'gatsby-transformer-yaml',
     {
+      resolve: `gatsby-plugin-redirect-to`,
+      options: {
+        force: true,
+        isPermanent: true,
+        redirectInBrowser: true,
+      },
+    },
+    {
       resolve: 'gatsby-transformer-remark',
       options: {
         plugins: [
