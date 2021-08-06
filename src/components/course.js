@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { Box, Styled, jsx } from 'theme-ui'
+import { Box, Themed, jsx } from 'theme-ui'
 import { css } from '@theme-ui/css'
 import { Global } from '@emotion/react'
 import 'react-toastify/dist/ReactToastify.min.css'
@@ -27,7 +27,7 @@ const Course = ({ children, bg }) => {
   }
 
   return (
-    <Styled.root
+    <Themed.root
       sx={{
         '&, *': {
           scrollbarColor: theme =>
@@ -154,7 +154,7 @@ const Course = ({ children, bg }) => {
       >
         {children}
       </Box>
-    </Styled.root>
+    </Themed.root>
   )
 }
 

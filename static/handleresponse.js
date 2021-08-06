@@ -41,6 +41,11 @@ async function updateResponse(element) {
 
 function loadAllResponses() {
   const example = document.querySelector('textarea')
+  if(currentUser === null){
+    window.location.href = '/login'
+    return
+  }
+
   db.collection('accounts')
     .doc(currentUser.uid)
     .collection('responses')

@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import { useState } from 'react'
-import { Box, Flex, Heading, IconButton, Styled, jsx } from 'theme-ui'
+import { Box, Flex, Heading, IconButton, Themed, jsx } from 'theme-ui'
 import { css } from '@theme-ui/css'
 import { Global } from '@emotion/react'
 import 'react-toastify/dist/ReactToastify.min.css'
@@ -46,7 +46,7 @@ const Layout = ({ children, bg }) => {
 
   const [navbarOpen, setNavbarOpen] = useState(false)
   return (
-    <Styled.root
+    <Themed.root
       sx={{
         '&, *': {
           scrollbarColor: theme =>
@@ -157,7 +157,7 @@ const Layout = ({ children, bg }) => {
           </Box>
         </Flex>
       </Flex>
-    </Styled.root>
+    </Themed.root>
   )
 }
 
