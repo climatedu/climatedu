@@ -142,7 +142,7 @@ const Unit = ({ html, frontmatter, children }) => {
     }, 100)
   }
 
-  const saveAnsweredProgress = useCallback(async () => {
+  const saveAnsweredProgress = async () => {
     if (firebase.auth().currentUser == null) return
 
     const unitResponses = (
@@ -206,7 +206,7 @@ const Unit = ({ html, frontmatter, children }) => {
           progressPercent: percentAnswered,
         })
     }
-  })
+  }
 
   useAuth(null)
 
