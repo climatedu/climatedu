@@ -217,7 +217,7 @@ const Unit = ({ html, frontmatter, children }) => {
     return () => {
       window.removeEventListener('click', saveAnsweredProgress, true)
     }
-  }, [saveAnsweredProgress])
+  }, [])
 
   if (frontmatter.scrollcolor) scrollColor()
 
