@@ -41,6 +41,7 @@ async function updateResponse(element) {
 
 function loadAllResponses() {
   const example = document.querySelector('textarea')
+
   db.collection('accounts')
     .doc(currentUser.uid)
     .collection('responses')

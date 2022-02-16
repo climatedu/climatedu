@@ -49,7 +49,7 @@ const Navbar = ({ navbarOpen, setNavbarOpen }) => {
         display: 'flex',
         justifyContent: 'space-between',
         alignItems: 'center',
-        flexWrap: 'wrap',
+        flexWrap: 'no-wrap',
         height: '12rem',
         py: 4,
       }}
@@ -72,6 +72,7 @@ const Navbar = ({ navbarOpen, setNavbarOpen }) => {
               position: 'relative',
               top: '0.6em',
               mr: '36px',
+              ml: '36px',
               ':hover': {
                 color: 'primary',
               },

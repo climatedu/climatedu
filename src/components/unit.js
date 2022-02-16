@@ -1,6 +1,6 @@
 /** @jsx jsx **/
 import React, { useState, useCallback, useEffect } from 'react'
-import { Box, IconButton, Styled, jsx } from 'theme-ui'
+import { Box, IconButton, Themed, jsx } from 'theme-ui'
 import { css } from '@theme-ui/css'
 import { Global } from '@emotion/react'
 import 'react-toastify/dist/ReactToastify.min.css'
@@ -96,6 +96,7 @@ const Unit = ({ html, frontmatter, children }) => {
   const [contentRef, setContentRef] = useState({ current: null })
   const navButtonRef = React.createRef()
   const [sectionHeights, setSectionHeights] = useState([])
+
   const contentCallbackRef = useCallback(
     content => {
       setContentRef({ current: content })
@@ -206,6 +207,7 @@ const Unit = ({ html, frontmatter, children }) => {
         })
     }
   }
+
   useAuth(null)
 
   useEffect(() => {
@@ -220,7 +222,7 @@ const Unit = ({ html, frontmatter, children }) => {
   if (frontmatter.scrollcolor) scrollColor()
 
   return (
-    <Styled.root
+    <Themed.root
       sx={{
         '&, *': {
           scrollbarColor: theme =>
@@ -553,7 +555,7 @@ const Unit = ({ html, frontmatter, children }) => {
         </Container>
         {children}
       </Box>
-    </Styled.root>
+    </Themed.root>
   )
 }
 

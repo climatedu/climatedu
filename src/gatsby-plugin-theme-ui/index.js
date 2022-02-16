@@ -31,7 +31,7 @@ export default {
   space: [0, 4, 8, 16, 32, 64, 128, 256, 512],
   sizes: {
     container: '1000px',
-    smallContainer: '300px',
+    smallContainer: '200px',
     mobileNav: '100vw',
   },
   images: {
