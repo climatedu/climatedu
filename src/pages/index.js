@@ -1,6 +1,7 @@
 /** @jsx jsx */
 import { graphql, navigate } from 'gatsby'
 import {
+  Alert,
   Box,
   Button,
   Flex,
@@ -57,6 +58,25 @@ const Home = ({ data }) => {
 
   return (
     <Layout bg='darkBackground'>
+      <Box bg='background' px={7} pt={2} pb={4}>
+        <Alert
+          sx={{
+            fontWeight: 400,
+            backgroundColor: '#ffefa1',
+            color: 'error',
+          }}
+        >
+          <Text>
+            <b>Jan 2, 2022:</b> We are no longer maintaining the climatedu
+            homepage or the learning platform. The course content is still
+            available and has been moved to{' '}
+            <Link to='https://www.climatedu.org'>climatedu.org</Link>. Thanks
+            for joining us on this journey. We hope you can still make use of
+            the climatedu course!
+          </Text>
+        </Alert>
+      </Box>
+
       <PageHeader
         primary='Welcome to climatedu!'
         secondary='Climate education made by students, for students.'
