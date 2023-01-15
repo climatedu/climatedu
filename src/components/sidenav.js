@@ -3,8 +3,7 @@ import { Box, IconButton, Flex, jsx, Grid } from 'theme-ui'
 import { navigate } from 'gatsby'
 import React, { useState } from 'react'
 
-import { IoIosArrowBack } from 'react-icons/io'
-import { BsGrid3X3Gap } from 'react-icons/bs'
+import { IoIosArrowBack, IoIosArrowForward, IoIosClose } from 'react-icons/io'
 
 // https://stackoverflow.com/a/46543292/9749629
 function hexToRgb(hex) {
@@ -101,29 +100,75 @@ const SideNav = ({
         <Box
           sx={{
             mt: '2em',
-            ml: '2em',
-            mb: '1.34em',
+            mx: '2em',
+            mb: '1em',
           }}
         >
-          <IconButton
+          <Flex
             sx={{
-              mx: '1em',
-              height: '3.5em',
-              width: '3.5em',
-              color: frontmatter.text,
-              '&:active': {
-                borderColor: frontmatter.highlight,
-                color: frontmatter.highlight,
-              },
-              float: 'right',
-            }}
-            onClick={() => {
-              setOpen(false)
+              alignItems: 'center',
+              justifyContent: 'space-between',
             }}
           >
-            <IoIosArrowBack size='100%' />
-          </IconButton>
-          <h1 sx={{ display: 'inline' }}>{frontmatter.title}</h1>
+            <Flex
+              onClick={() => {
+                setUnitNavOpen(true)
+              }}
+            >
+              <IconButton
+                sx={{
+                  pl: 0,
+                  pr: 2,
+                  height: '1.8em',
+                  width: '1.8em',
+                  color: frontmatter.text,
+                  '&:active': {
+                    borderColor: frontmatter.highlight,
+                    color: frontmatter.highlight,
+                  },
+                }}
+              >
+                <IoIosArrowBack size='100%' />
+              </IconButton>
+              <p
+                sx={{
+                  m: 0,
+                  cursor: 'pointer',
+                }}
+              >
+                View all units
+              </p>
+            </Flex>
+            <Flex
+              onClick={() => {
+                setOpen(false)
+              }}
+            >
+              <p
+                sx={{
+                  m: 0,
+                  cursor: 'pointer',
+                }}
+              >
+                Close menu
+              </p>
+              <IconButton
+                sx={{
+                  p: 0,
+                  height: '1.9em',
+                  width: '1.9em',
+                  color: frontmatter.text,
+                  '&:active': {
+                    borderColor: frontmatter.highlight,
+                    color: frontmatter.highlight,
+                  },
+                }}
+              >
+                <IoIosClose size='100%' />
+              </IconButton>
+            </Flex>
+          </Flex>
+          <h1>{frontmatter.title}</h1>
         </Box>
         <Grid
           sx={{
@@ -157,49 +202,6 @@ const SideNav = ({
             )
           })}
         </Grid>
-        <Box
-          sx={{
-            width: '80%',
-            mx: 'auto',
-            my: '1em',
-            backgroundColor: frontmatter.highlight + '50',
-            height: '10px',
-            borderRadius: '10px',
-          }}
-        >
-          <Box
-            sx={{
-              width: `${scrollLocation.progress}%`,
-              mr: 'auto',
-              backgroundColor: frontmatter.text,
-              height: '100%',
-              borderRadius: '10px',
-            }}
-          />
-        </Box>
-        <Box sx={{ textAlign: 'center', fontSize: '1.2em', mb: '1em' }}>
-          {scrollLocation.progress}%
-        </Box>
-        <IconButton
-          sx={{
-            mx: '1em',
-            mb: '1em',
-            alignSelf: 'flex-end',
-            mt: 'auto',
-            height: '3.5em',
-            width: '3.5em',
-            color: frontmatter.text,
-            '&:active': {
-              borderColor: frontmatter.highlight,
-              color: frontmatter.highlight,
-            },
-          }}
-          onClick={() => {
-            setUnitNavOpen(true)
-          }}
-        >
-          <BsGrid3X3Gap size='100%' />
-        </IconButton>
       </Flex>
       <Box
         sx={{
@@ -227,40 +229,45 @@ const SideNav = ({
       >
         <Flex
           sx={{
-            mt: '2em',
-            ml: '2em',
-            justifyContent: 'space-between',
+            pt: '2em',
+            px: '2em',
+            pb: '1em',
+            flexDirection: 'column',
           }}
         >
-          <h1
+          <Flex
             sx={{
-              mt: 0,
-              cursor: 'pointer',
-            }}
-            onClick={() => {
-              navigate('/')
-            }}
-          >
-            climatedu
-          </h1>
-          <IconButton
-            sx={{
-              mx: '1em',
-              height: '3.5em',
-              width: '3.5em',
-              color: frontmatter.text,
-              '&:active': {
-                borderColor: frontmatter.highlight,
-                color: frontmatter.highlight,
-              },
-              flex: '0 0 auto',
+              alignSelf: 'end',
             }}
             onClick={() => {
               setUnitNavOpen(false)
             }}
           >
-            <IoIosArrowBack size='100%' />
-          </IconButton>
+            <p
+              sx={{
+                m: 0,
+                cursor: 'pointer',
+              }}
+            >
+              View current unit
+            </p>
+            <IconButton
+              sx={{
+                pl: 2,
+                pr: 0,
+                height: '1.8em',
+                width: '1.8em',
+                color: frontmatter.text,
+                '&:active': {
+                  borderColor: frontmatter.highlight,
+                  color: frontmatter.highlight,
+                },
+              }}
+            >
+              <IoIosArrowForward size='100%' />
+            </IconButton>
+          </Flex>
+          <h1>climatedu</h1>
         </Flex>
         <Grid
           sx={{
@@ -277,7 +284,7 @@ const SideNav = ({
                 </h2>
                 <h2
                   onClick={() => {
-                    navigate('/course/' + unit.frontmatter.slug + '/')
+                    navigate('/' + unit.frontmatter.slug + '/')
                   }}
                   sx={{
                     gridColumn: 2,

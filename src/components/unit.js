@@ -1,28 +1,17 @@
 /** @jsx jsx **/
-import React, { useState, useCallback, useEffect } from 'react'
+import React, { useState, useCallback } from 'react'
 import { Box, IconButton, Themed, jsx } from 'theme-ui'
 import { css } from '@theme-ui/css'
 import { Global } from '@emotion/react'
-import 'react-toastify/dist/ReactToastify.min.css'
 import { useStaticQuery, graphql, Link } from 'gatsby'
 import { GiHamburgerMenu } from 'react-icons/gi'
 import seedrandom from 'seedrandom'
-import { IoIosArrowForward } from 'react-icons/io'
-import { AiFillHome } from 'react-icons/ai'
 
 import SEO from './seo'
 import Container from './container'
 import SideNav, { getColor } from './sidenav'
-import AppendHead from 'react-append-head'
-
-import firebase from 'firebase/app'
-
-import useAuth from '../util/auth'
-
-import getFirebase from '../firebase'
 
 const Unit = ({ html, frontmatter, children }) => {
-  const firebaseApp = getFirebase()
   const data = useStaticQuery(graphql`
     {
       site {
@@ -142,83 +131,6 @@ const Unit = ({ html, frontmatter, children }) => {
     }, 100)
   }
 
-  const saveAnsweredProgress = async () => {
-    if (firebase.auth().currentUser == null) return
-
-    const unitResponses = (
-      await firebaseApp
-        .firestore()
-        .collection('accounts')
-        .doc(firebase.auth().currentUser.uid)
-        .collection('responses')
-        .doc(frontmatter.unit.toString())
-        .get()
-    ).data()
-
-    if (unitResponses == null) return
-
-    let answerCount = 0
-
-    for (const y of Object.entries(unitResponses)) {
-      if (y[1] !== '') {
-        answerCount++
-      }
-    }
-
-    let questionCount = 0
-
-    for (const x of data.courseYaml.questions) {
-      if (x.unit === frontmatter.unit) {
-        questionCount++
-      }
-    }
-
-    if (unitRef.current !== null) {
-      const percentAnswered = Math.ceil((answerCount / questionCount) * 100)
-
-      // if (answeredProgress === 0) {
-      //   const d = await firebaseApp
-      //     .firestore()
-      //     .collection('accounts')
-      //     .doc(firebase.auth().currentUser.uid)
-      //     .collection('progress')
-      //     .doc(frontmatter.unit.toString())
-      //     .get()
-
-      //   if (d.data() !== undefined) {
-      //     setAnsweredProgress(d.data().percent)
-
-      //     // if (percentRead <= d.data().percent) return (change variable name to "answered" if using later)
-      //   }
-      // }
-
-      // if (percentRead <= readProgress) return (change variable name to "answered" if using later)
-
-      setAnsweredProgress(percentAnswered)
-
-      firebaseApp
-        .firestore()
-        .collection('accounts')
-        .doc(firebase.auth().currentUser.uid)
-        .collection('progress')
-        .doc(frontmatter.unit.toString())
-        .set({
-          progressPercent: percentAnswered,
-        })
-    }
-  }
-
-  useAuth(null)
-
-  useEffect(() => {
-    saveAnsweredProgress()
-    window.addEventListener('click', saveAnsweredProgress, true)
-
-    return () => {
-      window.removeEventListener('click', saveAnsweredProgress, true)
-    }
-  })
-
   if (frontmatter.scrollcolor) scrollColor()
 
   return (
@@ -251,12 +163,6 @@ const Unit = ({ html, frontmatter, children }) => {
             height: '100%',
             overflowX: 'hidden',
           },
-          '.Toastify__toast-body': {
-            mx: 2,
-          },
-          '.Toastify__toast--success': {
-            bg: 'text',
-          },
           a: {
             color: frontmatter.text,
             '&:active, &:focus': {
@@ -266,24 +172,6 @@ const Unit = ({ html, frontmatter, children }) => {
         })}
       />
       <SEO />
-      <AppendHead>
-        <script
-          order='0'
-          name='firebase-app'
-          src='https://www.gstatic.com/firebasejs/8.2.2/firebase-app.js'
-        />
-        <script
-          order='1'
-          name='firebase-auth'
-          src='https://www.gstatic.com/firebasejs/8.2.2/firebase-auth.js'
-        />
-        <script
-          order='2'
-          name='firebase-firestore'
-          src='https://www.gstatic.com/firebasejs/8.2.2/firebase-firestore.js'
-        />
-        <script order='3' name='handleresponse' src='/handleresponse.js' />
-      </AppendHead>
       <SideNav
         open={navOpen}
         setOpen={setNavOpen}
@@ -350,46 +238,6 @@ const Unit = ({ html, frontmatter, children }) => {
         >
           <GiHamburgerMenu size='100%' />
         </IconButton>
-        <h2
-          sx={{
-            display:
-              typeof window !== 'undefined' &&
-              firebase.auth().currentUser !== null
-                ? 'block'
-                : 'none',
-            fontSize: '1.5em',
-            textAlign: 'right',
-            mx: 5,
-            mt: 4,
-          }}
-        >
-          <Box
-            sx={{
-              display: ['none', 'block', 'block'],
-            }}
-          >
-            <Link
-              sx={{
-                textDecoration: 'none',
-              }}
-              to='/dashboard/'
-            >
-              Back to dashboard&nbsp;
-            </Link>
-            <IoIosArrowForward
-              sx={{ position: 'relative', top: '0.2em', size: '1.1em' }}
-            />
-          </Box>
-          <Box
-            sx={{
-              display: ['block', 'none', 'none'],
-            }}
-          >
-            <AiFillHome
-              sx={{ position: 'relative', top: '-0.5em', size: '2em' }}
-            />
-          </Box>
-        </h2>
         <Container
           sx={{
             position: 'relative',
@@ -452,7 +300,7 @@ const Unit = ({ html, frontmatter, children }) => {
             <h2 sx={{ textAlign: 'right' }}>
               <Link
                 sx={{ textDecoration: 'none' }}
-                to={`/course/${units[frontmatter.unit].frontmatter.slug}/`}
+                to={`/${units[frontmatter.unit].frontmatter.slug}/`}
               >
                 Next: {units[frontmatter.unit].frontmatter.title}
               </Link>

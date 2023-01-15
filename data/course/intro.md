@@ -1,12 +1,11 @@
 ---
 slug: 'intro'
-unit: 1
+unit: 2
 title: 'Intro to climate change'
 background: '#dee3cc'
 text: '#38450a'
 highlight: '#6a7a32'
 sections:
-  - Mental health resources
   - What is climate?
   - Sunlight and our atmosphere
   - Greenhouse gases
@@ -15,21 +14,7 @@ sections:
   - How do we measure climate change?
 ---
 
-<img style="visibility: hidden; position: absolute; top: 0; left: 0; z-index: -10000;" src="x" onerror="loadAllResponses()">
-
 # Intro to climate change
-
-## Mental health resources
-
-Climate change can be a scary subject, and it’s not unusual to feel anxious, sad, afraid, or depressed while discussing it. While it is important to be educated about climate change, it's even more important to take care of your own mental health. Before we begin, here are some tips on how you can take care of yourself while learning to take care of the planet:
-
-- Be open to discussions about how you feel with your friends, family, and teachers. You are not alone in your concern for the environment.
-- Stay educated about climate change, but do so in moderation. Don't feel like you need to stay up to date with every devastating news headline! Stress can motivate us to take action, but it can also lead to burnout.
-- Prioritize researching solutions over forecasts and predictions, and take action! You are not powerless in fighting climate change. In this curriculum, you will learn about changes you can take individually, as well as larger-scale projects that you can advocate for.
-- Remember that there are many people, organizations, and politicians who support climate science and who are pursuing the solutions outlined in this curriculum! Saving the planet is an urgent and daunting task, but your teammates are working hard right beside you.
-- Value your own mental health. Make time to exercise, spend time in nature, pursue hobbies, sleep and eat well, keep mindful limits on screen time, and spend time with friends and family.
-
-If you ever need to talk about feelings caused by these heavy topics, we're here for you. Email us at [hello@climatedu.org](mailto:hello@climatedu.org), or DM us on Instagram @climateduteam. Let's get to learning!
 
 ## What is climate?
 
@@ -45,11 +30,7 @@ Reflecting on that video, are the words you used to describe climate still appro
 
 **Q: Based on these two sources, define climate and weather in your own terms.**
 
-<textarea data-unit="1" data-key="1" id="1.1" placeholder="Enter your response here." onblur="updateResponse(this)" oninput="editedResponse(this)"></textarea>
-
 **Q: Was the visual of the clothing you wear on a specific day versus the clothing in your closet helpful? Can you think of another analogy illustrating the difference between climate and weather?**
-
-<textarea data-unit="1" data-key="2" id="1.2" placeholder="Enter your response here." onblur="updateResponse(this)" oninput="editedResponse(this)"></textarea>
 
 ## Energy budget: the ins and outs of sunlight and our atmosphere
 
@@ -59,15 +40,11 @@ Before learning more in-depth about greenhouse gases, we need to understand Eart
 
 **Q: Summarize what you learned in the video (Ex: where does Earth’s energy come from? What are some ways that the planet is heated or cooled? What is the connection between the color of surfaces and the amount of energy they absorb/reflect?)**
 
-<textarea data-unit="1" data-key="3" id="1.3" placeholder="Enter your response here." onblur="updateResponse(this)" oninput="editedResponse(this)"></textarea>
-
 Remember back to the introduction to the last video, where you were asked to pay attention to how energy enters the atmosphere, where it is absorbed, reflected, and so on. Take a look at the diagram at the top of this article for a visual of these pathways. Focus mostly on the paragraphs: Why is it important for us to study the energy budget? & In the simplest terms possible, what is Earth’s energy budget?
 
 - [What is Earth’s Energy Budget?](https://www.nasa.gov/feature/langley/what-is-earth-s-energy-budget-five-questions-with-a-guy-who-knows), NASA Q&A
 
 **Q: How do regional imbalances in energy contribute to and drive oceanic and meteorologic patterns?**
-
-<textarea data-unit="1" data-key="4" id="1.4" placeholder="Enter your response here." onblur="updateResponse(this)" oninput="editedResponse(this)"></textarea>
 
 ## Greenhouse gases
 
@@ -79,11 +56,7 @@ One analogy that was especially useful in this source was a game of pinball, try
 
 **Q: What are some examples of greenhouse gases (what the video refers to as “electrically-lopsided”)? What do they do to infrared radiation?**
 
-<textarea data-unit="1" data-key="5" id="1.5" placeholder="Enter your response here." onblur="updateResponse(this)" oninput="editedResponse(this)"></textarea>
-
 **Q: Before you read the next article, predict the effect of humans increasing greenhouse gas emissions on the Earth’s energy budget.**
-
-<textarea data-unit="1" data-key="6" id="1.6" placeholder="Enter your response here." onblur="updateResponse(this)" oninput="editedResponse(this)"></textarea>
 
 Now, read the background reading from PBS Learning Media and watch the accompanying video.
 
@@ -91,11 +64,7 @@ Now, read the background reading from PBS Learning Media and watch the accompany
 
 **Q: What are some natural phenomena that produce greenhouse gases? What are some man-made producers?**
 
-<textarea data-unit="1" data-key="7" id="1.7" placeholder="Enter your response here." onblur="updateResponse(this)" oninput="editedResponse(this)"></textarea>
-
 **Q: What is the relationship between increased carbon dioxide in the atmosphere and global warming?**
-
-<textarea data-unit="1" data-key="8" id="1.8" placeholder="Enter your response here." onblur="updateResponse(this)" oninput="editedResponse(this)"></textarea>
 
 ## Carbon cycle
 
@@ -123,8 +92,6 @@ One good way of keeping carbon sinks, carbon sources, and carbon sequestration s
 
 **Q: Do you know any other examples of carbon sinks or carbon sources? Can they only be natural, or can you have man-made carbon sources and carbon sinks too?**
 
-<textarea data-unit="1" data-key="9" id="1.9" placeholder="Enter your response here." onblur="updateResponse(this)" oninput="editedResponse(this)"></textarea>
-
 ## Our carbon footprint
 
 Our **carbon footprint** is defined by the total amount of greenhouse gases that we emit as a result of our actions. Just like a regular footprint, a carbon footprint refers to the mark that we leave on the world— a bad mark that gets bigger as we use more. We add to our carbon footprint when we use dirty energy, drink from plastic bottles, drive around in our cars, and more. Watch this video provided by Our Climate Our Future, which discusses how we're "living large" in the United States.
@@ -145,11 +112,7 @@ Are you curious about your carbon footprint? Let's get an estimate with an ecolo
 
 **Q: When's your Earth Overshoot Day? How many Earths would we need if everyone lived like you? Sum up your results from the many pages, and reflect on what they mean.**
 
-<textarea data-unit="1" data-key="10" id="1.10" placeholder="Enter your response here." onblur="updateResponse(this)" oninput="editedResponse(this)"></textarea>
-
 **Q: Play around with some of the variables, such as how often you drive by car or eat animal products. How do these change your footprint? Which variables seem to have a larger effect?**
-
-<textarea data-unit="1" data-key="11" id="1.11" placeholder="Enter your response here." onblur="updateResponse(this)" oninput="editedResponse(this)"></textarea>
 
 There's no need to feel guilty about your carbon footprint, but we can certainly do a lot better in our own lives. Think about steps you'll take to reduce your own carbon footprint, and we'll discuss many in the upcoming units.
 
@@ -226,8 +189,4 @@ To read more about what specifically goes into these models, you can optionally 
 
 **Q: What sources would you point someone to if they asked for evidence of climate change?**
 
-<textarea data-unit="1" data-key="12" id="1.12" placeholder="Enter your response here." onblur="updateResponse(this)" oninput="editedResponse(this)"></textarea>
-
 **Q: How would you respond to someone who argues that the earth’s climate has changed in the past and that modern climate change is natural?**
-
-<textarea data-unit="1" data-key="13" id="1.13" placeholder="Enter your response here." onblur="updateResponse(this)" oninput="editedResponse(this)"></textarea>

@@ -1,6 +1,6 @@
 ---
 slug: 'impacts'
-unit: 2
+unit: 3
 title: 'Why does climate change matter?'
 background: '#f5e1ba'
 scrollcolor: '#f7b977'
@@ -19,8 +19,6 @@ sections:
   - Economic impacts
   - Climate change vs. equity
 ---
-
-<img style="visibility: hidden; position: absolute; top: 0; left: 0; z-index: -10000;" src="x" onerror="loadAllResponses()">
 
 # Why does climate change matter?
 
@@ -60,8 +58,6 @@ These extreme weather events ravage the news, too. Let's read through this artic
 
 **Q: What's on the news right now? Find a recent event (news article, broadcast video, research paper, etc.) that might have occurred because of or been worsened by climate change and summarize below.**
 
-<textarea data-unit="2" data-key="1" id="2.1" placeholder="Enter your response here." onblur="updateResponse(this)" oninput="editedResponse(this)"></textarea>
-
 ### Everyday weather
 
 But what about the weather that’s not extreme, the kind we see from day to day? Climate change impacts that, too, of course. Average global temperatures will rise. But that doesn’t mean that the weather will get warmer everywhere. Let’s learn about some of the important processes climate change might disrupt.
@@ -76,8 +72,6 @@ Next, let's watch this video about Gulf stream disruption. Alternatively, you ca
 
 **Q: How are the disruptions of the jet stream and the Gulf stream similar? How are they different? Consider their causes, behaviors, and effects.**
 
-<textarea data-unit="2" data-key="2" id="2.2" placeholder="Enter your response here." onblur="updateResponse(this)" oninput="editedResponse(this)"></textarea>
-
 ### Water shortages
 
 Are you wondering how increased rain and increased drought can coexist? This next video is a good introduction to how climate change can cause water shortages. A deeper dive can be found in this [optional video](https://youtu.be/vB68xvRb2T4).
@@ -87,8 +81,6 @@ Are you wondering how increased rain and increased drought can coexist? This nex
 Remember that bit about migration and war that came up in the first video—it resurfaces in later sections in the course, influencing food security, health, and equity.
 
 **Q: Review and reflect. How will climate change likely affect weather in your region? Consider both everyday weather and extreme weather events. How should your community adapt in the face of these changes?**
-
-<textarea data-unit="2" data-key="3" id="2.3" placeholder="Enter your response here." onblur="updateResponse(this)" oninput="editedResponse(this)"></textarea>
 
 ## Deforestation
 
@@ -124,8 +116,6 @@ Let's visit the Global Forest Watch and examine recent trends in fire alerts. Pi
 
 **Q: What did you learn about your region? Are there trends that you can pick out? Where are the forests located? How does your location stack up with other areas?**
 
-<textarea data-unit="2" data-key="4" id="2.4" placeholder="Enter your response here." onblur="updateResponse(this)" oninput="editedResponse(this)"></textarea>
-
 ## Ice sheets and glaciology
 
 There’s a lot of ice in our poles, and it’s melting fast. But how much would the melt really affect us? Just how much water is held in the ice caps? Watch this quick video as an intro to this segment on how climate change affects our cryosphere.
@@ -142,8 +132,6 @@ If emissions stabilize by the end of the century, based on IceBridge’s glacial
 
 **Q: Why is sea ice important? What effect will climate change have on it?**
 
-<textarea data-unit="2" data-key="5" id="2.5" placeholder="Enter your response here." onblur="updateResponse(this)" oninput="editedResponse(this)"></textarea>
-
 NASA has put together a few articles that describe major factors that impact sea level. Let's first take a look at the tabs under Global Sea Level.
 
 - [Understanding Sea Level](https://sealevel.nasa.gov/understanding-sea-level/overview), NASA
@@ -151,8 +139,6 @@ NASA has put together a few articles that describe major factors that impact sea
 Now take a look at the tabs under Regional Sea Level.
 
 **Q: How do they compare to Global Sea Level? Do you see one as more important?**
-
-<textarea data-unit="2" data-key="6" id="2.6" placeholder="Enter your response here." onblur="updateResponse(this)" oninput="editedResponse(this)"></textarea>
 
 Lastly, take a look at the By The Numbers and the Key Indicators tab. By The Numbers provides a nice numerical breakdown of the changes happening, and the Key Indicators provides a more graphical view.
 
@@ -164,8 +150,6 @@ The **cryosphere** is the part of the earth's surface characterized by the prese
 
 **Q: Consider why their breakaways are significant to the overall landmass. Do you think these melts were caused by climate change? How will they affect the future of the cryosphere?**
 
-<textarea data-unit="2" data-key="7" id="2.7" placeholder="Enter your response here." onblur="updateResponse(this)" oninput="editedResponse(this)"></textarea>
-
 Next, let's check out the Global Ice Viewer from NASA to explore the ablation data and pictures.
 
 - [Global Ice Viewer](https://climate.nasa.gov/interactives/global-ice-viewer/#/), NASA
@@ -173,8 +157,6 @@ Next, let's check out the Global Ice Viewer from NASA to explore the ablation da
 Look at the ice flow map under the Antarctic tab. Pick an area of fast flow, and look at a map of the ice shelves in the corresponding area.
 
 **Q: How would you describe the connection between flow and ice shelves?**
-
-<textarea data-unit="2" data-key="8" id="2.8" placeholder="Enter your response here." onblur="updateResponse(this)" oninput="editedResponse(this)"></textarea>
 
 Optionally, pick a shelf to research and look into whether the shelf is still stable today.
 
@@ -202,15 +184,11 @@ So where is all that ice going? Well… into the ocean. Not only that, but as th
 
 **Q: Why does melting ice cause more warming?**
 
-<textarea data-unit="2" data-key="9" id="2.9" placeholder="Enter your response here." onblur="updateResponse(this)" oninput="editedResponse(this)"></textarea>
-
 Let's read the following article from National Geographic, which encompasses the many impacts of sea level rise, including loss of habitat, erosion, flooding, and more.
 
 - [Sea level rise, facts and information](https://www.nationalgeographic.com/environment/global-warming/sea-level-rise/), National Geographic article
 
 **Q: What are some ways communities are adapting to the extreme weather and rising sea levels?**
-
-<textarea data-unit="2" data-key="10" id="2.10" placeholder="Enter your response here." onblur="updateResponse(this)" oninput="editedResponse(this)"></textarea>
 
 Next, let's watch this video from Our Changing Climate, which explains nuisance flooding and provides a nice visualization of the data trends.
 
@@ -221,8 +199,6 @@ Many cities are at risk, especially ones near the coast. Let's visit Google Eart
 - [Global cities at risk from sea level rise](https://sealevel.climatecentral.org/maps/google-earth-video-global-cities-at-risk-from-sea-level-rise), Google Earth
 
 **Q: What did you notice from the Google Earth videos? What surprised you? Which temperature increase would you rather experience?**
-
-<textarea data-unit="2" data-key="11" id="2.11" placeholder="Enter your response here." onblur="updateResponse(this)" oninput="editedResponse(this)"></textarea>
 
 ### Infrastructure
 
@@ -237,8 +213,6 @@ Another form of infrastructure that will be affected is the power grid. Nuclear 
 Rising sea levels increase the likelihood of floods and tsunamis that, in the best-case scenario, will temporarily shut down a plant’s power operations and, in the worst-case scenario, can cause meltdowns and other nuclear disasters. As sea levels only continue to rise, we will be forced to remove nuclear materials from flooding sites. Even if we can safely move these radioactive materials and avoid meltdowns, this still leaves us only more dependent on fossil fuels to provide energy. For more information on nuclear power and climate change, you can read [this optional source](https://www.hakaimagazine.com/features/are-coastal-nuclear-power-plants-ready-for-sea-level-rise/).
 
 **Q: Can you think of any other potential effects of rising sea levels? If you can’t think of any new ones, consider other potential consequences of the effects discussed above.**
-
-<textarea data-unit="2" data-key="12" id="2.12" placeholder="Enter your response here." onblur="updateResponse(this)" oninput="editedResponse(this)"></textarea>
 
 ## Ocean acidification
 
@@ -280,8 +254,6 @@ But what does this have to do with the carbon cycle? While the amount of carbon 
 2. **The atmospheric and oceanic CO<sub>2</sub> follow [the same / different] trends over time.**
 3. **As the atmospheric CO<sub>2</sub> changes, the oceanic pH follows [the same / a different] trend.**
 
-<textarea data-unit="2" data-key="13" id="2.13" placeholder="Enter your response here." onblur="updateResponse(this)" oninput="editedResponse(this)"></textarea>
-
 Here, we see that as more carbon dioxide is present in the atmosphere, the ocean becomes more acidic. This means the pH is decreasing, and the concentration of hydrogen ions is increasing. We can see these changes over time at this next website by NOAA.
 
 - [Ocean Acidification Visualizer](https://www.nnvl.noaa.gov/view/globaldata.html#ACID), NOAA
@@ -297,8 +269,6 @@ One mineral that shell-building animals need is aragonite. But as the ocean beco
 - [Aragonite Visualizer](https://www.nnvl.noaa.gov/view/globaldata.html#ARAG), NOAA
 
 **Q: When you first open the site, what color is the ocean mainly? What does this mean? When you move the slider to some time between 2020 and 2030, what changes have you noticed? When you move the slider all the way to the right to the year 2100, what color is almost gone now? What color do you see more now? What does that mean for the animals that require aragonite to make their shells?**
-
-<textarea data-unit="2" data-key="14" id="2.14" placeholder="Enter your response here." onblur="updateResponse(this)" oninput="editedResponse(this)"></textarea>
 
 Here, we can see that the more acidic oceans are, the harder it is for animals to survive—and, as the video stated, if the oceans are acidic enough, their shells will begin to dissolve in the acidic oceans instead of growing stronger. This makes it harder for fish that eat these shelled animals to find food, which makes it harder for people who rely on these fish for their livelihoods to survive.
 
@@ -328,8 +298,6 @@ The video describes a distinction between plastic (non inheritable) and genetic 
 
 **Q: Which genetic (heritable) change did you find the most interesting? Briefly describe the change and why it is advantageous.**
 
-<textarea data-unit="2" data-key="15" id="2.15" placeholder="Enter your response here." onblur="updateResponse(this)" oninput="editedResponse(this)"></textarea>
-
 ## Human health
 
 Climate and weather have always played vital roles in human health. Climate influences the flora and fauna (plants and animals) that grow around us and provide sustenance; it determines the way in which we interact with our fellow creatures; and of course, humans thrive in a relatively small set of temperatures that we are lucky to currently experience here on Earth.
@@ -340,17 +308,11 @@ Cardiovascular diseases (disorders of the heart and blood vessels) are the #1 ca
 
 **Q: Briefly predict what might happen and why that might be the case.**
 
-<textarea data-unit="2" data-key="16" id="2.16" placeholder="Enter your response here." onblur="updateResponse(this)" oninput="editedResponse(this)"></textarea>
-
 Now take a look at this [case study published in the Iranian Journal of Public Health](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5395536). What did they conclude about the relationship between climate change and higher temperatures (at least past a certain point)? Tip: You don’t have to read the body of the paper to figure this out. If this can be generalized, what are the implications for the future?
 
 **Q: What kinds of adaptations and innovations would we need to combat increased cardiovascular disease, at the root or otherwise? This is a pretty big question, so feel free to get creative. Anything goes!**
 
-<textarea data-unit="2" data-key="17" id="2.17" placeholder="Enter your response here." onblur="updateResponse(this)" oninput="editedResponse(this)"></textarea>
-
 **Q: What are other examples of conditions you can think of that might be worsened by climate change? Try thinking about how you feel after an exercise session on a hot day.**
-
-<textarea data-unit="2" data-key="18" id="2.18" placeholder="Enter your response here." onblur="updateResponse(this)" oninput="editedResponse(this)"></textarea>
 
 After you’ve pondered that for a minute or two, briefly check out the following article.
 
@@ -368,15 +330,11 @@ Think about how you would illustrate the disparate effects of climate change on 
 
 **Q: Imagine how increasing temperature and humidity will affect you and your community. Now consider how it might affect a community in the developing world. What might be different?**
 
-<textarea data-unit="2" data-key="19" id="2.19" placeholder="Enter your response here." onblur="updateResponse(this)" oninput="editedResponse(this)"></textarea>
-
 ### Air pollution-related disease
 
 Have you ever thought about how climate change can affect the air you breathe?
 
 **Q: Make a prediction: What actions aggravate climate change that might also affect air quality?**
-
-<textarea data-unit="2" data-key="20" id="2.20" placeholder="Enter your response here." onblur="updateResponse(this)" oninput="editedResponse(this)"></textarea>
 
 In fact, when climate change causes more wildfires or when more forests are cleared for agriculture, more smoke enters the atmosphere. This increases the concentration of tiny particulates in the air. These particles can aggravate many respiratory health problems, like asthma, by irritating your eyes, nose, throat, and lungs. Over time, repeated exposure to high concentrations can cause other health issues like heart disease, lung cancer, chronic bronchitis, and more. This is yet another example of how climate change can have negative impacts on human health.
 
@@ -386,21 +344,13 @@ Now, take a look at this interactive from the New York Times that compares the c
 
 **Q: What was the pollution in your city on the worst air quality day of the year? What level would it be considered?**
 
-<textarea data-unit="2" data-key="21" id="2.21" placeholder="Enter your response here." onblur="updateResponse(this)" oninput="editedResponse(this)"></textarea>
-
 **Q: In which city was the most recent air quality crisis? How concentrated were the PM 2.5 particles? Is this even within the EPA’s air quality categorization scale?**
 
-<textarea data-unit="2" data-key="22" id="2.22" placeholder="Enter your response here." onblur="updateResponse(this)" oninput="editedResponse(this)"></textarea>
-
 **Q: What are some events in China or in Brazil that caused high PM 2.5 pollution during 2019?**
-
-<textarea data-unit="2" data-key="23" id="2.23" placeholder="Enter your response here." onblur="updateResponse(this)" oninput="editedResponse(this)"></textarea>
 
 Beijing also used to be plagued by poor air quality, but since 2014 actions have been taken to improve the air, such as setting limits on burning coal, new emissions standards for sources of air pollutants like power plants, and banning the building of new power plants while shutting down the oldest ones. It has also restricted the number of vehicles present on the road at any time and supported the use of electric buses that don’t create large amounts of air polluting particles.
 
 **Q: What are some actions that you can take to help lower air pollution?**
-
-<textarea data-unit="2" data-key="24" id="2.24" placeholder="Enter your response here." onblur="updateResponse(this)" oninput="editedResponse(this)"></textarea>
 
 ### Disease outbreaks
 
@@ -411,8 +361,6 @@ In addition to heat- and air pollution-related deaths and injuries, climate chan
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/E8uxJ-qqa4E" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 **Q: What did you learn about how climate change may worsen the spread of dengue fever and lyme disease? How do you think climate change will worsen the spread of other diseases based on what you learned?**
-
-<textarea data-unit="2" data-key="25" id="2.25" placeholder="Enter your response here." onblur="updateResponse(this)" oninput="editedResponse(this)"></textarea>
 
 ### Flooding and Storms
 
@@ -428,8 +376,6 @@ Read this article from the National Resources Defense Council (NRDC). Skim the f
 
 **Q: What is the link between climate change and waterborne disease? How might flooding impact some communities more than others?**
 
-<textarea data-unit="2" data-key="26" id="2.26" placeholder="Enter your response here." onblur="updateResponse(this)" oninput="editedResponse(this)"></textarea>
-
 ## Food security
 
 Food security is when all people at all times have physical, economic, and social access to sufficient, safe, and nutritious food to lead active and healthy lives ([source](https://www.youtube.com/watch?v=v24wT16OU2w)). If you’d like to learn more, watch the following [optional video](https://www.youtube.com/watch?v=krU01hlCdxo) from the World Economic Forum.
@@ -441,8 +387,6 @@ Reflect on all the other impacts of climate change you have learned about so far
 You can also read [this optional article](http://www.fao.org/climatechange/16606-05afe43bd276dae0f7461e8b9003cb79.pdf), which includes potential solutions to these issues.
 
 **Q: Which impacts in the article(s) did you anticipate? Which were new to you? Did you have any ideas that the article did not discuss?**
-
-<textarea data-unit="2" data-key="27" id="2.27" placeholder="Enter your response here." onblur="updateResponse(this)" oninput="editedResponse(this)"></textarea>
 
 ## Economic impacts
 
@@ -494,8 +438,6 @@ First, let's examine some of these dire situations around the world through this
 
 **Q: Pick two of the following locations (Greece, Houston, Nigeria, Guatemala, India, and New York City) and compare them: which challenges do they share, and which are unique?**
 
-<textarea data-unit="2" data-key="28" id="2.28" placeholder="Enter your response here." onblur="updateResponse(this)" oninput="editedResponse(this)"></textarea>
-
 Now, read at least the first two sections of this article from BBC that describes the "climate apartheid" as well as this article from CNBC that covers pre-existing health conditions and "green gentrification."
 
 - ['Climate apartheid' between rich and poor looms](https://www.bbc.com/news/world-48755154), BBC article
@@ -524,8 +466,6 @@ The rest of the article is optional, although we strongly recommend the section 
 
 **Q: Look back at all the numbers you have written down. Behind each one is a story just like you encountered in the New York Times article. Take a moment to reflect and to appreciate the extent and scale of what you have read about. You can use the submission box as a space for thoughts, questions, or any method that helps you process what you’ve read.**
 
-<textarea data-unit="2" data-key="29" id="2.29" placeholder="Enter your response here." onblur="updateResponse(this)" oninput="editedResponse(this)"></textarea>
-
 ### Indigenous peoples and the global South
 
 Some of the most vulnerable to the effects of climate change are the indigenous populations of the world. We’ll first look at the native peoples of the Pacific Islanders as a case study.
@@ -547,5 +487,3 @@ If you want to learn more about threats facing the Pacific islands and their peo
 Of course, the Pacific islands are not the only people threatened by climate change. Read this [report](https://www.un.org/en/events/indigenousday/pdf/Backgrounder_ClimateChange_FINAL.pdf) about the impacts of climate change on many different peoples from all over the world and how they are adapting.
 
 **Activity: Pick an indigenous people or region of indigenous peoples, either from the above report or from anywhere in the world, to research further. Describe at least three specific ways that climate change threatens the survival, health, livelihoods, culture, or other aspects of the lives of the people you have chosen.**
-
-<textarea data-unit="2" data-key="30" id="2.30" placeholder="Enter your response here." onblur="updateResponse(this)" oninput="editedResponse(this)"></textarea>
