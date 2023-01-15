@@ -73,13 +73,7 @@ const Unit = ({ html, frontmatter, children }) => {
     .map(n => n.node)
     .sort((a, b) => a.frontmatter.unit - b.frontmatter.unit)
 
-  const [answeredProgress, setAnsweredProgress] = React.useState(0)
   const [navOpen, setNavOpen] = useState(false)
-  const [scrollLocation, setScrollLocation] = useState({
-    percent: 0,
-    colorPercent: 0,
-    progress: answeredProgress,
-  })
 
   const unitRef = React.createRef()
   const [contentRef, setContentRef] = useState({ current: null })
@@ -108,30 +102,6 @@ const Unit = ({ html, frontmatter, children }) => {
       text.slice(1),
       (a, n) => parseInt(a.slice(n, n + 2), 16)
     )
-  function scrollColor() {
-    if (unitRef.current) {
-      setScrollLocation({
-        percent: scrollLocation.percent,
-        colorPercent: frontmatter.scrollcolorbottom
-          ? unitRef.current.scrollTop >
-            unitRef.current.scrollHeight - unitRef.current.offsetHeight * 2
-            ? (unitRef.current.scrollTop -
-                (unitRef.current.scrollHeight -
-                  unitRef.current.offsetHeight * 2)) /
-              unitRef.current.offsetHeight
-            : 0
-          : unitRef.current.scrollTop /
-            (unitRef.current.scrollHeight - unitRef.current.offsetHeight),
-        progress: answeredProgress,
-      })
-    }
-    setTimeout(() => {
-      if (typeof requestAnimationFrame !== 'undefined')
-        requestAnimationFrame(scrollColor)
-    }, 100)
-  }
-
-  if (frontmatter.scrollcolor) scrollColor()
 
   return (
     <Themed.root
@@ -143,11 +113,7 @@ const Unit = ({ html, frontmatter, children }) => {
         },
         '::-webkit-scrollbar, *::-webkit-scrollbar': {
           bg: frontmatter.scrollcolor
-            ? getColor(
-                frontmatter.background,
-                frontmatter.scrollcolor,
-                scrollLocation
-              )
+            ? getColor(frontmatter.background, frontmatter.scrollcolor)
             : frontmatter.background,
           transition: 'background-color 0.5s',
         },
@@ -176,7 +142,6 @@ const Unit = ({ html, frontmatter, children }) => {
         open={navOpen}
         setOpen={setNavOpen}
         frontmatter={frontmatter}
-        scrollLocation={scrollLocation}
         contentRef={contentRef}
         unitRef={unitRef}
         navButtonRef={navButtonRef}
@@ -187,11 +152,7 @@ const Unit = ({ html, frontmatter, children }) => {
         sx={{
           flex: '1 0 auto',
           bg: frontmatter.scrollcolor
-            ? getColor(
-                frontmatter.background,
-                frontmatter.scrollcolor,
-                scrollLocation
-              )
+            ? getColor(frontmatter.background, frontmatter.scrollcolor)
             : frontmatter.background,
           transition: 'background-color 0.5s',
           color: frontmatter.text,
@@ -212,11 +173,7 @@ const Unit = ({ html, frontmatter, children }) => {
             width: '1em',
             color: frontmatter.text,
             backgroundColor: frontmatter.scrollcolor
-              ? getColor(
-                  frontmatter.background,
-                  frontmatter.scrollcolor,
-                  scrollLocation
-                )
+              ? getColor(frontmatter.background, frontmatter.scrollcolor)
               : frontmatter.background,
             transition: 'background-color 0.5s',
             '&:active': {
@@ -226,13 +183,6 @@ const Unit = ({ html, frontmatter, children }) => {
             zIndex: 997,
           }}
           onClick={() => {
-            setScrollLocation({
-              colorPercent: scrollLocation.colorPercent,
-              percent:
-                unitRef.current.scrollTop /
-                (unitRef.current.scrollHeight - unitRef.current.offsetHeight),
-              progress: answeredProgress,
-            })
             setNavOpen(true)
           }}
         >
