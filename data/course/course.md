@@ -15,6 +15,8 @@ sections:
 
 # Welcome to climatedu!
 
+**Note: climatedu has moved to [climatedu.vivianwli.com](https://climatedu.vivianwli.com) and will no longer be available at climatedu.org after August 2023.**
+
 climatedu is an online climate education course made for students, by students. Here, you'd find consolidated sustainability education resources from all over the Internet covering current issues and solutions. Please take a look around!
 
 This intiative began as a Girl Scout Gold Award project in hopes of providing a consolidated resource for kids seeking to learn about climate change and sustainability. Many friends, mentors, and community partners were vital to making this aspiration a reality, including:
