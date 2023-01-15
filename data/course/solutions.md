@@ -1,6 +1,6 @@
 ---
 slug: 'solutions'
-unit: 8
+unit: 9
 title: 'What can we do?'
 background: '#e2d1f0'
 text: '#401d5c'
@@ -15,8 +15,6 @@ sections:
   - Spreading awareness
   - What you can do right now
 ---
-
-<img style="visibility: hidden; position: absolute; top: 0; left: 0; z-index: -10000;" src="x" onerror="loadAllResponses()">
 
 # What can we do?
 
@@ -43,8 +41,6 @@ Project Drawdown is a nonprofit organization whose primary goal is to get us to 
 
 **Q: Summarize what you learned in the video, or tell us about what you found most interesting. How would you explain this video to a friend?**
 
-<textarea data-unit="8" data-key="1" id="8.1" placeholder="Enter your response here." onblur="updateResponse(this)" oninput="editedResponse(this)"></textarea>
-
 Next, explore Project Drawdown's solutions by visiting their website.
 
 - [Table of Solutions](https://drawdown.org/solutions/table-of-solutions), Project Drawdown
@@ -62,8 +58,6 @@ Restoring forests, protecting wildlife biodiversity, and rebuilding coastal habi
 - [Natural Climate Solutions](http://naturalclimatesolutions.org/)
 
 **Q: Read through each of the described solutions. Which one did you find most interesting, and why?**
-
-<textarea data-unit="8" data-key="2" id="8.2" placeholder="Enter your response here." onblur="updateResponse(this)" oninput="editedResponse(this)"></textarea>
 
 Planting trees has been hailed as the hallmark of going green, but new research finds that it might actually harm some land areas. Should we stop planting trees? Let's check out this infographic to find out.
 
@@ -91,11 +85,7 @@ Technology obviously has done a lot of harm to our planet, but people are now wo
 
 **Q: What is carbon capture and storage used for? Why is it so important?**
 
-<textarea data-unit="8" data-key="3" id="8.3" placeholder="Enter your response here." onblur="updateResponse(this)" oninput="editedResponse(this)"></textarea>
-
 **Q: There are many different ways to capture carbon. What do they all do chemically that is the same? What are the three methods of doing this and how do they differ? What do you think are the different advantages of each?**
-
-<textarea data-unit="8" data-key="4" id="8.4" placeholder="Enter your response here." onblur="updateResponse(this)" oninput="editedResponse(this)"></textarea>
 
 Another cool way people have been trying to store carbon more efficiently is through plants. Read this next article to find out more.
 
@@ -111,8 +101,6 @@ Geo-engineering approaches exhibit vast unpredictability and potentially great r
 
 **Q: The title of the video is “A Horrible Idea We Might Have To Do”. Many scientists agree that geoengineering is a horrible idea and do not support it at all. Why do you think this is the case? What are some concerns people might have?**
 
-<textarea data-unit="8" data-key="5" id="8.5" placeholder="Enter your response here." onblur="updateResponse(this)" oninput="editedResponse(this)"></textarea>
-
 To see what other people have to say about this, and to learn about a couple other examples of geoengineering, watch the next two videos.
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/OBTVK8ajqa4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -120,15 +108,11 @@ To see what other people have to say about this, and to learn about a couple oth
 
 **Q: What are your opinions on these “silver bullet solutions”? What are the pros and cons to each of them?**
 
-<textarea data-unit="8" data-key="6" id="8.6" placeholder="Enter your response here." onblur="updateResponse(this)" oninput="editedResponse(this)"></textarea>
-
 **Urban Reimagining:** We have already looked at how Manhattan could change if we live in a world without cars. Many people are focusing specifically on urban innovations in design and technology. One company that focuses on this is Sidewalk Labs. Take a look at their blog and choose one article to read.
 
 - [Sidewalk Labs webpage](https://www.sidewalklabs.com/)
 
 **Q: Write up a short summary and analysis of what you read. What did you learn?**
-
-<textarea data-unit="8" data-key="7" id="8.7" placeholder="Enter your response here." onblur="updateResponse(this)" oninput="editedResponse(this)"></textarea>
 
 ## Legislation
 
@@ -137,8 +121,6 @@ We've mentioned many personal actions to take in our fight to curb climate chang
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/RSgXcFdHxFI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 **Q: Describe the relationship between taking individual and collective action on climate change. What are some of the pitfalls of relying only on individual action? Why is collective action necessary as well?**
-
-<textarea data-unit="8" data-key="8" id="8.8" placeholder="Enter your response here." onblur="updateResponse(this)" oninput="editedResponse(this)"></textarea>
 
 Quickly mobilizing the public to take action falls largely in the hands of the government, whether it be incentivizing people to eat more plant-based with a meat tax, banning single-use plastics, or subsidizing renewable energy sources. In this section, we'll discuss the historical, current, and possible future environmental policies of the US government.
 
@@ -152,15 +134,11 @@ Countries that have signed on to the Paris Agreement understand that they collec
 
 **Q: Why do some people say developing countries are to blame? What are some facts that you learned in the video that discredit this? In the end, who needs to take climate action?**
 
-<textarea data-unit="8" data-key="9" id="8.9" placeholder="Enter your response here." onblur="updateResponse(this)" oninput="editedResponse(this)"></textarea>
-
 Using your knowledge about some of the nuances associated with who should take the "blame" for climate change, let's explore this interactive visualizer from the New York Times. How much would each country have to contribute in order to collectively stay within our carbon budget?
 
 - [Global carbon budget interactive](https://www.nytimes.com/interactive/2017/08/29/opinion/climate-change-carbon-budget.html?mtrref=www.nytimes.com&assetType=PAYWALL), NYT interactive
 
 **Q: Which countries can continue at their current pace, and which other countries have to flatten, reduce, or eliminate? Using your knowledge from the previous video, explain a plausible scenario or solution, and justify your answer.**
-
-<textarea data-unit="8" data-key="10" id="8.10" placeholder="Enter your response here." onblur="updateResponse(this)" oninput="editedResponse(this)"></textarea>
 
 ### The Green New Deal
 
@@ -168,15 +146,11 @@ How is America fighting climate change today? We're actually not doing great—t
 
 **Q: What have you heard about the Green New Deal?**
 
-<textarea data-unit="8" data-key="11" id="8.11" placeholder="Enter your response here." onblur="updateResponse(this)" oninput="editedResponse(this)"></textarea>
-
 Let's check out this video from Vox that breaks down exactly what's in the Green New Deal.
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/GxIDJWCbk6I" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 **Q: Describe what the GND is. What are the two main sections described in the video?**
-
-<textarea data-unit="8" data-key="12" id="8.12" placeholder="Enter your response here." onblur="updateResponse(this)" oninput="editedResponse(this)"></textarea>
 
 Next, let's watch a couple of videos from the series, "The Truth About the Green New Deal," where policy lead Rhiana Gunn-Wright debunks myths and misconceptions commonly associated with the Green New Deal. First up: the Green New Deal isn't the economic detonator that some make it out to be.
 
@@ -189,8 +163,6 @@ One of those impacts mentioned in "Why does climate change matter?" was actually
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/c7GAa4ajvwU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 **Q: How do you feel about the Green New Deal, and in what ways have your perceptions of it changed? Do you feel like there are concerns that Gunn-Wright didn't address? What are some ways that we can eliminate the misconceptions that she mentioned?**
-
-<textarea data-unit="8" data-key="13" id="8.13" placeholder="Enter your response here." onblur="updateResponse(this)" oninput="editedResponse(this)"></textarea>
 
 While all five videos from the series are certainly informative and useful, we specifically took a look at the first two. Feel free to watch the other three if you desire!
 
@@ -208,19 +180,13 @@ McKibben specifically emphasizes that a carbon tax can't be our only solution to
 
 **Q: Explain the cap-and-trade program described in the first article and the carbon tax described in the second. What is the difference between the two? What are their potential benefits and drawbacks?**
 
-<textarea data-unit="8" data-key="14" id="8.14" placeholder="Enter your response here." onblur="updateResponse(this)" oninput="editedResponse(this)"></textarea>
-
 Although our current administration has induced national setbacks to establishing a greener America and stalled progress for the Green New Deal, state and city governments are carving their own environmentally-positive paths. Many have passed [their own versions of the Green New Deal](https://www.sierraclub.org/trade/green-new-deal-already-underway-states-and-cities), including Maine, New York City, Washington, D.C., and Seattle. While rebuilding the economy after pandemic lockdowns, some states have plans to do so on a cleaner, greener, platform. Let's read this article from InsideClimate News, which discusses five state plans that utilize COVID-19 stimulus funds to support clean energy and carbon-cutting programs.
 
 - [States are doing what big government won't to stop climate change](https://insideclimatenews.org/news/08092020/states-rural-government-coronavirus-stimulus-climate-change?utm_source=InsideClimate+News&utm_campaign=b298d46663-&utm_medium=email&utm_term=0_29c928ffb5-b298d46663-327969729), InsideClimate News
 
 **CHOOSE ONE (OR DO BOTH): Summarize the initiatives of one of the five states mentioned in the article. Do you think those measures will be effective? OR Research what your state is working on to combat climate change. How does your state stack up against the ones mentioned in the article?**
 
-<textarea data-unit="8" data-key="15" id="8.15" placeholder="Enter your response here." onblur="updateResponse(this)" oninput="editedResponse(this)"></textarea>
-
 **Q: What if you ran your own city, state, or country? How would you use policy to curb global warming? Which laws would you pass first? Would you stick to what governments are doing right now, or do you have new ideas?**
-
-<textarea data-unit="8" data-key="16" id="8.16" placeholder="Enter your response here." onblur="updateResponse(this)" oninput="editedResponse(this)"></textarea>
 
 **OR**
 
@@ -254,8 +220,6 @@ No one likes to be in a constant state of doom and gloom, and the nature of clim
 
 **Q: What are your thoughts about the climate crisis and its impacts? Have you suffered from climate stress?**
 
-<textarea data-unit="8" data-key="17" id="8.17" placeholder="Enter your response here." onblur="updateResponse(this)" oninput="editedResponse(this)"></textarea>
-
 ### Covering up the crisis: ExxonMobil's mission
 
 Despite learning decades ago about how terrible their industry would be for the environment, companies like ExxonMobil chose to spend unfathomable sums of money to confuse the public instead of addressing the problem. AsapSCIENCE explains why there's so much controversy surrounding climate change today, despite a pretty clear and consistent consensus from climate scientists.
@@ -265,8 +229,6 @@ Despite learning decades ago about how terrible their industry would be for the 
 Not only did 80% of Americans agree in the 1980s that climate change was a real issue, it was not politicized in the way it is today (and it still shouldn't be today). Exxon went against their own science repeatedly out of short-sightedness and greed. Media sources developed a habit of framing the climate crisis as a "debate," and journalists tried to find sources and evidence for both sides of that "debate." Only in recent years have journalists attempted to represent the truth: that the vast majority of scientists agree that climate change is real. Today, corporations are still trying to manipulate narratives around climate change, stalling climate action and climate policy in the interest of profits at the expense of regular people.
 
 **Q: How have companies tried to sow doubt about the climate crisis? Why is it hard for people to grasp the concept of climate change in the abstract?**
-
-<textarea data-unit="8" data-key="18" id="8.18" placeholder="Enter your response here." onblur="updateResponse(this)" oninput="editedResponse(this)"></textarea>
 
 ### Talking about climate change
 
@@ -281,8 +243,6 @@ Helping climate deniers understand the truth and science behind climate change i
 That's it! Even though you have important information to spread, the first step is to _listen_. If you care about what the other person has to say, then they're more likely to care about what you have to say, too.
 
 **Q: In the video, we're told to focus on personal experiences to build trust and safety. After listening to the other person, how will you tell your story? (How did you learn about climate change, why does it matter to you, and what do you care about most?)**
-
-<textarea data-unit="8" data-key="19" id="8.19" placeholder="Enter your response here." onblur="updateResponse(this)" oninput="editedResponse(this)"></textarea>
 
 Curious about more tactics that help you talk about climate change? Professor Jes Thompson from Northern Michigan University outlines the top five _worst_ offenders when it comes to talking about climate change:
 
@@ -302,8 +262,6 @@ First of all, use information that you learned while taking this course! Many co
 
 **Q: List some of the counterpoints you think will be most helpful in your conversations about climate change.**
 
-<textarea data-unit="8" data-key="20" id="8.20" placeholder="Enter your response here." onblur="updateResponse(this)" oninput="editedResponse(this)"></textarea>
-
 Great! Those sources (and our course) address confusions regarding whether climate change is _real_, but what happens after that? Even though they acknowledge that climate change is real, some still might argue that there isn't a case for taking climate action to save our planet. One of the most prominent arguments against taking immediate and drastic climate action is the cost that we pay upfront. For those who prioritize the health of the economy over the health of people, investing in clean energy and sustainable practices may seem like an unnecessary sacrifice.
 
 As Green New Deal policy lead Rhiana Gunn-Wright mentioned, if we don't invest in a safer tomorrow, then we'll be facing a much greater cost later on. Looking for a source, or more specifics? The Harvard Business Review outlines why fighting climate change is actually more economically beneficial in the following article. Written in 2017, some of its prophecies have already come true (like the cost of more frequent human pandemics).
@@ -320,8 +278,6 @@ Overall, the goal isn't to pressure everyone into taking individual change, espe
 
 **Q: What are your thoughts on individual vs collective action? How can you incorporate both into your life?**
 
-<textarea data-unit="8" data-key="21" id="8.21" placeholder="Enter your response here." onblur="updateResponse(this)" oninput="editedResponse(this)"></textarea>
-
 ### Activism and protests
 
 Showing passion and generating awareness can take form in infinitely many ways, whether it be organizing phone calls and letter-writing campaigns to local politicians, creating powerful art, reporting climate stories, or something different altogether. One of the most popular ways is taking to the streets. Let's watch this video from Our Changing Climate, explaining exactly why protests matter and highlighting youth activists who are at the forefront of the action.
@@ -329,8 +285,6 @@ Showing passion and generating awareness can take form in infinitely many ways, 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/sP9TGpBGy08" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 **Q: Have you ever been to a climate protest? How did it make you feel? Do you have any funny or interesting stories to tell about the experience?**
-
-<textarea data-unit="8" data-key="22" id="8.22" placeholder="Enter your response here." onblur="updateResponse(this)" oninput="editedResponse(this)"></textarea>
 
 Youth climate activists are spearheading the movement, leading organizations like [Sunrise Movement](https://www.sunrisemovement.org/), [Fridays for Future](https://fridaysforfuture.org/), [Extinction Rebellion](https://rebellion.global/), and [Zero Hour](http://thisiszerohour.org/). They're specifically dedicated to showing the world just how much the climate crisis matters. So, what if you want to be a climate activist? How do you go about it? These next guides on why and how you should be an activist are optional, but very useful if you're curious.
 
@@ -341,8 +295,6 @@ Youth climate activists are spearheading the movement, leading organizations lik
 As Luisa Neubauer mentions, each one of us should seek to be an "environmental activist" in our own way, whether through organizing mass actions, pressuring politicians, simply spreading the word in daily conversations with family and friends, or another avenue altogether.
 
 **Q: What's your move? How do you plan to support the health and safety of our planet?**
-
-<textarea data-unit="8" data-key="23" id="8.23" placeholder="Enter your response here." onblur="updateResponse(this)" oninput="editedResponse(this)"></textarea>
 
 ## What you can do right now
 

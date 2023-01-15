@@ -1,6 +1,6 @@
 ---
 slug: 'waste'
-unit: 4
+unit: 5
 title: 'Waste'
 background: '#CEE2FF'
 scrollcolor: '#8cd7ff'
@@ -17,8 +17,6 @@ sections:
   - Sustainability and Privilege
 ---
 
-<img style="visibility: hidden; position: absolute; top: 0; left: 0; z-index: -10000;" src="x" onerror="loadAllResponses()">
-
 # Waste
 
 ## America's disposable lifestyle
@@ -28,8 +26,6 @@ Plastic wasn't always our go-to. In fact, it didn't gain popularity until the 19
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/RS7IzU2VJIQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 **Q: Name three things you learned, two things you were surprised by, and one question you still have.**
-
-<textarea data-unit="4" data-key="1" id="4.1" placeholder="Enter your response here." onblur="updateResponse(this)" oninput="editedResponse(this)"></textarea>
 
 Next, let's take a closer look at the journey that our discarded plastic takes, and the impact that it has on the environment. When we throw away plastic, it's certainly "out of sight, out of mind" for us, but for the plastic, an arduous and tragic journey lies ahead.
 
@@ -53,8 +49,6 @@ So, a lot of the plastic we throw away ends up in the ocean — 8 million tons o
 
 **Summarize a section of your choice from the article.**
 
-<textarea data-unit="4" data-key="2" id="4.2" placeholder="Enter your response here." onblur="updateResponse(this)" oninput="editedResponse(this)"></textarea>
-
 The Ocean Cleanup has a variety of useful resources, so let's look at one more: the price tag of plastic pollution. Most sources focus on the ecological impacts of plastic pollution, but The Ocean Cleanup also makes the economic case for creating cleaner oceans. According to their economic assessment model, the greatest costs of plastic pollution come from cleanup. Plastic waste hinders profits to the fisheries and aquaculture industry, as well as tourism. Funding these necessary cleanups would cost billions.
 
 Explore this interactive map and take note of what you find. Lighter shades of blue indicate higher costs from plastic waste, while darker shades indicate lower costs. Hover over a country to find the average amount of money that they pay for plastic waste. In the pie chart that pops up, scroll over each section to learn about the money paid by each industry. If you're curious to learn more about the model behind this interactive map, check out the article linked below.
@@ -64,23 +58,17 @@ Explore this interactive map and take note of what you find. Lighter shades of b
 
 **Q: Which countries are paying the most for plastic waste? Choose a country—how much does that country pay, and which sector does it lose the most from?**
 
-<textarea data-unit="4" data-key="3" id="4.3" placeholder="Enter your response here." onblur="updateResponse(this)" oninput="editedResponse(this)"></textarea>
-
 Visit this overview of our global plastic pollution crisis from National Geographic, where they review most of the information that we've covered so far. Pay attention to the photo gallery of animals in a world of plastic.
 
 - [The World's Plastic Pollution Crisis explained](https://www.nationalgeographic.com/environment/habitats/plastic-pollution/), The National Geographic article
 
 **Q: How do these photos make you feel? Out of the 11 photos, which one impacted you the most? Which one was the most memorable?**
 
-<textarea data-unit="4" data-key="4" id="4.4" placeholder="Enter your response here." onblur="updateResponse(this)" oninput="editedResponse(this)"></textarea>
-
 You may have noticed that many of our sources have mentioned the toxic microplastics that make their way up the food chain and onto our dinner plates. Take a look at this essay from the New York Times, written by one of our writers (Vivian Li)!
 
 - [An Unexpected Dinner Guest](https://www.nytimes.com/2020/05/07/learning/an-unexpected-dinner-guest-marine-plastic-pollution-hides-a-neurological-toxin-in-our-food.html), NYT article
 
 **Q: Summarize the article. How did the information make you feel?**
-
-<textarea data-unit="4" data-key="5" id="4.5" placeholder="Enter your response here." onblur="updateResponse(this)" oninput="editedResponse(this)"></textarea>
 
 Finally, watch the first two minutes of this video from Oceana for some dramatic visuals of the plastic we've dumped in the oceans. It's terrifying, but let's think—how can we solve this?
 
@@ -110,13 +98,9 @@ Recycling is hard, but there are ways we can work to improve it. **When in doubt
 
 **Q: Name two things you were surprised that could or could not be recycled.**
 
-<textarea data-unit="4" data-key="6" id="4.6" placeholder="Enter your response here." onblur="updateResponse(this)" oninput="editedResponse(this)"></textarea>
-
 If you read the video description, The YEARS Project has included a recap of what can and can't be recycled. Feel free to combine these general guidelines with the recycling guidelines set by your city or county, and print it out as a handy cheat sheet. Let's do that right now!
 
 **Q: What are the recycling requirements for your county or city? What can you recycle, and what should you avoid? Was there anything that surprised you?**
-
-<textarea data-unit="4" data-key="7" id="4.7" placeholder="Enter your response here." onblur="updateResponse(this)" oninput="editedResponse(this)"></textarea>
 
 ## Composting
 
@@ -137,8 +121,6 @@ What about old phones and tablets that we can't recycle OR compost? They're ofte
 As Robbins mentioned in the article, there is no "silver bullet" for this single-use catastrophe. In addition to developing smart recycling infrastructure, companies should be taking an active role in recycling and reuse rather than throwing the costs onto consumers.
 
 **Q: Robbins's article mentions several specific disadvantages associated with replacing our current plastics with bioplastics. Explain one of your choice.**
-
-<textarea data-unit="4" data-key="8" id="4.8" placeholder="Enter your response here." onblur="updateResponse(this)" oninput="editedResponse(this)"></textarea>
 
 Recycling isn't the only tool we have in our toolbox, either. In "Reduce, Reuse, Recycle," recycling actually comes _after_ two other R's, which are much more important. Instead of _recycling_ a plastic water bottle every day (where it probably isn't really being recycled), _reduce_ the number of bottles you buy and _reuse_ a sturdier bottle that isn't made to be thrown away.
 
@@ -161,8 +143,6 @@ It seems that there are already some pretty viable options for campuses, workpla
 There are also countless zero-waste substitutes for disposables that cover every part of our daily lifestyle. Check out Meri's blog with a list of [142 whopping sustainable substitutes](https://www.almostzerowaste.com/zero-waste-products-list/), and click on the links if you're curious about what each item looks like. There are many other sustainable blogs out there that provide useful tips, tricks, and tutorials for making the most of a lifestyle to reduce waste. Keep these resources in mind on your journey toward sustainability!
 
 **Q: Of Meri's list of substitutes, what do you find most useful in your own life? Are there some items that stick out to you? Was there any commonly wasteful item that didn't have a substitute on Meri's list? How could you make that item sustainable?**
-
-<textarea data-unit="4" data-key="9" id="4.9" placeholder="Enter your response here." onblur="updateResponse(this)" oninput="editedResponse(this)"></textarea>
 
 ## Fast fashion
 
@@ -188,8 +168,6 @@ Organizations are popping up to solve the textile waste crisis, too. Let's follo
 
 **Q: What is one thing you've learned about fast fashion? What is one action you can take to reduce your textile waste?**
 
-<textarea data-unit="4" data-key="10" id="4.10" placeholder="Enter your response here." onblur="updateResponse(this)" oninput="editedResponse(this)"></textarea>
-
 ## Sustainability and Privilege
 
 Evidently, many of the solutions associated with sustainability and zero-waste come from extremely privileged perspectives. This section has covered many consumer-side adaptations to curate a healthier planet, but it's important to remember that the responsibility of sustainable consumption falls on businesses and government as opposed to individuals like you and me. If you're not in an economic position to invest in reusable items or avoid fast fashion, don't feel guilty! On one hand, it's important to acknowledge how we can reduce our waste. However, on the other, our disposable-dependent society is largely the fault of irresponsible corporations.
@@ -202,8 +180,4 @@ It's all about being creative, imaginative, curious, and forgiving.
 
 **Q: What's something you enjoy, or something you do every day? Is it sustainable, or does it contribute to waste in some way? Are there ways that you can make that activity have a lesser negative impact or a greater positive impact on the environment?**
 
-<textarea data-unit="4" data-key="11" id="4.11" placeholder="Enter your response here." onblur="updateResponse(this)" oninput="editedResponse(this)"></textarea>
-
 **Activity: Try going zero-waste for 48 hours, and report back, writing down each piece of waste that you weren't able to avoid. How did you do? What was the most difficult part?**
-
-<textarea data-unit="4" data-key="12" id="4.12" placeholder="Enter your response here." onblur="updateResponse(this)" oninput="editedResponse(this)"></textarea>

@@ -40,36 +40,8 @@ module.exports = {
     {
       resolve: 'gatsby-source-filesystem',
       options: {
-        name: 'people',
-        path: path.resolve(__dirname, 'data/people/'),
-      },
-    },
-    {
-      resolve: 'gatsby-source-filesystem',
-      options: {
         name: 'course',
         path: path.resolve(__dirname, 'data/course/'),
-      },
-    },
-    {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        name: 'hero',
-        path: path.resolve(__dirname, 'data/hero/'),
-      },
-    },
-    {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        name: 'config',
-        path: path.resolve(__dirname, 'data/config/'),
-      },
-    },
-    {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        name: 'media',
-        path: path.resolve(__dirname, 'data/media/'),
       },
     },
   ],
@@ -84,72 +56,9 @@ module.exports = {
     url: 'https://climatedu.org',
     socials: [
       {
-        icon: 'IoMdMail',
-        href: 'mailto:hello@climatedu.org',
-        name: 'Email',
-      },
-      {
         icon: 'IoLogoInstagram',
         href: 'https://instagram.com/climateduteam',
         name: 'Instagram',
-      },
-      {
-        icon: 'IoLogoTwitter',
-        href: 'https://twitter.com/climateduteam',
-        name: 'Twitter',
-      },
-      {
-        icon: 'IoLogoYoutube',
-        href: 'https://www.youtube.com/channel/UCmImqBAZqWWXPzmeArLJ-4Q',
-        name: 'YouTube',
-      },
-    ],
-    navLinks: [
-      {
-        location: '/',
-        text: 'Home',
-      },
-      {
-        text: 'About',
-        location: '/about/',
-        dropdown: [
-          {
-            location: '/about/team/',
-            text: 'Our Team',
-          },
-          {
-            location: '/about/mission/',
-            text: 'Our Mission',
-          },
-          {
-            externalLink: true,
-            location:
-              'https://mygreenmontgomery.org/2020/high-school-student-designs-climate-education-course-for-middle-schoolers/',
-            text: 'In the News',
-          },
-        ],
-      },
-      {
-        location: null,
-        text: 'Resources',
-        dropdown: [
-          {
-            location: '/sources/',
-            text: 'Sources',
-          },
-          {
-            location: '/apply/',
-            text: 'Apply',
-          },
-          {
-            location: '/camp/',
-            text: 'Camp',
-          },
-        ],
-      },
-      {
-        location: '/contact/',
-        text: 'Contact Us',
       },
     ],
   },

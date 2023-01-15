@@ -1,6 +1,6 @@
 ---
 slug: 'urbanization'
-unit: 7
+unit: 8
 title: 'Urbanization'
 background: '#dedede'
 highlight: '#7a7a7a'
@@ -12,8 +12,6 @@ sections:
   - Green infrastructure
 ---
 
-<img style="visibility: hidden; position: absolute; top: 0; left: 0; z-index: -10000;" src="x" onerror="loadAllResponses()">
-
 # Urbanization
 
 When you think of urbanization, what first comes to mind? The tall skyscrapers of New York City or the crowded crosswalks from Tokyo? Throughout history, millions of people have moved from the country to cities for economic, social, and political reasons. Unsurprisingly, this urbanization is an ongoing global trend! More than half the world population currently live in urban areas, and it’s projected that almost 7 billion people will live in urban areas by 2050 ([source](https://ourworldindata.org/urbanization#how-many-people-will-live-in-urban-areas-in-the-future)).
@@ -24,15 +22,11 @@ Air pollution and fossil fuel usage are probably some of the first environmental
 
 **Q: What are the contributing factors of urban heat islands? Why are urban heat islands harmful?**
 
-<textarea data-unit="7" data-key="1" id="7.1" placeholder="Enter your response here." onblur="updateResponse(this)" oninput="editedResponse(this)"></textarea>
-
 Urban heat islands can be detrimental to human health, especially during heat waves, which are increasingly common. Check out this global map of the number of deadly heat days in different countries over time. Be sure to click on red and orange areas to see the heat anomalies and the deadly thresholds of that area.
 
 - [Heatwaves: Number of deadly heat days](https://maps.esri.com/globalriskofdeadlyheat/#), interactive map from University of Hawaii at Manoa
 
 **Q: If you compare just the 2020 world map to the 2050 world map, what differences do you see? Can you think of possible causes for these differences?**
-
-<textarea data-unit="7" data-key="2" id="7.2" placeholder="Enter your response here." onblur="updateResponse(this)" oninput="editedResponse(this)"></textarea>
 
 It’s not a coincidence that the hottest areas also happen to be in the world’s most urbanized cities. As we’ve just learned, they are indeed related! Try thinking of solutions that cities can work towards. Then take a look at this Grist video and EPA article about the different steps that US cities have taken to diminish the urban heat island effect.
 
@@ -41,8 +35,6 @@ It’s not a coincidence that the hottest areas also happen to be in the world�
 - [Reduce Urban Heat Island Effect](https://www.epa.gov/green-infrastructure/reduce-urban-heat-island-effect), EPA article
 
 **Q: Describe two solutions to urban heat islands that you learned about. Can you think of your own?**
-
-<textarea data-unit="7" data-key="3" id="7.3" placeholder="Enter your response here." onblur="updateResponse(this)" oninput="editedResponse(this)"></textarea>
 
 ## Thermal inversions
 
@@ -66,15 +58,11 @@ Everyone has a general idea of what smog is - usually a yellowish dense fog or h
 
 **Q: How are the secondary pollutants formed and how do these pollutants affect human health? What kinds of cities are the most vulnerable to photochemical smog (hint: their surrounding geographies)?**
 
-<textarea data-unit="7" data-key="4" id="7.4" placeholder="Enter your response here." onblur="updateResponse(this)" oninput="editedResponse(this)"></textarea>
-
 **Tropospheric ozone**, one of the main pollutants of photochemical smog, is potent to all plant and animal life. Plants like tobacco, tomato, and spinach, are sensitive and highly reactive to ozone. Therefore, photochemical smog has the ability to damage plant leaves, stunt growth, and increase vulnerability to disease. Studies conducted from 1980 to 1989 exposed the most important agronomic crops in the USA to varying concentrations of ozone (O<sub>3</sub>). Below were their findings:
 
 ![Effect of O3 on Yield of Crops](./images/7-crops.png)
 
 **Q: What trends, if any, do you see in the graph? Which crop(s) lost the most yield and what implications does that have in our lives? What do you predict will happen in future years?**
-
-<textarea data-unit="7" data-key="5" id="7.5" placeholder="Enter your response here." onblur="updateResponse(this)" oninput="editedResponse(this)"></textarea>
 
 Remember the story from Unit 2 ("Why does climate change matter?") about Uruk and Anuradhapura? As a quick refresher, Uruk’s farmers chopped down their trees to make space for more crops and infrastructure. But without trees to filter their water supply, Uruk’s irrigation became contaminated and rendered the soil way too salty to grow agriculture. Contrastingly, in Anuradhapura, where trees were held sacred, their irrigation system ended up working with the surrounding forests and their population grew twofold.
 
@@ -83,8 +71,6 @@ This historical example shows us just how important trees are, especially as the
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/aKyvGHycngM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 **Q: Why is planting trees helpful in preventing smog and urban heat islands? Imagine a city near you: what would it be like to walk through it if it was filled with more trees?**
-
-<textarea data-unit="7" data-key="6" id="7.6" placeholder="Enter your response here." onblur="updateResponse(this)" oninput="editedResponse(this)"></textarea>
 
 ## Industry
 
@@ -101,8 +87,6 @@ The primary sector includes all industries involving the extraction and producti
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Tudal_4x4F0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 **Q: What is the fracking fluid’s role in collecting oil and natural gases? What is flow-back liquid and how can it be dealt with? Why is fracking so controversial?**
-
-<textarea data-unit="7" data-key="7" id="7.7" placeholder="Enter your response here." onblur="updateResponse(this)" oninput="editedResponse(this)"></textarea>
 
 With mining, we are literally reshaping the earth and unearthing large amounts of precious metals and sulfides. Iron and steel industries alone are responsible for 7% of world emissions because they burn coke, a carbonized form of coal, leading to more carbon emissions. Optionally, you can read about how LKAB, one of the world’s largest iron-ore companies, is moving to carbon neutral production.
 
@@ -121,8 +105,6 @@ Here are four videos that you can watch to learn more about the types of mining 
 
 **Q: Explain the specific impacts on the environment of two types of mining that you learned about.**
 
-<textarea data-unit="7" data-key="8" id="7.8" placeholder="Enter your response here." onblur="updateResponse(this)" oninput="editedResponse(this)"></textarea>
-
 Over the years, numerous resistance movements have popped up to protest extractive activities. For example, since 2008, many people (climate scientists, environmental activists, indigenous communities, farmers, and business owners) have rallied for the Keystone XL pipeline protests. Watch this NowThis World video to learn about the controversy surrounding the Keystone XL (KXL) pipeline.
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/RU-Y_VEhbj8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -130,8 +112,6 @@ Over the years, numerous resistance movements have popped up to protest extracti
 - Optional detailed article: [What is the Keystone Pipeline?](https://www.nrdc.org/stories/what-keystone-pipeline), NRDC article
 
 **Q: What are two ways that the KXL pipeline could worsen the environment? Why is the pipeline so controversial and what are your stances on the issue?**
-
-<textarea data-unit="7" data-key="9" id="7.9" placeholder="Enter your response here." onblur="updateResponse(this)" oninput="editedResponse(this)"></textarea>
 
 Although Obama rejected the pipeline’s border-crossing permit in 2015, Trump revived the proposal within weeks of his inauguration in 2017. As of July 2020, the proposal has been blocked by the Supreme Court, but there is still a huge debate centered around this proposal. We strongly recommend you stay updated on the status of the KXL pipeline proposal in the next couple of years!
 
@@ -145,16 +125,12 @@ Numerous industrial dump sites, filled with millions of tons of industrial waste
 
 **Q: What do you notice about the resulting land? How does the vegetation (or lack thereof) seem to be affected? What about the “water” sources (black and orange pools) in the photos?**
 
-<textarea data-unit="7" data-key="10" id="7.10" placeholder="Enter your response here." onblur="updateResponse(this)" oninput="editedResponse(this)"></textarea>
-
 With global warming, these dump sites are much more vulnerable to extreme weather events, which could potentially spread the toxins to nearby water sources and/or communities. Take a look at this map to find Superfund sites in your area, as well as sites around the country. You can also read this recent article about the state of these Superfund sites today.
 
 - [MAP: See the toxic sites near you that are threatened by climate change](https://www.nbcnews.com/news/us-news/map-see-toxic-sites-near-you-are-threatened-climate-change-n1240932), NBC news map
 - [A growing toxic threat - made worse by climate change](https://www.nbcnews.com/news/us-news/map-see-toxic-sites-near-you-are-threatened-climate-change-n1240932), NBC news article
 
 **Q: Where in the US do the sites seem to be most concentrated? Can you think of reasons why that area has the most Superfund sites?**
-
-<textarea data-unit="7" data-key="11" id="7.11" placeholder="Enter your response here." onblur="updateResponse(this)" oninput="editedResponse(this)"></textarea>
 
 It’s extremely important to note that the vast majority of Superfund sites are most likely to be located near low-income communities and communities of color. A recent 2020 study by the Shriver Center found that 70% of the country’s most contaminated sites are within one mile of federally assisted housing. These households (~77,000 families) are also disproportionately in low-income communities of color. Many of these families are unaware of the community health risks and/or don’t have the means to move out of the area. This kind of environmental injustice speaks to federal policies of allocating federal housing in contaminated areas. Take a look at this document from the EPA to see who exactly are being affected by Superfund sites.
 
@@ -175,8 +151,6 @@ Although Bangladesh is a developing country, its major brick-making, clothing, a
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/eNCj0V3tnoU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 **Q: How does the lead poisoning affect Anik? What were your personal reactions to the video?**
-
-<textarea data-unit="7" data-key="12" id="7.12" placeholder="Enter your response here." onblur="updateResponse(this)" oninput="editedResponse(this)"></textarea>
 
 In light of the climate crisis, many companies are implementing green factories, where workers use fewer natural resources and more renewable sources of energy, leading to reduced pollution and emissions. Fortunately, Bangladesh is in the lead of implementing this new kind of “green manufacturing.” The top three green factories - the first denim, garment, and knitwear factories of its kind - actually originated from Bangladesh, and it currently has the most green factories in the world.
 
@@ -220,8 +194,6 @@ Tourism and environmental awareness don’t have to be mutually exclusive! Many 
 
 **Q: Compare the state of the coral reef environment before and after the ecotourists worked on conserving biodiversity.**
 
-<textarea data-unit="7" data-key="13" id="7.13" placeholder="Enter your response here." onblur="updateResponse(this)" oninput="editedResponse(this)"></textarea>
-
 Ecotourists get the best of both worlds - they can experience the thrill of travel while also being a part of conservation efforts. Even if you decide not to be an ecotourist, the motto “leave it better than you found it” should always be in the back of your mind. Whether you’re at the beach, a natural park, or an exotic rainforest, be sure to clean up after yourselves and do your best not to disturb the wildlife there!
 
 #### Quaternary (information services)
@@ -231,8 +203,6 @@ Last but certainly not least, the quaternary sector includes all industries invo
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/iZ499mdRgLU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 **Q: What are data centers and how do they contribute to greenhouse gas emissions?**
-
-<textarea data-unit="7" data-key="14" id="7.14" placeholder="Enter your response here." onblur="updateResponse(this)" oninput="editedResponse(this)"></textarea>
 
 You’d think that sending an email or doing a quick Google search doesn’t have much of a carbon footprint, but when billions of people are sending dozens of emails daily and browsing websites, they add up. To give you an idea, a Harvard study found that two Google searches produce the same amount of carbon dioxide as boiling water on your stovetop. Even just slightly changing our internet habits, like sending thank you emails, would make a bigger impact than you think. Check out this article about ways you can change your internet habits to reduce their environmental impact!
 
@@ -250,8 +220,6 @@ Check out this simulation of stormwater runoff based on the land type. Adjust th
 
 **Q: In a few sentences, compare the amount of runoff that results based on the precipitation. Write a similar comparison of runoff based on the three land types that you were asked to toggle among. What is the most ideal scenario for minimized runoff?**
 
-<textarea data-unit="7" data-key="15" id="7.15" placeholder="Enter your response here." onblur="updateResponse(this)" oninput="editedResponse(this)"></textarea>
-
 Currently, certain areas in the US are increasingly experiencing higher contamination rates, respiratory illness related deaths, and wastewater overflows. Clean water is critical to our public health and environment and our current systems aren’t sufficient to address the problem. To upgrade these public wastewater systems would require hundreds of billions of dollars in investments - taxpayer dollars - per year.
 
 In the 1980s, the concept of green infrastructure was proposed as a primary solution for stormwater runoff, but has expanded into a general way of solving urban and climatic challenges through the harnessing of nature.
@@ -262,8 +230,6 @@ Watch this TED talk, from 3:42 to 11:03, about green infrastructure for storm ru
 
 **Q: What happens to the sewage in wet weather and why is this “combined sewer” so dangerous for us and the environment? Based on the speaker’s principles, define stormwater green infrastructure. Why should rooftops be the focus surface of green infrastructure? What is the purpose of plants in the sponge analogy?**
 
-<textarea data-unit="7" data-key="16" id="7.16" placeholder="Enter your response here." onblur="updateResponse(this)" oninput="editedResponse(this)"></textarea>
-
 Since the 1980s, we have come up with a wide variety of green infrastructure to better manage wastewater and we have implemented them into our daily lives. Projects include vegetated rooftops, rain gardens, bioretention areas, constructed wetlands, and porous pavement. To get an idea of the different types of green infrastructure, check out this catalog of green infrastructure projects in US cities and an article about different projects specifically in New York City.
 
 - [Green Infrastructure Examples for Stormwater Management in the Hudson Valley](https://www.dec.ny.gov/lands/58930.html), New York Department of Environmental Conservation article
@@ -272,5 +238,3 @@ Since the 1980s, we have come up with a wide variety of green infrastructure to 
 Read about three different projects and answer the following set of questions for each project. Feel free to look for other project types via Google, but be sure to find credible sources and link them in your responses!
 
 **Q: Where is it mainly used? How does it work? What are the benefits? Who does it benefit?**
-
-<textarea data-unit="7" data-key="17" id="7.17" placeholder="Enter your response here." onblur="updateResponse(this)" oninput="editedResponse(this)"></textarea>

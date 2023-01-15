@@ -1,6 +1,6 @@
 ---
 slug: 'energy'
-unit: 3
+unit: 4
 title: 'Energy'
 background: '#f7e9a3'
 text: '#5c4b00'
@@ -11,8 +11,6 @@ sections:
   - Renewable energy solutions
   - Innovative energy technologies
 ---
-
-<img style="visibility: hidden; position: absolute; top: 0; left: 0; z-index: -10000;" src="x" onerror="loadAllResponses()">
 
 # Energy
 
@@ -44,8 +42,6 @@ Although we've relied primarily on fossil fuels for electricity since the Indust
 
 **Q: Which impact did you find most alarming? Tell a story about it below, as if you were telling a friend or family member.**
 
-<textarea data-unit="3" data-key="1" id="3.1" placeholder="Enter your response here." onblur="updateResponse(this)" oninput="editedResponse(this)"></textarea>
-
 **Nuclear energy** harnesses energy stored in the nuclei of atoms. We set this energy free using two main methods: fusion and fission. With **fusion**, atoms are combined to make a new atom. For example, the sun's energy comes from fusion. Inside the sun, small hydrogen atoms combine to make larger helium atoms. However, since helium atoms require less energy to be held together, the extra energy is released as light and heat.
 
 With **fission**, one atom is split into two smaller atoms, releasing extra energy as heat and radiation. Usually, we create nuclear energy by splitting uranium atoms. Since uranium is a mineral found in the ground and there's a limited supply, it's **nonrenewable**. However, nuclear energy is also considered to be one of the most environmentally-friendly nonrenewable energy sources since it doesn't produce greenhouse gases the way fossil fuels do.
@@ -55,8 +51,6 @@ However, if the concept of nuclear power makes you a little uncomfortable, you'r
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/poPLSgbSO6k" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 **Q: How do you feel about shifting to nuclear energy as a climate solution? Do you trust the up-and-coming technology?**
-
-<textarea data-unit="3" data-key="2" id="3.2" placeholder="Enter your response here." onblur="updateResponse(this)" oninput="editedResponse(this)"></textarea>
 
 ### Renewable energy sources
 
@@ -78,8 +72,6 @@ Solar energy is free, clean, and **renewable**, but the challenge lies in captur
 
 **Q: Pick one of the mentioned energy sources and dig a little deeper. What are its pros and cons? Or, investigate online for another energy source that hasn't been mentioned yet. There are some weird ones out there!**
 
-<textarea data-unit="3" data-key="3" id="3.3" placeholder="Enter your response here." onblur="updateResponse(this)" oninput="editedResponse(this)"></textarea>
-
 ## Air pollution
 
 We learned previously in "Why does climate change matter?" that small particles like PM 2.5 (particulate matter with a diameter of 2.5 micrometers) have detrimental effects on human health. So what are some sources of these harmful particulates? The most common are the burning of fossil fuels like coal, the combustion of gasoline in vehicles, the smoke emitted from industrial factories, and smoke from wildfires.
@@ -94,8 +86,6 @@ Some of the same sources of poor air quality also aggravate climate change. The 
 
 **Q: Fossil fuels negatively impact the environment’s health and our health, but we still use them to get energy. What are some methods you know of to get energy that are healthier for the environment?**
 
-<textarea data-unit="3" data-key="4" id="3.4" placeholder="Enter your response here." onblur="updateResponse(this)" oninput="editedResponse(this)"></textarea>
-
 ## Renewable energy solutions
 
 The solution to climate change centers heavily around transitioning from fossil fuels to cleaner energy sources. While we have mainly relied on coal, oil, and natural gas, we really need to be looking at solar, wind, hydropower, geothermal, and nuclear energy instead. However, some skeptics believe that transitioning to 100% renewable energy isn't feasible. Our Changing Climate addresses their concerns in the following video. Let's watch!
@@ -103,8 +93,6 @@ The solution to climate change centers heavily around transitioning from fossil 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/lyZCPqQrg6w" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 **Q: What was your favorite renewable energy solution from the Our Changing Climate video? Why?**
-
-<textarea data-unit="3" data-key="5" id="3.5" placeholder="Enter your response here." onblur="updateResponse(this)" oninput="editedResponse(this)"></textarea>
 
 If we need to get to zero emissions by 2050, then our transition needs to speed up _right now_. Renewable energy is no longer a scheme of the future, no matter how oil and gas companies try to paint it. Let's watch this video from AsapSCIENCE video on the biggest lie about renewable energy.
 
@@ -120,11 +108,7 @@ To prevent total climate collapse, we will have to eventually switch to 100% cle
 
 **Q: Is PTX actually environmentally friendly in itself? Why do you think this is the case?**
 
-<textarea data-unit="3" data-key="6" id="3.6" placeholder="Enter your response here." onblur="updateResponse(this)" oninput="editedResponse(this)"></textarea>
-
 **Q: What are the different PTX methods? What do you think are their respective benefits?**
-
-<textarea data-unit="3" data-key="7" id="3.7" placeholder="Enter your response here." onblur="updateResponse(this)" oninput="editedResponse(this)"></textarea>
 
 If you're curious about the chemistry behind how Power-to-Gas actually works, here's an [optional video](https://www.youtube.com/watch?v=DFOp-1b65vM).
 
@@ -143,5 +127,3 @@ Carroll does very interesting experiments modeling wind turbines and floating wi
 If you're interested, [here](https://www.rechargenews.com/wind/2020-vision-five-floating-wind-power-technologies-to-watch-this-year/2-1-736157) are a couple of projects to watch out for in the coming years!
 
 **Q: Do you think the enormous cost of putting these turbines into the sea is worth it? How are floating wind turbines different from offshore turbines?**
-
-<textarea data-unit="3" data-key="8" id="3.8" placeholder="Enter your response here." onblur="updateResponse(this)" oninput="editedResponse(this)"></textarea>
