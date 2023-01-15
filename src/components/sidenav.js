@@ -101,7 +101,7 @@ const SideNav = ({
           sx={{
             mt: '2em',
             mx: '2em',
-            mb: '1em',
+            mb: '0',
           }}
         >
           <Flex
@@ -194,6 +194,7 @@ const SideNav = ({
                     cursor: 'pointer',
                     my: '0.5em',
                     '&:active, &:focus': { color: frontmatter.highlight },
+                    fontWeight: 400,
                   }}
                 >
                   {section}
@@ -231,7 +232,7 @@ const SideNav = ({
           sx={{
             pt: '2em',
             px: '2em',
-            pb: '1em',
+            pb: '0',
             flexDirection: 'column',
           }}
         >
@@ -291,6 +292,7 @@ const SideNav = ({
                     cursor: 'pointer',
                     my: '0.5em',
                     '&:active, &:focus': { color: frontmatter.highlight },
+                    fontWeight: 400,
                   }}
                 >
                   {unit.frontmatter.title}
